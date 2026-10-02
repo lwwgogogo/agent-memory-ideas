@@ -1,0 +1,37 @@
+{
+  "selected": {
+    "selected_global": "recency_0.8",
+    "selected_forgetting": "forget_0.995",
+    "selected_window": "window_bma_500",
+    "selected_deployable": "forget_0.995"
+  },
+  "validation_accuracy": {
+    "last": 0.815080459770115,
+    "majority": 0.5753850574712643,
+    "ema_0.05": 0.8460325670498084,
+    "ema_0.15": 0.8835459770114942,
+    "ema_0.35": 0.871028735632184,
+    "ema_0.65": 0.815080459770115,
+    "recency_0.5": 0.815367816091954,
+    "recency_0.8": 0.8839540229885058,
+    "recency_0.95": 0.8460325670498084,
+    "recency_0.99": 0.7256934865900383,
+    "window_5": 0.8655593869731799,
+    "window_15": 0.8543045977011494,
+    "window_51": 0.7793333333333332,
+    "raw_conflict": 0.815080459770115,
+    "bayes_0.01_0.1": 0.8821015325670498,
+    "bayes_0.05_0.2": 0.8797624521072799,
+    "bayes_0.2_0.35": 0.8602490421455937,
+    "online_bma": 0.8981283524904216,
+    "dense_bma": 0.8996321839080461,
+    "forget_0.95": 0.8991475095785442,
+    "forget_0.99": 0.907609195402299,
+    "forget_0.995": 0.9092203065134097,
+    "forget_0.999": 0.9051283524904215,
+    "window_bma_50": 0.8990766283524904,
+    "window_bma_200": 0.9072892720306515,
+    "window_bma_500": 0.9079980842911877
+  },
+  "rule": "equal scenario-weighted accuracy; deterministic candidate-order ties"
+}

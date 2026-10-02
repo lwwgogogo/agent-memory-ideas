@@ -1,0 +1,232 @@
+{
+  "steps": 3000,
+  "burn_in": 100,
+  "start_range": [
+    900,
+    1500
+  ],
+  "validation_seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219
+  ],
+  "test_seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339
+  ],
+  "bootstrap_samples": 5000,
+  "workers": 4,
+  "scenarios": [
+    {
+      "name": "q_increase",
+      "kind": "q_change",
+      "q_before": 0.005,
+      "q_after": 0.15,
+      "r_before": 0.2
+    },
+    {
+      "name": "q_decrease",
+      "kind": "q_change",
+      "q_before": 0.15,
+      "q_after": 0.005,
+      "r_before": 0.2
+    },
+    {
+      "name": "r_increase",
+      "kind": "r_change",
+      "q_before": 0.01,
+      "r_before": 0.05,
+      "r_after": 0.35
+    },
+    {
+      "name": "r_decrease",
+      "kind": "r_change",
+      "q_before": 0.01,
+      "r_before": 0.35,
+      "r_after": 0.05
+    },
+    {
+      "name": "temporary_corruption",
+      "kind": "corruption",
+      "q_before": 0.01,
+      "r_before": 0.05,
+      "r_after": 0.45
+    },
+    {
+      "name": "control_low_q",
+      "kind": "control",
+      "q_before": 0.005,
+      "r_before": 0.2
+    },
+    {
+      "name": "control_high_q",
+      "kind": "control",
+      "q_before": 0.15,
+      "r_before": 0.2
+    },
+    {
+      "name": "control_clean",
+      "kind": "control",
+      "q_before": 0.01,
+      "r_before": 0.05
+    },
+    {
+      "name": "control_noisy",
+      "kind": "control",
+      "q_before": 0.01,
+      "r_before": 0.35
+    }
+  ],
+  "original_grid": {
+    "q_grid": [
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "r_grid": [
+      0,
+      0.05,
+      0.15,
+      0.25,
+      0.35,
+      0.45,
+      0.5
+    ]
+  },
+  "dense_grid": {
+    "q_grid": [
+      0.001,
+      0.001295558666,
+      0.001678472256,
+      0.002174559276,
+      0.002817269114,
+      0.003,
+      0.003649937414,
+      0.004728708045,
+      0.006126318685,
+      0.00793700526,
+      0.01,
+      0.010282855943,
+      0.013322043124,
+      0.017259488412,
+      0.022360679775,
+      0.02896957245,
+      0.03,
+      0.037531780626,
+      0.048624623623,
+      0.05,
+      0.062996052495,
+      0.081615081706,
+      0.1,
+      0.105737126344,
+      0.136988650306,
+      0.15,
+      0.177476832988,
+      0.229931648913,
+      0.297889940236,
+      0.3,
+      0.385933893456,
+      0.5
+    ],
+    "r_grid": [
+      0.0,
+      0.025,
+      0.05,
+      0.075,
+      0.1,
+      0.125,
+      0.15,
+      0.175,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3,
+      0.325,
+      0.35,
+      0.375,
+      0.4,
+      0.425,
+      0.45,
+      0.475,
+      0.5
+    ]
+  },
+  "forgetting_rates": [
+    0.95,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "window_sizes": [
+    50,
+    200,
+    500
+  ],
+  "decision_rule": {
+    "min_distinct_categories": 2,
+    "min_accuracy_gap": 0.02,
+    "post_change_error": "Oracle better at all 50/100/300 windows; point estimates with CIs reported",
+    "control": "selected_deployable must not trail either fixed or dense stationary by >1pp with paired lower CI >0",
+    "note": "Q directions count as one category, R directions count as one category; corruption is third"
+  }
+}

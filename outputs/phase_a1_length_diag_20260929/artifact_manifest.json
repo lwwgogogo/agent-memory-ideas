@@ -1,0 +1,22 @@
+{
+  "sha256": {
+    "audit.json": "8a2b8b2c1026c75f2763f03bb64e3e1253df298c72fef3096dfe3cd56d2d305d",
+    "config.json": "d5ed4bebfef05bee0bf6c6c9f89906e37dbe7c8fc88448cf00c278aaaa33c2b3",
+    "contrasts.csv": "f4e829f42ffe80e9506f5669ca14b3e3e463a885f590e271b567f0c346a3c437",
+    "environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+    "per_seed.csv": "15e21f501a351f65125a75e79a41a292efd246331a017d6ff7d1ce5309496a22",
+    "posterior.csv": "f18e0b6fecc4c97e568125b60c0ca539b55bcf22c840e21d7e1d940005541cd3",
+    "posterior_summary.csv": "f5ae77efea06cbc411e7651b04dccadc1038aa848dc2ed8890331f18497c510c",
+    "postprocessing_source.zip": "930c3872f91854f278359471c1d5b622ab7c5d87f469ee1363ac838f95934290",
+    "run.json": "a207d31019be4894432e70902cf19cd0563c92261856fb7687cc54390763380f",
+    "source_snapshot.zip": "6cf560edc64af9092a70d717212e70192561a27925360fc46ae7fee371c7db6e",
+    "summary.csv": "cdd243fd65fdebb4f17f4e29e37215036c04906eebe6c432506348bca1d5caca",
+    "windows.csv": "0773e429cf655603623985c19d8c1c5bbc61f963b41e06f7b9d4ff2cadd537e8",
+    "window_contrasts.csv": "fa5a1c11c887b4134c42073c99533f6e78fa531fc7104c711aa1990e8d1cab2c",
+    "window_summary.csv": "0e30ee69ebdfd1e2aa7587707ec16c02d1db073c4ef53c241585bc6412c7ee3f",
+    "figures/gap_vs_length.png": "f9cc2dd6995035fa207b680f2fc436c59f4c23c721e56b709bda83e481798d6c",
+    "figures/posterior_convergence.png": "6cde42524201382ea13ec2b749722d14575f58dda5786dadb23246adc81fb187"
+  },
+  "plot_source_archive": "postprocessing_source.zip",
+  "note": "Additional derived artifacts; inference run.json is unchanged."
+}

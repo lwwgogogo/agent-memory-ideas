@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "rows": 3600,
+  "source_files_verified": 37,
+  "inference_outputs_verified": 12,
+  "seeds": 40,
+  "method_counts": {
+    "selected_deployable": 360,
+    "dense_bma": 360,
+    "oracle_qr": 360,
+    "selected_window": 360,
+    "online_bma": 360,
+    "selected_forgetting": 360,
+    "forget_0.995": 360,
+    "recency_0.8": 360,
+    "selected_global": 360,
+    "window_bma_500": 360
+  }
+}

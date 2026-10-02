@@ -1,0 +1,24 @@
+{
+  "sha256": {
+    "audit.json": "df5f24b76711fb2e6ccc0bf2ffcc85ca159eb98ef23e1468f5efeacb180cefb5",
+    "config.json": "aca86c1c5fa761d72d4e0f7ae2b5d272ea2a9eb55a4f0444d9ee0fc99bfeb79c",
+    "contrasts.csv": "643351e04312d5aff23ea2b161ca181e6441e14ede7b3c12f4dcff6fcb1c3a74",
+    "decision.json": "d7889925b4dfa57dc637a893455f23e130a4c7578bc0a7087444b14c34e782cd",
+    "dense_improvement.csv": "f78182d69f42de114e5d04ef6c7a9eba98d57af75e394737b21e8e30d5fb2055",
+    "environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+    "overall.csv": "5e011997b59686176e70d8bf5112e7f956b9c40722ff0f64a4f17d25fc482898",
+    "overall_contrasts.csv": "13d3a9b9145135950a0a12c7b3760b31108e51cfa3471f36a8eefc95ce5fa7f9",
+    "per_seed.csv": "ab40d23b80967555d81a117cc6f5ee8eff06b9b92b8bd521715f274bc9474d45",
+    "posterior.csv": "bbe6d123371e5e9520535e66d342d100c824c2901e024d1f31c14371b9e38a5b",
+    "postprocessing_source.zip": "930c3872f91854f278359471c1d5b622ab7c5d87f469ee1363ac838f95934290",
+    "run.json": "8fdf8c7181066d9b46c2ee0ba0cd09f1cd731b164d4ed61c7f177649d762a923",
+    "selection.json": "33a2ef3d92b5479f7e4869d021d142e3445468798183fd2a194bb61945087910",
+    "source_snapshot.zip": "6cf560edc64af9092a70d717212e70192561a27925360fc46ae7fee371c7db6e",
+    "summary.csv": "279dfa9e4d82d929d62814b5b5c422d7d509d5a8060497f84d2e75dce4e73784",
+    "validation.csv": "b374163021caa81a3353cea00cc91a390553bb290614c9b2e18ec3af0d60f669",
+    "figures/accuracy_heatmap.png": "d21eaebd6b6b0e793451463134da9fa6d9a52d855dda8939a5dddb95ca09807d",
+    "figures/gap_heatmap.png": "917e06744628458208d4e7592b04c552c9a158a66d606aef27c61493bd3a1368"
+  },
+  "plot_source_archive": "postprocessing_source.zip",
+  "note": "Additional derived artifacts; inference run.json is unchanged."
+}

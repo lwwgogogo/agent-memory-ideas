@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "rows": 3000,
+  "source_files_verified": 30,
+  "inference_outputs_verified": 13,
+  "seeds": 20,
+  "method_counts": {
+    "online_bma": 500,
+    "selected_global": 500,
+    "selected_per_cell": 500,
+    "dense_prior_matched": 500,
+    "dense_bma": 500,
+    "oracle_qr": 500
+  }
+}

@@ -1,0 +1,1 @@
+{"seeds":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39],"pairs_per_condition":100,"sources":["S1_single","S2_multi","S3_alternative"],"levels":["L0_raw","L1_paraphrase","L2_mild_summary","L3_abstract_summary","L4_strong_merge","L5_exact_collision"],"traces":["T_full","T_partial","T_final_only"]}

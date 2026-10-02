@@ -1,0 +1,227 @@
+Agent Memory Idea 1后续推进与 JitRL 验证方案
+从“Noise or Change?”现象验证到 Test-Time RL Downstream Case Study
+研究推进备忘录 · 2026-09-24 · v1.0
+本备忘录与前文的关系
+前一份《Agent Memory 三条研究 Idea 备忘录》已经完成 Idea 1/2/3 的问题定义、相关工作边界和初步验证设计。本文件不再重复三条 Idea 的综述，而只记录本轮进一步形成的判断：是否依托 JitRL、如何分阶段验证、何时继续/停止、算力预算与最终论文定位。
+
+当前核心决策
+不把课题从一开始定义为“JitRL++”。先独立证明 Noise-or-Change failure mode 和 Oracle 上限；若成立，再把 JitRL 作为最重要的 downstream 验证之一。论文主问题仍是“冲突证据来自真实状态变化还是观测不可靠”，JitRL 是放大这一问题的实验载体，而不是研究对象本身。
+一句话版本： 先证明问题，再做方法，最后用 JitRL 证明方法对 test-time policy improvement 真的有用。
+
+一、重新确定研究定位
+这条线最容易出现的误区，是把研究目标写成“给 JitRL 的均值价值估计加入 uncertainty / volatility weighting”。这种定位实现容易，但论文上容易被评价为对既有方法的增量修改。
+更稳妥的定位是先独立研究一个 failure mode：当新 evidence 与长期 memory 冲突时，Agent 不应只根据 recency、surprise 或 conflict magnitude 决定更新，而应区分两类原因：latent state 真的发生变化，或 observation / reward 本身不可靠。
+Conflict = state change  OR  unreliable observation
+因此，JitRL 的作用不是“提供我们的创新点”，而是提供一个特别合适的压力测试环境：它把 memory 中的历史 return 直接用于 Q/V/Advantage 估计，随后直接调制动作 logits。只要 memory evidence 过时、受噪声污染或混入错误 regime，误差就会进一步传到 policy。
+1.1 建议的论文主线与副线
+层级
+建议定位
+说明
+主问题
+Noise or Change?
+研究证据冲突的来源识别，以及由此决定的记忆更新速率。
+核心方法
+Reliable / Adaptive Memory Updating
+显式估计或近似 process volatility 与 observation reliability；具体 estimator 可替换。
+关键 downstream
+JitRL memory critic
+验证错误 memory update 是否会污染非参数 value / advantage，以及我们的方法能否缓解。
+非主卖点
+Kalman / NIS / HMM 等
+这些是工具，不把经典过滤理论本身包装为新算法。
+1.2 当前最重要的研究问题
+现象问题：Noise Overreaction 与 Stale Memory Reuse 是否能在同一个可控任务中同时稳定出现？
+上限问题：如果我们知道真实的 process volatility Q 和 observation noise R，能否明显优于最好的简单 recency / EMA baseline？
+估计问题：在不知道 Q/R 标签时，能否仅凭 observation sequence、return sequence 和 conflict pattern 在线估计出足够有用的更新信号？
+迁移问题：这一机制进入自然语言 Agent / JitRL 后，收益是否仍然存在，还是只在二元 synthetic 环境成立？
+二、为什么 JitRL 值得作为第二阶段核心验证
+JitRL 的结构与我们的 failure mode 很匹配：它冻结 LLM 权重，通过检索历史 (state, action, return) 经验估计非参数 Q/V/Advantage，再用 advantage 直接调整候选动作 logits。换言之，memory 不只是提示词材料，而直接承担 critic 的角色。
+Memory Evidence
+Value Estimate
+Advantage
+Logit Modulation
+Action
+这形成一个非常直接的误差传播链：
+stale / noisy memory → biased Q(s,a) → biased A(s,a) → wrong logit shift
+因此，如果我们的方法只是在抽象 memory benchmark 上提高“记忆正确率”，意义还不够强；而如果它能进一步改善 JitRL 的 policy adaptation，就能说明我们解决的是“memory evidence reliability 对决策的因果影响”。
+2.1 为什么不应该把整个工作写成 JitRL 改进
+会把问题范围缩窄成某一篇论文的 value estimator patch，削弱通用性。
+如果 JitRL 后续被替代，主贡献会显得依附于 baseline。
+容易让 novelty 变成“weighted mean / extra gate”，而不是新的 failure mode 与 evaluation protocol。
+最好的叙事是：先建立 general problem，再用 JitRL 证明这个问题会直接损害 test-time policy improvement。
+
+三、建议的四阶段验证路线
+后续实现不应一次性搭完整 Agent，而应逐级增加复杂度。每一阶段都设置明确 Go/No-Go 条件，上一阶段没有证据就不进入下一阶段。
+阶段
+环境
+主要问题
+方法复杂度
+GPU
+Go / No-Go
+A
+二元 synthetic
+Noise/Change 区分是否有上限收益？
+极低：Oracle + 简单 baselines
+不需要
+Oracle 明显优于 best simple baseline 才继续
+B
+synthetic + online estimation
+能否在线估计 Q/R 或 change probability？
+低：Bayesian/HMM/NIS/change-point
+不需要
+实际 estimator 保留大部分 Oracle 增益
+C
+自然语言 / mini-agent
+文本 observation 下是否仍能识别 reliability 与 drift？
+中：LLM parser 或轻量 judge
+API 或小模型
+收益不能只来自额外 token / judge
+D
+JitRL / Jericho / WebArena
+能否改善 non-parametric critic 与 policy？
+中：接入 memory weighting / regime logic
+API-first
+对 noisy/shifted setting 有稳定、可重复提升
+3.1 Phase A：先做 Oracle，不碰 LLM
+目的不是展示复杂方法，而是回答一个最重要的问题：如果能够正确区分 process volatility 与 observation noise，收益到底够不够大。建议用最小二元 latent state，人工控制两个量：
+Q = P(x_t ≠ x_{t-1})      R = P(y_t ≠ x_t)
+扫描 Q×R 网格并多随机种子重复，至少比较：Last Observation、Majority、Fixed EMA、Recency Decay、简单 Bayesian belief、Oracle-Q/R。最终不只看平均 accuracy，还要把 failure 分开量化。
+3.2 Phase B：从 Oracle 走向可实现 estimator
+第一版不追求复杂神经网络。优先考虑能解释、容易做消融的 estimator：简单 HMM / Bayesian filtering、normalized innovation、change-point accumulation。目标是生成两个可用信号：当前 observation 的可靠性，以及当前 latent state 已切换 regime 的概率。
+update strength_t = f(change probability ↑, observation unreliability ↓)
+这里的关键不是复现某个经典滤波公式，而是验证“同样大小的 mismatch，在高噪声与低噪声条件下应该触发不同更新”这一行为。
+3.3 Phase C：自然语言化，但仍保持可控
+在进入 WebArena 前，先把二元状态包装成自然语言 evidence：例如工具返回、用户陈述、网页字段或传感器式文本。控制 latent truth 和 observation corruption，但让 Agent 看到自然语言。这样可以验证从数值 toy task 到 LLM perception 之间是否出现新的错误来源。
+3.4 Phase D：接入 JitRL
+原版 JitRL 可视为对检索到的 return 做局部非参数价值估计。我们的改动应尽量保持 policy improvement 部分不变，只替换“哪些历史 return 仍然可信、应该占多大权重”。一个自然接口是：
+Q_t(s,a) = Σ_i w_{t,i} G_i / Σ_i w_{t,i}
+其中 w 可由 similarity、age、observation reliability、change probability、regime compatibility 等组成。第一版不要一次把所有因素都加上，优先做最小可解释版本，确保能把收益归因到 Noise-or-Change 区分。
+四、JitRL 阶段应该怎样构造压力测试
+如果只在原始 benchmark 上比较最终成功率，很可能看不出我们解决的具体问题。因此建议人为注入三类 disturbance，让 failure 可控且可复现。
+Stress Test
+人为控制
+预期暴露的问题
+主要指标
+Reward / Observation Noise
+以概率 p 翻转或扰动 reward / observation
+JitRL 对偶发异常过度调整
+False Update、policy variance、success drop
+Abrupt Environment Shift
+在固定 episode / step 改 action-reward mapping
+旧 memory 继续主导 value estimate
+Adaptation Delay、post-shift regret、stale reuse
+Temporary Corruption
+短暂噪声后恢复原 regime
+过度 forgetting 导致“被一次异常带跑”
+Recovery time、useful-memory retention
+4.1 JitRL 阶段 baseline 设计
+Vanilla JitRL：原始 retrieval + value estimation。
+JitRL + Fixed Recency Decay：证明收益不是简单“偏爱新 memory”。
+JitRL + Sliding Window：证明不是只要删除旧数据就够。
+JitRL + Simple Change Detector：衡量最小 change-point baseline。
+JitRL + Ours：noise/change-aware memory critic。
+Oracle variant：直接提供真实 noise / regime 标签，给出方法上限。
+4.2 需要重点记录的指标
+Task Success / Return：最终任务表现。
+Adaptation Delay：环境真实变化后，需要多少 step / episode 才恢复。
+False Update Rate：仅发生 observation noise 时，错误覆盖/降权旧 memory 的频率。
+Stale Memory Reuse Rate：环境已变化后仍使用旧 regime 经验的比例。
+Noise Overreaction：短暂异常引起的策略漂移幅度。
+Token / API Cost：确保增益不是用更多 judge calls 或更长 prompt 换来的。
+五、算力与工程成本评估
+总体判断
+这条路线的主要成本是 Agent rollout、API 调用和环境搭建，而不是梯度训练。Phase A/B 完全可以 CPU 完成；JitRL 本身冻结模型参数，API-first 时本机几乎不需要 GPU。
+阶段
+主要计算
+推荐配置
+GPU 需求
+成本风险
+A Synthetic
+Q×R 网格、多 seeds、统计
+普通 CPU / Python NumPy
+0
+极低
+B Estimator
+HMM/Bayesian/NIS/change-point
+普通 CPU
+0
+极低
+C NL Synthetic
+LLM 解析 / judge
+API 优先；也可本地小模型
+可选
+API token
+D Jericho + JitRL
+rollout + retrieval + value update
+API 模型最省事
+0（API）
+rollout 时长 / API
+D 本地 7B/8B
+本地 LLM inference
+4-bit 量化小模型
+约 12GB 可尝试
+速度与上下文长度
+WebArena
+浏览器 + 多站点 + API
+服务器/容器环境
+GPU 非核心
+环境维护成本高
+5.1 对当前设备条件的现实建议
+早期不要为了“复现论文同款大模型”购买算力。方法验证的核心是 memory dynamics，而不是 backbone size。Phase A/B 本地即可；Phase C/D 优先走 API。如果希望本地做可控实验，可尝试 7B/8B 级 4-bit 模型，但不建议一开始上 14B/32B。
+真正不推荐自己做的是大模型 GRPO / PPO 对照训练。若后续必须比较参数更新方案，优先引用论文结果或使用公开 checkpoint / 小规模替代实验，而不是把项目变成 GPU 训练工程。
+5.2 环境选择顺序
+Synthetic  →  Mini Natural-Language Env  →  Jericho  →  WebArena
+Jericho 比 WebArena 更适合作为第一轮真实 Agent 验证：环境轻、trajectory 清晰、容易注入 reward / observation corruption。WebArena 的主要难点是多站点、自托管和浏览器工程，应该等方法已经有明显信号后再投入。
+六、明确的 Go / No-Go 决策标准
+为了避免“因为已经做了很多就舍不得停”，建议把每阶段的停止条件提前写死。下面不是最终统计显著性标准，而是研究决策阈值。
+结果
+解释
+决策
+Oracle 在广泛 Q/R 区域明显优于 best simple baseline
+Noise/Change distinction 有真实上限价值
+GO：进入 online estimator
+Oracle 只在极端参数角落有极小收益
+问题存在但应用面窄
+NO-GO / 降级为分析现象
+Oracle 强，但实际 estimator 学不到
+failure mode 成立，方法不够
+保留问题，换 estimator
+Fixed EMA / recency 与 Oracle 几乎相同
+复杂区分没有必要
+立即停止主线
+Synthetic 有收益，自然语言后消失
+依赖显式结构，迁移性差
+收缩 claim，不进 JitRL
+JitRL noisy/shifted 设置稳定受益
+下游价值成立
+GO：扩展 benchmark / 写论文
+七、如果实验成功，论文应该怎么讲
+建议避免标题和摘要过度绑定 JitRL。核心贡献应围绕 failure mode、measurement protocol 和 adaptive memory updating 展开；JitRL 出现在实验部分作为 decision-sensitive downstream。
+7.1 推荐的问题表述
+核心问题表述（工作版）
+Current agent memory systems often treat disagreement between new evidence and stored memory as a generic update signal. However, the same conflict can arise from two fundamentally different causes: latent-state change and unreliable observation. Conflating them creates a noise–adaptation trade-off: updating aggressively overreacts to noise, while updating conservatively reuses stale memory.
+7.2 推荐的贡献结构
+定义并量化 Noise Overreaction 与 Stale Memory Reuse 两类相反 failure。
+建立 controlled Q×R evaluation protocol，并给出 Oracle 上限，证明区分 noise/change 是否值得。
+提出轻量、可解释的 online memory updater，以 observation reliability 与 change probability 控制更新。
+在自然语言 memory task 与 JitRL-style non-parametric critic 中验证对 state tracking 和 policy adaptation 的收益。
+7.3 不建议作为主创新的表述
+“首次把 Kalman Filter 用于 Agent Memory”。
+“提出 normalized innovation”。
+“给 JitRL 增加 uncertainty-aware weighting”。
+“统一 volatility / surprise / inhibition 三个机制”。
+这些表达要么经典方法色彩太强，要么容易显得只是现有框架上的插件。真正应该强调的是 Agent Memory 中尚未被清晰拆开的 failure mode，以及这个区分对 continual decision making 的实证价值。
+八、下一步执行清单（按优先级）
+实现最小二元 environment：latent state transition Q、observation flip R、长度 T、随机种子。
+实现 5–6 个 simple baselines 与 Oracle-Q/R。
+跑 Q×R 网格，输出 Accuracy / Adaptation Delay / False Update / Stale Reuse 热力图。
+根据 Oracle gap 决定是否继续；不要在结果出来前设计复杂 LLM 模块。
+若 GO：实现最简单 online Q/R 或 change-probability estimator，并做 estimator-vs-oracle gap。
+若仍 GO：构造自然语言版 synthetic，再接 Jericho/JitRL。
+JitRL 阶段最后再考虑 WebArena；不要把环境搭建放在研究验证之前。
+当前优先级
+未来一周最值得做的不是继续扩 related work，也不是先复现完整 WebArena，而是完成 Phase A：用一个小型 synthetic experiment 回答“如果真的能区分 noise 和 change，是否有足够大的收益”。这一步决定整条线是否值得投入。
+附：本轮新增参考与实现入口
+1. Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates. arXiv:2601.18510.（用于 downstream framework 与 non-parametric memory critic）
+2. JitRL official repository. https://github.com/liushiliushi/JitRL （用于后续复现、Jericho/WebArena 接入）
+3. 前一份《Agent Memory 三条研究 Idea 备忘录》仍作为 Idea 1/2/3 的定义、相关工作和原始 kill conditions 文档；本文件仅记录后续推进决策。

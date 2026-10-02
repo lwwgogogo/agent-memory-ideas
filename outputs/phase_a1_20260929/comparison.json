@@ -1,0 +1,21 @@
+{
+  "accuracy": {
+    "selected_global": 0.7913915789473684,
+    "selected_per_cell": 0.8426694736842106,
+    "online_bma": 0.8318526315789473,
+    "oracle_qr": 0.8442978947368422
+  },
+  "gain_vs_global": 0.04046105263157897,
+  "gain_ci95": [
+    0.038057868421052646,
+    0.04282857894736843
+  ],
+  "recovered_oracle_gap_fraction": 0.7647679115019594,
+  "recovery_ci95": [
+    0.7328927824460095,
+    0.7939697616664827
+  ],
+  "runtime_seconds": 101.252277135849,
+  "bootstrap_seed": 918,
+  "note": "Equal weight over grid cells; bootstrap clusters all cells by seed."
+}

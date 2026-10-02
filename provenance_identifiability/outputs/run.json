@@ -1,0 +1,73 @@
+{
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "episodes_per_condition": 10,
+    "source_structures": [
+      "S1_single",
+      "S2_multi",
+      "S3_redundant",
+      "S4_alternative",
+      "S5_conflicting",
+      "S6_overlap"
+    ],
+    "transformations": [
+      "T0_identity",
+      "T1_paraphrase",
+      "T2_summary",
+      "T3_merge",
+      "T4_rewrite",
+      "T5_multistep"
+    ],
+    "compressions": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "trace_completeness": [
+      1.0,
+      0.8,
+      0.5,
+      0.2,
+      0.0
+    ]
+  },
+  "summary": {
+    "episodes": 180000,
+    "seeds": 20,
+    "methods": {
+      "full_trace_oracle": 1.0,
+      "lexical": 0.7173333333342925,
+      "random": 0.6666666666675519,
+      "trace_heuristic": 0.7738666666672003
+    },
+    "identifiability_upper_bound": 0.9479927927927992,
+    "ambiguity_rate": 0.09932545151368806,
+    "timestamp": "2026-09-30T10:05:03Z",
+    "source_sha256": "b211696677c612ddc14cebdc5160aedfd631811e42f076821553ed657f649600",
+    "verdict": "NO-GO"
+  },
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]"
+}

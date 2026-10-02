@@ -1,0 +1,15 @@
+{
+  "episodes": 180000,
+  "seeds": 20,
+  "methods": {
+    "full_trace_oracle": 1.0,
+    "lexical": 0.7173333333342925,
+    "random": 0.6666666666675519,
+    "trace_heuristic": 0.7738666666672003
+  },
+  "identifiability_upper_bound": 0.9479927927927992,
+  "ambiguity_rate": 0.09932545151368806,
+  "timestamp": "2026-09-30T10:05:03Z",
+  "source_sha256": "b211696677c612ddc14cebdc5160aedfd631811e42f076821553ed657f649600",
+  "verdict": "NO-GO"
+}

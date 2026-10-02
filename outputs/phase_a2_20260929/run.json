@@ -1,0 +1,477 @@
+{
+  "config": {
+    "steps": 3000,
+    "burn_in": 100,
+    "start_range": [
+      900,
+      1500
+    ],
+    "validation_seeds": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "test_seeds": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339
+    ],
+    "bootstrap_samples": 5000,
+    "workers": 4,
+    "scenarios": [
+      {
+        "name": "q_increase",
+        "kind": "q_change",
+        "q_before": 0.005,
+        "q_after": 0.15,
+        "r_before": 0.2
+      },
+      {
+        "name": "q_decrease",
+        "kind": "q_change",
+        "q_before": 0.15,
+        "q_after": 0.005,
+        "r_before": 0.2
+      },
+      {
+        "name": "r_increase",
+        "kind": "r_change",
+        "q_before": 0.01,
+        "r_before": 0.05,
+        "r_after": 0.35
+      },
+      {
+        "name": "r_decrease",
+        "kind": "r_change",
+        "q_before": 0.01,
+        "r_before": 0.35,
+        "r_after": 0.05
+      },
+      {
+        "name": "temporary_corruption",
+        "kind": "corruption",
+        "q_before": 0.01,
+        "r_before": 0.05,
+        "r_after": 0.45
+      },
+      {
+        "name": "control_low_q",
+        "kind": "control",
+        "q_before": 0.005,
+        "r_before": 0.2
+      },
+      {
+        "name": "control_high_q",
+        "kind": "control",
+        "q_before": 0.15,
+        "r_before": 0.2
+      },
+      {
+        "name": "control_clean",
+        "kind": "control",
+        "q_before": 0.01,
+        "r_before": 0.05
+      },
+      {
+        "name": "control_noisy",
+        "kind": "control",
+        "q_before": 0.01,
+        "r_before": 0.35
+      }
+    ],
+    "original_grid": {
+      "q_grid": [
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        0.5
+      ],
+      "r_grid": [
+        0,
+        0.05,
+        0.15,
+        0.25,
+        0.35,
+        0.45,
+        0.5
+      ]
+    },
+    "dense_grid": {
+      "q_grid": [
+        0.001,
+        0.001295558666,
+        0.001678472256,
+        0.002174559276,
+        0.002817269114,
+        0.003,
+        0.003649937414,
+        0.004728708045,
+        0.006126318685,
+        0.00793700526,
+        0.01,
+        0.010282855943,
+        0.013322043124,
+        0.017259488412,
+        0.022360679775,
+        0.02896957245,
+        0.03,
+        0.037531780626,
+        0.048624623623,
+        0.05,
+        0.062996052495,
+        0.081615081706,
+        0.1,
+        0.105737126344,
+        0.136988650306,
+        0.15,
+        0.177476832988,
+        0.229931648913,
+        0.297889940236,
+        0.3,
+        0.385933893456,
+        0.5
+      ],
+      "r_grid": [
+        0.0,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.3,
+        0.325,
+        0.35,
+        0.375,
+        0.4,
+        0.425,
+        0.45,
+        0.475,
+        0.5
+      ]
+    },
+    "forgetting_rates": [
+      0.95,
+      0.99,
+      0.995,
+      0.999
+    ],
+    "window_sizes": [
+      50,
+      200,
+      500
+    ],
+    "decision_rule": {
+      "min_distinct_categories": 2,
+      "min_accuracy_gap": 0.02,
+      "post_change_error": "Oracle better at all 50/100/300 windows; point estimates with CIs reported",
+      "control": "selected_deployable must not trail either fixed or dense stationary by >1pp with paired lower CI >0",
+      "note": "Q directions count as one category, R directions count as one category; corruption is third"
+    }
+  },
+  "config_sha256": "a693b9226bef9608f29b6690e659ec6043a41343b216721bb523d7790f5b11db",
+  "source_sha256": {
+    "src/agent_memory/metrics.py": "b7935db076bba5ff7d31277466b5c437fa45e430e5006a1f1b294b69e13b5960",
+    "src/agent_memory/nonstationary.py": "0a2fdb6aa6127975c54b73e5a826d4caa1f7ee2a46bd4e916f7b6ca004dad7eb",
+    "src/agent_memory/__init__.py": "a09f7145722540a5273f00ebce510a8db81b12d3ffee36d7ea8330c10b1f0a9b",
+    "src/agent_memory/window.py": "a52e54bcde852b15af1060ddf9757962c6be7be8fb78735a1f6f8e9b8ecf5497",
+    "src/agent_memory/baselines.py": "18bf1f7d719d424d92c162c87f6bf53fb2607cc0a28821e446dcfeeb4519e1fb",
+    "src/agent_memory/environment.py": "fa774b17de797f26b72358729e435792df6a1046abc4a16b54deb4fd8a53e929",
+    "src/agent_memory/online.py": "e2b8947aba0bf13eeb0a47597117236c115feebf47dcaab8697fb7faf6cfe43d",
+    "src/agent_memory/research_io.py": "91786c8b7b9422a0ca36cb5cfffafd58aeea63175656be573cbd2ce8b1c4201e",
+    "scripts/plot_diagnostics.py": "e2d886085d9e54be90a9bc5ca82d1af7227593f32cdfe122b012944e4b499a46",
+    "scripts/sync_server.ps1": "190e2dcc48be40435980cac83caf5021b78e06ae80b39237289e05557238ea00",
+    "scripts/run_diagnostics.py": "5266db0f6adf37693590db21b431a841dd2a0c1a5e195ef719efd88bbf12a925",
+    "scripts/run_phase_a.py": "d6e8ee8977f3fc5a1ed7813521a7c0e31cde7269ad7daff930418020a5e05244",
+    "scripts/run_phase_a2.py": "932357afa5cd150c843402cbe87a100b4105f98c98e89e6804fcb985ff3f59fe",
+    "scripts/server_smoke.sh": "04ddee0cae4eb4ece6fa3b26ed086c3f761f7429cd836d59d89f3986713fa380",
+    "scripts/compare_online.py": "90d80806e979ec65091cecdad608831b29aaf0b868a879b63cda83b63ee4d232",
+    "scripts/install_requirements.py": "7d2bacf2e68d7d348a930783c53c26cd4cea12c8d64bb56b83a87cee5683e08d",
+    "scripts/plot_results.py": "cea2e31b5423e7da1df796cdd42721988e4a9b55f586e3ee2f6bfa402ab75576",
+    "configs/smoke.json": "8a64a3b5ba5e6c10ffc5e527662b70ad19853001a97df0c23c49c7e31fbfd337",
+    "configs/phase_a.json": "1f31ceccfe6e4d81ec6b00270fe7049d2a04c533127e8241a486ed620528ec1b",
+    "configs/phase_a2.json": "a693b9226bef9608f29b6690e659ec6043a41343b216721bb523d7790f5b11db",
+    "configs/phase_a1_dense.json": "9fd6c7cea5efbbce20dbcd1ab58fd3f87a7de9ae6f3405e55541d8efd477f9bb",
+    "configs/phase_a1_length_diag.json": "281c0bbf92437d2ea80349d2ddc1ea61bdcba8092b94149b0260a039da16d39d",
+    "configs/phase_a1.json": "ab089be54ef65ce25a7c16756da3dafc7fedccd6eaefe02a233ecd5d3e18867b",
+    "tests/test_diagnostics.py": "46568842ba732a435779925ae7f55f2c560811fd783cefcba6cd97a417582ec7",
+    "tests/test_nonstationary.py": "ab132bef745e4e6f7e28b796be726f68389127a63a0cf086c134240edc2b9aa3",
+    "tests/test_phase_a.py": "db4a2b556144a7f31ad4b86c44e7b716fe067f120cf2a723c817c1fccc4041a6",
+    "tests/test_online.py": "493b3ddcb4e70af407fc5379d12a7366a88f816038a1c381d83597b17f3a00b9",
+    "docs/diagnostics_frozen_20260929.md": "0441fa4215fa531f533b54e3873457bac2c300cd640cdfc878a8ee4f7d30aeca",
+    "docs/protocol.md": "8008bc19e569d36b48037e888e2ea48d106d809524d617f3add54132d7dd8e0a",
+    "docs/Agent_Memory_Idea1_后续推进与JitRL验证方案.txt": "9e4987763e106b4bccceec000d413f30d152ff7c4f2b0819052cedd6760bc8f7",
+    "docs/phase_a2_implementation_frozen_20260929.md": "2c7de9709b5f1dc0f235ceca1a8c9f9f3e37151b5c2bb752509b611b16d7b835",
+    "docs/execution_20260929.md": "9c6f774bd6c75d0eee844f441806b1fdf4cea501a94c3555ed8b4f8ca727b969",
+    "docs/phase_a1_a2_plan.md": "2078d6d82850f2b79c53b562023022cc295c9f83a073614ebb70399616042e31",
+    "docs/Agent_Memory_三条Idea研究备忘录.txt": "f665c672e173b74d5be7c455e5b8ab321e4fd8aec6aba7430820b9046413b794",
+    "docs/execution_20260924.md": "47dceca0f7e79e187686bbcb5f29eb32e31c8103997f615447b3998b3f556267",
+    "requirements.txt": "08f615513758827ca7515229ff59aca66f04cbbee996ee8ad65908f9773feab1",
+    "README.md": "a2b0ab36509484dad483c2d0c7ed9434c52dbc0bd555d730ff7ea089cc436b30"
+  },
+  "python": "3.10.21",
+  "numpy": "1.24.4",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "start_utc": "2026-09-29T10:04:49Z",
+  "status": "complete",
+  "bootstrap_unit": "seed; cells jointly resampled",
+  "bootstrap_samples": 5000,
+  "prerequisites": {
+    "outputs/phase_a1_dense_20260929/run.json": "8fdf8c7181066d9b46c2ee0ba0cd09f1cd731b164d4ed61c7f177649d762a923",
+    "outputs/phase_a1_length_diag_20260929/run.json": "a207d31019be4894432e70902cf19cd0563c92261856fb7687cc54390763380f"
+  },
+  "elapsed_seconds": 366.9237914709993,
+  "result": {
+    "verdict": "NO-GO",
+    "selected": {
+      "selected_global": "recency_0.8",
+      "selected_forgetting": "forget_0.995",
+      "selected_window": "window_bma_500",
+      "selected_deployable": "forget_0.995"
+    },
+    "scenario_checks": [
+      {
+        "scenario": "q_increase",
+        "category": "q_change",
+        "gap": {
+          "scenario": "q_increase",
+          "reference": "oracle_qr",
+          "method": "selected_deployable",
+          "metric": "accuracy",
+          "mean": 0.007551724137931032,
+          "ci_low": 0.005991379310344822,
+          "ci_high": 0.009094827586206874,
+          "n": 40
+        },
+        "meets": false
+      },
+      {
+        "scenario": "q_decrease",
+        "category": "q_change",
+        "gap": {
+          "scenario": "q_decrease",
+          "reference": "oracle_qr",
+          "method": "selected_deployable",
+          "metric": "accuracy",
+          "mean": 0.0054913793103448265,
+          "ci_low": 0.004448275862068965,
+          "ci_high": 0.006568965517241382,
+          "n": 40
+        },
+        "meets": false
+      },
+      {
+        "scenario": "r_increase",
+        "category": "r_change",
+        "gap": {
+          "scenario": "r_increase",
+          "reference": "oracle_qr",
+          "method": "selected_deployable",
+          "metric": "accuracy",
+          "mean": 0.010775862068965514,
+          "ci_low": 0.008241379310344844,
+          "ci_high": 0.013267456896551722,
+          "n": 40
+        },
+        "meets": false
+      },
+      {
+        "scenario": "r_decrease",
+        "category": "r_change",
+        "gap": {
+          "scenario": "r_decrease",
+          "reference": "oracle_qr",
+          "method": "selected_deployable",
+          "metric": "accuracy",
+          "mean": 0.0052586206896551805,
+          "ci_low": 0.003396551724137939,
+          "ci_high": 0.007275862068965524,
+          "n": 40
+        },
+        "meets": false
+      },
+      {
+        "scenario": "temporary_corruption",
+        "category": "corruption",
+        "gap": {
+          "scenario": "temporary_corruption",
+          "reference": "oracle_qr",
+          "method": "selected_deployable",
+          "metric": "accuracy",
+          "mean": 0.006482758620689646,
+          "ci_low": 0.004198275862068959,
+          "ci_high": 0.008637931034482738,
+          "n": 40
+        },
+        "meets": false
+      }
+    ],
+    "eligible_categories": [],
+    "control_degradation": false,
+    "control_comparisons": [
+      {
+        "scenario": "control_low_q",
+        "reference": "dense_bma",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": 0.0008534482758620565,
+        "ci_low": 0.0004310344827586132,
+        "ci_high": 0.0012415948275862094,
+        "n": 40
+      },
+      {
+        "scenario": "control_high_q",
+        "reference": "dense_bma",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": 0.0029482758620689694,
+        "ci_low": 0.0015172413793103523,
+        "ci_high": 0.0043364224137931095,
+        "n": 40
+      },
+      {
+        "scenario": "control_clean",
+        "reference": "dense_bma",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": 0.00011206896551724799,
+        "ci_low": 2.5862068965523678e-05,
+        "ci_high": 0.00020689655172414224,
+        "n": 40
+      },
+      {
+        "scenario": "control_noisy",
+        "reference": "dense_bma",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": 0.004534482758620684,
+        "ci_low": 0.0021204741379310162,
+        "ci_high": 0.00690560344827585,
+        "n": 40
+      },
+      {
+        "scenario": "control_low_q",
+        "reference": "selected_global",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": -0.009758620689655172,
+        "ci_low": -0.01106896551724138,
+        "ci_high": -0.00850862068965518,
+        "n": 40
+      },
+      {
+        "scenario": "control_high_q",
+        "reference": "selected_global",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": -0.03437068965517241,
+        "ci_low": -0.03681056034482758,
+        "ci_high": -0.032051724137931045,
+        "n": 40
+      },
+      {
+        "scenario": "control_clean",
+        "reference": "selected_global",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": -0.012120689655172401,
+        "ci_low": -0.01335366379310343,
+        "ci_high": -0.01088771551724136,
+        "n": 40
+      },
+      {
+        "scenario": "control_noisy",
+        "reference": "selected_global",
+        "method": "selected_deployable",
+        "metric": "accuracy",
+        "mean": -0.058818965517241376,
+        "ci_low": -0.06412931034482758,
+        "ci_high": -0.05337887931034483,
+        "n": 40
+      }
+    ],
+    "thresholds": {
+      "min_distinct_categories": 2,
+      "min_accuracy_gap": 0.02,
+      "post_change_error": "Oracle better at all 50/100/300 windows; point estimates with CIs reported",
+      "control": "selected_deployable must not trail either fixed or dense stationary by >1pp with paired lower CI >0",
+      "note": "Q directions count as one category, R directions count as one category; corruption is third"
+    }
+  },
+  "output_sha256": {
+    "validation_per_seed.csv": "a30f0a94225bf43eaeaa3a2f9ee5f659af29af9f952f2ec05902f9d4289d17b9",
+    "curve_summary.csv": "be8ce42dfaf3b606a8902a2a2ddf86f008ccf2e6e616427ee6bf7af73b65495a",
+    "per_seed.csv": "d2bafcbe4cb9f78e154ad9fd01cfa442a0199f602bc82c46fbc86d891b205dd2",
+    "selection.json": "aa80d816f86a844590d8ba5b0fc59ae6921861c0fbd7c111a5e3bdfa05954a3f",
+    "source_snapshot.zip": "259aa00fc0be82eda32d142d57dd1655181d82c7c6b966a6a9a12eed467ec67f",
+    "summary.csv": "90656b6558a62b3121aa2f0391f798f5b07c67bbe1c2299ef7865568dd23a82c",
+    "curves.csv": "a8e325dd251629f413760e53d88f14b878e9fa36b2c06c4a5ddb41e3d74c2603",
+    "config.json": "d339214b660973e5f7d498fa11b1439fbb941e62bf5c1ae2c7748b058696688f",
+    "contrasts.csv": "00fbb7cfa764b8fefa8e0531f995748ed1b7cca13be000c8bd29b1515937379e",
+    "validation_summary.csv": "fffff963e7ccab6b74adad666777632abaa697c261fedab04b578eb35f8254a9",
+    "environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+    "decision.json": "62bd5bb5f84b3b977cd9ce2b5b78949e458e5d60a48aba62655659f6602a8e19"
+  }
+}

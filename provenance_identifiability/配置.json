@@ -1,0 +1,1 @@
+{"seeds":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],"episodes_per_condition":10,"source_structures":["S1_single","S2_multi","S3_redundant","S4_alternative","S5_conflicting","S6_overlap"],"transformations":["T0_identity","T1_paraphrase","T2_summary","T3_merge","T4_rewrite","T5_multistep"],"compressions":[0.0,0.2,0.4,0.6,0.8],"trace_completeness":[1.0,0.8,0.5,0.2,0.0]}

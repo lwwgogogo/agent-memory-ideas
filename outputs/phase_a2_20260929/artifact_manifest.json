@@ -1,0 +1,27 @@
+{
+  "sha256": {
+    "audit.json": "a2f7b5ec38cdeeb209e55096a27c6f8457a16524d94619c1526f21a3d4417afc",
+    "config.json": "d339214b660973e5f7d498fa11b1439fbb941e62bf5c1ae2c7748b058696688f",
+    "contrasts.csv": "00fbb7cfa764b8fefa8e0531f995748ed1b7cca13be000c8bd29b1515937379e",
+    "curves.csv": "a8e325dd251629f413760e53d88f14b878e9fa36b2c06c4a5ddb41e3d74c2603",
+    "curve_summary.csv": "be8ce42dfaf3b606a8902a2a2ddf86f008ccf2e6e616427ee6bf7af73b65495a",
+    "decision.json": "62bd5bb5f84b3b977cd9ce2b5b78949e458e5d60a48aba62655659f6602a8e19",
+    "environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+    "per_seed.csv": "d2bafcbe4cb9f78e154ad9fd01cfa442a0199f602bc82c46fbc86d891b205dd2",
+    "postprocessing_source.zip": "930c3872f91854f278359471c1d5b622ab7c5d87f469ee1363ac838f95934290",
+    "run.json": "7a3ad78f4a9ec19267cdba2a44e0a236358fe7470cdf337a704e7964ac518970",
+    "selection.json": "aa80d816f86a844590d8ba5b0fc59ae6921861c0fbd7c111a5e3bdfa05954a3f",
+    "source_snapshot.zip": "259aa00fc0be82eda32d142d57dd1655181d82c7c6b966a6a9a12eed467ec67f",
+    "summary.csv": "90656b6558a62b3121aa2f0391f798f5b07c67bbe1c2299ef7865568dd23a82c",
+    "validation_per_seed.csv": "a30f0a94225bf43eaeaa3a2f9ee5f659af29af9f952f2ec05902f9d4289d17b9",
+    "validation_summary.csv": "fffff963e7ccab6b74adad666777632abaa697c261fedab04b578eb35f8254a9",
+    "figures/oracle_gap_by_scenario.png": "8ec496a7f8e3722825c76bbe5355c717a9e0572a3c28640b5dea113c2168adf0",
+    "figures/q_change.png": "0b7f7af9f43c20c2de7885cf46ba3963eef578f2a6f802b8597cd10b201a00c1",
+    "figures/recovery_delay.png": "4ec904b73b24c34f163acc00759d6243a495fe38e12f4a6d2a1f92c64c1d20f5",
+    "figures/r_change.png": "38be280bda07560c8360f1a90dcba149b04ce32ebc52eff584a5910798d039ab",
+    "figures/temporary_corruption.png": "ac7b84be7431c3dbe283de587245d4fcd9b2a0e56ebf7b7c894efe18adcf8cd7",
+    "figures/validation_forgetting_tradeoff.png": "51101fda260b265d90f60a12753b2558e257243b3adbbebc9db206a3f133ace9"
+  },
+  "plot_source_archive": "postprocessing_source.zip",
+  "note": "Additional derived artifacts; inference run.json is unchanged."
+}

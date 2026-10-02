@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "rows": 480,
+  "source_files_verified": 30,
+  "inference_outputs_verified": 11,
+  "seeds": 20,
+  "method_counts": {
+    "online_bma": 120,
+    "oracle_qr": 120,
+    "dense_prior_matched": 120,
+    "dense_bma": 120
+  }
+}

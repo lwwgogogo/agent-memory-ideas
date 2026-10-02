@@ -1,0 +1,74 @@
+validation q=0.001 r=0.0: last
+validation q=0.001 r=0.1: recency_0.8
+validation q=0.001 r=0.2: window_15
+validation q=0.001 r=0.35: window_51
+validation q=0.001 r=0.45: recency_0.99
+validation q=0.01 r=0.0: last
+validation q=0.01 r=0.1: bayes_0.01_0.1
+validation q=0.01 r=0.2: ema_0.15
+validation q=0.01 r=0.35: ema_0.05
+validation q=0.01 r=0.45: ema_0.05
+validation q=0.05 r=0.0: last
+validation q=0.05 r=0.1: bayes_0.01_0.1
+validation q=0.05 r=0.2: bayes_0.05_0.2
+validation q=0.05 r=0.35: ema_0.15
+validation q=0.05 r=0.45: ema_0.15
+validation q=0.15 r=0.0: last
+validation q=0.15 r=0.1: last
+validation q=0.15 r=0.2: bayes_0.2_0.35
+validation q=0.15 r=0.35: ema_0.35
+validation q=0.15 r=0.45: bayes_0.2_0.35
+validation q=0.3 r=0.0: last
+validation q=0.3 r=0.1: last
+validation q=0.3 r=0.2: last
+validation q=0.3 r=0.35: last
+validation q=0.3 r=0.45: last
+test complete q=0.001 r=0.0
+test complete q=0.001 r=0.1
+test complete q=0.001 r=0.2
+test complete q=0.001 r=0.35
+test complete q=0.001 r=0.45
+test complete q=0.01 r=0.0
+test complete q=0.01 r=0.1
+test complete q=0.01 r=0.2
+test complete q=0.01 r=0.35
+test complete q=0.01 r=0.45
+test complete q=0.05 r=0.0
+test complete q=0.05 r=0.1
+test complete q=0.05 r=0.2
+test complete q=0.05 r=0.35
+test complete q=0.05 r=0.45
+test complete q=0.15 r=0.0
+test complete q=0.15 r=0.1
+test complete q=0.15 r=0.2
+test complete q=0.15 r=0.35
+test complete q=0.15 r=0.45
+test complete q=0.3 r=0.0
+test complete q=0.3 r=0.1
+test complete q=0.3 r=0.2
+test complete q=0.3 r=0.35
+test complete q=0.3 r=0.45
+{
+  "output": "outputs/phase_a1_20260929",
+  "global_selected": "bayes_0.01_0.1",
+  "gaps": [
+    {
+      "comparator": "selected_global",
+      "accuracy_gap": 0.05290631578947373,
+      "ci95_low": 0.0502041842105264,
+      "ci95_high": 0.05564894736842109
+    },
+    {
+      "comparator": "selected_per_cell",
+      "accuracy_gap": 0.0016284210526315347,
+      "ci95_low": 0.0007557631578946806,
+      "ci95_high": 0.002487394736842051
+    },
+    {
+      "comparator": "online_bma",
+      "accuracy_gap": 0.012445263157894754,
+      "ci95_low": 0.010611473684210473,
+      "ci95_high": 0.014242236842105255
+    }
+  ]
+}

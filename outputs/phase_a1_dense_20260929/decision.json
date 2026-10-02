@@ -1,0 +1,339 @@
+{
+  "recovery_fraction": {
+    "online_bma": {
+      "mean": 0.7647679115019594,
+      "ci_low": 0.7328927824460095,
+      "ci_high": 0.7939697616664827
+    },
+    "dense_bma": {
+      "mean": 0.8383836374127053,
+      "ci_low": 0.808383157968534,
+      "ci_high": 0.8659199691783273
+    },
+    "dense_prior_matched": {
+      "mean": 0.7854201070412449,
+      "ci_low": 0.7478416808854992,
+      "ci_high": 0.8224546111051902
+    }
+  },
+  "oracle_dense_gap": 0.008550526315789491,
+  "stationary_mechanism_verdict": "NO-GO",
+  "stationary_threshold_met": true,
+  "dense_improvement": [
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "accuracy",
+      "mean": 0.04435578947368423,
+      "ci_low": 0.04222315789473681,
+      "ci_high": 0.0465032105263158,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "accuracy",
+      "mean": -0.006922105263157957,
+      "ci_low": -0.008225289473684259,
+      "ci_high": -0.005641052631579035,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "accuracy",
+      "mean": -0.008550526315789491,
+      "ci_low": -0.010306315789473702,
+      "ci_high": -0.00689573684210526,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "accuracy",
+      "mean": 0.003894736842105262,
+      "ci_low": 0.003121999999999976,
+      "ci_high": 0.004692657894736893,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "accuracy",
+      "mean": 0.0028021052631578723,
+      "ci_low": 0.0017283157894736458,
+      "ci_high": 0.003881236842105289,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "brier",
+      "mean": -0.061532975333468284,
+      "ci_low": -0.06306453246195085,
+      "ci_high": -0.05992450034056363,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "brier",
+      "mean": -0.029014885477588237,
+      "ci_low": -0.029758096695686204,
+      "ci_high": -0.02822622527918628,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "brier",
+      "mean": 0.005231314266807163,
+      "ci_low": 0.004196630705845257,
+      "ci_high": 0.006219656530456372,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "brier",
+      "mean": -0.0017040538174060988,
+      "ci_low": -0.0019730243831029936,
+      "ci_high": -0.0014346590396235811,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "brier",
+      "mean": -0.0010923790431210945,
+      "ci_low": -0.001347856004818862,
+      "ci_high": -0.0008503042215437528,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "false_update_rate",
+      "mean": 0.12007258703687593,
+      "ci_low": 0.10481636082396964,
+      "ci_high": 0.13506187032336348,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "false_update_rate",
+      "mean": 0.03351755322625567,
+      "ci_low": 0.018000893535539422,
+      "ci_high": 0.0482453008965616,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "false_update_rate",
+      "mean": 0.05071968174512374,
+      "ci_low": 0.03567772908495341,
+      "ci_high": 0.06481317577866448,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "false_update_rate",
+      "mean": -0.012709875963968909,
+      "ci_low": -0.021160497742203407,
+      "ci_high": -0.004258249851164264,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "false_update_rate",
+      "mean": -0.057319598124709416,
+      "ci_low": -0.06342129996718611,
+      "ci_high": -0.051564185054465736,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "noise_overreaction",
+      "mean": -0.018460714580991112,
+      "ci_low": -0.024868699585308775,
+      "ci_high": -0.011896711581059946,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "noise_overreaction",
+      "mean": -0.08352156206005484,
+      "ci_low": -0.08988716072068732,
+      "ci_high": -0.0774282247330416,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "noise_overreaction",
+      "mean": 0.004472646653557092,
+      "ci_low": -0.0017267952093823892,
+      "ci_high": 0.01063697684736945,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "noise_overreaction",
+      "mean": 0.0014753324340522316,
+      "ci_low": -0.0022489767085789062,
+      "ci_high": 0.00509298951838702,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "noise_overreaction",
+      "mean": -0.014171442503519382,
+      "ci_low": -0.015640072055843408,
+      "ci_high": -0.012720683338246792,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "adaptation_delay_capped",
+      "mean": 1.6582237013095245,
+      "ci_low": 1.3034732379228684,
+      "ci_high": 2.0457521100786797,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "adaptation_delay_capped",
+      "mean": -1.405881501067814,
+      "ci_low": -1.9792966375900236,
+      "ci_high": -0.8911051611139528,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "adaptation_delay_capped",
+      "mean": -2.407513985398026,
+      "ci_low": -3.106013763842967,
+      "ci_high": -1.7231842604019847,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "adaptation_delay_capped",
+      "mean": -0.2661088744409931,
+      "ci_low": -0.5023932966298151,
+      "ci_high": -0.07196840348919473,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "adaptation_delay_capped",
+      "mean": 0.1577413719965962,
+      "ci_low": 0.05196554063766641,
+      "ci_high": 0.2574423294776134,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "adaptation_censored_rate",
+      "mean": -0.03544354736189612,
+      "ci_low": -0.040196419802373394,
+      "ci_high": -0.030918555230350277,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "adaptation_censored_rate",
+      "mean": 0.0017587468677981658,
+      "ci_low": -0.002826916716300995,
+      "ci_high": 0.006613091379839143,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "adaptation_censored_rate",
+      "mean": -0.003833309827973675,
+      "ci_low": -0.00854608843455472,
+      "ci_high": 0.0003342436505551101,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "adaptation_censored_rate",
+      "mean": 0.000291010845941779,
+      "ci_low": -0.00144523354170199,
+      "ci_high": 0.001951849970326653,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "adaptation_censored_rate",
+      "mean": 0.0077868841115237165,
+      "ci_low": 0.006392978481737011,
+      "ci_high": 0.009232051020933106,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_global",
+      "metric": "stale_reuse_proxy",
+      "mean": -0.0393047921343523,
+      "ci_low": -0.04346465691849679,
+      "ci_high": -0.03410776895809643,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "selected_per_cell",
+      "metric": "stale_reuse_proxy",
+      "mean": 0.004684768973538327,
+      "ci_low": 0.0026614276758519543,
+      "ci_high": 0.006577241865177286,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "oracle_qr",
+      "metric": "stale_reuse_proxy",
+      "mean": 0.006001443395735104,
+      "ci_low": 0.0037215113520015965,
+      "ci_high": 0.008260715497717886,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "online_bma",
+      "metric": "stale_reuse_proxy",
+      "mean": -0.004297295179973686,
+      "ci_low": -0.005343510974183214,
+      "ci_high": -0.003216379358472962,
+      "n": 20
+    },
+    {
+      "reference": "dense_bma",
+      "method": "dense_prior_matched",
+      "metric": "stale_reuse_proxy",
+      "mean": -0.0026151104681351053,
+      "ci_low": -0.0037970423417984754,
+      "ci_high": -0.0014555798769713873,
+      "n": 20
+    }
+  ]
+}

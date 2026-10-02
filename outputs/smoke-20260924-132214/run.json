@@ -1,0 +1,82 @@
+{
+  "config": {
+    "q_values": [
+      0.01,
+      0.2
+    ],
+    "r_values": [
+      0.05,
+      0.35
+    ],
+    "steps": 300,
+    "burn_in": 30,
+    "validation_seeds": [
+      100,
+      101,
+      102,
+      103
+    ],
+    "test_seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "bootstrap_samples": 1000
+  },
+  "global_selected": "bayes_0.01_0.1",
+  "per_cell_selected": [
+    {
+      "q": 0.01,
+      "r": 0.05,
+      "method": "ema_0.35"
+    },
+    {
+      "q": 0.01,
+      "r": 0.35,
+      "method": "ema_0.05"
+    },
+    {
+      "q": 0.2,
+      "r": 0.05,
+      "method": "last"
+    },
+    {
+      "q": 0.2,
+      "r": 0.35,
+      "method": "last"
+    }
+  ],
+  "paired_seed_bootstrap": [
+    {
+      "comparator": "selected_global",
+      "accuracy_gap": 0.06203703703703706,
+      "ci95_low": 0.0537037037037037,
+      "ci95_high": 0.07037037037037042
+    },
+    {
+      "comparator": "selected_per_cell",
+      "accuracy_gap": -0.0009259259259259411,
+      "ci95_low": -0.00462962962962965,
+      "ci95_high": 0.002777777777777768
+    }
+  ],
+  "elapsed_seconds": 0.37873268127441406,
+  "python": "3.10.21",
+  "numpy": "1.24.4",
+  "git_revision": null,
+  "source_sha256": {
+    "src/agent_memory/metrics.py": "b7935db076bba5ff7d31277466b5c437fa45e430e5006a1f1b294b69e13b5960",
+    "src/agent_memory/__init__.py": "a09f7145722540a5273f00ebce510a8db81b12d3ffee36d7ea8330c10b1f0a9b",
+    "src/agent_memory/baselines.py": "18bf1f7d719d424d92c162c87f6bf53fb2607cc0a28821e446dcfeeb4519e1fb",
+    "src/agent_memory/environment.py": "fa774b17de797f26b72358729e435792df6a1046abc4a16b54deb4fd8a53e929",
+    "scripts/sync_server.ps1": "ea46e12ee16fce36cee9031cd3bf3708e106c6fdd00f68a26d5587597ac80c44",
+    "scripts/run_phase_a.py": "37ae0396d59dcdcdf320a9c5ab3e7eaa0b720c51bb586fbc07e95f439c6f78f2",
+    "scripts/server_smoke.sh": "04ddee0cae4eb4ece6fa3b26ed086c3f761f7429cd836d59d89f3986713fa380",
+    "scripts/install_requirements.py": "7d2bacf2e68d7d348a930783c53c26cd4cea12c8d64bb56b83a87cee5683e08d",
+    "scripts/plot_results.py": "ccd8d747d7a44fce292c4f46e389e09935d1daa4cc464b9a32c113dcc07e88a9",
+    "configs/smoke.json": "8a64a3b5ba5e6c10ffc5e527662b70ad19853001a97df0c23c49c7e31fbfd337",
+    "configs/phase_a.json": "1f31ceccfe6e4d81ec6b00270fe7049d2a04c533127e8241a486ed620528ec1b"
+  },
+  "note": "Synthetic Phase A; no automatic GO decision. Per-cell selection has privileged regime identity."
+}

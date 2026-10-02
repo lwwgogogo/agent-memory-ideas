@@ -1,0 +1,243 @@
+{
+  "config": {
+    "q_values": [
+      0.001,
+      0.01,
+      0.05,
+      0.15,
+      0.3
+    ],
+    "r_values": [
+      0.0,
+      0.1,
+      0.2,
+      0.35,
+      0.45
+    ],
+    "steps": 2000,
+    "burn_in": 100,
+    "validation_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "test_seeds": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "bootstrap_samples": 5000,
+    "online_model_average": {
+      "q_grid": [
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        0.5
+      ],
+      "r_grid": [
+        0,
+        0.05,
+        0.15,
+        0.25,
+        0.35,
+        0.45,
+        0.5
+      ]
+    }
+  },
+  "global_selected": "bayes_0.01_0.1",
+  "per_cell_selected": [
+    {
+      "q": 0.001,
+      "r": 0.0,
+      "method": "last"
+    },
+    {
+      "q": 0.001,
+      "r": 0.1,
+      "method": "recency_0.8"
+    },
+    {
+      "q": 0.001,
+      "r": 0.2,
+      "method": "window_15"
+    },
+    {
+      "q": 0.001,
+      "r": 0.35,
+      "method": "window_51"
+    },
+    {
+      "q": 0.001,
+      "r": 0.45,
+      "method": "recency_0.99"
+    },
+    {
+      "q": 0.01,
+      "r": 0.0,
+      "method": "last"
+    },
+    {
+      "q": 0.01,
+      "r": 0.1,
+      "method": "bayes_0.01_0.1"
+    },
+    {
+      "q": 0.01,
+      "r": 0.2,
+      "method": "ema_0.15"
+    },
+    {
+      "q": 0.01,
+      "r": 0.35,
+      "method": "ema_0.05"
+    },
+    {
+      "q": 0.01,
+      "r": 0.45,
+      "method": "ema_0.05"
+    },
+    {
+      "q": 0.05,
+      "r": 0.0,
+      "method": "last"
+    },
+    {
+      "q": 0.05,
+      "r": 0.1,
+      "method": "bayes_0.01_0.1"
+    },
+    {
+      "q": 0.05,
+      "r": 0.2,
+      "method": "bayes_0.05_0.2"
+    },
+    {
+      "q": 0.05,
+      "r": 0.35,
+      "method": "ema_0.15"
+    },
+    {
+      "q": 0.05,
+      "r": 0.45,
+      "method": "ema_0.15"
+    },
+    {
+      "q": 0.15,
+      "r": 0.0,
+      "method": "last"
+    },
+    {
+      "q": 0.15,
+      "r": 0.1,
+      "method": "last"
+    },
+    {
+      "q": 0.15,
+      "r": 0.2,
+      "method": "bayes_0.2_0.35"
+    },
+    {
+      "q": 0.15,
+      "r": 0.35,
+      "method": "ema_0.35"
+    },
+    {
+      "q": 0.15,
+      "r": 0.45,
+      "method": "bayes_0.2_0.35"
+    },
+    {
+      "q": 0.3,
+      "r": 0.0,
+      "method": "last"
+    },
+    {
+      "q": 0.3,
+      "r": 0.1,
+      "method": "last"
+    },
+    {
+      "q": 0.3,
+      "r": 0.2,
+      "method": "last"
+    },
+    {
+      "q": 0.3,
+      "r": 0.35,
+      "method": "last"
+    },
+    {
+      "q": 0.3,
+      "r": 0.45,
+      "method": "last"
+    }
+  ],
+  "paired_seed_bootstrap": [
+    {
+      "comparator": "selected_global",
+      "accuracy_gap": 0.05290631578947373,
+      "ci95_low": 0.0502041842105264,
+      "ci95_high": 0.05564894736842109
+    },
+    {
+      "comparator": "selected_per_cell",
+      "accuracy_gap": 0.0016284210526315347,
+      "ci95_low": 0.0007557631578946806,
+      "ci95_high": 0.002487394736842051
+    },
+    {
+      "comparator": "online_bma",
+      "accuracy_gap": 0.012445263157894754,
+      "ci95_low": 0.010611473684210473,
+      "ci95_high": 0.014242236842105255
+    }
+  ],
+  "elapsed_seconds": 101.252277135849,
+  "python": "3.10.21",
+  "numpy": "1.24.4",
+  "git_revision": null,
+  "source_sha256": {
+    "src/agent_memory/metrics.py": "b7935db076bba5ff7d31277466b5c437fa45e430e5006a1f1b294b69e13b5960",
+    "src/agent_memory/__init__.py": "a09f7145722540a5273f00ebce510a8db81b12d3ffee36d7ea8330c10b1f0a9b",
+    "src/agent_memory/baselines.py": "18bf1f7d719d424d92c162c87f6bf53fb2607cc0a28821e446dcfeeb4519e1fb",
+    "src/agent_memory/environment.py": "fa774b17de797f26b72358729e435792df6a1046abc4a16b54deb4fd8a53e929",
+    "src/agent_memory/online.py": "50d7b2785f872d7bca0d9eb11ede9353b98beb9b7129f2fb64eaa98f54f4390e",
+    "scripts/sync_server.ps1": "190e2dcc48be40435980cac83caf5021b78e06ae80b39237289e05557238ea00",
+    "scripts/run_phase_a.py": "d6e8ee8977f3fc5a1ed7813521a7c0e31cde7269ad7daff930418020a5e05244",
+    "scripts/server_smoke.sh": "04ddee0cae4eb4ece6fa3b26ed086c3f761f7429cd836d59d89f3986713fa380",
+    "scripts/install_requirements.py": "7d2bacf2e68d7d348a930783c53c26cd4cea12c8d64bb56b83a87cee5683e08d",
+    "scripts/plot_results.py": "cea2e31b5423e7da1df796cdd42721988e4a9b55f586e3ee2f6bfa402ab75576",
+    "configs/smoke.json": "8a64a3b5ba5e6c10ffc5e527662b70ad19853001a97df0c23c49c7e31fbfd337",
+    "configs/phase_a.json": "1f31ceccfe6e4d81ec6b00270fe7049d2a04c533127e8241a486ed620528ec1b",
+    "configs/phase_a1.json": "ab089be54ef65ce25a7c16756da3dafc7fedccd6eaefe02a233ecd5d3e18867b"
+  },
+  "note": "Synthetic Phase A; no automatic GO decision. Per-cell selection has privileged regime identity."
+}
