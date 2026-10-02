@@ -1,0 +1,17 @@
+{
+  "condition": "A_current_qwen",
+  "case_id": "P11",
+  "text": "我更喜欢靠窗座位。",
+  "user_id": "formation_sanity_A_current_qwen_P11",
+  "writer": "qwen2.5:14b",
+  "infer": true,
+  "official_messages": false,
+  "add_return": {
+    "results": []
+  },
+  "get_all": [],
+  "search": [],
+  "memory_count": 0,
+  "search_count": 0,
+  "status": "NO_MEMORY"
+}

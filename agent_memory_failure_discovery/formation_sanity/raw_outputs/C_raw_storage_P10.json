@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P10",
+  "text": "我每天早上七点跑步。",
+  "user_id": "formation_sanity_C_raw_storage_P10",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "85176dba-7a89-464d-9b2e-4f2960f442f1",
+        "memory": "我每天早上七点跑步。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "85176dba-7a89-464d-9b2e-4f2960f442f1",
+      "memory": "我每天早上七点跑步。",
+      "hash": "918fc9c9f33c5d686fe7308c8cbf4e5c",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:52.299988+00:00",
+      "updated_at": "2026-10-02T09:27:52.299988+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P10",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "85176dba-7a89-464d-9b2e-4f2960f442f1",
+      "memory": "我每天早上七点跑步。",
+      "hash": "918fc9c9f33c5d686fe7308c8cbf4e5c",
+      "metadata": null,
+      "score": 0.9999999927650474,
+      "created_at": "2026-10-02T09:27:52.299988+00:00",
+      "updated_at": "2026-10-02T09:27:52.299988+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P10",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

@@ -1,0 +1,17 @@
+{
+  "condition": "A_current_qwen",
+  "case_id": "P12",
+  "text": "我当前项目使用 PostgreSQL。",
+  "user_id": "formation_sanity_A_current_qwen_P12",
+  "writer": "qwen2.5:14b",
+  "infer": true,
+  "official_messages": false,
+  "add_return": {
+    "results": []
+  },
+  "get_all": [],
+  "search": [],
+  "memory_count": 0,
+  "search_count": 0,
+  "status": "NO_MEMORY"
+}

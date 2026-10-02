@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P05",
+  "text": "我平时喜欢喝无糖咖啡。",
+  "user_id": "formation_sanity_C_raw_storage_P05",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "9832024c-8fe8-432b-a9ec-4a9afa7cf21f",
+        "memory": "我平时喜欢喝无糖咖啡。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "9832024c-8fe8-432b-a9ec-4a9afa7cf21f",
+      "memory": "我平时喜欢喝无糖咖啡。",
+      "hash": "28f5340cfbe26a7f1eb9c078d8689a2a",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:51.898467+00:00",
+      "updated_at": "2026-10-02T09:27:51.898467+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P05",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "9832024c-8fe8-432b-a9ec-4a9afa7cf21f",
+      "memory": "我平时喜欢喝无糖咖啡。",
+      "hash": "28f5340cfbe26a7f1eb9c078d8689a2a",
+      "metadata": null,
+      "score": 1.0,
+      "created_at": "2026-10-02T09:27:51.898467+00:00",
+      "updated_at": "2026-10-02T09:27:51.898467+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P05",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

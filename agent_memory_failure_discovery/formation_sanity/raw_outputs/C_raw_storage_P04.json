@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P04",
+  "text": "我的生日是 5 月 12 日。",
+  "user_id": "formation_sanity_C_raw_storage_P04",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "c767aae2-561d-4e95-abda-2fa5f984fd7a",
+        "memory": "我的生日是 5 月 12 日。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "c767aae2-561d-4e95-abda-2fa5f984fd7a",
+      "memory": "我的生日是 5 月 12 日。",
+      "hash": "9f2cfc46da56a6ed5ebd1e183f9b0793",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:51.815619+00:00",
+      "updated_at": "2026-10-02T09:27:51.815619+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P04",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "c767aae2-561d-4e95-abda-2fa5f984fd7a",
+      "memory": "我的生日是 5 月 12 日。",
+      "hash": "9f2cfc46da56a6ed5ebd1e183f9b0793",
+      "metadata": null,
+      "score": 1.0,
+      "created_at": "2026-10-02T09:27:51.815619+00:00",
+      "updated_at": "2026-10-02T09:27:51.815619+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P04",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

@@ -1,0 +1,17 @@
+{
+  "condition": "D_official_qwq",
+  "case_id": "P07",
+  "text": "我的狗叫 Lucky。",
+  "user_id": "formation_sanity_D_official_qwq_P07",
+  "writer": "qwq:32b",
+  "infer": true,
+  "official_messages": true,
+  "add_return": {
+    "results": []
+  },
+  "get_all": [],
+  "search": [],
+  "memory_count": 0,
+  "search_count": 0,
+  "status": "NO_MEMORY"
+}

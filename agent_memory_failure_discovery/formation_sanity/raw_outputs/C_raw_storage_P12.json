@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P12",
+  "text": "我当前项目使用 PostgreSQL。",
+  "user_id": "formation_sanity_C_raw_storage_P12",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "870b9d3a-7214-47fe-b8a5-feb202b76f61",
+        "memory": "我当前项目使用 PostgreSQL。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "870b9d3a-7214-47fe-b8a5-feb202b76f61",
+      "memory": "我当前项目使用 PostgreSQL。",
+      "hash": "5cf1b284daae8187da532698a0aa234c",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:52.465865+00:00",
+      "updated_at": "2026-10-02T09:27:52.465865+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P12",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "870b9d3a-7214-47fe-b8a5-feb202b76f61",
+      "memory": "我当前项目使用 PostgreSQL。",
+      "hash": "5cf1b284daae8187da532698a0aa234c",
+      "metadata": null,
+      "score": 1.0,
+      "created_at": "2026-10-02T09:27:52.465865+00:00",
+      "updated_at": "2026-10-02T09:27:52.465865+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P12",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

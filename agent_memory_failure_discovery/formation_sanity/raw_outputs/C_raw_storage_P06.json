@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P06",
+  "text": "我工作时默认使用 Python。",
+  "user_id": "formation_sanity_C_raw_storage_P06",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "2a1a2574-2656-4a48-a22d-4509f0d3ed58",
+        "memory": "我工作时默认使用 Python。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "2a1a2574-2656-4a48-a22d-4509f0d3ed58",
+      "memory": "我工作时默认使用 Python。",
+      "hash": "ac4a00d43d515a295ea1027ae1dc1503",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:51.985959+00:00",
+      "updated_at": "2026-10-02T09:27:51.985959+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P06",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "2a1a2574-2656-4a48-a22d-4509f0d3ed58",
+      "memory": "我工作时默认使用 Python。",
+      "hash": "ac4a00d43d515a295ea1027ae1dc1503",
+      "metadata": null,
+      "score": 0.9999999609168978,
+      "created_at": "2026-10-02T09:27:51.985959+00:00",
+      "updated_at": "2026-10-02T09:27:51.985959+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P06",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

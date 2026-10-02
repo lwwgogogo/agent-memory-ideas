@@ -1,0 +1,10 @@
+{
+  "model": "qwen2.5:14b",
+  "status": "ok",
+  "raw_extraction_response": {
+    "response": "{\n    \"summary\": \"The user has identified themselves as a vegetarian.\",\n    \"last_k_messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": \"我是一名素食主义者。\",\n            \"date\": \"2026-10-02\"\n        }\n    ],\n    \"recently_extracted_memories\": [],\n    \"existing_memories\": []\n}"
+  },
+  "add_return": {
+    "results": []
+  }
+}

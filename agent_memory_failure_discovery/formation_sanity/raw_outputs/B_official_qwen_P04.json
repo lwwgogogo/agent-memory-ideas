@@ -1,0 +1,12 @@
+{
+  "condition": "B_official_qwen",
+  "case_id": "P04",
+  "text": "我的生日是 5 月 12 日。",
+  "user_id": "formation_sanity_B_official_qwen_P04",
+  "writer": "qwen2.5:14b",
+  "infer": true,
+  "official_messages": true,
+  "status": "ERROR",
+  "error": "AttributeError(\"'str' object has no attribute 'get'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/liaoweiwen/projects/agent-memory-ideas/agent_memory_failure_discovery/formation_sanity/run_matrix.py\", line 26, in run_condition\n    add=mem.add(inp,user_id=uid,infer=infer); allr=mem.get_all(filters={'user_id':uid}); items=allr.get('results',allr) if isinstance(allr,dict) else allr; sr=mem.search(text,filters={'user_id':uid}); sr=sr.get('results',sr) if isinstance(sr,dict) else sr\n  File \"/home/liaoweiwen/projects/agent-memory-ideas/agent_memory_failure_discovery/runtime/mem0/lib/python3.10/site-packages/mem0/memory/main.py\", line 871, in add\n    vector_store_result = self._add_to_vector_store(messages, processed_metadata, effective_filters, infer, prompt=prompt)\n  File \"/home/liaoweiwen/projects/agent-memory-ideas/agent_memory_failure_discovery/runtime/mem0/lib/python3.10/site-packages/mem0/memory/main.py\", line 994, in _add_to_vector_store\n    mem_texts = [m.get(\"text\", \"\") for m in extracted_memories if m.get(\"text\")]\n  File \"/home/liaoweiwen/projects/agent-memory-ideas/agent_memory_failure_discovery/runtime/mem0/lib/python3.10/site-packages/mem0/memory/main.py\", line 994, in <listcomp>\n    mem_texts = [m.get(\"text\", \"\") for m in extracted_memories if m.get(\"text\")]\nAttributeError: 'str' object has no attribute 'get'\n"
+}

@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P03",
+  "text": "我住在重庆。",
+  "user_id": "formation_sanity_C_raw_storage_P03",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "c580b90a-40ed-4631-b161-a1037d415685",
+        "memory": "我住在重庆。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "c580b90a-40ed-4631-b161-a1037d415685",
+      "memory": "我住在重庆。",
+      "hash": "ae01869514279f8f319939e9f8a0d2f4",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:51.728981+00:00",
+      "updated_at": "2026-10-02T09:27:51.728981+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P03",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "c580b90a-40ed-4631-b161-a1037d415685",
+      "memory": "我住在重庆。",
+      "hash": "ae01869514279f8f319939e9f8a0d2f4",
+      "metadata": null,
+      "score": 0.9999999866857963,
+      "created_at": "2026-10-02T09:27:51.728981+00:00",
+      "updated_at": "2026-10-02T09:27:51.728981+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P03",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

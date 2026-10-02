@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P01",
+  "text": "我是一名素食主义者。",
+  "user_id": "formation_sanity_C_raw_storage_P01",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "86f737e7-094f-4c68-9b58-2676cb6be6ce",
+        "memory": "我是一名素食主义者。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "86f737e7-094f-4c68-9b58-2676cb6be6ce",
+      "memory": "我是一名素食主义者。",
+      "hash": "2c3631f71c00a0c584e38152d6776902",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:51.566028+00:00",
+      "updated_at": "2026-10-02T09:27:51.566028+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P01",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "86f737e7-094f-4c68-9b58-2676cb6be6ce",
+      "memory": "我是一名素食主义者。",
+      "hash": "2c3631f71c00a0c584e38152d6776902",
+      "metadata": null,
+      "score": 1.0,
+      "created_at": "2026-10-02T09:27:51.566028+00:00",
+      "updated_at": "2026-10-02T09:27:51.566028+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P01",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

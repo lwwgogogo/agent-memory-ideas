@@ -1,0 +1,17 @@
+{
+  "condition": "B_official_qwen",
+  "case_id": "P02",
+  "text": "我对花生严重过敏。",
+  "user_id": "formation_sanity_B_official_qwen_P02",
+  "writer": "qwen2.5:14b",
+  "infer": true,
+  "official_messages": true,
+  "add_return": {
+    "results": []
+  },
+  "get_all": [],
+  "search": [],
+  "memory_count": 0,
+  "search_count": 0,
+  "status": "NO_MEMORY"
+}

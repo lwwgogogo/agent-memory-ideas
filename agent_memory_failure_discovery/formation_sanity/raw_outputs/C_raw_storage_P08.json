@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P08",
+  "text": "我不喜欢恐怖电影。",
+  "user_id": "formation_sanity_C_raw_storage_P08",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "584b2230-1fba-496e-83bf-8d45a10c7e83",
+        "memory": "我不喜欢恐怖电影。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "584b2230-1fba-496e-83bf-8d45a10c7e83",
+      "memory": "我不喜欢恐怖电影。",
+      "hash": "145271f6dacffd8b74bca7c990a355b3",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:52.134666+00:00",
+      "updated_at": "2026-10-02T09:27:52.134666+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P08",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "584b2230-1fba-496e-83bf-8d45a10c7e83",
+      "memory": "我不喜欢恐怖电影。",
+      "hash": "145271f6dacffd8b74bca7c990a355b3",
+      "metadata": null,
+      "score": 1.0,
+      "created_at": "2026-10-02T09:27:52.134666+00:00",
+      "updated_at": "2026-10-02T09:27:52.134666+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P08",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}

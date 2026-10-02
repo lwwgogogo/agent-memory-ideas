@@ -1,0 +1,48 @@
+{
+  "condition": "C_raw_storage",
+  "case_id": "P07",
+  "text": "我的狗叫 Lucky。",
+  "user_id": "formation_sanity_C_raw_storage_P07",
+  "writer": "qwen2.5:14b",
+  "infer": false,
+  "official_messages": true,
+  "add_return": {
+    "results": [
+      {
+        "id": "8bf5c80f-c02c-4e05-857c-2c0a7a356fcd",
+        "memory": "我的狗叫 Lucky。",
+        "event": "ADD",
+        "actor_id": null,
+        "role": "user"
+      }
+    ]
+  },
+  "get_all": [
+    {
+      "id": "8bf5c80f-c02c-4e05-857c-2c0a7a356fcd",
+      "memory": "我的狗叫 Lucky。",
+      "hash": "64dd6b6e813a0164aea87027b7ebe938",
+      "metadata": null,
+      "created_at": "2026-10-02T09:27:52.062602+00:00",
+      "updated_at": "2026-10-02T09:27:52.062602+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P07",
+      "role": "user"
+    }
+  ],
+  "search": [
+    {
+      "id": "8bf5c80f-c02c-4e05-857c-2c0a7a356fcd",
+      "memory": "我的狗叫 Lucky。",
+      "hash": "64dd6b6e813a0164aea87027b7ebe938",
+      "metadata": null,
+      "score": 1.0,
+      "created_at": "2026-10-02T09:27:52.062602+00:00",
+      "updated_at": "2026-10-02T09:27:52.062602+00:00",
+      "user_id": "formation_sanity_C_raw_storage_P07",
+      "role": "user"
+    }
+  ],
+  "memory_count": 1,
+  "search_count": 1,
+  "status": "MEMORY_CREATED"
+}
