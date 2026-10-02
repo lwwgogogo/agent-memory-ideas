@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETE",
+  "trace_count": 96,
+  "accuracy": {
+    "O0": {
+      "correct": 24,
+      "total": 96,
+      "accuracy": 0.25
+    },
+    "O2": {
+      "correct": 24,
+      "total": 96,
+      "accuracy": 0.25
+    },
+    "O3a": {
+      "correct": 96,
+      "total": 96,
+      "accuracy": 1.0
+    },
+    "O3b": {
+      "correct": 84,
+      "total": 96,
+      "accuracy": 0.875
+    },
+    "O1": {
+      "correct": 96,
+      "total": 96,
+      "accuracy": 1.0
+    }
+  },
+  "persistence": {
+    "P1 NO_FORMATION": 96
+  },
+  "coverage": {
+    "NO": 96
+  }
+}

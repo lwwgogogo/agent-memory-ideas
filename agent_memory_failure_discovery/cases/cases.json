@@ -1,0 +1,1826 @@
+[
+  {
+    "case_id": "C1_00",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 0。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_01",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 1。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_02",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 2。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_03",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 3。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_04",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 4。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_05",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 5。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_06",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 6。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_07",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 7。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_08",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 8。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_09",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 9。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_10",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 10。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C1_11",
+    "family": "C1",
+    "raw_history": "用户平时喜欢本地模型，因为更在意隐私。今天服务器不能联网，所以这次必须使用本地模型。 表达版本 11。",
+    "current_query": "如果网络恢复，用户通常优先什么模型？",
+    "correct_answer": "本地模型",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "长期偏好:本地模型"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "偏好",
+    "expected_update": "长期偏好",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_00",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 0。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_01",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 1。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_02",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 2。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_03",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 3。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_04",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 4。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_05",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 5。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_06",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 6。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_07",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 7。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_08",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 8。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_09",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 9。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_10",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 10。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C2_11",
+    "family": "C2",
+    "raw_history": "用户不是偏爱 Python，只是当前服务器只能运行 Python；如果环境允许，用户更愿意使用云 API。 表达版本 11。",
+    "current_query": "环境恢复后优先什么？",
+    "correct_answer": "云 API",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "约束:云 API"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "约束",
+    "expected_update": "约束",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_00",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 0。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_01",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 1。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_02",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 2。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_03",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 3。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_04",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 4。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_05",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 5。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_06",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 6。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_07",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 7。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_08",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 8。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_09",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 9。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_10",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 10。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C3_11",
+    "family": "C3",
+    "raw_history": "通常项目使用 Python，但这个项目因旧依赖必须使用 Ruby；该例外只适用于当前项目。 表达版本 11。",
+    "current_query": "新的普通项目默认使用什么？",
+    "correct_answer": "Python",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "例外:Python"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "例外",
+    "expected_update": "例外",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_00",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 0。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_01",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 1。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_02",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 2。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_03",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 3。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_04",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 4。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_05",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 5。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_06",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 6。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_07",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 7。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_08",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 8。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_09",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 9。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_10",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 10。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C4_11",
+    "family": "C4",
+    "raw_history": "用户以前使用模型 A，但上周已经迁移到模型 B，当前配置是模型 B。 表达版本 11。",
+    "current_query": "当前配置是什么？",
+    "correct_answer": "模型 B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "当前:模型 B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "当前",
+    "expected_update": "当前",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_00",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 0。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_01",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 1。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_02",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 2。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_03",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 3。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_04",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 4。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_05",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 5。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_06",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 6。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_07",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 7。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_08",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 8。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_09",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 9。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_10",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 10。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C5_11",
+    "family": "C5",
+    "raw_history": "观察到工具返回超时。根据这个现象，代理推断服务可能过载。 表达版本 11。",
+    "current_query": "哪一项是直接观察到的事实？",
+    "correct_answer": "工具返回超时",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "证据:工具返回超时"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "证据",
+    "expected_update": "证据",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_00",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 0。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_01",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 1。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_02",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 2。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_03",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 3。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_04",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 4。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_05",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 5。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_06",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 6。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_07",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 7。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_08",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 8。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_09",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 9。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_10",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 10。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C6_11",
+    "family": "C6",
+    "raw_history": "候选 X 价格低、颜色相似，但候选 Y 满足用户要求的续航和重量限制。 表达版本 11。",
+    "current_query": "应推荐哪一个？",
+    "correct_answer": "候选 Y",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "支持:候选 Y"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "支持",
+    "expected_update": "支持",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_00",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 0。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_01",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 1。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_02",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 2。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_03",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 3。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_04",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 4。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_05",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 5。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_06",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 6。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_07",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 7。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_08",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 8。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_09",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 9。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_10",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 10。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C7_11",
+    "family": "C7",
+    "raw_history": "策略 S 只在网络稳定时有效；当前网络不稳定，应使用策略 T。 表达版本 11。",
+    "current_query": "当前网络不稳定时使用什么？",
+    "correct_answer": "策略 T",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "条件:策略 T"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "条件",
+    "expected_update": "条件",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_00",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 0。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_01",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 1。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_02",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 2。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_03",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 3。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_04",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 4。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_05",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 5。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_06",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 6。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_07",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 7。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_08",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 8。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_09",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 9。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_10",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 10。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  },
+  {
+    "case_id": "C8_11",
+    "family": "C8",
+    "raw_history": "前面说推荐 A 是错误的。更正：真正应推荐 B，A 不满足最新限制。 表达版本 11。",
+    "current_query": "最终应推荐什么？",
+    "correct_answer": "B",
+    "relevant_source_turns": [
+      0
+    ],
+    "required_memory_facts": [
+      "纠正:B"
+    ],
+    "invalid_old_information": [
+      "旧结论不得覆盖当前问题"
+    ],
+    "condition": "纠正",
+    "expected_update": "纠正",
+    "ambiguous": false
+  }
+]

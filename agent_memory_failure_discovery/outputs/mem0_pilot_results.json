@@ -1,0 +1,1826 @@
+[
+  {
+    "case_id": "C1_00",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_01",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_02",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_03",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_04",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_05",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_06",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_07",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_08",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_09",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_10",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C1_11",
+    "family": "C1",
+    "correct": "本地模型",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "聊天模型",
+    "o1_raw_answer": "用户通常优先使用本地模型。",
+    "o2_retrieval_oracle": "本地模型",
+    "o3_gold_memory": "本地模型",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C2_00",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_01",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_02",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_03",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_04",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_05",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_06",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_07",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_08",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_09",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_10",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C2_11",
+    "family": "C2",
+    "correct": "云 API",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "植树造林",
+    "o1_raw_answer": "优先使用云API。",
+    "o2_retrieval_oracle": "数据检查和备份恢复优先。",
+    "o3_gold_memory": "数据检查和备份恢复优先。",
+    "o0_correct": false,
+    "o1_correct": false,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_00",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_01",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_02",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_03",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_04",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_05",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_06",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_07",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_08",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_09",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_10",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C3_11",
+    "family": "C3",
+    "correct": "Python",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "Maven或Gradle配置文件",
+    "o1_raw_answer": "Python",
+    "o2_retrieval_oracle": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o3_gold_memory": "新的普通项目默认使用标准库和基本的文件结构。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C4_00",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_01",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_02",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_03",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_04",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_05",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_06",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_07",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_08",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_09",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_10",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C4_11",
+    "family": "C4",
+    "correct": "模型 B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "未知，请提供更多信息。",
+    "o1_raw_answer": "当前配置是模型 B。",
+    "o2_retrieval_oracle": "当前配置是模型 B。",
+    "o3_gold_memory": "当前配置是模型 B。",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_00",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_01",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_02",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_03",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_04",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_05",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_06",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_07",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_08",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_09",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_10",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C5_11",
+    "family": "C5",
+    "correct": "工具返回超时",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "需要具体选项才能回答。请提供详细选项。",
+    "o1_raw_answer": "工具返回超时。",
+    "o2_retrieval_oracle": "工具返回超时",
+    "o3_gold_memory": "工具返回超时",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_00",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_01",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_02",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_03",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_04",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_05",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_06",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_07",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_08",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_09",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_10",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C6_11",
+    "family": "C6",
+    "correct": "候选 Y",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体选项和情境，请提供更多信息。",
+    "o1_raw_answer": "推荐候选 Y。",
+    "o2_retrieval_oracle": "候选 Y",
+    "o3_gold_memory": "候选 Y",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": true,
+    "o3_correct": true
+  },
+  {
+    "case_id": "C7_00",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_01",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_02",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_03",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_04",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_05",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_06",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_07",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_08",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_09",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_10",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C7_11",
+    "family": "C7",
+    "correct": "策略 T",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "使用无线信号更强的位置或者连接有线网络。",
+    "o1_raw_answer": "策略 T",
+    "o2_retrieval_oracle": "备用连接或网络稳定增强策略",
+    "o3_gold_memory": "备用连接或网络稳定增强策略",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_00",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_01",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_02",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_03",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_04",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_05",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_06",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_07",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_08",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_09",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_10",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  },
+  {
+    "case_id": "C8_11",
+    "family": "C8",
+    "correct": "B",
+    "written_memory": {
+      "results": []
+    },
+    "retrieved_memory": {
+      "results": []
+    },
+    "o0_answer": "缺少具体信息，无法作答。请提供更多信息。",
+    "o1_raw_answer": "最终应推荐B。",
+    "o2_retrieval_oracle": "A",
+    "o3_gold_memory": "A",
+    "o0_correct": false,
+    "o1_correct": true,
+    "o2_correct": false,
+    "o3_correct": false
+  }
+]
