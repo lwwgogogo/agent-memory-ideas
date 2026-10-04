@@ -1,0 +1,6 @@
+name: agentmem_lab
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+prefix: /home/liaoweiwen/miniconda3/envs/agentmem_lab

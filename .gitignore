@@ -9,3 +9,10 @@
 *.pem
 *.token
 .DS_Store
+
+# Idea Validation 通用缓存与临时文件
+__pycache__/
+venv/
+runtime/
+cache/
+*.log
