@@ -1,0 +1,20 @@
+{
+  "model": "qwq:32b",
+  "options": {
+    "temperature": 0,
+    "seed": 20261004,
+    "num_predict": 768,
+    "num_ctx": 4096
+  },
+  "order_seeds": [
+    17,
+    43
+  ],
+  "job_order_seed": 905,
+  "system": "你正在参与虚构低风险情境的判断实验。只输出一个 JSON 对象，且恰好包含 choice、confidence、reason。choice 只能为 H1 或 H0。confidence 明确定义为 H1 成立的概率，范围为 0 到 1，并非所选选项的概率。概率不少于 0.5 时选 H1，否则选 H0。reason 用一句简短中文说明。",
+  "confidence_semantics": "P(H1)",
+  "bootstrap_seed": 20261004,
+  "bootstrap_samples": 10000,
+  "format": "json",
+  "formal_run": false
+}

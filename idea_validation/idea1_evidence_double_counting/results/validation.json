@@ -1,0 +1,6 @@
+{
+  "parser_invalid_inputs_rejected": 6,
+  "valid_H0_probability_semantics": true,
+  "integrity_structure_and_length_cases": 20,
+  "distinct_orders_for_3_and_5": true
+}
