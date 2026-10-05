@@ -1,0 +1,35 @@
+{
+  "system": "memento",
+  "paper": "Selective Memory Retention for Long-Horizon LLM Agents",
+  "official_repo": null,
+  "paper_url": "https://arxiv.org/abs/2606.29178",
+  "commit": null,
+  "license": "NOASSERTION",
+  "official": false,
+  "clone_status": "OFFICIAL_CODE_NOT_FOUND",
+  "dynamic_status": "OFFICIAL_CODE_NOT_FOUND",
+  "audit_level": "L0",
+  "experience_origin": "SELF_GENERATED",
+  "stores_state": null,
+  "stores_action": null,
+  "stores_outcome": true,
+  "stores_behavior_policy_id": false,
+  "stores_action_propensity": false,
+  "observed_reward_used_as_utility": "yes",
+  "utility_affects_future_retrieval": true,
+  "utility_affects_future_action": true,
+  "state_conditioned_utility": "PARTIAL",
+  "exposure_correction": "none disclosed",
+  "counterfactual_handling": "NONE disclosed",
+  "feedback_loop": "yes",
+  "structural_blindspot": true,
+  "classification": "C",
+  "evidence": [
+    {
+      "file": "paper https://arxiv.org/abs/2606.29178",
+      "lines": "paper-level",
+      "symbol": "TraceRetain",
+      "note": "公开论文描述按 success/age/access/frequency/redundancy/specificity/similarity/downstream utility 对 memory 项打分保留；官方公开代码未找到，代码层字段无法核实。"
+    }
+  ]
+}

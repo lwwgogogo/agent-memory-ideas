@@ -95,3 +95,9 @@ Primary qwen2.5:14b 和 Secondary qwq:32b 各完成 160/160 memory formation、3
 Primary qwen2.5:14b 和 Secondary qwq:32b 各完成 160/160 memory formation、320/320 双 faithfulness audit、160/160 recoverability、320/320 downstream calls；formal pipeline 无 retry。C1/C2 calibration 为 80/80 有效。Primary 严格双审计 faithfulness：GenericSummary 0/40、ReflectionLesson 0/40、StrategyMemory 0/40、ConsolidatedExperience 19/40。Secondary 分别为 6/40、2/40、5/40、40/40。Secondary ReflectionLesson 在 strict faithful cohort 中有 FBIR=0.50，但 cohort 仅 N=2；primary 的 FBIR 与 retention/regret、matched-pair gates 均未达到预设门槛。G0/G1/G7/G8 通过，G2–G6 未通过。C1 downstream control 有 1/80 label calls 因中断未知而保守记为 invalid，未重发；C1/C2 下游准确率分别 0.475/0.500，作为读者表现限制报告。
 
 该结果是 partial formation signal，不支持 GO，也不足以称为无现象；严格按预注册规则判为 WEAK。只适用于本次固定 toy worlds、提示、模型与预算。运行环境 Python 3.10.21 / conda `agentmem_lab`；端末核验 GPU 为 4 张 RTX 4090，实验结束快照中 qwq:32b 位于 GPU 0。详见 Stage3 报告、最终结论、statistics 和 final_verification。Run1、Confirmatory、Stage-2 的历史 verdict 保持不变；本轮已停止。
+
+## Idea 2 Stage-4 — Policy-Conditioned Experience Memory Audit — 2026-10-05
+
+独立目录：`idea_validation/idea2_policy_conditioned_memory_audit/`。预注册门槛结果为 **POLICY_MEMORY_GO（限定范围）**。六个目标系统纳入静态审计，五个官方 repo 成功 clone，Memento 标记 `OFFICIAL_CODE_NOT_FOUND`。五个可审 repo 均未发现 behavior-policy/propensity 记录或 exposure correction，结构性 blind spot 5/5。
+
+JitRL 原生 episode ranking helper 与 MemRL 原生 Q-value selector 在合成 P/Q exposure 反转下均出现 policy-aligned preference flip（PIUR=1），BAL 后 score gap reduction 各约 97.8%。此为隔离的 native ranking/value-selection component 证据，不是完整 agent 端到端结果。state-matched query API 不支持；JitRL 完整 state/history embedding retrieval 未运行，解释收窄至 aggregate/native selector 路径。G0–G4、G6 PASS，G5 为 NARROW。详见 Stage4 报告和逐系统 JSON；本阶段结束，不启动新 Idea。

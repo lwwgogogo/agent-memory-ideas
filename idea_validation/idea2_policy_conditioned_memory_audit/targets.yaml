@@ -1,0 +1,25 @@
+systems:
+  - id: jitrl
+    paper: "Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates"
+    paper_url: "https://arxiv.org/abs/2601.18510"
+    official_repo: "https://github.com/liushiliushi/JitRL"
+  - id: memrl
+    paper: "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory"
+    paper_url: "https://arxiv.org/abs/2601.03192"
+    official_repo: "https://github.com/MemTensor/MemRL"
+  - id: memento
+    paper: "Selective Memory Retention for Long-Horizon LLM Agents"
+    paper_url: "https://arxiv.org/abs/2606.29178"
+    official_repo: null
+  - id: reasoningbank
+    paper: "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory"
+    paper_url: "https://arxiv.org/abs/2509.25140"
+    official_repo: "https://github.com/google-research/reasoning-bank"
+  - id: expel
+    paper: "ExpeL: LLM Agents Are Experiential Learners"
+    paper_url: "https://arxiv.org/abs/2308.10144"
+    official_repo: "https://github.com/LeapLabTHU/ExpeL"
+  - id: reflexion
+    paper: "Reflexion: Language Agents with Verbal Reinforcement Learning"
+    paper_url: "https://arxiv.org/abs/2303.11366"
+    official_repo: "https://github.com/noahshinn/reflexion"

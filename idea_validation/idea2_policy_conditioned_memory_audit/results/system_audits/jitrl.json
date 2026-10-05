@@ -1,0 +1,47 @@
+{
+  "system": "jitrl",
+  "paper": "Just-in-Time Reinforcement Learning for LLM Agents (JitRL)",
+  "official_repo": "https://github.com/liushiliushi/JitRL",
+  "paper_url": "https://arxiv.org/abs/2601.18510",
+  "commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+  "license": "NOASSERTION (no license file/API identifier found)",
+  "official": true,
+  "clone_status": "GIT_CLONE_SUCCESS",
+  "dynamic_status": "DYNAMIC_TEST_PASS",
+  "audit_level": "L2",
+  "experience_origin": "SELF_GENERATED",
+  "stores_state": true,
+  "stores_action": true,
+  "stores_outcome": true,
+  "stores_behavior_policy_id": false,
+  "stores_action_propensity": false,
+  "observed_reward_used_as_utility": "yes",
+  "utility_affects_future_retrieval": true,
+  "utility_affects_future_action": true,
+  "state_conditioned_utility": "PARTIAL",
+  "exposure_correction": "none",
+  "counterfactual_handling": "NONE",
+  "feedback_loop": "yes",
+  "structural_blindspot": true,
+  "classification": "C",
+  "evidence": [
+    {
+      "file": "third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "lines": "238-285",
+      "symbol": "_store_step_in_vector_db",
+      "note": "存 state/action、episode_success、final score 和 future_rewards；未见 policy/propensity 字段。"
+    },
+    {
+      "file": "third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "lines": "335-440",
+      "symbol": "retrieve_similar_with_vector",
+      "note": "用历史/state 相似检索，折扣 future reward 参与排序。"
+    },
+    {
+      "file": "third_party/jitrl/Jericho/src/prompt_update_with_history.py",
+      "lines": "get_top_episodes",
+      "symbol": "get_top_episodes",
+      "note": "按 final_score 降序取 top-k；正式动态适配执行此原生排序 helper。"
+    }
+  ]
+}

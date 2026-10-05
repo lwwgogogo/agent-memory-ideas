@@ -1,0 +1,292 @@
+{
+  "scope": "native ranking/value-selection components only; not end-to-end agent",
+  "n_per_policy": {
+    "P": 2000,
+    "Q": 2000,
+    "BAL": 2000
+  },
+  "systems": [
+    {
+      "system": "jitrl",
+      "audit_level": "L2",
+      "PSI": 1.246990539105021,
+      "RCD": 0.6,
+      "PIUR": 1,
+      "policy_delta_P": 0.6050788677927921,
+      "policy_delta_Q": -0.6419116713122288,
+      "balanced_reduction": 0.9775459403083395,
+      "state_matched_effect": "UNSUPPORTED_BY_NATIVE_QUERY_API",
+      "query_state_supported": false,
+      "notes": "Native top-k ranker/value selector exercised over source-derived experience items; full end-to-end agent and embedding candidate generation not run.",
+      "conditions": {
+        "P": {
+          "score": {
+            "A": 0.8636826042726348,
+            "B": 0.2586037364798427
+          },
+          "retrieved_distribution": {
+            "A": 0.75,
+            "B": 0.25
+          },
+          "top20_actions": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "state_queries": {
+            "S0": {
+              "A": 0.75,
+              "B": 0.25
+            },
+            "S1": {
+              "A": 0.75,
+              "B": 0.25
+            }
+          }
+        },
+        "Q": {
+          "score": {
+            "A": 0.22851365015166836,
+            "B": 0.8704253214638972
+          },
+          "retrieved_distribution": {
+            "A": 0.15,
+            "B": 0.85
+          },
+          "top20_actions": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "state_queries": {
+            "S0": {
+              "A": 0.15,
+              "B": 0.85
+            },
+            "S1": {
+              "A": 0.15,
+              "B": 0.85
+            }
+          }
+        },
+        "BAL": {
+          "score": {
+            "A": 0.553,
+            "B": 0.539
+          },
+          "retrieved_distribution": {
+            "A": 0.4,
+            "B": 0.6
+          },
+          "top20_actions": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "state_queries": {
+            "S0": {
+              "A": 0.4,
+              "B": 0.6
+            },
+            "S1": {
+              "A": 0.4,
+              "B": 0.6
+            }
+          }
+        }
+      }
+    },
+    {
+      "system": "memrl",
+      "audit_level": "L2",
+      "PSI": 0.24939810782100533,
+      "RCD": 0.6,
+      "PIUR": 1,
+      "policy_delta_P": 0.12101577355855905,
+      "policy_delta_Q": -0.12838233426244627,
+      "balanced_reduction": 0.9775459403083397,
+      "state_matched_effect": "UNSUPPORTED_BY_NATIVE_QUERY_API",
+      "query_state_supported": false,
+      "notes": "Native top-k ranker/value selector exercised over source-derived experience items; full end-to-end agent and embedding candidate generation not run.",
+      "conditions": {
+        "P": {
+          "score": {
+            "A": 0.07273652085452717,
+            "B": -0.04827925270403188
+          },
+          "retrieved_distribution": {
+            "A": 0.75,
+            "B": 0.25
+          },
+          "top20_actions": [
+            "A",
+            "A",
+            "A",
+            "A",
+            "A",
+            "A",
+            "A",
+            "A",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B",
+            "B",
+            "A",
+            "A",
+            "B",
+            "A",
+            "A",
+            "A"
+          ],
+          "state_queries": {
+            "S0": {
+              "A": 0.75,
+              "B": 0.25
+            },
+            "S1": {
+              "A": 0.75,
+              "B": 0.25
+            }
+          }
+        },
+        "Q": {
+          "score": {
+            "A": -0.05429726996966683,
+            "B": 0.07408506429277945
+          },
+          "retrieved_distribution": {
+            "A": 0.15,
+            "B": 0.85
+          },
+          "top20_actions": [
+            "A",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B",
+            "B"
+          ],
+          "state_queries": {
+            "S0": {
+              "A": 0.15,
+              "B": 0.85
+            },
+            "S1": {
+              "A": 0.15,
+              "B": 0.85
+            }
+          }
+        },
+        "BAL": {
+          "score": {
+            "A": 0.010599999999999977,
+            "B": 0.00779999999999999
+          },
+          "retrieved_distribution": {
+            "A": 0.4,
+            "B": 0.6
+          },
+          "top20_actions": [
+            "B",
+            "B",
+            "B",
+            "A",
+            "B",
+            "B",
+            "B",
+            "A",
+            "B",
+            "A",
+            "B",
+            "B",
+            "B",
+            "A",
+            "A",
+            "B",
+            "A",
+            "A",
+            "A",
+            "B"
+          ],
+          "state_queries": {
+            "S0": {
+              "A": 0.4,
+              "B": 0.6
+            },
+            "S1": {
+              "A": 0.4,
+              "B": 0.6
+            }
+          }
+        }
+      }
+    }
+  ]
+}

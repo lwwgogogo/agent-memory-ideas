@@ -1,0 +1,41 @@
+{
+  "system": "reasoningbank",
+  "paper": "ReasoningBank: Scaling Agent Self-Evolution with Language Models",
+  "official_repo": "https://github.com/google-research/reasoning-bank",
+  "paper_url": "https://arxiv.org/abs/2509.25140",
+  "commit": "ed80611788292ea739f1effd31f16c53823b8a0d",
+  "license": "Apache-2.0",
+  "official": true,
+  "clone_status": "GIT_CLONE_SUCCESS",
+  "dynamic_status": "NOT_RUN_DEPENDENCY_BLOCKED",
+  "audit_level": "L1",
+  "experience_origin": "SELF_GENERATED",
+  "stores_state": true,
+  "stores_action": true,
+  "stores_outcome": true,
+  "stores_behavior_policy_id": false,
+  "stores_action_propensity": false,
+  "observed_reward_used_as_utility": "partial",
+  "utility_affects_future_retrieval": true,
+  "utility_affects_future_action": true,
+  "state_conditioned_utility": "PARTIAL",
+  "exposure_correction": "none",
+  "counterfactual_handling": "HEURISTIC",
+  "feedback_loop": "yes",
+  "structural_blindspot": true,
+  "classification": "C",
+  "evidence": [
+    {
+      "file": "third_party/reasoningbank/WebArena/memory_management.py",
+      "lines": "138-213",
+      "symbol": "select_memory / screening",
+      "note": "基于当前 query embedding 检索排序；策略内容的归纳来自任务轨迹。"
+    },
+    {
+      "file": "third_party/reasoningbank/WebArena/induce_memory.py",
+      "lines": "source review",
+      "symbol": "induce memory",
+      "note": "从成功/失败执行轨迹提炼可复用策略；本实现含 Vertex/Gemini 与 WebArena 集成依赖。"
+    }
+  ]
+}

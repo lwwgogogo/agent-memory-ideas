@@ -1,0 +1,3 @@
+System,Audit Level,PSI,RCD,PIUR,Balanced Reduction,State-matched effect,Dynamic scope
+jitrl,L2,1.246990539105021,0.6,1,0.9775459403083395,UNSUPPORTED_BY_NATIVE_QUERY_API,native selector/ranker component
+memrl,L2,0.24939810782100533,0.6,1,0.9775459403083397,UNSUPPORTED_BY_NATIVE_QUERY_API,native selector/ranker component

@@ -1,0 +1,16 @@
+{
+  "python": "3.10.21",
+  "environment": "agentmem_lab",
+  "preregistration_sha256": "97c44f51fc3618edd41fafa214412e26cdc12450b53e8246c72d57df703392ec",
+  "preregistration_unchanged": true,
+  "historical_directories_modified": false,
+  "official_repos_cloned": 5,
+  "systems_static_audited": 6,
+  "dynamic_native_components": 2,
+  "tests": "10 passed",
+  "third_party_ignored": true,
+  "dynamic_scope": "isolated native ranking/value-selection components, not end-to-end agents",
+  "external_conda_envs_created": [],
+  "verdict": "POLICY_MEMORY_GO",
+  "git_push": "completed"
+}

@@ -1,0 +1,47 @@
+{
+  "system": "expel",
+  "paper": "ExpeL: LLM Agents Are Experiential Learners",
+  "official_repo": "https://github.com/LeapLabTHU/ExpeL",
+  "paper_url": "https://arxiv.org/abs/2308.10144",
+  "commit": "e41ec9a24823e7b560c561ab191441b56d9bcefc",
+  "license": "Apache-2.0",
+  "official": true,
+  "clone_status": "GIT_CLONE_SUCCESS",
+  "dynamic_status": "NOT_RUN_DEPENDENCY_BLOCKED",
+  "audit_level": "L1",
+  "experience_origin": "SELF_GENERATED",
+  "stores_state": true,
+  "stores_action": true,
+  "stores_outcome": true,
+  "stores_behavior_policy_id": false,
+  "stores_action_propensity": false,
+  "observed_reward_used_as_utility": "partial",
+  "utility_affects_future_retrieval": true,
+  "utility_affects_future_action": true,
+  "state_conditioned_utility": "PARTIAL",
+  "exposure_correction": "none",
+  "counterfactual_handling": "HEURISTIC",
+  "feedback_loop": "yes",
+  "structural_blindspot": true,
+  "classification": "C",
+  "evidence": [
+    {
+      "file": "third_party/expel/agent/expel.py",
+      "lines": "124-200",
+      "symbol": "task_critique / failure_critique",
+      "note": "以成功/失败 trajectory 作为 critique 输入；成功与失败均形成规则/反思。"
+    },
+    {
+      "file": "third_party/expel/agent/expel.py",
+      "lines": "420-641",
+      "symbol": "setup_vectorstore / update_dynamic_prompt_components",
+      "note": "成功 episode 与 reflection 建文档库，以 task/thought/reflection 相似度检索并纳入后续 prompt。"
+    },
+    {
+      "file": "third_party/expel/agent/expel.py",
+      "lines": "696-741",
+      "symbol": "update_rules",
+      "note": "规则计数影响优先级；不是 propensity 校正。"
+    }
+  ]
+}

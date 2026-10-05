@@ -1,0 +1,51 @@
+{
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "criterion": "six-system paper/code coverage; five official repositories cloned; one paper-only official-code-not-found",
+      "n_covered": 6,
+      "n_official_repos": 5
+    },
+    "G1": {
+      "status": "PASS",
+      "criterion": "at least 3/5 source-audited repositories structurally blind",
+      "n_structural_blindspots": 5,
+      "denominator": 5,
+      "note": "count excludes paper-only Memento"
+    },
+    "G2": {
+      "status": "PASS",
+      "criterion": "at least two L1+ and at least one L2+",
+      "L1plus": 5,
+      "L2plus": 2
+    },
+    "G3": {
+      "status": "PASS",
+      "criterion": "two native L2 selection components show policy-aligned P/Q reversals",
+      "systems": [
+        "jitrl",
+        "memrl"
+      ],
+      "scope": "component-level; not end-to-end agents"
+    },
+    "G4": {
+      "status": "PASS",
+      "criterion": "balanced exposure reduces policy-induced score gap by >=50% in a real-system component",
+      "jitrl": 0.9775459403083395,
+      "memrl": 0.9775459403083397
+    },
+    "G5": {
+      "interpretation": "NARROW",
+      "note": "state-conditioned query unsupported by both tested selector APIs; no claim that state-aware full retrieval is biased. JitRL full pipeline has state-conditioned embedding retrieval, not run here."
+    },
+    "G6": {
+      "status": "PASS",
+      "criterion": "fewer than 3/5 implement explicit exposure correction",
+      "n_explicit_corrections": 0,
+      "denominator": 5
+    }
+  },
+  "verdict": "POLICY_MEMORY_GO",
+  "decision_scope": "native ranking/value-selection components on the preregistered synthetic logs; not full agent end-to-end behavior",
+  "generated_by": "Stage-4 audit"
+}

@@ -1,0 +1,11 @@
+{
+  "required": ["system","paper","paper_url","official_repo","commit","license","clone_time_utc","official","clone_status","audit_level","experience_origin","stores_state","stores_action","stores_outcome","stores_behavior_policy_id","stores_action_propensity","observed_reward_used_as_utility","utility_affects_future_retrieval","utility_affects_future_action","state_conditioned_utility","exposure_correction","counterfactual_handling","feedback_loop","evidence","structural_blindspot","classification"],
+  "experience_origin": ["SELF_GENERATED","EXTERNAL","MIXED","UNCLEAR"],
+  "state_conditioned_utility": ["STATE_CONDITIONAL","PARTIAL","AGGREGATE","UNCLEAR"],
+  "exposure_correction": ["EXPLICIT","PARTIAL","NONE","UNCLEAR"],
+  "counterfactual_handling": ["NONE","HEURISTIC","EXPLICIT","UNCLEAR"],
+  "classification": ["TYPE_A","TYPE_B","TYPE_C","TYPE_D","UNRESOLVED"],
+  "evidence_item": {
+    "required": ["source_type","file","line_start","line_end","symbol","snippet_summary","supports"]
+  }
+}

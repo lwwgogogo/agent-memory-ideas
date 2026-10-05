@@ -1,0 +1,47 @@
+{
+  "system": "memrl",
+  "paper": "MEMRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+  "official_repo": "https://github.com/MemTensor/MemRL",
+  "paper_url": "https://arxiv.org/abs/2601.03192",
+  "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0",
+  "license": "MIT",
+  "official": true,
+  "clone_status": "GIT_CLONE_SUCCESS",
+  "dynamic_status": "DYNAMIC_TEST_PASS",
+  "audit_level": "L2",
+  "experience_origin": "SELF_GENERATED",
+  "stores_state": true,
+  "stores_action": true,
+  "stores_outcome": true,
+  "stores_behavior_policy_id": false,
+  "stores_action_propensity": false,
+  "observed_reward_used_as_utility": "yes",
+  "utility_affects_future_retrieval": true,
+  "utility_affects_future_action": true,
+  "state_conditioned_utility": "AGGREGATE",
+  "exposure_correction": "none",
+  "counterfactual_handling": "NONE",
+  "feedback_loop": "yes",
+  "structural_blindspot": true,
+  "classification": "C",
+  "evidence": [
+    {
+      "file": "third_party/memrl/memrl/service/value_driven.py",
+      "lines": "90-150",
+      "symbol": "ValueAwareSelector.select",
+      "note": "候选按 q_value 排序，similarity 作 tie-break；selector API 不收当前 state。"
+    },
+    {
+      "file": "third_party/memrl/memrl/service/value_driven.py",
+      "lines": "181-219",
+      "symbol": "QValueUpdater.update",
+      "note": "TD target=reward+gamma*next_max_q，并写回 q_value/reward_ma/last_reward。"
+    },
+    {
+      "file": "third_party/memrl/memrl/service/value_driven.py",
+      "lines": "225-271",
+      "symbol": "MemoryCurator.attribute_reward",
+      "note": "成功任务可对相似既有 memory 归因奖励。"
+    }
+  ]
+}
