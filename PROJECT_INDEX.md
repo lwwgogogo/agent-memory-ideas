@@ -42,3 +42,11 @@ infer=False：12/12；qwen infer=True：0/12；qwq infer=True：0/12。qwen 原�
 - [研究状态时间线](docs/RESEARCH_STATUS.md)
 - [研究原则](docs/RESEARCH_PRINCIPLES.md)
 - [文件清理建议](docs/FILE_CLEANUP_RECOMMENDATIONS.md)
+
+## Idea 2 最终状态（2026-10-05 汇总）
+
+状态：IDEA2_NO_GO（未达到预先固定的完整性门槛，不是无偏差结论）。2026-10-04 已完成 400 次固定调用，387 条合法；五条件完整场景 14/20，γ=0.70 档全部因分层条件越界概率被排除。
+
+完整主分析 Confounded MIAB=0.133009，95% CI [0.063119, 0.203637]；Balanced correction=0.133009，Stratified correction=0.127652。有正偏差和纠正信号，不能写成“没有发现 action bias”。合法配对事后诊断 N=19，Δ_confounded=0.114388，95% CI [0.059638, 0.173566]，趋势随 γ 增加；但不替代预设的完整检验。13 条 UNRESOLVED 不修复、不补跑。
+
+结果：[实验报告](idea_validation/idea2_policy_confounding/Idea2实验结果.md)、[最终结论](idea_validation/idea2_policy_confounding/最终结论.md)。本轮停止，不进入 Idea 3、不开展查重或方法设计。

@@ -1,0 +1,10 @@
+{
+  "frozen_protocol_and_case_hashes_match": true,
+  "frozen_source_hashes_match": true,
+  "unique_calls": 400,
+  "valid_runs": 387,
+  "historical_tracked_paths_unchanged_since_organization_commit": true,
+  "required_artifacts_present": true,
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "no_additional_llm_calls": true
+}

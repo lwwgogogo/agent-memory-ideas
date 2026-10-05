@@ -1,0 +1,485 @@
+{
+  "method": "对已生成的中文记忆文本独立正则提取计数、动作映射及百分比，与生成真值逐项核对；未调用模型。",
+  "views": [
+    {
+      "case_id": "W01",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W01",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W01",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W01",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W02",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W02",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W02",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W02",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W03",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W03",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W03",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W03",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W04",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W04",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W04",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W04",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W05",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W05",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W05",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W05",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W06",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W06",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W06",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W06",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W07",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W07",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W07",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W07",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W08",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W08",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W08",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W08",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W09",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W09",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W09",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W09",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W10",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W10",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W10",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W10",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W11",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W11",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W11",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W11",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W12",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W12",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W12",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W12",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W13",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W13",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W13",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W13",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W14",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W14",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W14",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W14",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W15",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W15",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W15",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W15",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W16",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W16",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W16",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W16",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W17",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W17",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W17",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W17",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W18",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W18",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W18",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W18",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W19",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W19",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W19",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W19",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W20",
+      "label_swap": 0,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W20",
+      "label_swap": 0,
+      "order_seed": 43,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W20",
+      "label_swap": 1,
+      "order_seed": 17,
+      "status": "PASS"
+    },
+    {
+      "case_id": "W20",
+      "label_swap": 1,
+      "order_seed": 43,
+      "status": "PASS"
+    }
+  ]
+}

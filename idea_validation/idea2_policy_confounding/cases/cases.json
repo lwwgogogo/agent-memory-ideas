@@ -1,0 +1,4022 @@
+[
+  {
+    "id": "W01",
+    "family": "机器控制",
+    "world_name": "单元 A101",
+    "gamma": 0.5,
+    "state_labels": [
+      "Q2",
+      "K7"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State K7 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State K7 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State Q2 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State K7 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State K7 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State Q2 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W02",
+    "family": "机器控制",
+    "world_name": "单元 A102",
+    "gamma": 0.7,
+    "state_labels": [
+      "T3",
+      "M8"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 700,
+        "successes": 630,
+        "failures": 70
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 300,
+        "successes": 270,
+        "failures": 30
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 300,
+        "successes": 60,
+        "failures": 240
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 700,
+        "successes": 140,
+        "failures": 560
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action A；执行 700 次；成功 630 次；失败 70 次。",
+            "State M8；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State T3；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State M8；Action B；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action A 执行 700 次、成功 630 次、成功率 90.0%；Action B 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State M8 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State M8；Action B；执行 700 次；成功 140 次；失败 560 次。",
+            "State T3；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State T3；Action A；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State T3 内的记录：Action B 执行 300 次、成功 270 次、成功率 90.0%；Action A 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action B；执行 700 次；成功 630 次；失败 70 次。",
+            "State M8；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State T3；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State M8；Action A；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action B 执行 700 次、成功 630 次、成功率 90.0%；Action A 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State M8 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State M8；Action A；执行 700 次；成功 140 次；失败 560 次。",
+            "State T3；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State T3；Action B；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State T3 内的记录：Action A 执行 300 次、成功 270 次、成功率 90.0%；Action B 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W03",
+    "family": "机器控制",
+    "world_name": "单元 A103",
+    "gamma": 0.85,
+    "state_labels": [
+      "T3",
+      "N5"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 850,
+        "successes": 765,
+        "failures": 85
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 150,
+        "successes": 135,
+        "failures": 15
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 150,
+        "successes": 30,
+        "failures": 120
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 850,
+        "successes": 170,
+        "failures": 680
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action A；执行 850 次；成功 765 次；失败 85 次。",
+            "State N5；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State T3；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State N5；Action B；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action A 执行 850 次、成功 765 次、成功率 90.0%；Action B 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State N5 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State N5；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State N5；Action B；执行 850 次；成功 170 次；失败 680 次。",
+            "State T3；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State T3；Action A；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State N5 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State T3 内的记录：Action B 执行 150 次、成功 135 次、成功率 90.0%；Action A 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action B；执行 850 次；成功 765 次；失败 85 次。",
+            "State N5；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State T3；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State N5；Action A；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action B 执行 850 次、成功 765 次、成功率 90.0%；Action A 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State N5 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State N5；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State N5；Action A；执行 850 次；成功 170 次；失败 680 次。",
+            "State T3；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State T3；Action B；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State N5 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State T3 内的记录：Action A 执行 150 次、成功 135 次、成功率 90.0%；Action B 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W04",
+    "family": "机器控制",
+    "world_name": "单元 A104",
+    "gamma": 0.95,
+    "state_labels": [
+      "M8",
+      "P9"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 950,
+        "successes": 855,
+        "failures": 95
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 50,
+        "successes": 45,
+        "failures": 5
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 50,
+        "successes": 10,
+        "failures": 40
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 950,
+        "successes": 190,
+        "failures": 760
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 950 次；成功 855 次；失败 95 次。",
+            "State P9；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State M8；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State P9；Action B；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 950 次、成功 855 次、成功率 90.0%；Action B 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State P9 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State P9；Action B；执行 950 次；成功 190 次；失败 760 次。",
+            "State M8；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State M8；Action A；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State M8 内的记录：Action B 执行 50 次、成功 45 次、成功率 90.0%；Action A 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 950 次；成功 855 次；失败 95 次。",
+            "State P9；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State M8；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State P9；Action A；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 950 次、成功 855 次、成功率 90.0%；Action A 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State P9 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State P9；Action A；执行 950 次；成功 190 次；失败 760 次。",
+            "State M8；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State M8；Action B；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State M8 内的记录：Action A 执行 50 次、成功 45 次、成功率 90.0%；Action B 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W05",
+    "family": "资源选择",
+    "world_name": "单元 B105",
+    "gamma": 0.5,
+    "state_labels": [
+      "Q2",
+      "M8"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State M8 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State Q2 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State M8 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State Q2 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W06",
+    "family": "资源选择",
+    "world_name": "单元 B106",
+    "gamma": 0.7,
+    "state_labels": [
+      "Q2",
+      "M8"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 700,
+        "successes": 630,
+        "failures": 70
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 300,
+        "successes": 270,
+        "failures": 30
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 300,
+        "successes": 60,
+        "failures": 240
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 700,
+        "successes": 140,
+        "failures": 560
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action A；执行 700 次；成功 630 次；失败 70 次。",
+            "State M8；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State Q2；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State M8；Action B；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action A 执行 700 次、成功 630 次、成功率 90.0%；Action B 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State M8 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State M8；Action B；执行 700 次；成功 140 次；失败 560 次。",
+            "State Q2；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State Q2；Action A；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State Q2 内的记录：Action B 执行 300 次、成功 270 次、成功率 90.0%；Action A 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action B；执行 700 次；成功 630 次；失败 70 次。",
+            "State M8；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State Q2；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State M8；Action A；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action B 执行 700 次、成功 630 次、成功率 90.0%；Action A 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State M8 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State M8；Action A；执行 700 次；成功 140 次；失败 560 次。",
+            "State Q2；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State Q2；Action B；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State Q2 内的记录：Action A 执行 300 次、成功 270 次、成功率 90.0%；Action B 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W07",
+    "family": "资源选择",
+    "world_name": "单元 B107",
+    "gamma": 0.85,
+    "state_labels": [
+      "V6",
+      "Z4"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 850,
+        "successes": 765,
+        "failures": 85
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 150,
+        "successes": 135,
+        "failures": 15
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 150,
+        "successes": 30,
+        "failures": 120
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 850,
+        "successes": 170,
+        "failures": 680
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action A；执行 850 次；成功 765 次；失败 85 次。",
+            "State Z4；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State V6；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State Z4；Action B；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action A 执行 850 次、成功 765 次、成功率 90.0%；Action B 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State Z4 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State Z4；Action B；执行 850 次；成功 170 次；失败 680 次。",
+            "State V6；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State V6；Action A；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State V6 内的记录：Action B 执行 150 次、成功 135 次、成功率 90.0%；Action A 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action B；执行 850 次；成功 765 次；失败 85 次。",
+            "State Z4；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State V6；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State Z4；Action A；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action B 执行 850 次、成功 765 次、成功率 90.0%；Action A 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State Z4 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State Z4；Action A；执行 850 次；成功 170 次；失败 680 次。",
+            "State V6；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State V6；Action B；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State V6 内的记录：Action A 执行 150 次、成功 135 次、成功率 90.0%；Action B 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W08",
+    "family": "资源选择",
+    "world_name": "单元 B108",
+    "gamma": 0.95,
+    "state_labels": [
+      "M8",
+      "K7"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 950,
+        "successes": 855,
+        "failures": 95
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 50,
+        "successes": 45,
+        "failures": 5
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 50,
+        "successes": 10,
+        "failures": 40
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 950,
+        "successes": 190,
+        "failures": 760
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 950 次；成功 855 次；失败 95 次。",
+            "State K7；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State M8；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State K7；Action B；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 950 次、成功 855 次、成功率 90.0%；Action B 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State K7 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State K7；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State K7；Action B；执行 950 次；成功 190 次；失败 760 次。",
+            "State M8；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State M8；Action A；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State K7 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State M8 内的记录：Action B 执行 50 次、成功 45 次、成功率 90.0%；Action A 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 950 次；成功 855 次；失败 95 次。",
+            "State K7；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State M8；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State K7；Action A；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 950 次、成功 855 次、成功率 90.0%；Action A 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State K7 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State K7；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State K7；Action A；执行 950 次；成功 190 次；失败 760 次。",
+            "State M8；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State M8；Action B；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State K7；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State K7 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State M8 内的记录：Action A 执行 50 次、成功 45 次、成功率 90.0%；Action B 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W09",
+    "family": "路径选择",
+    "world_name": "单元 C109",
+    "gamma": 0.5,
+    "state_labels": [
+      "M8",
+      "Z4"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State Z4 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State M8 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State Z4 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State M8 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W10",
+    "family": "路径选择",
+    "world_name": "单元 C110",
+    "gamma": 0.7,
+    "state_labels": [
+      "T3",
+      "M8"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 700,
+        "successes": 630,
+        "failures": 70
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 300,
+        "successes": 270,
+        "failures": 30
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 300,
+        "successes": 60,
+        "failures": 240
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 700,
+        "successes": 140,
+        "failures": 560
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action A；执行 700 次；成功 630 次；失败 70 次。",
+            "State M8；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State T3；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State M8；Action B；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action A 执行 700 次、成功 630 次、成功率 90.0%；Action B 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State M8 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State M8；Action B；执行 700 次；成功 140 次；失败 560 次。",
+            "State T3；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State T3；Action A；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State T3 内的记录：Action B 执行 300 次、成功 270 次、成功率 90.0%；Action A 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action B；执行 700 次；成功 630 次；失败 70 次。",
+            "State M8；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State T3；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State M8；Action A；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action B 执行 700 次、成功 630 次、成功率 90.0%；Action A 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State M8 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State M8；Action A；执行 700 次；成功 140 次；失败 560 次。",
+            "State T3；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State T3；Action B；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State T3 内的记录：Action A 执行 300 次、成功 270 次、成功率 90.0%；Action B 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W11",
+    "family": "路径选择",
+    "world_name": "单元 C111",
+    "gamma": 0.85,
+    "state_labels": [
+      "T3",
+      "Z4"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 850,
+        "successes": 765,
+        "failures": 85
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 150,
+        "successes": 135,
+        "failures": 15
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 150,
+        "successes": 30,
+        "failures": 120
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 850,
+        "successes": 170,
+        "failures": 680
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action A；执行 850 次；成功 765 次；失败 85 次。",
+            "State Z4；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State T3；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State Z4；Action B；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action A 执行 850 次、成功 765 次、成功率 90.0%；Action B 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State Z4 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State Z4；Action B；执行 850 次；成功 170 次；失败 680 次。",
+            "State T3；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State T3；Action A；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State T3 内的记录：Action B 执行 150 次、成功 135 次、成功率 90.0%；Action A 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action B；执行 850 次；成功 765 次；失败 85 次。",
+            "State Z4；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State T3；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State Z4；Action A；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action B 执行 850 次、成功 765 次、成功率 90.0%；Action A 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State Z4 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State Z4；Action A；执行 850 次；成功 170 次；失败 680 次。",
+            "State T3；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State T3；Action B；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State T3 内的记录：Action A 执行 150 次、成功 135 次、成功率 90.0%；Action B 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W12",
+    "family": "路径选择",
+    "world_name": "单元 C112",
+    "gamma": 0.95,
+    "state_labels": [
+      "Q2",
+      "V6"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 950,
+        "successes": 855,
+        "failures": 95
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 50,
+        "successes": 45,
+        "failures": 5
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 50,
+        "successes": 10,
+        "failures": 40
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 950,
+        "successes": 190,
+        "failures": 760
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action A；执行 950 次；成功 855 次；失败 95 次。",
+            "State V6；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State Q2；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State V6；Action B；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action A 执行 950 次、成功 855 次、成功率 90.0%；Action B 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State V6 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State V6；Action B；执行 950 次；成功 190 次；失败 760 次。",
+            "State Q2；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State Q2；Action A；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State Q2 内的记录：Action B 执行 50 次、成功 45 次、成功率 90.0%；Action A 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action B；执行 950 次；成功 855 次；失败 95 次。",
+            "State V6；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State Q2；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State V6；Action A；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action B 执行 950 次、成功 855 次、成功率 90.0%；Action A 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State V6 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State V6；Action A；执行 950 次；成功 190 次；失败 760 次。",
+            "State Q2；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State Q2；Action B；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State Q2 内的记录：Action A 执行 50 次、成功 45 次、成功率 90.0%；Action B 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W13",
+    "family": "算法策略",
+    "world_name": "单元 D113",
+    "gamma": 0.5,
+    "state_labels": [
+      "M8",
+      "P9"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State P9 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State M8 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State P9 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State M8 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W14",
+    "family": "算法策略",
+    "world_name": "单元 D114",
+    "gamma": 0.7,
+    "state_labels": [
+      "Z4",
+      "N5"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 700,
+        "successes": 630,
+        "failures": 70
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 300,
+        "successes": 270,
+        "failures": 30
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 300,
+        "successes": 60,
+        "failures": 240
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 700,
+        "successes": 140,
+        "failures": 560
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action A；执行 700 次；成功 630 次；失败 70 次。",
+            "State N5；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State Z4；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State N5；Action B；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action A 执行 700 次、成功 630 次、成功率 90.0%；Action B 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State N5 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State N5；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State N5；Action B；执行 700 次；成功 140 次；失败 560 次。",
+            "State Z4；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State Z4；Action A；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State N5 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State Z4 内的记录：Action B 执行 300 次、成功 270 次、成功率 90.0%；Action A 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action B；执行 700 次；成功 630 次；失败 70 次。",
+            "State N5；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State Z4；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State N5；Action A；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action B 执行 700 次、成功 630 次、成功率 90.0%；Action A 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State N5 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State N5；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State N5；Action A；执行 700 次；成功 140 次；失败 560 次。",
+            "State Z4；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State Z4；Action B；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State N5；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State N5；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State N5 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State Z4 内的记录：Action A 执行 300 次、成功 270 次、成功率 90.0%；Action B 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W15",
+    "family": "算法策略",
+    "world_name": "单元 D115",
+    "gamma": 0.85,
+    "state_labels": [
+      "P9",
+      "M8"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 850,
+        "successes": 765,
+        "failures": 85
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 150,
+        "successes": 135,
+        "failures": 15
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 150,
+        "successes": 30,
+        "failures": 120
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 850,
+        "successes": 170,
+        "failures": 680
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action A；执行 850 次；成功 765 次；失败 85 次。",
+            "State M8；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State P9；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State M8；Action B；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action A 执行 850 次、成功 765 次、成功率 90.0%；Action B 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State M8 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State M8；Action B；执行 850 次；成功 170 次；失败 680 次。",
+            "State P9；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State P9；Action A；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State P9 内的记录：Action B 执行 150 次、成功 135 次、成功率 90.0%；Action A 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action B；执行 850 次；成功 765 次；失败 85 次。",
+            "State M8；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State P9；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State M8；Action A；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action B 执行 850 次、成功 765 次、成功率 90.0%；Action A 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State M8 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State M8；Action A；执行 850 次；成功 170 次；失败 680 次。",
+            "State P9；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State P9；Action B；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State P9 内的记录：Action A 执行 150 次、成功 135 次、成功率 90.0%；Action B 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W16",
+    "family": "算法策略",
+    "world_name": "单元 D116",
+    "gamma": 0.95,
+    "state_labels": [
+      "M8",
+      "Q2"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 950,
+        "successes": 855,
+        "failures": 95
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 50,
+        "successes": 45,
+        "failures": 5
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 50,
+        "successes": 10,
+        "failures": 40
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 950,
+        "successes": 190,
+        "failures": 760
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action A；执行 950 次；成功 855 次；失败 95 次。",
+            "State Q2；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State M8；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State Q2；Action B；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action A 执行 950 次、成功 855 次、成功率 90.0%；Action B 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State Q2 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State Q2；Action B；执行 950 次；成功 190 次；失败 760 次。",
+            "State M8；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State M8；Action A；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State M8 内的记录：Action B 执行 50 次、成功 45 次、成功率 90.0%；Action A 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State M8；Action B；执行 950 次；成功 855 次；失败 95 次。",
+            "State Q2；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State M8；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State Q2；Action A；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Q2；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State M8 内的记录：Action B 执行 950 次、成功 855 次、成功率 90.0%；Action A 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State Q2 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Q2；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State Q2；Action A；执行 950 次；成功 190 次；失败 760 次。",
+            "State M8；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State M8；Action B；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State Q2；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Q2；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State M8；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State M8；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Q2 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State M8 内的记录：Action A 执行 50 次、成功 45 次、成功率 90.0%；Action B 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W17",
+    "family": "任务调度",
+    "world_name": "单元 E117",
+    "gamma": 0.5,
+    "state_labels": [
+      "K7",
+      "Z4"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State K7 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State Z4 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action A 执行 500 次、成功 100 次、成功率 20.0%；Action B 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State K7 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "BalancedMemory": [
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State K7 内的记录：Action B 执行 500 次、成功 450 次、成功率 90.0%；Action A 执行 500 次、成功 450 次、成功率 90.0%；",
+            "State Z4 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "BalancedMemory": [
+            "State Z4；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State Z4；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State K7；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State K7；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State Z4 内的记录：Action B 执行 500 次、成功 100 次、成功率 20.0%；Action A 执行 500 次、成功 100 次、成功率 20.0%；",
+            "State K7 内的记录：Action A 执行 500 次、成功 450 次、成功率 90.0%；Action B 执行 500 次、成功 450 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 550 次，总成功率 55.0%。",
+            "Action B：总执行 1000 次，成功 550 次，总成功率 55.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W18",
+    "family": "任务调度",
+    "world_name": "单元 E118",
+    "gamma": 0.7,
+    "state_labels": [
+      "T3",
+      "P9"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 700,
+        "successes": 630,
+        "failures": 70
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 300,
+        "successes": 270,
+        "failures": 30
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 300,
+        "successes": 60,
+        "failures": 240
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 700,
+        "successes": 140,
+        "failures": 560
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action A；执行 700 次；成功 630 次；失败 70 次。",
+            "State P9；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State T3；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State P9；Action B；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action A 执行 700 次、成功 630 次、成功率 90.0%；Action B 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State P9 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action A；执行 300 次；成功 60 次；失败 240 次。",
+            "State P9；Action B；执行 700 次；成功 140 次；失败 560 次。",
+            "State T3；Action B；执行 300 次；成功 270 次；失败 30 次。",
+            "State T3；Action A；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action A 执行 300 次、成功 60 次、成功率 20.0%；Action B 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State T3 内的记录：Action B 执行 300 次、成功 270 次、成功率 90.0%；Action A 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action A：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State T3；Action B；执行 700 次；成功 630 次；失败 70 次。",
+            "State P9；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State T3；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State P9；Action A；执行 700 次；成功 140 次；失败 560 次。"
+          ],
+          "BalancedMemory": [
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State T3 内的记录：Action B 执行 700 次、成功 630 次、成功率 90.0%；Action A 执行 300 次、成功 270 次、成功率 90.0%；",
+            "State P9 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。",
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action B；执行 300 次；成功 60 次；失败 240 次。",
+            "State P9；Action A；执行 700 次；成功 140 次；失败 560 次。",
+            "State T3；Action A；执行 300 次；成功 270 次；失败 30 次。",
+            "State T3；Action B；执行 700 次；成功 630 次；失败 70 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State T3；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State T3；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action B 执行 300 次、成功 60 次、成功率 20.0%；Action A 执行 700 次、成功 140 次、成功率 20.0%；",
+            "State T3 内的记录：Action A 执行 300 次、成功 270 次、成功率 90.0%；Action B 执行 700 次、成功 630 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 410 次，总成功率 41.0%。",
+            "Action B：总执行 1000 次，成功 690 次，总成功率 69.0%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W19",
+    "family": "任务调度",
+    "world_name": "单元 E119",
+    "gamma": 0.85,
+    "state_labels": [
+      "P9",
+      "V6"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 850,
+        "successes": 765,
+        "failures": 85
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 150,
+        "successes": 135,
+        "failures": 15
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 150,
+        "successes": 30,
+        "failures": 120
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 850,
+        "successes": 170,
+        "failures": 680
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action A；执行 850 次；成功 765 次；失败 85 次。",
+            "State V6；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State P9；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State V6；Action B；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action A 执行 850 次、成功 765 次、成功率 90.0%；Action B 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State V6 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action A；执行 150 次；成功 30 次；失败 120 次。",
+            "State V6；Action B；执行 850 次；成功 170 次；失败 680 次。",
+            "State P9；Action B；执行 150 次；成功 135 次；失败 15 次。",
+            "State P9；Action A；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action A 执行 150 次、成功 30 次、成功率 20.0%；Action B 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State P9 内的记录：Action B 执行 150 次、成功 135 次、成功率 90.0%；Action A 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action A：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action B；执行 850 次；成功 765 次；失败 85 次。",
+            "State V6；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State P9；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State V6；Action A；执行 850 次；成功 170 次；失败 680 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action B 执行 850 次、成功 765 次、成功率 90.0%；Action A 执行 150 次、成功 135 次、成功率 90.0%；",
+            "State V6 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。",
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action B；执行 150 次；成功 30 次；失败 120 次。",
+            "State V6；Action A；执行 850 次；成功 170 次；失败 680 次。",
+            "State P9；Action A；执行 150 次；成功 135 次；失败 15 次。",
+            "State P9；Action B；执行 850 次；成功 765 次；失败 85 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action B 执行 150 次、成功 30 次、成功率 20.0%；Action A 执行 850 次、成功 170 次、成功率 20.0%；",
+            "State P9 内的记录：Action A 执行 150 次、成功 135 次、成功率 90.0%；Action B 执行 850 次、成功 765 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 305 次，总成功率 30.5%。",
+            "Action B：总执行 1000 次，成功 795 次，总成功率 79.5%。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "W20",
+    "family": "任务调度",
+    "world_name": "单元 E120",
+    "gamma": 0.95,
+    "state_labels": [
+      "V6",
+      "P9"
+    ],
+    "confounded_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 950,
+        "successes": 855,
+        "failures": 95
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 50,
+        "successes": 45,
+        "failures": 5
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 50,
+        "successes": 10,
+        "failures": 40
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 950,
+        "successes": 190,
+        "failures": 760
+      }
+    ],
+    "balanced_counts": [
+      {
+        "state": 0,
+        "action": "A",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 0,
+        "action": "B",
+        "trials": 500,
+        "successes": 450,
+        "failures": 50
+      },
+      {
+        "state": 1,
+        "action": "A",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      },
+      {
+        "state": 1,
+        "action": "B",
+        "trials": 500,
+        "successes": 100,
+        "failures": 400
+      }
+    ],
+    "ground_truth": {
+      "causal_success_A": 0.55,
+      "causal_success_B": 0.55,
+      "causal_gap": 0
+    },
+    "variants": [
+      {
+        "label_swap": 0,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action A；执行 950 次；成功 855 次；失败 95 次。",
+            "State P9；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State V6；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State P9；Action B；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action A 执行 950 次、成功 855 次、成功率 90.0%；Action B 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State P9 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 0,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "A",
+          "B": "B"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action A；执行 50 次；成功 10 次；失败 40 次。",
+            "State P9；Action B；执行 950 次；成功 190 次；失败 760 次。",
+            "State V6；Action B；执行 50 次；成功 45 次；失败 5 次。",
+            "State V6；Action A；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action A 执行 50 次、成功 10 次、成功率 20.0%；Action B 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State V6 内的记录：Action B 执行 50 次、成功 45 次、成功率 90.0%；Action A 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action A：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 17,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State V6；Action B；执行 950 次；成功 855 次；失败 95 次。",
+            "State P9；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State V6；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State P9；Action A；执行 950 次；成功 190 次；失败 760 次。"
+          ],
+          "BalancedMemory": [
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。"
+          ],
+          "StratifiedOracle": [
+            "State V6 内的记录：Action B 执行 950 次、成功 855 次、成功率 90.0%；Action A 执行 50 次、成功 45 次、成功率 90.0%；",
+            "State P9 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；"
+          ],
+          "AggregateSummary": [
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。",
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。"
+          ]
+        }
+      },
+      {
+        "label_swap": 1,
+        "order_seed": 43,
+        "canonical_to_display": {
+          "A": "B",
+          "B": "A"
+        },
+        "memories": {
+          "NoMemory": [],
+          "ConfoundedMemory": [
+            "State P9；Action B；执行 50 次；成功 10 次；失败 40 次。",
+            "State P9；Action A；执行 950 次；成功 190 次；失败 760 次。",
+            "State V6；Action A；执行 50 次；成功 45 次；失败 5 次。",
+            "State V6；Action B；执行 950 次；成功 855 次；失败 95 次。"
+          ],
+          "BalancedMemory": [
+            "State P9；Action B；执行 500 次；成功 100 次；失败 400 次。",
+            "State P9；Action A；执行 500 次；成功 100 次；失败 400 次。",
+            "State V6；Action A；执行 500 次；成功 450 次；失败 50 次。",
+            "State V6；Action B；执行 500 次；成功 450 次；失败 50 次。"
+          ],
+          "StratifiedOracle": [
+            "State P9 内的记录：Action B 执行 50 次、成功 10 次、成功率 20.0%；Action A 执行 950 次、成功 190 次、成功率 20.0%；",
+            "State V6 内的记录：Action A 执行 50 次、成功 45 次、成功率 90.0%；Action B 执行 950 次、成功 855 次、成功率 90.0%；"
+          ],
+          "AggregateSummary": [
+            "Action A：总执行 1000 次，成功 235 次，总成功率 23.5%。",
+            "Action B：总执行 1000 次，成功 865 次，总成功率 86.5%。"
+          ]
+        }
+      }
+    ]
+  }
+]

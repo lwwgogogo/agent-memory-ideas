@@ -1,0 +1,17 @@
+{
+  "note": "离线统计程序校验；人工构造数值，仅在 /tmp 临时目录运行，未调用模型，未加入研究样本。",
+  "checks": {
+    "positive": {
+      "expected": "IDEA2_GO",
+      "actual": "IDEA2_GO"
+    },
+    "no_extra_bias": {
+      "expected": "IDEA2_NO_GO",
+      "actual": "IDEA2_NO_GO"
+    },
+    "flat_bias": {
+      "expected": "IDEA2_WEAK",
+      "actual": "IDEA2_WEAK"
+    }
+  }
+}

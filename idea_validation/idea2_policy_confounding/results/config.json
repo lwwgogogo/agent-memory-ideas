@@ -1,0 +1,71 @@
+{
+  "model": "qwq:32b",
+  "options": {
+    "temperature": 0,
+    "seed": 20261004,
+    "num_ctx": 4096,
+    "num_predict": 768
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "p_success_A": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "p_success_B": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "choice": {
+        "type": "string",
+        "enum": [
+          "A",
+          "B",
+          "TIE"
+        ]
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "reason": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "p_success_A",
+      "p_success_B",
+      "choice",
+      "confidence",
+      "reason"
+    ],
+    "additionalProperties": false
+  },
+  "system": "请判断虚构系统的未来成功概率。只能输出一个 JSON 对象，包含 p_success_A、p_success_B、choice、confidence、reason。两个 p_success 分别对应提示中 Action A 和 Action B 的未来成功概率。choice 可以是 A、B 或 TIE；confidence 是你对该选择的把握程度，取 0 到 1。不要将 confidence 当作成功率。reason 用一句简短中文解释。",
+  "endpoint": "http://127.0.0.1:11434/api/chat",
+  "order_seeds": [
+    17,
+    43
+  ],
+  "label_swaps": [
+    0,
+    1
+  ],
+  "job_order_seed": 20261005,
+  "planned_calls": 400,
+  "case_sha256": "43df5c85d66f440d134da26f56c67bac7168e7354eea4c93ba27741191474cfa",
+  "protocol_sha256": "8e7f6dbe90d014bfa107ae001b6d73df45ce12dbd429891dc7cd2a46bbe02d89",
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "version": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "source_sha256": {
+    "simulate.py": "9cd3bc4f56d680631290925ce5aa27ca74626a9a123768a476c653661a0f744f",
+    "generate_cases.py": "362a278440fdf3331233e7719f46781400b9a41418d1b0157bb93a2cedee3e57",
+    "run_llm_test.py": "c4610af5aede90eb5b1ea58115802ee343da7c14889a05feab7467779eb40d29",
+    "evaluate.py": "286670f31078409c6d271df28584af2a19688417dc6cab9ea89c94c53c6b3647",
+    "common.py": "879b9814599c8cdafbe5f46d7fd8ba6f7af5c077d139fc60fdf1f95d8ff812ce"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "gate": "PHASE_A_GO",
+  "pytest_returncode": 0,
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "version": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "simulation_rows": 6
+}

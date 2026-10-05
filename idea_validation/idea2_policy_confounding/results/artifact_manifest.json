@@ -1,0 +1,134 @@
+{
+  "simulate.py": {
+    "bytes": 2357,
+    "sha256": "9cd3bc4f56d680631290925ce5aa27ca74626a9a123768a476c653661a0f744f"
+  },
+  "最终结论.md": {
+    "bytes": 3039,
+    "sha256": "9a9839910703c436a7aadeb46226dc6c5f4cdeb5dd0022455bdff6f62bd6a257"
+  },
+  "README.md": {
+    "bytes": 5026,
+    "sha256": "8e7f6dbe90d014bfa107ae001b6d73df45ce12dbd429891dc7cd2a46bbe02d89"
+  },
+  "generate_cases.py": {
+    "bytes": 3859,
+    "sha256": "362a278440fdf3331233e7719f46781400b9a41418d1b0157bb93a2cedee3e57"
+  },
+  "run_llm_test.py": {
+    "bytes": 4909,
+    "sha256": "c4610af5aede90eb5b1ea58115802ee343da7c14889a05feab7467779eb40d29"
+  },
+  "theory.md": {
+    "bytes": 1852,
+    "sha256": "d80c1a9a238ed8e481a685d1c18638b3f0e5cf1120cb68f4f1b6f6cd15623289"
+  },
+  "evaluate.py": {
+    "bytes": 13739,
+    "sha256": "286670f31078409c6d271df28584af2a19688417dc6cab9ea89c94c53c6b3647"
+  },
+  "Idea2实验结果.md": {
+    "bytes": 6782,
+    "sha256": "1096b425c4da6d5cacfeb9f85edd80c41179be668114cc488ad8b29f049cd008"
+  },
+  "common.py": {
+    "bytes": 728,
+    "sha256": "879b9814599c8cdafbe5f46d7fd8ba6f7af5c077d139fc60fdf1f95d8ff812ce"
+  },
+  "analysis/diagnose_missingness.py": {
+    "bytes": 6032,
+    "sha256": "af004583bde4368e0d300c91bc0b38e5751c98da3d34d9987f7236d07de7a43d"
+  },
+  "results/pytest_output.txt": {
+    "bytes": 99,
+    "sha256": "7c84de419e0136cc5ef1692d99019c8ae339080d71eb5bb9e3d66f5a81d21e58"
+  },
+  "results/simulation.csv": {
+    "bytes": 476,
+    "sha256": "e0b6b80916076ea55c372a8acc8668ba321b866e4b8b8fec0bca158ba1307a33"
+  },
+  "results/math_gate.json": {
+    "bytes": 215,
+    "sha256": "fa65c25e2ffe2431be1253302693b6d3ca86f8d0e1853f1e284f2d68719b0d73"
+  },
+  "results/by_family.csv": {
+    "bytes": 3982,
+    "sha256": "3589391542a2ee30f922be040853a66de5dc0a95593dd2c69f596a0023015f16"
+  },
+  "results/statistics.json": {
+    "bytes": 26378,
+    "sha256": "895235f89120035720bd777a30a294708537197432f1df516dedeafe7099af9f"
+  },
+  "results/final_verification.json": {
+    "bytes": 350,
+    "sha256": "9ff178a817e45029dfb569f66a1a4331d80f45fb170d5626f33e1b05127ef4b5"
+  },
+  "results/paired_differences.csv": {
+    "bytes": 1493,
+    "sha256": "1d5340a27fdab2dba6b4e7025229a4188c589128bea7eb6e9162651d0ef0b82c"
+  },
+  "results/summary.csv": {
+    "bytes": 849,
+    "sha256": "ec1df01351e9f96e638635df20edf0b862e4c3d112642b5d61bac449140abfd3"
+  },
+  "results/by_gamma.csv": {
+    "bytes": 2279,
+    "sha256": "53d38a5c0ac659a1532048a45fb9d7cd68e32294f7890d80961b2e581ffc505b"
+  },
+  "results/available_pairs.csv": {
+    "bytes": 888,
+    "sha256": "1d4e891b941e82be059c3b0b2b5a6fb5c94812d5ec87b8f46453eecfb7ee029f"
+  },
+  "results/environment.json": {
+    "bytes": 4310,
+    "sha256": "d438d3a2c08a7abbd20f2573e59f78c7bcf80a85ee2976515232fbcd8ba404dc"
+  },
+  "results/config.json": {
+    "bytes": 2207,
+    "sha256": "966e4e13e0101cba80b7ed19c83a5394877b3cc08f27e019afcb8d22b3269577"
+  },
+  "results/llm_results.json": {
+    "bytes": 757625,
+    "sha256": "3604a864c2e9a1b4503ebb6972ed2d5f99d36f5243b0b72aca1003bfb3002950"
+  },
+  "results/evaluator_validation.json": {
+    "bytes": 419,
+    "sha256": "08fb7af40e199510350a5b1e0ce18a27e333fa48fd0bd3cdfa65a36b7616a797"
+  },
+  "results/memory_integrity_audit.json": {
+    "bytes": 8730,
+    "sha256": "4ed8a476e62b41d64d5b8b2f16bf183581561224b81dc0a00741a74b0de8c69d"
+  },
+  "results/available_pairs.json": {
+    "bytes": 7071,
+    "sha256": "9616a259c676a6e630ad9474bbfe22f7eef2b4523e770a8b9f3a2a97a2523fec"
+  },
+  "plots/llm_bias_available_pairs.png": {
+    "bytes": 133135,
+    "sha256": "c4c9ea4e5d8d84808f025e2b91fd596b56480a1985e613d192eddaff76daeb8d"
+  },
+  "plots/observational_vs_causal_gap.png": {
+    "bytes": 72044,
+    "sha256": "e18e26143c1abd2e2736e9da3828a7172e8356a57979176b95b128968bd31bbf"
+  },
+  "plots/llm_bias_vs_confounding.png": {
+    "bytes": 100428,
+    "sha256": "48ce8cf06fc36f210d6e650ac2bc9b46f3db24dacc7789d0934d151b17416989"
+  },
+  "plots/observational_gap_vs_confounding.png": {
+    "bytes": 65219,
+    "sha256": "1270453d28439f5302b0da1b7ca235ee601ace3fe5f790dbb9a0ebba9181308f"
+  },
+  "cases/cases.json": {
+    "bytes": 155072,
+    "sha256": "43df5c85d66f440d134da26f56c67bac7168e7354eea4c93ba27741191474cfa"
+  },
+  "tests/conftest.py": {
+    "bytes": 87,
+    "sha256": "f5afde57261726b0c5045d220a34c76992c35f6fc03b8e1c1f0b78f9b11452c4"
+  },
+  "tests/test_core.py": {
+    "bytes": 3409,
+    "sha256": "9df1e4b6292ed3659cba05f8797137336ab9bda2ab337a11924fd3f8a217c044"
+  }
+}
