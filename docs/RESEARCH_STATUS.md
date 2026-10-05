@@ -74,3 +74,6 @@ Stage-4.1 scope correction：旧 adapter action-level score/bank-average score �
 M1在两adapter上得到相同观察输入，无true propensity/gamma；null PIG=NPE=0，真实gap=.10全部保留、TSR=1，context T0/T1全部正确翻转。M4在常规support通过但仍有小幅strict false reversal与.99 shrinkage limitation。M2的题述global SNIPS缺rho适配，crossover失败且.99 clipping留大偏差；M3为oracle classical reference，永不候选。M0 primary proxy是native selection fraction中位数，报告明确它不等于成功概率。
 
 M1与经典direct standardization/g-computation相同，不声明novelty；下一步应做方法新颖性/差异化审计，本轮不自动执行。Exact离散state结果不外推finite-sample/连续context/full-agent。六个历史目录与verdict冻结，不回写结果。
+
+## Idea 2 Stage-6A — Cross-Policy Memory Certification — 2026-10-06
+独立目录 idea_validation/idea2_cross_policy_certification/。W1 same-policy echo 保持 D_policy=0、DESCRIPTIVE；W2 识别交替方向与 C_conflict=1；W3 invariant profile 为 PRESCRIPTIVE；W4 false-diversity D=.0333 对比 true-diversity D=.60；M1 utility 在 echo/diverse 下同为 gap=.4，但 lifecycle 不同。最终 **CROSS_POLICY_CERT_NARROW**：G0–G4、G6–G9 通过；G5 因运行器未充分隔离生成器与 candidate 输入而失败，故不声称完成 oracle-free 执行认证。24 项测试通过，正式 deterministic run 一次，未调阈值。Stage-6A 已停止。

@@ -1,0 +1,18 @@
+{
+  "M1_ECHO": {
+    "utility": {
+      "A": 0.8,
+      "B": 0.4
+    },
+    "gap": 0.4,
+    "status": "DESCRIPTIVE"
+  },
+  "M1_DIVERSE": {
+    "utility": {
+      "A": 0.8,
+      "B": 0.4
+    },
+    "gap": 0.4,
+    "status": "PRESCRIPTIVE"
+  }
+}

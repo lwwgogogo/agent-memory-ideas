@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "preregistration.md": "1bd8943cce4b54d7e6513ad55bcd1170c7f7cf8145a9166e7d6aa088275a5fe7",
+    "run_experiment.py": "ad8a06e0182007c5bd4522cbab6c44f7f8ef8cff467d42b62d12c9582264d035",
+    "schema.py": "1c8922e5e9c6e5e154a4d67829116c5ba65fe226977123036e84df15616af0f1",
+    "build_worlds.py": "488eeed0672dfa0eefa98872093537884e028d0388e7b8bf2c3120924379a968",
+    "policy_profile.py": "488eeed0672dfa0eefa98872093537884e028d0388e7b8bf2c3120924379a968",
+    "certification.py": "488eeed0672dfa0eefa98872093537884e028d0388e7b8bf2c3120924379a968",
+    "baselines.py": "488eeed0672dfa0eefa98872093537884e028d0388e7b8bf2c3120924379a968",
+    "tests/test_minimum.py": "beba32518920483f1b8960d242ddbb97c87deb87408665ec15b6ec7d97e1dd90"
+  }
+}

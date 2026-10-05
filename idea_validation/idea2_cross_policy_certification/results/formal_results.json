@@ -1,0 +1,814 @@
+{
+  "results": {
+    "W1_K1": {
+      "label": "W1_K1",
+      "era_count": 1,
+      "profile": {
+        "W1_K1-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "W1_K1-0": 0.63
+      },
+      "sign_pattern": [
+        "+"
+      ],
+      "mean_observed_gap": 0.63,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 2000,
+      "success_support": 865,
+      "D_policy": 0.0,
+      "D_min": 0.0,
+      "D_median": 0.0,
+      "D_max": 0.0,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 0,
+      "status": "DESCRIPTIVE",
+      "diagnostic": "NO_EFFECTIVE_POLICY_DIVERSITY",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W1_K2": {
+      "label": "W1_K2",
+      "era_count": 2,
+      "profile": {
+        "W1_K2-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K2-1": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "W1_K2-0": 0.63,
+        "W1_K2-1": 0.63
+      },
+      "sign_pattern": [
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.63,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 4000,
+      "success_support": 1730,
+      "D_policy": 0.0,
+      "D_min": 0.0,
+      "D_median": 0.0,
+      "D_max": 0.0,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 0,
+      "status": "DESCRIPTIVE",
+      "diagnostic": "NO_EFFECTIVE_POLICY_DIVERSITY",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W1_K5": {
+      "label": "W1_K5",
+      "era_count": 5,
+      "profile": {
+        "W1_K5-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K5-1": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K5-2": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K5-3": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K5-4": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "W1_K5-0": 0.63,
+        "W1_K5-1": 0.63,
+        "W1_K5-2": 0.63,
+        "W1_K5-3": 0.63,
+        "W1_K5-4": 0.63
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.63,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 10000,
+      "success_support": 4325,
+      "D_policy": 0.0,
+      "D_min": 0.0,
+      "D_median": 0.0,
+      "D_max": 0.0,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 0,
+      "status": "DESCRIPTIVE",
+      "diagnostic": "NO_EFFECTIVE_POLICY_DIVERSITY",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W1_K10": {
+      "label": "W1_K10",
+      "era_count": 10,
+      "profile": {
+        "W1_K10-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-1": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-2": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-3": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-4": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-5": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-6": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-7": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-8": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K10-9": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "W1_K10-0": 0.63,
+        "W1_K10-1": 0.63,
+        "W1_K10-2": 0.63,
+        "W1_K10-3": 0.63,
+        "W1_K10-4": 0.63,
+        "W1_K10-5": 0.63,
+        "W1_K10-6": 0.63,
+        "W1_K10-7": 0.63,
+        "W1_K10-8": 0.63,
+        "W1_K10-9": 0.63
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.63,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 20000,
+      "success_support": 8650,
+      "D_policy": 0.0,
+      "D_min": 0.0,
+      "D_median": 0.0,
+      "D_max": 0.0,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 0,
+      "status": "DESCRIPTIVE",
+      "diagnostic": "NO_EFFECTIVE_POLICY_DIVERSITY",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W1_K20": {
+      "label": "W1_K20",
+      "era_count": 20,
+      "profile": {
+        "W1_K20-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-1": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-2": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-3": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-4": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-5": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-6": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-7": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-8": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-9": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-10": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-11": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-12": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-13": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-14": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-15": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-16": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-17": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-18": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W1_K20-19": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "W1_K20-0": 0.63,
+        "W1_K20-1": 0.63,
+        "W1_K20-2": 0.63,
+        "W1_K20-3": 0.63,
+        "W1_K20-4": 0.63,
+        "W1_K20-5": 0.63,
+        "W1_K20-6": 0.63,
+        "W1_K20-7": 0.63,
+        "W1_K20-8": 0.63,
+        "W1_K20-9": 0.63,
+        "W1_K20-10": 0.63,
+        "W1_K20-11": 0.63,
+        "W1_K20-12": 0.63,
+        "W1_K20-13": 0.63,
+        "W1_K20-14": 0.63,
+        "W1_K20-15": 0.63,
+        "W1_K20-16": 0.63,
+        "W1_K20-17": 0.63,
+        "W1_K20-18": 0.63,
+        "W1_K20-19": 0.63
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.6300000000000002,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 40000,
+      "success_support": 17300,
+      "D_policy": 0.0,
+      "D_min": 0.0,
+      "D_median": 0.0,
+      "D_max": 0.0,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 0,
+      "status": "DESCRIPTIVE",
+      "diagnostic": "NO_EFFECTIVE_POLICY_DIVERSITY",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W2_PQ": {
+      "label": "W2_PQ",
+      "era_count": 2,
+      "profile": {
+        "W2_PQ-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W2_PQ-1": {
+          "S0": 0.05,
+          "S1": 0.95
+        }
+      },
+      "gaps": {
+        "W2_PQ-0": 0.63,
+        "W2_PQ-1": -0.63
+      },
+      "sign_pattern": [
+        "+",
+        "-"
+      ],
+      "mean_observed_gap": 0.0,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 4000,
+      "success_support": 865,
+      "D_policy": 0.8999999999999999,
+      "D_min": 0.8999999999999999,
+      "D_median": 0.8999999999999999,
+      "D_max": 0.8999999999999999,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 1.0,
+      "effective_distinct_policy_pairs": 1,
+      "status": "PROVISIONAL",
+      "diagnostic": "POLICY_CONDITIONED",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W2_PQPQ": {
+      "label": "W2_PQPQ",
+      "era_count": 4,
+      "profile": {
+        "W2_PQPQ-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W2_PQPQ-1": {
+          "S0": 0.05,
+          "S1": 0.95
+        },
+        "W2_PQPQ-2": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W2_PQPQ-3": {
+          "S0": 0.05,
+          "S1": 0.95
+        }
+      },
+      "gaps": {
+        "W2_PQPQ-0": 0.63,
+        "W2_PQPQ-1": -0.63,
+        "W2_PQPQ-2": 0.63,
+        "W2_PQPQ-3": -0.63
+      },
+      "sign_pattern": [
+        "+",
+        "-",
+        "+",
+        "-"
+      ],
+      "mean_observed_gap": 0.0,
+      "M1_target_utility": {
+        "A": 0.55,
+        "B": 0.55
+      },
+      "M1_target_gap": 0.0,
+      "raw_support_count": 8000,
+      "success_support": 1730,
+      "D_policy": 0.6,
+      "D_min": 0.0,
+      "D_median": 0.8999999999999999,
+      "D_max": 0.8999999999999999,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 1.0,
+      "effective_distinct_policy_pairs": 4,
+      "status": "PROVISIONAL",
+      "diagnostic": "POLICY_CONDITIONED",
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "W3": {
+      "label": "W3",
+      "era_count": 3,
+      "profile": {
+        "W3-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "W3-1": {
+          "S0": 0.05,
+          "S1": 0.95
+        },
+        "W3-2": {
+          "S0": 0.5,
+          "S1": 0.5
+        }
+      },
+      "gaps": {
+        "W3-0": 0.5800000000000001,
+        "W3-1": 0.21999999999999997,
+        "W3-2": 0.4
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.4000000000000001,
+      "M1_target_utility": {
+        "A": 0.8,
+        "B": 0.4
+      },
+      "M1_target_gap": 0.4,
+      "raw_support_count": 6000,
+      "success_support": 2400,
+      "D_policy": 0.6,
+      "D_min": 0.44999999999999996,
+      "D_median": 0.44999999999999996,
+      "D_max": 0.8999999999999999,
+      "C_pos": 1.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 3,
+      "status": "PRESCRIPTIVE",
+      "diagnostic": "CROSS_POLICY_SUPPORT",
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    },
+    "W4": {
+      "label": "W4",
+      "era_count": 3,
+      "profile": {
+        "W4-0": {
+          "S0": 0.9,
+          "S1": 0.1
+        },
+        "W4-1": {
+          "S0": 0.92,
+          "S1": 0.08
+        },
+        "W4-2": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "W4-0": 0.56,
+        "W4-1": 0.5680000000000001,
+        "W4-2": 0.5800000000000001
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.5693333333333334,
+      "M1_target_utility": {
+        "A": 0.8,
+        "B": 0.4
+      },
+      "M1_target_gap": 0.4,
+      "raw_support_count": 6000,
+      "success_support": 2654,
+      "D_policy": 0.03333333333333331,
+      "D_min": 0.02000000000000001,
+      "D_median": 0.029999999999999957,
+      "D_max": 0.04999999999999997,
+      "C_pos": 1.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 3,
+      "status": "PROVISIONAL",
+      "diagnostic": "CROSS_POLICY_SUPPORT",
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    },
+    "M1_ECHO": {
+      "label": "M1_ECHO",
+      "era_count": 20,
+      "profile": {
+        "M1_ECHO-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-1": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-2": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-3": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-4": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-5": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-6": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-7": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-8": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-9": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-10": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-11": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-12": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-13": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-14": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-15": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-16": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-17": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-18": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_ECHO-19": {
+          "S0": 0.95,
+          "S1": 0.05
+        }
+      },
+      "gaps": {
+        "M1_ECHO-0": 0.5800000000000001,
+        "M1_ECHO-1": 0.5800000000000001,
+        "M1_ECHO-2": 0.5800000000000001,
+        "M1_ECHO-3": 0.5800000000000001,
+        "M1_ECHO-4": 0.5800000000000001,
+        "M1_ECHO-5": 0.5800000000000001,
+        "M1_ECHO-6": 0.5800000000000001,
+        "M1_ECHO-7": 0.5800000000000001,
+        "M1_ECHO-8": 0.5800000000000001,
+        "M1_ECHO-9": 0.5800000000000001,
+        "M1_ECHO-10": 0.5800000000000001,
+        "M1_ECHO-11": 0.5800000000000001,
+        "M1_ECHO-12": 0.5800000000000001,
+        "M1_ECHO-13": 0.5800000000000001,
+        "M1_ECHO-14": 0.5800000000000001,
+        "M1_ECHO-15": 0.5800000000000001,
+        "M1_ECHO-16": 0.5800000000000001,
+        "M1_ECHO-17": 0.5800000000000001,
+        "M1_ECHO-18": 0.5800000000000001,
+        "M1_ECHO-19": 0.5800000000000001
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.5800000000000001,
+      "M1_target_utility": {
+        "A": 0.8,
+        "B": 0.4
+      },
+      "M1_target_gap": 0.4,
+      "raw_support_count": 40000,
+      "success_support": 17800,
+      "D_policy": 0.0,
+      "D_min": 0.0,
+      "D_median": 0.0,
+      "D_max": 0.0,
+      "C_pos": 0.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 0,
+      "status": "DESCRIPTIVE",
+      "diagnostic": "NO_EFFECTIVE_POLICY_DIVERSITY",
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    },
+    "M1_DIVERSE": {
+      "label": "M1_DIVERSE",
+      "era_count": 3,
+      "profile": {
+        "M1_DIVERSE-0": {
+          "S0": 0.95,
+          "S1": 0.05
+        },
+        "M1_DIVERSE-1": {
+          "S0": 0.05,
+          "S1": 0.95
+        },
+        "M1_DIVERSE-2": {
+          "S0": 0.5,
+          "S1": 0.5
+        }
+      },
+      "gaps": {
+        "M1_DIVERSE-0": 0.5800000000000001,
+        "M1_DIVERSE-1": 0.21999999999999997,
+        "M1_DIVERSE-2": 0.4
+      },
+      "sign_pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "mean_observed_gap": 0.4000000000000001,
+      "M1_target_utility": {
+        "A": 0.8,
+        "B": 0.4
+      },
+      "M1_target_gap": 0.4,
+      "raw_support_count": 6000,
+      "success_support": 2400,
+      "D_policy": 0.6,
+      "D_min": 0.44999999999999996,
+      "D_median": 0.44999999999999996,
+      "D_max": 0.8999999999999999,
+      "C_pos": 1.0,
+      "C_neg": 0.0,
+      "C_conflict": 0.0,
+      "effective_distinct_policy_pairs": 3,
+      "status": "PRESCRIPTIVE",
+      "diagnostic": "CROSS_POLICY_SUPPORT",
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    }
+  },
+  "gates": {
+    "G0": true,
+    "G1": true,
+    "G2": true,
+    "G3": true,
+    "G4": true,
+    "G5": false,
+    "G6": true,
+    "G7": true,
+    "G8": true,
+    "G9": true
+  },
+  "metrics": {
+    "EchoInflationRatio": 20.0,
+    "CertificationGain": "DESCRIPTIVE -> DESCRIPTIVE",
+    "D_false": 0.03333333333333331,
+    "D_true": 0.6,
+    "D_true_over_D_false": 18.00000000000001
+  },
+  "final_verdict": "CROSS_POLICY_CERT_NARROW"
+}

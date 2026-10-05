@@ -1,0 +1,50 @@
+{
+  "label": "W4",
+  "era_count": 3,
+  "profile": {
+    "W4-0": {
+      "S0": 0.9,
+      "S1": 0.1
+    },
+    "W4-1": {
+      "S0": 0.92,
+      "S1": 0.08
+    },
+    "W4-2": {
+      "S0": 0.95,
+      "S1": 0.05
+    }
+  },
+  "gaps": {
+    "W4-0": 0.56,
+    "W4-1": 0.5680000000000001,
+    "W4-2": 0.5800000000000001
+  },
+  "sign_pattern": [
+    "+",
+    "+",
+    "+"
+  ],
+  "mean_observed_gap": 0.5693333333333334,
+  "M1_target_utility": {
+    "A": 0.8,
+    "B": 0.4
+  },
+  "M1_target_gap": 0.4,
+  "raw_support_count": 6000,
+  "success_support": 2654,
+  "D_policy": 0.03333333333333331,
+  "D_min": 0.02000000000000001,
+  "D_median": 0.029999999999999957,
+  "D_max": 0.04999999999999997,
+  "C_pos": 1.0,
+  "C_neg": 0.0,
+  "C_conflict": 0.0,
+  "effective_distinct_policy_pairs": 3,
+  "status": "PROVISIONAL",
+  "diagnostic": "CROSS_POLICY_SUPPORT",
+  "truth": {
+    "A": "4/5",
+    "B": "2/5"
+  }
+}

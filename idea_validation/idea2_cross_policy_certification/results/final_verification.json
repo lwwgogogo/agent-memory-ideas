@@ -1,0 +1,10 @@
+{
+  "formal_run_count": 1,
+  "formal_restart": false,
+  "tests_passed": 24,
+  "preregistration_lock_verified": true,
+  "all_gates_pass": false,
+  "G5": "FAIL",
+  "final_verdict": "CROSS_POLICY_CERT_NARROW",
+  "audit_note": "G5 fails: run harness hardcodes the gate and generation/evaluation paths are not sufficiently separated to establish oracle-free candidate execution."
+}

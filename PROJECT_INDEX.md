@@ -117,3 +117,6 @@ JitRL 原生 episode ranking helper 与 MemRL 原生 Q-value selector 在合成 
 M1 在本轮已观测离散state下实现null PIG/NPE=0，真实global gap=.10、TSR=1，P/Q×三档gamma全部query crossover正确；通过两个native metadata adapters，未读取true propensity/gamma。M4也满足常规Gate但有small shrinkage bias；M2不随target变化，crossover失败，.99 clipping偏差明显；M3是ORACLE / NOT CANDIDATE METHOD。M0是native selection-support proxy，不能当作成功概率；报告用absolute NPE、TGE、TSR及same-scale A1消融共同判断。
 
 M1统计核心就是direct standardization/g-computation，不声明novelty。exact低support结果不证明sampling robustness，也不证明自然语言state解析或full-agent效果。历史六阶段verdict全部冻结：IDEA2_RUN1_NO_GO、IDEA2_CONFIRM_GO、CAUSAL_SUFFICIENCY_WEAK、REAL_FORMATION_WEAK、POLICY_MEMORY_GO、NATIVE_EVIDENCE_GO。详见新目录theory.md、Method候选比较.md、Stage5实验结果.md、最终结论.md与results/。本轮停止，不自动开始新颖性审计。
+
+## Idea 2 Stage-6A — Cross-Policy Memory Certification — 2026-10-06
+独立目录 idea_validation/idea2_cross_policy_certification/。W1 same-policy echo 保持 D_policy=0、DESCRIPTIVE；W2 识别交替方向与 C_conflict=1；W3 invariant profile 为 PRESCRIPTIVE；W4 false-diversity D=.0333 对比 true-diversity D=.60；M1 utility 在 echo/diverse 下同为 gap=.4，但 lifecycle 不同。最终 **CROSS_POLICY_CERT_NARROW**：G0–G4、G6–G9 通过；G5 因运行器未充分隔离生成器与 candidate 输入而失败，故不声称完成 oracle-free 执行认证。24 项测试通过，正式 deterministic run 一次，未调阈值。Stage-6A 已停止。

@@ -1,0 +1,56 @@
+{
+  "label": "W2_PQPQ",
+  "era_count": 4,
+  "profile": {
+    "W2_PQPQ-0": {
+      "S0": 0.95,
+      "S1": 0.05
+    },
+    "W2_PQPQ-1": {
+      "S0": 0.05,
+      "S1": 0.95
+    },
+    "W2_PQPQ-2": {
+      "S0": 0.95,
+      "S1": 0.05
+    },
+    "W2_PQPQ-3": {
+      "S0": 0.05,
+      "S1": 0.95
+    }
+  },
+  "gaps": {
+    "W2_PQPQ-0": 0.63,
+    "W2_PQPQ-1": -0.63,
+    "W2_PQPQ-2": 0.63,
+    "W2_PQPQ-3": -0.63
+  },
+  "sign_pattern": [
+    "+",
+    "-",
+    "+",
+    "-"
+  ],
+  "mean_observed_gap": 0.0,
+  "M1_target_utility": {
+    "A": 0.55,
+    "B": 0.55
+  },
+  "M1_target_gap": 0.0,
+  "raw_support_count": 8000,
+  "success_support": 1730,
+  "D_policy": 0.6,
+  "D_min": 0.0,
+  "D_median": 0.8999999999999999,
+  "D_max": 0.8999999999999999,
+  "C_pos": 0.0,
+  "C_neg": 0.0,
+  "C_conflict": 1.0,
+  "effective_distinct_policy_pairs": 4,
+  "status": "PROVISIONAL",
+  "diagnostic": "POLICY_CONDITIONED",
+  "truth": {
+    "A": "11/20",
+    "B": "11/20"
+  }
+}

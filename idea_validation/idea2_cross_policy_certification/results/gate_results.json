@@ -1,0 +1,23 @@
+{
+  "gates": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "FAIL",
+    "G6": "PASS",
+    "G7": "PASS",
+    "G8": "PASS",
+    "G9": "PASS"
+  },
+  "metrics": {
+    "EchoInflationRatio": 20.0,
+    "CertificationGain": "DESCRIPTIVE -> DESCRIPTIVE",
+    "D_false": 0.03333333333333331,
+    "D_true": 0.6,
+    "D_true_over_D_false": 18.00000000000001
+  },
+  "final_verdict": "CROSS_POLICY_CERT_NARROW",
+  "audit_note": "G5 fails: run harness hardcodes the gate and generation/evaluation paths are not sufficiently separated to establish oracle-free candidate execution."
+}
