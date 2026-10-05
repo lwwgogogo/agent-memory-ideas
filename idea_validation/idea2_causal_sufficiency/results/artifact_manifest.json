@@ -1,0 +1,134 @@
+{
+  "Confirmatory结果.md": {
+    "sha256": "64e0500fa721c9f84c5f8e367d29c85136729dc423ae7a9778bf205afabf94eb",
+    "bytes": 2330
+  },
+  "README.md": {
+    "sha256": "9d2f252788875352d686efeba127e565716161a43f87a3d3d20a9c16b6fee23f",
+    "bytes": 1436
+  },
+  "audit.py": {
+    "sha256": "fef2bfe43fe6820e5beca934ff98336dc0cc34226429cc977d3a72f466227aba",
+    "bytes": 4089
+  },
+  "capability_probe.py": {
+    "sha256": "557c178a68c582724c3229cbe31a9de6d05bad14681a48a2ab6bc3c5c58a4540",
+    "bytes": 1824
+  },
+  "cases.json": {
+    "sha256": "76fbd6c45e70a8737a6b81b220f480c8f95aa63b18d6d454b969cc8fda2ac148",
+    "bytes": 47688
+  },
+  "cases/cases.json": {
+    "sha256": "2c6167ff4b0961aae8540b215dff3f700af6b8d474dde16773c2b868de1a0777",
+    "bytes": 815824
+  },
+  "cases/source.json": {
+    "sha256": "9f749c80c197b4bb80e298489ce55c5981a750b222c6cdffb5d6f03b12edf9be",
+    "bytes": 187
+  },
+  "core.py": {
+    "sha256": "8c1ff82245bbce7480a2c4936284e9399686d67087393e107260078c32609419",
+    "bytes": 7099
+  },
+  "evaluate.py": {
+    "sha256": "0892a4949c165d50437ad4bcb5884c60ee8c029e299b874ce14084fa6af0f88c",
+    "bytes": 14406
+  },
+  "generate_cases.py": {
+    "sha256": "d7626a70515812f39b38b375084bf55689b361284aa669779d41fe344c0c3b53",
+    "bytes": 2440
+  },
+  "phase_a_search.py": {
+    "sha256": "69f7fdde8713669d31138e89d912e10cf4b188d2160ab108a35c5d6c38163d90",
+    "bytes": 5955
+  },
+  "plots_accuracy.png": {
+    "sha256": "56f0c86bf7a5b5b3ec545a1ec14cd3bf10cfb5f2e9d056b80c430db3299d8a7e",
+    "bytes": 31119
+  },
+  "plots_regret.png": {
+    "sha256": "b1aa20ce50f33c86865a6917e14c815af6f0e386efcadc9e8e086c4dfeab9c3e",
+    "bytes": 33920
+  },
+  "preflight.py": {
+    "sha256": "38f3b5fc292dd38a48d97ef6120714957b57b129a06ecef43feaf549693f5ab5",
+    "bytes": 1169
+  },
+  "preregistration.md": {
+    "sha256": "f5dd676231cc380348c4bc394030d642e2cff675a63d0a5f882d618106318a3b",
+    "bytes": 5248
+  },
+  "results/capability_probe.json": {
+    "sha256": "d11d85e33bb7c87c77ef547a9e90320e1ab21c3a4c4d53fbd23bc703f4925a86",
+    "bytes": 817
+  },
+  "results/config.json": {
+    "sha256": "65e48d5fa76c7f0c2b0c4a83bb5749343007fdd5f1ec711e4a02c820eb8368df",
+    "bytes": 2128
+  },
+  "results/environment.json": {
+    "sha256": "4c10c706e934e9a255a08d857962641decb6b4ed36bfcb192e23a0e6bf53d2ed",
+    "bytes": 514
+  },
+  "results/final_verification.json": {
+    "sha256": "39415780373ba0f70aa287dcc003659d4be77b83f6a546f1e37724079e41276a",
+    "bytes": 422
+  },
+  "results/identifiability_checks.json": {
+    "sha256": "8ec758063093c44813e577f9324fa96439ce953b8aca1b9ffc1615ca1ea335ab",
+    "bytes": 12139
+  },
+  "results/length_checks.json": {
+    "sha256": "2794eb2ed0c43ce7a7facaa5669a6a65ec02796315b714461fa2cd684593fa57",
+    "bytes": 18403
+  },
+  "results/llm_results.json": {
+    "sha256": "e2093100cbaebefac9d76a5efa25223fbe6dfe51680ecc44eb27e536829ac206",
+    "bytes": 1545507
+  },
+  "results/matched_pair_identity.json": {
+    "sha256": "66c61c0f04c2e167d6d2b6b663455dad4cd4c39a15298c3cbcb53b647073cebf",
+    "bytes": 10127
+  },
+  "results/matched_worlds.csv": {
+    "sha256": "04a1022126eaab3a7ce6471a805c98fc719f129a4aa0467e4401d639f7ff7512",
+    "bytes": 3755
+  },
+  "results/pytest_output.txt": {
+    "sha256": "d5be81bbe49b412357ba177be7fae47b32ba70b563d2a01ec6ee15df362cc215",
+    "bytes": 98
+  },
+  "results/raw_outputs.jsonl": {
+    "sha256": "73de14dd6d0366a493165a2b96a0d9901d29753f4bcee357ba23555a36048078",
+    "bytes": 542193
+  },
+  "results/statistics.json": {
+    "sha256": "64b49c448d7efbf71303ecefe2c3236a7524ac47674fc342efdd6089802c9293",
+    "bytes": 59207
+  },
+  "results/summary.csv": {
+    "sha256": "ef20037ad5911626b515431cb08806578e319f6d07d81fbd906b262a92da6519",
+    "bytes": 1708
+  },
+  "results/tests.json": {
+    "sha256": "9418e78b993e8c1a4aa7858761a02701edf449f9eb276983be7f846b421d6a58",
+    "bytes": 1260
+  },
+  "results/world_metrics.csv": {
+    "sha256": "c41201b269f9436543c88d91d5b66ba368f7fb75c6cb4f2b2b8abc91b2891121",
+    "bytes": 8086
+  },
+  "run_llm_test.py": {
+    "sha256": "9543e2157de64ba2b880f18807f414ed9c3f9a89f117eff5505c88eb1996172e",
+    "bytes": 4561
+  },
+  "tests/test_stage2.py": {
+    "sha256": "067439d49934595f75d9e20131511b3486163a38d977371dda026a4796ca65c3",
+    "bytes": 4061
+  },
+  "最终结论.md": {
+    "sha256": "2a16b4f3833389526c38461d90a364007abb1add3aebb72ad1a6a9c05b7b8449",
+    "bytes": 517
+  }
+}

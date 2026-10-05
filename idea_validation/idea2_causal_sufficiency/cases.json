@@ -1,0 +1,2966 @@
+{
+  "pairs": [
+    [
+      [
+        2,
+        1,
+        18,
+        2
+      ],
+      [
+        2,
+        0,
+        18,
+        3
+      ],
+      [
+        2,
+        0,
+        18,
+        3
+      ],
+      [
+        2,
+        1,
+        18,
+        2
+      ],
+      [
+        20,
+        3,
+        20,
+        3
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        2
+      ],
+      [
+        2,
+        0,
+        18,
+        4
+      ],
+      [
+        2,
+        0,
+        18,
+        3
+      ],
+      [
+        2,
+        1,
+        18,
+        3
+      ],
+      [
+        20,
+        3,
+        20,
+        4
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        3
+      ],
+      [
+        2,
+        0,
+        18,
+        3
+      ],
+      [
+        2,
+        0,
+        18,
+        4
+      ],
+      [
+        2,
+        1,
+        18,
+        2
+      ],
+      [
+        20,
+        4,
+        20,
+        3
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        3
+      ],
+      [
+        2,
+        0,
+        18,
+        4
+      ],
+      [
+        2,
+        0,
+        18,
+        4
+      ],
+      [
+        2,
+        1,
+        18,
+        3
+      ],
+      [
+        20,
+        4,
+        20,
+        4
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        3
+      ],
+      [
+        2,
+        0,
+        18,
+        5
+      ],
+      [
+        2,
+        0,
+        18,
+        4
+      ],
+      [
+        2,
+        1,
+        18,
+        4
+      ],
+      [
+        20,
+        4,
+        20,
+        5
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        4
+      ],
+      [
+        2,
+        0,
+        18,
+        4
+      ],
+      [
+        2,
+        0,
+        18,
+        5
+      ],
+      [
+        2,
+        1,
+        18,
+        3
+      ],
+      [
+        20,
+        5,
+        20,
+        4
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        4
+      ],
+      [
+        2,
+        0,
+        18,
+        5
+      ],
+      [
+        2,
+        0,
+        18,
+        5
+      ],
+      [
+        2,
+        1,
+        18,
+        4
+      ],
+      [
+        20,
+        5,
+        20,
+        5
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        4
+      ],
+      [
+        2,
+        0,
+        18,
+        6
+      ],
+      [
+        2,
+        0,
+        18,
+        5
+      ],
+      [
+        2,
+        1,
+        18,
+        5
+      ],
+      [
+        20,
+        5,
+        20,
+        6
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        5
+      ],
+      [
+        2,
+        0,
+        18,
+        5
+      ],
+      [
+        2,
+        0,
+        18,
+        6
+      ],
+      [
+        2,
+        1,
+        18,
+        4
+      ],
+      [
+        20,
+        6,
+        20,
+        5
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        5
+      ],
+      [
+        2,
+        0,
+        18,
+        6
+      ],
+      [
+        2,
+        0,
+        18,
+        6
+      ],
+      [
+        2,
+        1,
+        18,
+        5
+      ],
+      [
+        20,
+        6,
+        20,
+        6
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        5
+      ],
+      [
+        2,
+        0,
+        18,
+        7
+      ],
+      [
+        2,
+        0,
+        18,
+        6
+      ],
+      [
+        2,
+        1,
+        18,
+        6
+      ],
+      [
+        20,
+        6,
+        20,
+        7
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        6
+      ],
+      [
+        2,
+        0,
+        18,
+        6
+      ],
+      [
+        2,
+        0,
+        18,
+        7
+      ],
+      [
+        2,
+        1,
+        18,
+        5
+      ],
+      [
+        20,
+        7,
+        20,
+        6
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        6
+      ],
+      [
+        2,
+        0,
+        18,
+        7
+      ],
+      [
+        2,
+        0,
+        18,
+        7
+      ],
+      [
+        2,
+        1,
+        18,
+        6
+      ],
+      [
+        20,
+        7,
+        20,
+        7
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        6
+      ],
+      [
+        2,
+        0,
+        18,
+        8
+      ],
+      [
+        2,
+        0,
+        18,
+        7
+      ],
+      [
+        2,
+        1,
+        18,
+        7
+      ],
+      [
+        20,
+        7,
+        20,
+        8
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        7
+      ],
+      [
+        2,
+        0,
+        18,
+        7
+      ],
+      [
+        2,
+        0,
+        18,
+        8
+      ],
+      [
+        2,
+        1,
+        18,
+        6
+      ],
+      [
+        20,
+        8,
+        20,
+        7
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        7
+      ],
+      [
+        2,
+        0,
+        18,
+        8
+      ],
+      [
+        2,
+        0,
+        18,
+        8
+      ],
+      [
+        2,
+        1,
+        18,
+        7
+      ],
+      [
+        20,
+        8,
+        20,
+        8
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        7
+      ],
+      [
+        2,
+        0,
+        18,
+        9
+      ],
+      [
+        2,
+        0,
+        18,
+        8
+      ],
+      [
+        2,
+        1,
+        18,
+        8
+      ],
+      [
+        20,
+        8,
+        20,
+        9
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        8
+      ],
+      [
+        2,
+        0,
+        18,
+        8
+      ],
+      [
+        2,
+        0,
+        18,
+        9
+      ],
+      [
+        2,
+        1,
+        18,
+        7
+      ],
+      [
+        20,
+        9,
+        20,
+        8
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        8
+      ],
+      [
+        2,
+        0,
+        18,
+        9
+      ],
+      [
+        2,
+        0,
+        18,
+        9
+      ],
+      [
+        2,
+        1,
+        18,
+        8
+      ],
+      [
+        20,
+        9,
+        20,
+        9
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        18,
+        8
+      ],
+      [
+        2,
+        0,
+        18,
+        10
+      ],
+      [
+        2,
+        0,
+        18,
+        9
+      ],
+      [
+        2,
+        1,
+        18,
+        9
+      ],
+      [
+        20,
+        9,
+        20,
+        10
+      ]
+    ]
+  ],
+  "worlds": [
+    {
+      "pair_id": 1,
+      "world_id": "P01W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 2
+          },
+          "B": {
+            "n": 18,
+            "success": 3
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 3
+        },
+        "B": {
+          "n": 20,
+          "success": 3
+        }
+      },
+      "target_value_fraction": {
+        "A": "11/36",
+        "B": "1/12"
+      },
+      "target_value": {
+        "A": 0.3055555555555556,
+        "B": 0.08333333333333333
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 1,
+      "world_id": "P01W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 3
+          },
+          "B": {
+            "n": 18,
+            "success": 2
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 3
+        },
+        "B": {
+          "n": 20,
+          "success": 3
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/12",
+        "B": "11/36"
+      },
+      "target_value": {
+        "A": 0.08333333333333333,
+        "B": 0.3055555555555556
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 2,
+      "world_id": "P02W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 2
+          },
+          "B": {
+            "n": 18,
+            "success": 4
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 3
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "target_value_fraction": {
+        "A": "11/36",
+        "B": "1/9"
+      },
+      "target_value": {
+        "A": 0.3055555555555556,
+        "B": 0.1111111111111111
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 2,
+      "world_id": "P02W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 3
+          },
+          "B": {
+            "n": 18,
+            "success": 3
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 3
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/12",
+        "B": "1/3"
+      },
+      "target_value": {
+        "A": 0.08333333333333333,
+        "B": 0.3333333333333333
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 3,
+      "world_id": "P03W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 3
+          },
+          "B": {
+            "n": 18,
+            "success": 3
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 3
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/3",
+        "B": "1/12"
+      },
+      "target_value": {
+        "A": 0.3333333333333333,
+        "B": 0.08333333333333333
+      },
+      "target_difference_fraction": "1/4",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 3,
+      "world_id": "P03W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 4
+          },
+          "B": {
+            "n": 18,
+            "success": 2
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 3
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/9",
+        "B": "11/36"
+      },
+      "target_value": {
+        "A": 0.1111111111111111,
+        "B": 0.3055555555555556
+      },
+      "target_difference_fraction": "-7/36",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 4,
+      "world_id": "P04W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 3
+          },
+          "B": {
+            "n": 18,
+            "success": 4
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/3",
+        "B": "1/9"
+      },
+      "target_value": {
+        "A": 0.3333333333333333,
+        "B": 0.1111111111111111
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 4,
+      "world_id": "P04W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 4
+          },
+          "B": {
+            "n": 18,
+            "success": 3
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/9",
+        "B": "1/3"
+      },
+      "target_value": {
+        "A": 0.1111111111111111,
+        "B": 0.3333333333333333
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 5,
+      "world_id": "P05W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 3
+          },
+          "B": {
+            "n": 18,
+            "success": 5
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/3",
+        "B": "5/36"
+      },
+      "target_value": {
+        "A": 0.3333333333333333,
+        "B": 0.1388888888888889
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 5,
+      "world_id": "P05W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 4
+          },
+          "B": {
+            "n": 18,
+            "success": 4
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/9",
+        "B": "13/36"
+      },
+      "target_value": {
+        "A": 0.1111111111111111,
+        "B": 0.3611111111111111
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 6,
+      "world_id": "P06W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 4
+          },
+          "B": {
+            "n": 18,
+            "success": 4
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "target_value_fraction": {
+        "A": "13/36",
+        "B": "1/9"
+      },
+      "target_value": {
+        "A": 0.3611111111111111,
+        "B": 0.1111111111111111
+      },
+      "target_difference_fraction": "1/4",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 6,
+      "world_id": "P06W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 5
+          },
+          "B": {
+            "n": 18,
+            "success": 3
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "target_value_fraction": {
+        "A": "5/36",
+        "B": "1/3"
+      },
+      "target_value": {
+        "A": 0.1388888888888889,
+        "B": 0.3333333333333333
+      },
+      "target_difference_fraction": "-7/36",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 7,
+      "world_id": "P07W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 4
+          },
+          "B": {
+            "n": 18,
+            "success": 5
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "target_value_fraction": {
+        "A": "13/36",
+        "B": "5/36"
+      },
+      "target_value": {
+        "A": 0.3611111111111111,
+        "B": 0.1388888888888889
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 7,
+      "world_id": "P07W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 5
+          },
+          "B": {
+            "n": 18,
+            "success": 4
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "target_value_fraction": {
+        "A": "5/36",
+        "B": "13/36"
+      },
+      "target_value": {
+        "A": 0.1388888888888889,
+        "B": 0.3611111111111111
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 8,
+      "world_id": "P08W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 4
+          },
+          "B": {
+            "n": 18,
+            "success": 6
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "target_value_fraction": {
+        "A": "13/36",
+        "B": "1/6"
+      },
+      "target_value": {
+        "A": 0.3611111111111111,
+        "B": 0.16666666666666666
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 8,
+      "world_id": "P08W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 5
+          },
+          "B": {
+            "n": 18,
+            "success": 5
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "target_value_fraction": {
+        "A": "5/36",
+        "B": "7/18"
+      },
+      "target_value": {
+        "A": 0.1388888888888889,
+        "B": 0.3888888888888889
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 9,
+      "world_id": "P09W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 5
+          },
+          "B": {
+            "n": 18,
+            "success": 5
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "target_value_fraction": {
+        "A": "7/18",
+        "B": "5/36"
+      },
+      "target_value": {
+        "A": 0.3888888888888889,
+        "B": 0.1388888888888889
+      },
+      "target_difference_fraction": "1/4",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 9,
+      "world_id": "P09W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 6
+          },
+          "B": {
+            "n": 18,
+            "success": 4
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/6",
+        "B": "13/36"
+      },
+      "target_value": {
+        "A": 0.16666666666666666,
+        "B": 0.3611111111111111
+      },
+      "target_difference_fraction": "-7/36",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 10,
+      "world_id": "P10W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 5
+          },
+          "B": {
+            "n": 18,
+            "success": 6
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "target_value_fraction": {
+        "A": "7/18",
+        "B": "1/6"
+      },
+      "target_value": {
+        "A": 0.3888888888888889,
+        "B": 0.16666666666666666
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 10,
+      "world_id": "P10W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 6
+          },
+          "B": {
+            "n": 18,
+            "success": 5
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/6",
+        "B": "7/18"
+      },
+      "target_value": {
+        "A": 0.16666666666666666,
+        "B": 0.3888888888888889
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 11,
+      "world_id": "P11W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 5
+          },
+          "B": {
+            "n": 18,
+            "success": 7
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "target_value_fraction": {
+        "A": "7/18",
+        "B": "7/36"
+      },
+      "target_value": {
+        "A": 0.3888888888888889,
+        "B": 0.19444444444444445
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 11,
+      "world_id": "P11W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 6
+          },
+          "B": {
+            "n": 18,
+            "success": 6
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/6",
+        "B": "5/12"
+      },
+      "target_value": {
+        "A": 0.16666666666666666,
+        "B": 0.4166666666666667
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 12,
+      "world_id": "P12W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 6
+          },
+          "B": {
+            "n": 18,
+            "success": 6
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "target_value_fraction": {
+        "A": "5/12",
+        "B": "1/6"
+      },
+      "target_value": {
+        "A": 0.4166666666666667,
+        "B": 0.16666666666666666
+      },
+      "target_difference_fraction": "1/4",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 12,
+      "world_id": "P12W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 7
+          },
+          "B": {
+            "n": 18,
+            "success": 5
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "target_value_fraction": {
+        "A": "7/36",
+        "B": "7/18"
+      },
+      "target_value": {
+        "A": 0.19444444444444445,
+        "B": 0.3888888888888889
+      },
+      "target_difference_fraction": "-7/36",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 13,
+      "world_id": "P13W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 6
+          },
+          "B": {
+            "n": 18,
+            "success": 7
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "target_value_fraction": {
+        "A": "5/12",
+        "B": "7/36"
+      },
+      "target_value": {
+        "A": 0.4166666666666667,
+        "B": 0.19444444444444445
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 13,
+      "world_id": "P13W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 7
+          },
+          "B": {
+            "n": 18,
+            "success": 6
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "target_value_fraction": {
+        "A": "7/36",
+        "B": "5/12"
+      },
+      "target_value": {
+        "A": 0.19444444444444445,
+        "B": 0.4166666666666667
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 14,
+      "world_id": "P14W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 6
+          },
+          "B": {
+            "n": 18,
+            "success": 8
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "target_value_fraction": {
+        "A": "5/12",
+        "B": "2/9"
+      },
+      "target_value": {
+        "A": 0.4166666666666667,
+        "B": 0.2222222222222222
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 14,
+      "world_id": "P14W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 7
+          },
+          "B": {
+            "n": 18,
+            "success": 7
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "target_value_fraction": {
+        "A": "7/36",
+        "B": "4/9"
+      },
+      "target_value": {
+        "A": 0.19444444444444445,
+        "B": 0.4444444444444444
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 15,
+      "world_id": "P15W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 7
+          },
+          "B": {
+            "n": 18,
+            "success": 7
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "target_value_fraction": {
+        "A": "4/9",
+        "B": "7/36"
+      },
+      "target_value": {
+        "A": 0.4444444444444444,
+        "B": 0.19444444444444445
+      },
+      "target_difference_fraction": "1/4",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 15,
+      "world_id": "P15W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 8
+          },
+          "B": {
+            "n": 18,
+            "success": 6
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "target_value_fraction": {
+        "A": "2/9",
+        "B": "5/12"
+      },
+      "target_value": {
+        "A": 0.2222222222222222,
+        "B": 0.4166666666666667
+      },
+      "target_difference_fraction": "-7/36",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 16,
+      "world_id": "P16W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 7
+          },
+          "B": {
+            "n": 18,
+            "success": 8
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "target_value_fraction": {
+        "A": "4/9",
+        "B": "2/9"
+      },
+      "target_value": {
+        "A": 0.4444444444444444,
+        "B": 0.2222222222222222
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 16,
+      "world_id": "P16W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 8
+          },
+          "B": {
+            "n": 18,
+            "success": 7
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "target_value_fraction": {
+        "A": "2/9",
+        "B": "4/9"
+      },
+      "target_value": {
+        "A": 0.2222222222222222,
+        "B": 0.4444444444444444
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 17,
+      "world_id": "P17W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 7
+          },
+          "B": {
+            "n": 18,
+            "success": 9
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 9
+        }
+      },
+      "target_value_fraction": {
+        "A": "4/9",
+        "B": "1/4"
+      },
+      "target_value": {
+        "A": 0.4444444444444444,
+        "B": 0.25
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 17,
+      "world_id": "P17W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 8
+          },
+          "B": {
+            "n": 18,
+            "success": 8
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 9
+        }
+      },
+      "target_value_fraction": {
+        "A": "2/9",
+        "B": "17/36"
+      },
+      "target_value": {
+        "A": 0.2222222222222222,
+        "B": 0.4722222222222222
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 18,
+      "world_id": "P18W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 8
+          },
+          "B": {
+            "n": 18,
+            "success": 8
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "target_value_fraction": {
+        "A": "17/36",
+        "B": "2/9"
+      },
+      "target_value": {
+        "A": 0.4722222222222222,
+        "B": 0.2222222222222222
+      },
+      "target_difference_fraction": "1/4",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 18,
+      "world_id": "P18W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 9
+          },
+          "B": {
+            "n": 18,
+            "success": 7
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/4",
+        "B": "4/9"
+      },
+      "target_value": {
+        "A": 0.25,
+        "B": 0.4444444444444444
+      },
+      "target_difference_fraction": "-7/36",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 19,
+      "world_id": "P19W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 8
+          },
+          "B": {
+            "n": 18,
+            "success": 9
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 9
+        }
+      },
+      "target_value_fraction": {
+        "A": "17/36",
+        "B": "1/4"
+      },
+      "target_value": {
+        "A": 0.4722222222222222,
+        "B": 0.25
+      },
+      "target_difference_fraction": "2/9",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 19,
+      "world_id": "P19W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 9
+          },
+          "B": {
+            "n": 18,
+            "success": 8
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 9
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/4",
+        "B": "17/36"
+      },
+      "target_value": {
+        "A": 0.25,
+        "B": 0.4722222222222222
+      },
+      "target_difference_fraction": "-2/9",
+      "optimal_action": "B"
+    },
+    {
+      "pair_id": 20,
+      "world_id": "P20W1",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 1
+          },
+          "B": {
+            "n": 2,
+            "success": 0
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 8
+          },
+          "B": {
+            "n": 18,
+            "success": 10
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 10
+        }
+      },
+      "target_value_fraction": {
+        "A": "17/36",
+        "B": "5/18"
+      },
+      "target_value": {
+        "A": 0.4722222222222222,
+        "B": 0.2777777777777778
+      },
+      "target_difference_fraction": "7/36",
+      "optimal_action": "A"
+    },
+    {
+      "pair_id": 20,
+      "world_id": "P20W2",
+      "states": [
+        "S0",
+        "S1"
+      ],
+      "actions": [
+        "A",
+        "B"
+      ],
+      "target_state_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 2,
+            "success": 0
+          },
+          "B": {
+            "n": 2,
+            "success": 1
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 18,
+            "success": 9
+          },
+          "B": {
+            "n": 18,
+            "success": 9
+          }
+        }
+      },
+      "aggregate": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 10
+        }
+      },
+      "target_value_fraction": {
+        "A": "1/4",
+        "B": "1/2"
+      },
+      "target_value": {
+        "A": 0.25,
+        "B": 0.5
+      },
+      "target_difference_fraction": "-1/4",
+      "optimal_action": "B"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-05T06:42:16.665379+00:00",
+  "phase_a": "PASS",
+  "journal_records": 1600,
+  "unique_formal_runs": 800,
+  "all_first_attempt": true,
+  "raw_matches_parsed_results": "PASS",
+  "complete_worlds": 40,
+  "r2_pair_identity": "PASS",
+  "r2_r4_length_equal_256": "PASS",
+  "historical_idea2_dirs_unchanged": "PASS",
+  "credential_and_artifact_scan": "PASS",
+  "verdict": "CAUSAL_SUFFICIENCY_WEAK"
+}

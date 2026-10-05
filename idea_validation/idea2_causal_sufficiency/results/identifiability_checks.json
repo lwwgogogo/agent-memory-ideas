@@ -1,0 +1,710 @@
+{
+  "verdict": "CAUSAL_SUFFICIENCY_MATH_GO",
+  "search": {
+    "method": "exhaustive integer cell-table enumeration",
+    "n_per_action": 20,
+    "pairs": 20
+  },
+  "target_policy": {
+    "states": [
+      "S0",
+      "S1"
+    ],
+    "weights": [
+      "1/2",
+      "1/2"
+    ],
+    "intervenes_on_action": true
+  },
+  "checks": {
+    "lossy_representation_exactly_identical": true,
+    "faithful_summary_values_from_raw_counts": true,
+    "opposite_optimal_actions": true,
+    "state_preserving_representation_differs": true,
+    "target_causal_value_analytically_computed": true,
+    "exact_fraction_comparisons_no_float_coincidence": true,
+    "minimum_absolute_target_difference": 0.19444444444444445
+  },
+  "pairs": [
+    {
+      "pair_id": 1,
+      "worlds": [
+        "P01W1",
+        "P01W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 3
+        },
+        "B": {
+          "n": 20,
+          "success": 3
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "11/36",
+          "B": "1/12"
+        },
+        {
+          "A": "1/12",
+          "B": "11/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 2,
+      "worlds": [
+        "P02W1",
+        "P02W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 3
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "11/36",
+          "B": "1/9"
+        },
+        {
+          "A": "1/12",
+          "B": "1/3"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 3,
+      "worlds": [
+        "P03W1",
+        "P03W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 3
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "1/3",
+          "B": "1/12"
+        },
+        {
+          "A": "1/9",
+          "B": "11/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 4,
+      "worlds": [
+        "P04W1",
+        "P04W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "1/3",
+          "B": "1/9"
+        },
+        {
+          "A": "1/9",
+          "B": "1/3"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 5,
+      "worlds": [
+        "P05W1",
+        "P05W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 4
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "1/3",
+          "B": "5/36"
+        },
+        {
+          "A": "1/9",
+          "B": "13/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 6,
+      "worlds": [
+        "P06W1",
+        "P06W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 4
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "13/36",
+          "B": "1/9"
+        },
+        {
+          "A": "5/36",
+          "B": "1/3"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 7,
+      "worlds": [
+        "P07W1",
+        "P07W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "13/36",
+          "B": "5/36"
+        },
+        {
+          "A": "5/36",
+          "B": "13/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 8,
+      "worlds": [
+        "P08W1",
+        "P08W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 5
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "13/36",
+          "B": "1/6"
+        },
+        {
+          "A": "5/36",
+          "B": "7/18"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 9,
+      "worlds": [
+        "P09W1",
+        "P09W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 5
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "7/18",
+          "B": "5/36"
+        },
+        {
+          "A": "1/6",
+          "B": "13/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 10,
+      "worlds": [
+        "P10W1",
+        "P10W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "7/18",
+          "B": "1/6"
+        },
+        {
+          "A": "1/6",
+          "B": "7/18"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 11,
+      "worlds": [
+        "P11W1",
+        "P11W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 6
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "7/18",
+          "B": "7/36"
+        },
+        {
+          "A": "1/6",
+          "B": "5/12"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 12,
+      "worlds": [
+        "P12W1",
+        "P12W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 6
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "5/12",
+          "B": "1/6"
+        },
+        {
+          "A": "7/36",
+          "B": "7/18"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 13,
+      "worlds": [
+        "P13W1",
+        "P13W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "5/12",
+          "B": "7/36"
+        },
+        {
+          "A": "7/36",
+          "B": "5/12"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 14,
+      "worlds": [
+        "P14W1",
+        "P14W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 7
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "5/12",
+          "B": "2/9"
+        },
+        {
+          "A": "7/36",
+          "B": "4/9"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 15,
+      "worlds": [
+        "P15W1",
+        "P15W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 7
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "4/9",
+          "B": "7/36"
+        },
+        {
+          "A": "2/9",
+          "B": "5/12"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 16,
+      "worlds": [
+        "P16W1",
+        "P16W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "4/9",
+          "B": "2/9"
+        },
+        {
+          "A": "2/9",
+          "B": "4/9"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 17,
+      "worlds": [
+        "P17W1",
+        "P17W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 8
+        },
+        "B": {
+          "n": 20,
+          "success": 9
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "4/9",
+          "B": "1/4"
+        },
+        {
+          "A": "2/9",
+          "B": "17/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 18,
+      "worlds": [
+        "P18W1",
+        "P18W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 8
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "17/36",
+          "B": "2/9"
+        },
+        {
+          "A": "1/4",
+          "B": "4/9"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 19,
+      "worlds": [
+        "P19W1",
+        "P19W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 9
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "17/36",
+          "B": "1/4"
+        },
+        {
+          "A": "1/4",
+          "B": "17/36"
+        }
+      ],
+      "exact_opposite": true
+    },
+    {
+      "pair_id": 20,
+      "worlds": [
+        "P20W1",
+        "P20W2"
+      ],
+      "g_lossy": {
+        "A": {
+          "n": 20,
+          "success": 9
+        },
+        "B": {
+          "n": 20,
+          "success": 10
+        }
+      },
+      "lossy_equal": true,
+      "g_preserve_equal": false,
+      "optimal_actions": [
+        "A",
+        "B"
+      ],
+      "target_values": [
+        {
+          "A": "17/36",
+          "B": "5/18"
+        },
+        {
+          "A": "1/4",
+          "B": "1/2"
+        }
+      ],
+      "exact_opposite": true
+    }
+  ]
+}

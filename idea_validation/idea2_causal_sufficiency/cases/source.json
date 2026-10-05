@@ -1,0 +1,7 @@
+{
+  "phase_a_cases_sha256": "76fbd6c45e70a8737a6b81b220f480c8f95aa63b18d6d454b969cc8fda2ac148",
+  "pairs": 20,
+  "worlds": 40,
+  "planned_runs": 800,
+  "r2_identical_prompt_checks": 80
+}

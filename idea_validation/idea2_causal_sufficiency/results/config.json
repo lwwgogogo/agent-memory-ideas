@@ -1,0 +1,50 @@
+{
+  "model": "qwq:32b",
+  "options": {
+    "temperature": 0,
+    "top_p": 1.0,
+    "seed": 20261005,
+    "num_ctx": 4096,
+    "num_predict": 128
+  },
+  "system": "Output only one JSON object with exactly p_success_left and p_success_right. Each value must be a decimal probability from 0 to 1, such as 0.55. Do not output choice, reason, confidence, or any explanation.",
+  "format": {
+    "type": "object",
+    "properties": {
+      "p_success_left": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "p_success_right": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "required": [
+      "p_success_left",
+      "p_success_right"
+    ],
+    "additionalProperties": false
+  },
+  "planned_runs": 800,
+  "retry_max": 1,
+  "job_order_seed": 20261005,
+  "case_sha256": "2c6167ff4b0961aae8540b215dff3f700af6b8d474dde16773c2b868de1a0777",
+  "preregistration_sha256": "f5dd676231cc380348c4bc394030d642e2cff675a63d0a5f882d618106318a3b",
+  "source_sha256": {
+    "core.py": "8c1ff82245bbce7480a2c4936284e9399686d67087393e107260078c32609419",
+    "generate_cases.py": "d7626a70515812f39b38b375084bf55689b361284aa669779d41fe344c0c3b53",
+    "phase_a_search.py": "69f7fdde8713669d31138e89d912e10cf4b188d2160ab108a35c5d6c38163d90",
+    "preflight.py": "38f3b5fc292dd38a48d97ef6120714957b57b129a06ecef43feaf549693f5ab5",
+    "capability_probe.py": "557c178a68c582724c3229cbe31a9de6d05bad14681a48a2ab6bc3c5c58a4540",
+    "run_llm_test.py": "9543e2157de64ba2b880f18807f414ed9c3f9a89f117eff5505c88eb1996172e",
+    "evaluate.py": "0892a4949c165d50437ad4bcb5884c60ee8c029e299b874ce14084fa6af0f88c",
+    "tests/test_stage2.py": "067439d49934595f75d9e20131511b3486163a38d977371dda026a4796ca65c3",
+    "preregistration.md": "f5dd676231cc380348c4bc394030d642e2cff675a63d0a5f882d618106318a3b",
+    "cases/cases.json": "2c6167ff4b0961aae8540b215dff3f700af6b8d474dde16773c2b868de1a0777",
+    "results/identifiability_checks.json": "8ec758063093c44813e577f9324fa96439ce953b8aca1b9ffc1615ca1ea335ab"
+  },
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python"
+}

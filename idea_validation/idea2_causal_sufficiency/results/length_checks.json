@@ -1,0 +1,1122 @@
+[
+  {
+    "world_id": "P01W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P01W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P02W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P03W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P04W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P05W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P06W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P07W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P08W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P09W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P10W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P11W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P12W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P13W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P14W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P15W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P16W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P17W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P18W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P19W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W1",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W1",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W1",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W1",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W2",
+    "version": "AB",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W2",
+    "version": "AB",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W2",
+    "version": "BA",
+    "order": "O1",
+    "r2_chars": 256,
+    "r4_chars": 256
+  },
+  {
+    "world_id": "P20W2",
+    "version": "BA",
+    "order": "O2",
+    "r2_chars": 256,
+    "r4_chars": 256
+  }
+]
