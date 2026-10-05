@@ -1,0 +1,99 @@
+{
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "version": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "git_start": "ce66c7c4059523e6becc8f8f0616991ff8c0be1f",
+  "ollama_version": {
+    "version": "0.5.12"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "deepseek-r1:70b",
+        "model": "deepseek-r1:70b",
+        "modified_at": "2025-03-23T07:34:03.866071689Z",
+        "size": 42520397704,
+        "digest": "0c1615a8ca32ef41e433aa420558b4685f9fc7f3fd74119860a8e2e389cd7942",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "llama",
+          "families": [
+            "llama"
+          ],
+          "parameter_size": "70.6B",
+          "quantization_level": "Q4_K_M"
+        }
+      },
+      {
+        "name": "llama3.3:70b",
+        "model": "llama3.3:70b",
+        "modified_at": "2025-03-14T07:38:58.897787867Z",
+        "size": 42520413916,
+        "digest": "a6eb4748fd2990ad2952b2335a95a7f952d1a06119a0aa6a2df6cd052a93a3fa",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "llama",
+          "families": [
+            "llama"
+          ],
+          "parameter_size": "70.6B",
+          "quantization_level": "Q4_K_M"
+        }
+      },
+      {
+        "name": "qwq:32b",
+        "model": "qwq:32b",
+        "modified_at": "2025-03-06T07:43:10.986061056Z",
+        "size": 19851349390,
+        "digest": "cc1091b0e276012ba4c1662ea103be2c87a1543d2ee435eb5715b37b9b680d27",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "32.8B",
+          "quantization_level": "Q4_K_M"
+        }
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "model": "nomic-embed-text:latest",
+        "modified_at": "2025-03-05T13:35:40.580678628Z",
+        "size": 274302450,
+        "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "nomic-bert",
+          "families": [
+            "nomic-bert"
+          ],
+          "parameter_size": "137M",
+          "quantization_level": "F16"
+        }
+      },
+      {
+        "name": "qwen2.5:14b",
+        "model": "qwen2.5:14b",
+        "modified_at": "2025-03-04T13:38:38.810555839Z",
+        "size": 8988124069,
+        "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "14.8B",
+          "quantization_level": "Q4_K_M"
+        }
+      }
+    ]
+  },
+  "gpu_before": "index, uuid, name, memory.used [MiB], utilization.gpu [%]\n0, GPU-4b084b0f-29e0-fed7-883c-762216506ed1, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n1, GPU-0f1d1c5c-9211-fbd0-40f3-3b25ecf8325c, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n2, GPU-efb47475-9c9e-eabe-c1f1-0855ea1b3805, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n3, GPU-a352cc27-ef5d-62c3-9464-92e47e48c994, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n",
+  "gpu_during": "index, uuid, name, memory.used [MiB], utilization.gpu [%]\n0, GPU-4b084b0f-29e0-fed7-883c-762216506ed1, NVIDIA GeForce RTX 4090, 20393 MiB, 75 %\n1, GPU-0f1d1c5c-9211-fbd0-40f3-3b25ecf8325c, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n2, GPU-efb47475-9c9e-eabe-c1f1-0855ea1b3805, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n3, GPU-a352cc27-ef5d-62c3-9464-92e47e48c994, NVIDIA GeForce RTX 4090, 3 MiB, 0 %\n"
+}

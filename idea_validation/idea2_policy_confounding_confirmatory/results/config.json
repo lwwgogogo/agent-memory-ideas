@@ -1,0 +1,47 @@
+{
+  "model": "qwq:32b",
+  "options": {
+    "temperature": 0,
+    "top_p": 1.0,
+    "seed": 20261005,
+    "num_ctx": 4096,
+    "num_predict": 128
+  },
+  "system": "只输出 JSON 对象，且只能有 p_success_left 和 p_success_right 两个字段。每个值必须是 0 到 1 之间的小数概率，例如 0.55，禁止写成百分数 55。不输出 choice、confidence、reason 或任何解释。",
+  "format": {
+    "type": "object",
+    "properties": {
+      "p_success_left": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "p_success_right": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "required": [
+      "p_success_left",
+      "p_success_right"
+    ],
+    "additionalProperties": false
+  },
+  "planned_runs": 320,
+  "retry_max": 1,
+  "job_order_seed": 20261005,
+  "case_sha256": "1f4570fd79a4982df7ce61b929782fd871327fb92e38a27ca1587e9848a17d94",
+  "preregistration_sha256": "24b4a494fc9413cf504d472904ae76e04e047947518701a18bb6033a5d4bdfa6",
+  "source_sha256": {
+    "generate_cases.py": "10505991a6a3ea34d1835a1e536505a8418ffcc2d0c87737a41d6097ee0deeb3",
+    "run_llm_test.py": "f31437082dfbd9467acc22ce7a218cd97d81b341824a4a28cda6bd2fe7d76291",
+    "core.py": "a9b558b121f20b68760eefb17dbdb3c02de73d266152759781a1d41edee7ab50",
+    "evaluate.py": "2dbbbfc87dd1b34600151b1c2dba51051b02eed6998f433f5c1acf042a2f158d",
+    "preflight.py": "ad48ffda4616e362cf6274b0335436334c87afe59c026af2c671ae86e57e624e",
+    "tests/conftest.py": "f5afde57261726b0c5045d220a34c76992c35f6fc03b8e1c1f0b78f9b11452c4",
+    "tests/test_confirmatory.py": "8bed63cb6b2cfc280dd01161dbc2302eb442c485309ff49cc5d7fb2f7fe95abf"
+  },
+  "run1_cases_sha256": "43df5c85d66f440d134da26f56c67bac7168e7354eea4c93ba27741191474cfa",
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python"
+}

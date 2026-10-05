@@ -56,3 +56,14 @@ infer=False：12/12；qwen infer=True：0/12；qwq infer=True：0/12。qwen 原�
 安全审计确认 5 组字节相同文件均有引用风险，0 组 / 0 文件移动，16 个候选原位保留；见 archive/duplicates_20261005/MANIFEST.md。
 
 Idea 2 Run 1 永久登记为 IDEA2_RUN1_NO_GO；原始 verdict 仍为 IDEA2_NO_GO，原因是完整性 Gate 未通过。原目录 idea_validation/idea2_policy_confounding/ 不修改。新的独立确认性复现位于 idea_validation/idea2_policy_confounding_confirmatory/，不覆盖或重判 Run 1。
+
+
+## Idea 2 Confirmatory Replication — 2026-10-05 完成
+
+独立确认性复现实验结论：**IDEA2_CONFIRM_GO**，预注册 G0—G7 全部通过。固定 320/320 个正式运行有效，0 次重试、0 个无效；20/20 个主场景完整，每个 gamma 均为 5/5。运行前测试 46 passed / 0 failed。
+
+场景级 MIAB：NoMemory 0.000000；Confounded 0.199256（95% bootstrap CI [0.105587, 0.287052]）；Balanced 0.015938；Stratified 0.008750；Aggregate 0.350000（次要结果）。Balanced/Stratified 纠正比例为 92.001506% / 95.608670%；gamma 单调递增，四点 Spearman rho=1.0。Confounded 标签 AB/BA 均值 0.155275 / 0.243238，顺序 O1/O2 均值 0.196113 / 0.202400。
+
+Run 1 永久保留 **IDEA2_RUN1_NO_GO**（原始标记 **IDEA2_NO_GO**）：因完整率门槛未通过，其历史文件及结论均不修改。此次 GO 仅适用于 qwq:32b、固定机制与预注册输入协议，不代表新颖性或现实长期 Agent 泛化。正式推理已结束；不自动开展文献查重、方法设计或 Idea 3。
+
+证据目录：`idea_validation/idea2_policy_confounding_confirmatory/`。详见其中 `preregistration.md`、`Confirmatory结果.md`、`最终结论.md`、`results/statistics.json`、`results/raw_outputs.jsonl` 和 `plots/`。

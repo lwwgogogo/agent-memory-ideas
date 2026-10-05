@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-10-05T05:38:11.040689+00:00",
+  "python": "3.10.21",
+  "frozen_source_preregistration_cases_hashes": "PASS",
+  "run1_cases_hash": "PASS",
+  "historical_tracked_files_unchanged_before_index_update": "PASS",
+  "journal_records": 640,
+  "unique_formal_runs": 320,
+  "first_attempt_only": true,
+  "raw_parsed_and_scenario_arithmetic": "PASS",
+  "required_artifacts": "PASS",
+  "artifact_size_and_credential_scan": "PASS",
+  "visual_review": "four PNG plots reviewed",
+  "verdict": "IDEA2_CONFIRM_GO"
+}

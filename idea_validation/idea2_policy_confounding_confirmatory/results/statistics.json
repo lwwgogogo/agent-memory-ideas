@@ -1,0 +1,653 @@
+{
+  "verdict": "IDEA2_CONFIRM_GO",
+  "gates": {
+    "G0": true,
+    "G1": true,
+    "G2": true,
+    "G3": true,
+    "G4": true,
+    "G5": true,
+    "G6": true,
+    "G7": true
+  },
+  "planned_runs": 320,
+  "valid_runs": 320,
+  "retried_runs": 0,
+  "invalid_runs": 0,
+  "formal_attempts": 320,
+  "complete_scenarios": 20,
+  "complete_by_gamma": {
+    "0.5": 5,
+    "0.7": 5,
+    "0.85": 5,
+    "0.95": 5
+  },
+  "excluded_scenarios": [],
+  "metrics": {
+    "NoMemory": {
+      "n": 20,
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "ConfoundedMemory": {
+      "n": 20,
+      "mean": 0.19925624999999997,
+      "median": 0.24437499999999998,
+      "std": 0.21200299648375753,
+      "ci_low": 0.1055865625,
+      "ci_high": 0.28705156249999997
+    },
+    "BalancedMemory": {
+      "n": 20,
+      "mean": 0.0159375,
+      "median": 0.0,
+      "std": 0.07704116615741702,
+      "ci_low": -0.016257812499999996,
+      "ci_high": 0.049695312499999894
+    },
+    "StratifiedOracle": {
+      "n": 20,
+      "mean": 0.008749999999999999,
+      "median": 0.0,
+      "std": 0.039131189606246314,
+      "ci_low": 0.0,
+      "ci_high": 0.026249999999999996
+    },
+    "AggregateSummary": {
+      "n": 20,
+      "mean": 0.35000000000000003,
+      "median": 0.385,
+      "std": 0.2435483308784608,
+      "ci_low": 0.24499999999999997,
+      "ci_high": 0.45150000000000007
+    },
+    "BalancedCorrection": {
+      "n": 20,
+      "mean": 0.18331875,
+      "median": 0.219375,
+      "std": 0.2049050625602719,
+      "ci_low": 0.09261453125,
+      "ci_high": 0.26949390624999997
+    },
+    "StratifiedCorrection": {
+      "n": 20,
+      "mean": 0.19050625,
+      "median": 0.24437499999999998,
+      "std": 0.20443919792855542,
+      "ci_low": 0.10039812499999998,
+      "ci_high": 0.2740878124999999
+    },
+    "DeltaConfounded": {
+      "n": 20,
+      "mean": 0.19925624999999997,
+      "median": 0.24437499999999998,
+      "std": 0.21200299648375753,
+      "ci_low": 0.1055865625,
+      "ci_high": 0.28705156249999997
+    },
+    "AggregateAmplification": {
+      "n": 20,
+      "mean": 0.15074375,
+      "median": 0.1255,
+      "std": 0.19915349011090733,
+      "ci_low": 0.06807437500000002,
+      "ci_high": 0.23830625
+    }
+  },
+  "by_gamma": {
+    "0.5": {
+      "NoMemory": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 5,
+        "mean": 0.0050000000000000044,
+        "median": 0.0,
+        "std": 0.06809345599982423,
+        "ci_low": -0.03749999999999999,
+        "ci_high": 0.06375
+      },
+      "BalancedMemory": {
+        "n": 5,
+        "mean": 0.009999999999999998,
+        "median": 0.0,
+        "std": 0.04562928062110994,
+        "ci_low": -0.02375,
+        "ci_high": 0.04375
+      },
+      "StratifiedOracle": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      }
+    },
+    "0.7": {
+      "NoMemory": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 5,
+        "mean": 0.1755,
+        "median": 0.34500000000000003,
+        "std": 0.29794294755875655,
+        "ci_low": -0.09350000000000001,
+        "ci_high": 0.362
+      },
+      "BalancedMemory": {
+        "n": 5,
+        "mean": 0.05625,
+        "median": 0.056249999999999994,
+        "std": 0.09509452534189337,
+        "ci_low": -0.016249999999999997,
+        "ci_high": 0.12875
+      },
+      "StratifiedOracle": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 5,
+        "mean": 0.27999999999999997,
+        "median": 0.27999999999999997,
+        "std": 0.0,
+        "ci_low": 0.27999999999999997,
+        "ci_high": 0.27999999999999997
+      }
+    },
+    "0.85": {
+      "NoMemory": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 5,
+        "mean": 0.25610000000000005,
+        "median": 0.22625,
+        "std": 0.1642218963780409,
+        "ci_low": 0.13024999999999998,
+        "ci_high": 0.38195000000000007
+      },
+      "BalancedMemory": {
+        "n": 5,
+        "mean": 0.027500000000000004,
+        "median": 0.0,
+        "std": 0.08168154626352271,
+        "ci_low": -0.025000000000000005,
+        "ci_high": 0.0975
+      },
+      "StratifiedOracle": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 5,
+        "mean": 0.49000000000000005,
+        "median": 0.49000000000000005,
+        "std": 0.0,
+        "ci_low": 0.49000000000000005,
+        "ci_high": 0.49000000000000005
+      }
+    },
+    "0.95": {
+      "NoMemory": {
+        "n": 5,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 5,
+        "mean": 0.36042499999999994,
+        "median": 0.3125,
+        "std": 0.09344222814124244,
+        "ci_low": 0.2899999999999999,
+        "ci_high": 0.43242499999999995
+      },
+      "BalancedMemory": {
+        "n": 5,
+        "mean": -0.030000000000000006,
+        "median": 0.0,
+        "std": 0.07426725388756475,
+        "ci_low": -0.0875,
+        "ci_high": 0.025
+      },
+      "StratifiedOracle": {
+        "n": 5,
+        "mean": 0.034999999999999996,
+        "median": 0.0,
+        "std": 0.07826237921249263,
+        "ci_low": 0.0,
+        "ci_high": 0.10499999999999998
+      },
+      "AggregateSummary": {
+        "n": 5,
+        "mean": 0.63,
+        "median": 0.63,
+        "std": 0.0,
+        "ci_low": 0.63,
+        "ci_high": 0.63
+      }
+    }
+  },
+  "spearman_rho": 1.0,
+  "sensitivity": {
+    "label": {
+      "AB": {
+        "NoMemory": {
+          "n": 20,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "ConfoundedMemory": {
+          "n": 20,
+          "mean": 0.155275,
+          "median": 0.15000000000000002,
+          "std": 0.3053579640098003,
+          "ci_low": 0.02642062500000004,
+          "ci_high": 0.28355937499999984
+        },
+        "BalancedMemory": {
+          "n": 20,
+          "mean": -0.05500000000000001,
+          "median": 0.0,
+          "std": 0.16570225358185467,
+          "ci_low": -0.123125,
+          "ci_high": 0.01812500000000001
+        },
+        "StratifiedOracle": {
+          "n": 20,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "AggregateSummary": {
+          "n": 20,
+          "mean": 0.35000000000000003,
+          "median": 0.385,
+          "std": 0.2435483308784608,
+          "ci_low": 0.24499999999999997,
+          "ci_high": 0.45150000000000007
+        }
+      },
+      "BA": {
+        "NoMemory": {
+          "n": 20,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "ConfoundedMemory": {
+          "n": 20,
+          "mean": 0.24323750000000005,
+          "median": 0.28,
+          "std": 0.25563979946864385,
+          "ci_low": 0.12052500000000002,
+          "ci_high": 0.33791374999999996
+        },
+        "BalancedMemory": {
+          "n": 20,
+          "mean": 0.08687500000000001,
+          "median": 0.11249999999999999,
+          "std": 0.16753215520107112,
+          "ci_low": 0.014374999999999999,
+          "ci_high": 0.156875
+        },
+        "StratifiedOracle": {
+          "n": 20,
+          "mean": 0.017499999999999998,
+          "median": 0.0,
+          "std": 0.07826237921249263,
+          "ci_low": 0.0,
+          "ci_high": 0.05249999999999999
+        },
+        "AggregateSummary": {
+          "n": 20,
+          "mean": 0.35000000000000003,
+          "median": 0.385,
+          "std": 0.2435483308784608,
+          "ci_low": 0.24499999999999997,
+          "ci_high": 0.45150000000000007
+        }
+      }
+    },
+    "order": {
+      "O1": {
+        "ConfoundedMemory": {
+          "n": 20,
+          "mean": 0.1961125,
+          "median": 0.23249999999999998,
+          "std": 0.25781136610595945,
+          "ci_low": 0.08645937499999999,
+          "ci_high": 0.30398749999999997
+        },
+        "BalancedMemory": {
+          "n": 20,
+          "mean": -0.001250000000000004,
+          "median": 0.0,
+          "std": 0.10433845483758487,
+          "ci_low": -0.045625,
+          "ci_high": 0.04250000000000001
+        },
+        "StratifiedOracle": {
+          "n": 20,
+          "mean": 0.017499999999999998,
+          "median": 0.0,
+          "std": 0.07826237921249263,
+          "ci_low": 0.0,
+          "ci_high": 0.05249999999999999
+        }
+      },
+      "O2": {
+        "ConfoundedMemory": {
+          "n": 20,
+          "mean": 0.2024,
+          "median": 0.19375,
+          "std": 0.24689693140426452,
+          "ci_low": 0.09824999999999998,
+          "ci_high": 0.30867687499999996
+        },
+        "BalancedMemory": {
+          "n": 20,
+          "mean": 0.033125,
+          "median": 0.0,
+          "std": 0.08719637169539857,
+          "ci_low": -0.0031406249999999885,
+          "ci_high": 0.07062500000000001
+        },
+        "StratifiedOracle": {
+          "n": 20,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    }
+  },
+  "balanced_correction_percent": 92.0015055989461,
+  "stratified_correction_percent": 95.60866974059786,
+  "status_by_condition": {
+    "NoMemory": {
+      "VALID": 40
+    },
+    "ConfoundedMemory": {
+      "VALID": 80
+    },
+    "BalancedMemory": {
+      "VALID": 80
+    },
+    "StratifiedOracle": {
+      "VALID": 80
+    },
+    "AggregateSummary": {
+      "VALID": 40
+    }
+  },
+  "first_attempt_valid": 320,
+  "raw_NoMemory_left_minus_right": {
+    "n": 40,
+    "mean": 0.0,
+    "median": 0.0,
+    "std": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+  },
+  "families": {
+    "任务调度": {
+      "NoMemory": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 4,
+        "mean": 0.25653125,
+        "median": 0.286375,
+        "std": 0.2297976096617413,
+        "ci_low": 0.06249999999999999,
+        "ci_high": 0.4505625
+      },
+      "BalancedMemory": {
+        "n": 4,
+        "mean": 0.0546875,
+        "median": 0.028124999999999997,
+        "std": 0.0766103167008204,
+        "ci_low": 0.0,
+        "ci_high": 0.12187500000000001
+      },
+      "StratifiedOracle": {
+        "n": 4,
+        "mean": 0.04375,
+        "median": 0.0,
+        "std": 0.08749999999999998,
+        "ci_low": 0.0,
+        "ci_high": 0.13124999999999998
+      },
+      "AggregateSummary": {
+        "n": 4,
+        "mean": 0.35,
+        "median": 0.385,
+        "std": 0.27410460290431704,
+        "ci_low": 0.12250000000000001,
+        "ci_high": 0.56
+      }
+    },
+    "机器控制": {
+      "NoMemory": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0062500000000000125,
+        "std": 0.262797450520358,
+        "ci_low": -0.23125,
+        "ci_high": 0.225
+      },
+      "BalancedMemory": {
+        "n": 4,
+        "mean": -0.0031250000000000028,
+        "median": 0.0,
+        "std": 0.0062500000000000056,
+        "ci_low": -0.009375000000000008,
+        "ci_high": 0.0
+      },
+      "StratifiedOracle": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 4,
+        "mean": 0.35,
+        "median": 0.385,
+        "std": 0.27410460290431704,
+        "ci_low": 0.12250000000000001,
+        "ci_high": 0.56
+      }
+    },
+    "算法策略": {
+      "NoMemory": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 4,
+        "mean": 0.21781249999999996,
+        "median": 0.24437499999999998,
+        "std": 0.15982534412601773,
+        "ci_low": 0.06562499999999999,
+        "ci_high": 0.34343749999999995
+      },
+      "BalancedMemory": {
+        "n": 4,
+        "mean": 0.03125,
+        "median": 0.028124999999999997,
+        "std": 0.11215224028078975,
+        "ci_low": -0.060937500000000006,
+        "ci_high": 0.12656250000000002
+      },
+      "StratifiedOracle": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 4,
+        "mean": 0.35,
+        "median": 0.385,
+        "std": 0.27410460290431704,
+        "ci_low": 0.12250000000000001,
+        "ci_high": 0.56
+      }
+    },
+    "资源选择": {
+      "NoMemory": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 4,
+        "mean": 0.234375,
+        "median": 0.23437499999999997,
+        "std": 0.11116101309961751,
+        "ci_low": 0.140625,
+        "ci_high": 0.328125
+      },
+      "BalancedMemory": {
+        "n": 4,
+        "mean": 0.003124999999999996,
+        "median": -6.938893903907228e-18,
+        "std": 0.10526504247216485,
+        "ci_low": -0.08125,
+        "ci_high": 0.0875
+      },
+      "StratifiedOracle": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 4,
+        "mean": 0.35,
+        "median": 0.385,
+        "std": 0.27410460290431704,
+        "ci_low": 0.12250000000000001,
+        "ci_high": 0.56
+      }
+    },
+    "路径选择": {
+      "NoMemory": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "ConfoundedMemory": {
+        "n": 4,
+        "mean": 0.2875625,
+        "median": 0.36950000000000005,
+        "std": 0.23467178986476694,
+        "ci_low": 0.056312499999999995,
+        "ci_high": 0.436875
+      },
+      "BalancedMemory": {
+        "n": 4,
+        "mean": -0.006249999999999992,
+        "median": -0.009374999999999988,
+        "std": 0.06594663246393506,
+        "ci_low": -0.06249999999999999,
+        "ci_high": 0.05000000000000002
+      },
+      "StratifiedOracle": {
+        "n": 4,
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0
+      },
+      "AggregateSummary": {
+        "n": 4,
+        "mean": 0.35,
+        "median": 0.385,
+        "std": 0.27410460290431704,
+        "ci_low": 0.12250000000000001,
+        "ci_high": 0.56
+      }
+    }
+  }
+}

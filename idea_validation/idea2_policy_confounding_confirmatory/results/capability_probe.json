@@ -1,0 +1,42 @@
+{
+  "supported": true,
+  "format": "schema",
+  "attempts": [
+    {
+      "format": "schema",
+      "http_status": 200,
+      "response": "{\"model\":\"qwq:32b\",\"created_at\":\"2026-10-05T05:28:01.542556189Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n    \\\"p_success_left\\\": 0.25,\\n    \\\"p_success_right\\\": 0.75\\n}\\n\"},\"done_reason\":\"stop\",\"done\":true,\"total_duration\":6376726187,\"load_duration\":4824880875,\"prompt_eval_count\":125,\"prompt_eval_duration\":174000000,\"eval_count\":27,\"eval_duration\":768000000}"
+    }
+  ],
+  "semantic_prompt": "这是输出格式协议测试，不是研究场景。请返回 Left 成功概率 0.25、Right 成功概率 0.75，严格使用指定的两个字段和 0 到 1 的小数。",
+  "model": "qwq:32b",
+  "options": {
+    "temperature": 0,
+    "top_p": 1.0,
+    "seed": 20261005,
+    "num_ctx": 4096,
+    "num_predict": 128
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "p_success_left": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "p_success_right": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "required": [
+      "p_success_left",
+      "p_success_right"
+    ],
+    "additionalProperties": false
+  },
+  "error": null,
+  "excluded_from_experiment": true
+}

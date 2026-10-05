@@ -1,0 +1,15 @@
+{
+  "returncode": 0,
+  "source_sha256": {
+    "generate_cases.py": "10505991a6a3ea34d1835a1e536505a8418ffcc2d0c87737a41d6097ee0deeb3",
+    "run_llm_test.py": "f31437082dfbd9467acc22ce7a218cd97d81b341824a4a28cda6bd2fe7d76291",
+    "core.py": "a9b558b121f20b68760eefb17dbdb3c02de73d266152759781a1d41edee7ab50",
+    "evaluate.py": "2dbbbfc87dd1b34600151b1c2dba51051b02eed6998f433f5c1acf042a2f158d",
+    "preflight.py": "ad48ffda4616e362cf6274b0335436334c87afe59c026af2c671ae86e57e624e",
+    "tests/conftest.py": "f5afde57261726b0c5045d220a34c76992c35f6fc03b8e1c1f0b78f9b11452c4",
+    "tests/test_confirmatory.py": "8bed63cb6b2cfc280dd01161dbc2302eb442c485309ff49cc5d7fb2f7fe95abf"
+  },
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "version": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "timestamp": "2026-10-05T05:27:55.041935+00:00"
+}
