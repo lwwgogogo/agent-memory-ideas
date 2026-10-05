@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-10-05T12:02:54.557371+00:00",
+  "completed_at_utc": "2026-10-05T12:02:55.536693+00:00",
+  "exit_code": 0,
+  "passed": 57,
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "command": "python -m pytest -q tests",
+  "development_fixes_before_lock": [
+    "native baseline dictionary-comprehension syntax",
+    "frozen-slots exception-type expectation; field injection still rejected"
+  ]
+}

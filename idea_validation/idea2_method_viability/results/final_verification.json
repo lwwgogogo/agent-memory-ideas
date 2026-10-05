@@ -1,0 +1,60 @@
+{
+  "verified_at_utc": "2026-10-05T12:09:41.414806+00:00",
+  "python": "3.10.21",
+  "environment": "agentmem_lab",
+  "tests_passed": 57,
+  "preregistration_code_unchanged": true,
+  "preregistration_sha256": "8fb53ec998c89a9b32de1a42009ee81c94e9c3ea5418899285a6b073b3cf4dc0",
+  "tests_before_lock_before_formal": true,
+  "history_file_count": 571,
+  "all_history_files_identical": true,
+  "upstream_source_unchanged": true,
+  "sources": {
+    "jitrl": {
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl",
+      "commit": "143d22185d95fbf633a0befe6861d5e8b732543b"
+    },
+    "memrl": {
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl",
+      "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0"
+    }
+  },
+  "exact_world_count": 36,
+  "method_results_rows": 720,
+  "raw_record_counts": {
+    "native_outputs.jsonl": 1440,
+    "secondary_selection.jsonl": 4800
+  },
+  "secondary_constraints_passed": true,
+  "candidate_no_oracle_leakage": true,
+  "normalized_adapter_inputs_equal": true,
+  "selected_candidate": "M1",
+  "verdict": "METHOD_VIABILITY_GO",
+  "all_required_artifacts_present": true,
+  "plots": {
+    "method_tradeoff.png": [
+      1440,
+      720
+    ],
+    "policy_invariance_gap.png": [
+      1800,
+      720
+    ],
+    "correction_vs_gamma.png": [
+      1440,
+      720
+    ],
+    "crossover.png": [
+      1980,
+      720
+    ],
+    "true_signal_retention.png": [
+      1440,
+      720
+    ]
+  },
+  "formal_reruns": 0,
+  "new_packages": [],
+  "new_models": [],
+  "snapshot": "pre-commit; final Git delivery checked after push"
+}

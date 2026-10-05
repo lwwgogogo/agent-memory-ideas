@@ -1,0 +1,57 @@
+{
+  "gates": {
+    "G0": true,
+    "G1": true,
+    "G2": true,
+    "G3": true,
+    "G4": true,
+    "G5": true,
+    "G6": true,
+    "G7": true,
+    "G8": true,
+    "G9": true
+  },
+  "candidate_gates": {
+    "M1": {
+      "G1": true,
+      "G2": true,
+      "G3": true,
+      "G4": true,
+      "G5": true,
+      "G6": true,
+      "G7": true,
+      "G8": true,
+      "G9": true
+    },
+    "M2": {
+      "G1": true,
+      "G2": true,
+      "G3": true,
+      "G4": true,
+      "G5": false,
+      "G6": true,
+      "G7": false,
+      "G8": true,
+      "G9": true
+    },
+    "M4": {
+      "G1": true,
+      "G2": true,
+      "G3": true,
+      "G4": true,
+      "G5": true,
+      "G6": true,
+      "G7": true,
+      "G8": true,
+      "G9": true
+    }
+  },
+  "selected_candidate": "M1",
+  "verdict": "METHOD_VIABILITY_GO",
+  "method_selection_order": [
+    "M1",
+    "M4"
+  ],
+  "no_oracle_leakage": true,
+  "scope": "exact finite discrete observed-state viability, not novelty or finite-sample robustness"
+}

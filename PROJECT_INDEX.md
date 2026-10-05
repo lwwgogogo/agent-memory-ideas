@@ -109,3 +109,11 @@ JitRL 原生 episode ranking helper 与 MemRL 原生 Q-value selector 在合成 
 证据只来自 JitRL 原生 get_top_episodes 与 MemRL 原生 QValueUpdater/ValueAwareSelector 的返回选择；不再以旧 adapter 全 bank action-average score 为 Gate。所有 selected 项在成功池内同分，20 次 shuffle 后偏移仍随 P/Q 稳定变化。两个组件 selected IDs 一致，属于同一固定机制的两个实现，不应视为独立统计重复。JitRL exact state-aware path 被依赖阻塞，MemRL full retrieval 未运行；结论仅限 native global/value-selection components。详见新目录 SCOPE_CORRECTION.md、Stage4_1实验结果.md、最终结论.md 和 results/。
 
 历史 verdict 均冻结：Run1 IDEA2_RUN1_NO_GO；Confirmatory IDEA2_CONFIRM_GO；Stage-2 CAUSAL_SUFFICIENCY_WEAK；Stage-3 REAL_FORMATION_WEAK；Stage-4 POLICY_MEMORY_GO。本阶段停止，不自动进入方法设计或下一阶段。
+
+## Idea 2 Stage-5 — Method Viability Study — 2026-10-05
+
+独立目录：idea_validation/idea2_method_viability/。新增 verdict：**METHOD_VIABILITY_GO**；选择 practical candidate **M1 StateStandardizedUtility**（暂用描述性名称）。57项测试在正式运行前通过，锁定预注册与实现；两系统复现 Stage-4.1 native selected IDs。36个exact bank、720条method/target结果，G0–G9通过。
+
+M1 在本轮已观测离散state下实现null PIG/NPE=0，真实global gap=.10、TSR=1，P/Q×三档gamma全部query crossover正确；通过两个native metadata adapters，未读取true propensity/gamma。M4也满足常规Gate但有small shrinkage bias；M2不随target变化，crossover失败，.99 clipping偏差明显；M3是ORACLE / NOT CANDIDATE METHOD。M0是native selection-support proxy，不能当作成功概率；报告用absolute NPE、TGE、TSR及same-scale A1消融共同判断。
+
+M1统计核心就是direct standardization/g-computation，不声明novelty。exact低support结果不证明sampling robustness，也不证明自然语言state解析或full-agent效果。历史六阶段verdict全部冻结：IDEA2_RUN1_NO_GO、IDEA2_CONFIRM_GO、CAUSAL_SUFFICIENCY_WEAK、REAL_FORMATION_WEAK、POLICY_MEMORY_GO、NATIVE_EVIDENCE_GO。详见新目录theory.md、Method候选比较.md、Stage5实验结果.md、最终结论.md与results/。本轮停止，不自动开始新颖性审计。

@@ -66,3 +66,11 @@ Primary qwen2.5:14b 和 Secondary qwq:32b 各完成 160/160 memory formation、3
 Stage-4.1 scope correction：旧 adapter action-level score/bank-average score 不进入新 Gate；新 primary 只依赖 upstream returned ranking/selection。两个组件原生 selected IDs 完全一致，不作为独立统计重复；大量同分成功项是机制本身，shuffle 排除单一 insertion order 特例。当前完整 JitRL state-aware 路径缺 OpenAI/FAISS 等依赖与必要环境配置，严格记 BLOCKED，没有模拟 embedding；MemRL full candidate retrieval 未运行。加固仅限 native component selection，不能外推完整 agent。
 
 永久保留历史：IDEA2_RUN1_NO_GO、IDEA2_CONFIRM_GO、CAUSAL_SUFFICIENCY_WEAK、REAL_FORMATION_WEAK、POLICY_MEMORY_GO。现象证据加固完成，可以进入方法设计阶段；本轮到此停止。
+
+## Idea 2 Stage-5 — Method Viability Study — 2026-10-05
+
+独立目录 idea_validation/idea2_method_viability/。最终 **METHOD_VIABILITY_GO**，候选 **M1**。G0原生复现先通过，57项测试与SHA256锁定均在正式运行前；36个exact bank、720条method结果、1440条native selections、4800条secondary selections完成，G0–G9通过。
+
+M1在两adapter上得到相同观察输入，无true propensity/gamma；null PIG=NPE=0，真实gap=.10全部保留、TSR=1，context T0/T1全部正确翻转。M4在常规support通过但仍有小幅strict false reversal与.99 shrinkage limitation。M2的题述global SNIPS缺rho适配，crossover失败且.99 clipping留大偏差；M3为oracle classical reference，永不候选。M0 primary proxy是native selection fraction中位数，报告明确它不等于成功概率。
+
+M1与经典direct standardization/g-computation相同，不声明novelty；下一步应做方法新颖性/差异化审计，本轮不自动执行。Exact离散state结果不外推finite-sample/连续context/full-agent。六个历史目录与verdict冻结，不回写结果。

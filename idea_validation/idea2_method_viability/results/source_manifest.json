@@ -1,0 +1,43 @@
+{
+  "sources": {
+    "jitrl": {
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl",
+      "commit": "143d22185d95fbf633a0befe6861d5e8b732543b"
+    },
+    "memrl": {
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl",
+      "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0"
+    }
+  },
+  "native_functions": {
+    "jitrl": [
+      {
+        "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/prompt_update_with_history.py",
+        "symbol": "get_top_episodes",
+        "line": 22,
+        "sha256": "badde43d32471e483a775a6016345c43fd1862a53106dfc394c48f4ef671c7ec"
+      }
+    ],
+    "memrl": [
+      {
+        "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/value_driven.py",
+        "symbol": "QValueUpdater.update",
+        "line": 181,
+        "sha256": "994a27154e78bdfdad07018b795c22c68e26ad30a41c67da7276c75cd85f563b"
+      },
+      {
+        "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/value_driven.py",
+        "symbol": "ValueAwareSelector.select",
+        "line": 90,
+        "sha256": "994a27154e78bdfdad07018b795c22c68e26ad30a41c67da7276c75cd85f563b"
+      }
+    ]
+  },
+  "python_executable": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "initial_worktree_clean": true,
+  "base_commit": "df09502895ab10c70b614d613560fa21859b9c6b",
+  "new_packages_installed": [],
+  "new_models_used": [],
+  "created_at_utc": "2026-10-05T12:02:55.801353+00:00"
+}

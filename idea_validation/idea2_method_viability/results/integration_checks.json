@@ -1,0 +1,185 @@
+{
+  "all_pass": true,
+  "worlds": [
+    {
+      "world_id": "A_A_0.50_P",
+      "normalized_inputs_identical": true,
+      "sha256": "b9623af9c5ccd7c0c6bc9f83527cbd4c760ac06aa03303a78484ecb53d050e5f"
+    },
+    {
+      "world_id": "A_A_0.50_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "b9623af9c5ccd7c0c6bc9f83527cbd4c760ac06aa03303a78484ecb53d050e5f"
+    },
+    {
+      "world_id": "A_A_0.70_P",
+      "normalized_inputs_identical": true,
+      "sha256": "5d83b8e1c56f0b2c803492004018cc5979f45425db0be3659f42dfd1f1e1abea"
+    },
+    {
+      "world_id": "A_A_0.70_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "ff72169d74714271c5d72dfcb955d87a70f5a6f482a3a6dbf176f9ec77f22439"
+    },
+    {
+      "world_id": "A_A_0.85_P",
+      "normalized_inputs_identical": true,
+      "sha256": "86d22cbbfa5a3414902058cb8df9b038002da9d6def9e935dd88d44113230f9e"
+    },
+    {
+      "world_id": "A_A_0.85_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "25f418d221ab25d47dde10f4dfb76c77c48c005800aa94cb5da96e0403efde7d"
+    },
+    {
+      "world_id": "A_A_0.95_P",
+      "normalized_inputs_identical": true,
+      "sha256": "030c721c477267f42aeacd27514b830b45dc1098c1d597c9076c2c331a8eeaa5"
+    },
+    {
+      "world_id": "A_A_0.95_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "407a2d4d0d0b203e88c61ff8e87e7a21f597a6c602262176e28ac27c73c47b9e"
+    },
+    {
+      "world_id": "B_B_0.50_P",
+      "normalized_inputs_identical": true,
+      "sha256": "b360ea33ba392116e260f0bc17a70024981e88ce7b9fb3741f4f78b083143fae"
+    },
+    {
+      "world_id": "B_B_0.50_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "b360ea33ba392116e260f0bc17a70024981e88ce7b9fb3741f4f78b083143fae"
+    },
+    {
+      "world_id": "B_B_0.70_P",
+      "normalized_inputs_identical": true,
+      "sha256": "a9ed7c64677c5f7fa4c224d132ad858a656e6091958e190334bd8b4225ff8cf2"
+    },
+    {
+      "world_id": "B_B_0.70_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "00a3262549bfdece7aaddabd861548a1169a80d8d49f1329347ca31d6002406b"
+    },
+    {
+      "world_id": "B_B_0.85_P",
+      "normalized_inputs_identical": true,
+      "sha256": "ea7b53f2c5e1a13b00bc61e29debfe8438e60f1fe38c62e2e5a4ab1cd3ef429a"
+    },
+    {
+      "world_id": "B_B_0.85_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "2490dd463af17ea7fcad48b5ae620254e0ef3b10c6948458464f9416fa212c49"
+    },
+    {
+      "world_id": "B_B_0.95_P",
+      "normalized_inputs_identical": true,
+      "sha256": "11ed645bc781bb10b9fd06ac0d23bc9ab8621dc12be731477885dec943863d2a"
+    },
+    {
+      "world_id": "B_B_0.95_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "1f93f588f5f833e4db211260a6fd13017256e22a3ba59c7068cfc4b48d087416"
+    },
+    {
+      "world_id": "C_C_0.50_P",
+      "normalized_inputs_identical": true,
+      "sha256": "c2911a88893e7084c8ee3befbaf316a52179a391b7c6fb1b4cf97dce6af3e9cc"
+    },
+    {
+      "world_id": "C_C_0.50_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "c2911a88893e7084c8ee3befbaf316a52179a391b7c6fb1b4cf97dce6af3e9cc"
+    },
+    {
+      "world_id": "C_C_0.70_P",
+      "normalized_inputs_identical": true,
+      "sha256": "3e8998c7eaa496062c905a52b61acf9da1e7250af8ef25ef4ce2d8f7656acaf6"
+    },
+    {
+      "world_id": "C_C_0.70_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "c9bc363f04560812b3661a48851520d40f8c601e5c59bf4bcbb2e02f64cdb01c"
+    },
+    {
+      "world_id": "C_C_0.85_P",
+      "normalized_inputs_identical": true,
+      "sha256": "2de1d13f98014053337ad086e58b5c22fadd277edd9787d36657ada3bba81482"
+    },
+    {
+      "world_id": "C_C_0.85_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "4bcea84a832949ab04b0e2a639a91f848d71271572c4d4db1e7106c9f6da9546"
+    },
+    {
+      "world_id": "C_C_0.95_P",
+      "normalized_inputs_identical": true,
+      "sha256": "4df54d40ae73e46c519014c16f5074b1b12ec9ccda2587225a3b66af9b245d85"
+    },
+    {
+      "world_id": "C_C_0.95_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "0fb41fb40b938c20f2bce93815580822224f6fd21698da9b3545795486c6c31b"
+    },
+    {
+      "world_id": "D_A_0.95_P",
+      "normalized_inputs_identical": true,
+      "sha256": "030c721c477267f42aeacd27514b830b45dc1098c1d597c9076c2c331a8eeaa5"
+    },
+    {
+      "world_id": "D_A_0.95_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "407a2d4d0d0b203e88c61ff8e87e7a21f597a6c602262176e28ac27c73c47b9e"
+    },
+    {
+      "world_id": "D_A_0.99_P",
+      "normalized_inputs_identical": true,
+      "sha256": "65032622fd447114224c5bdae8867b7d709157d3fb9bbe9b378d643a557dbd91"
+    },
+    {
+      "world_id": "D_A_0.99_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "b11799f0e6a1f1298964a85f72d3475925a1f65ac7964af5e2b71c88b843931f"
+    },
+    {
+      "world_id": "D_B_0.95_P",
+      "normalized_inputs_identical": true,
+      "sha256": "11ed645bc781bb10b9fd06ac0d23bc9ab8621dc12be731477885dec943863d2a"
+    },
+    {
+      "world_id": "D_B_0.95_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "1f93f588f5f833e4db211260a6fd13017256e22a3ba59c7068cfc4b48d087416"
+    },
+    {
+      "world_id": "D_B_0.99_P",
+      "normalized_inputs_identical": true,
+      "sha256": "15d0ab02d392db9a96c4a2ec7811814d1625e2ada653394186ad31217bb6226b"
+    },
+    {
+      "world_id": "D_B_0.99_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "269d8338e0491e82a240144d928e05a0ba2ef562313759905d2d3779a22c1f63"
+    },
+    {
+      "world_id": "D_C_0.95_P",
+      "normalized_inputs_identical": true,
+      "sha256": "4df54d40ae73e46c519014c16f5074b1b12ec9ccda2587225a3b66af9b245d85"
+    },
+    {
+      "world_id": "D_C_0.95_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "0fb41fb40b938c20f2bce93815580822224f6fd21698da9b3545795486c6c31b"
+    },
+    {
+      "world_id": "D_C_0.99_P",
+      "normalized_inputs_identical": true,
+      "sha256": "270e7a9e4ffb3431918426982ac5d3e05fe560862547b5a02212e743a4cb2da1"
+    },
+    {
+      "world_id": "D_C_0.99_Q",
+      "normalized_inputs_identical": true,
+      "sha256": "a7c9b9ced16a9612b4f99223de22548f13d7d11c24fefbabf18381840faf5372"
+    }
+  ]
+}

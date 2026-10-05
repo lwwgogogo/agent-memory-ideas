@@ -1,0 +1,21 @@
+{
+  "locked_at_utc": "2026-10-05T12:02:55.802052+00:00",
+  "sha256": "8fb53ec998c89a9b32de1a42009ee81c94e9c3ea5418899285a6b073b3cf4dc0",
+  "code_sha256": {
+    "native_baselines.py": "4ce19eb23ddc73376d35015835ecdb5995d9c73579c529d6108fdf5df3750917",
+    "metrics.py": "c4ddd9a79312ad1a39d49801baaa8825d35bfa7e489f9d88663b3af43268e8b5",
+    "evaluate.py": "74373aec00f2d36253cc5bead6a7268c2098f22a0ed2e15bfe73dd9ad9d7b3dd",
+    "methods.py": "dbe9b4df97c53ce36c790db9a62c1eb20690ec11e81b46c18ac0229844dd8da4",
+    "preflight.py": "953e4c3e1fbb177a3235cb90dc606cbc08917affeefcb1e9dd87c040ea7de7dc",
+    "config.py": "f7fd216f6c4c8de6b3bbc469201ccc1298a72aae811b3a7f3254d611e27747ca",
+    "run_experiment.py": "27debaecc7aa8b4aeae52c4a55519eb4019d836aa28519785edad86bc8d10ac4",
+    "schema.py": "cedd76d60d2e6a37aebcee988c3ab18ee8a4f5df33606e90b1adc72ffdf7d879",
+    "build_worlds.py": "f10cfd5ced0c54396785c98fc9d568a0eaef51b06f87b942a235c37835b7e6d7",
+    "adapters/jitrl.py": "0a00be9517b61cdc6846e37e453233eb60d8843b5b8785d746f0b52a72e480cb",
+    "adapters/memrl.py": "33671eb2c8d3d2cfcddcce2dd6ca0012a3f6ef53290b489f676b5b8621d123eb",
+    "adapters/__init__.py": "ff0cb971d9c881af9c82099633741378ba68e806b99776093c42263368bde648",
+    "adapters/corrected_selector.py": "87098a9266975c87f1dc6253473510c5cde9e49fb8d7121a31a792a06e9b16ca",
+    "tests/test_study.py": "6955e612b0345191ce22548a3fd4f68ea8767aa15cc8bbe82937b0225d19b819"
+  },
+  "formal_run_started": false
+}

@@ -1,0 +1,1603 @@
+{
+  "worlds": [
+    {
+      "id": "A_A_0.50_P",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.50",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 500,
+            "success": 450
+          },
+          "B": {
+            "n": 500,
+            "success": 450
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 500,
+            "success": 100
+          },
+          "B": {
+            "n": 500,
+            "success": 100
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.50_P.jsonl",
+      "sha256": "29b66da6deb7a68ab20cf40677f1bf5616a87f4cdbee084a5cbd123f3372ef94",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.50_Q",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.50",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 500,
+            "success": 450
+          },
+          "B": {
+            "n": 500,
+            "success": 450
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 500,
+            "success": 100
+          },
+          "B": {
+            "n": 500,
+            "success": 100
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.50_Q.jsonl",
+      "sha256": "29b66da6deb7a68ab20cf40677f1bf5616a87f4cdbee084a5cbd123f3372ef94",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.70_P",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.70",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 700,
+            "success": 630
+          },
+          "B": {
+            "n": 300,
+            "success": 270
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 300,
+            "success": 60
+          },
+          "B": {
+            "n": 700,
+            "success": 140
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.70_P.jsonl",
+      "sha256": "1d83e137a68c333061af62fcfe6b97ef0f852c81a2ff865e96f1eab1ceb5bf90",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.70_Q",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.70",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 300,
+            "success": 270
+          },
+          "B": {
+            "n": 700,
+            "success": 630
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 700,
+            "success": 140
+          },
+          "B": {
+            "n": 300,
+            "success": 60
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.70_Q.jsonl",
+      "sha256": "23092327ef5a8cc6c410d2a526811709acdf690d95faccc75a4c45372d6d60aa",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.85_P",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.85",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 850,
+            "success": 765
+          },
+          "B": {
+            "n": 150,
+            "success": 135
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 150,
+            "success": 30
+          },
+          "B": {
+            "n": 850,
+            "success": 170
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.85_P.jsonl",
+      "sha256": "ccc72a88cabb1c09fc92ccba9d6508c95d3417eac8ff91b840aea58e721102e6",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.85_Q",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.85",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 150,
+            "success": 135
+          },
+          "B": {
+            "n": 850,
+            "success": 765
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 850,
+            "success": 170
+          },
+          "B": {
+            "n": 150,
+            "success": 30
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.85_Q.jsonl",
+      "sha256": "a9053ad63c7846af7e6393c44cae68da3c9281f2e933679ea3a5ef9f7f082ab4",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.95_P",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.95",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 950,
+            "success": 855
+          },
+          "B": {
+            "n": 50,
+            "success": 45
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 50,
+            "success": 10
+          },
+          "B": {
+            "n": 950,
+            "success": 190
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.95_P.jsonl",
+      "sha256": "3a470e3f11eb61a8703a451359a996905097c146e49f5b289b531c13c4b86d3f",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "A_A_0.95_Q",
+      "family": "A",
+      "mechanism": "A",
+      "gamma": "0.95",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 50,
+            "success": 45
+          },
+          "B": {
+            "n": 950,
+            "success": 855
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 950,
+            "success": 190
+          },
+          "B": {
+            "n": 50,
+            "success": 10
+          }
+        }
+      },
+      "file": "results/worlds/A_A_0.95_Q.jsonl",
+      "sha256": "6b48a8a28256dd574b6c3f20d810e5c501151a5e5e4bc7af2cad9bf808dd19eb",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.50_P",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.50",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 500,
+            "success": 450
+          },
+          "B": {
+            "n": 500,
+            "success": 400
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 500,
+            "success": 150
+          },
+          "B": {
+            "n": 500,
+            "success": 100
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.50_P.jsonl",
+      "sha256": "e7561a8a8dba743016dfa8582157deab0cf8886ac8b31c3c717011cb83f6179c",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.50_Q",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.50",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 500,
+            "success": 450
+          },
+          "B": {
+            "n": 500,
+            "success": 400
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 500,
+            "success": 150
+          },
+          "B": {
+            "n": 500,
+            "success": 100
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.50_Q.jsonl",
+      "sha256": "e7561a8a8dba743016dfa8582157deab0cf8886ac8b31c3c717011cb83f6179c",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.70_P",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.70",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 700,
+            "success": 630
+          },
+          "B": {
+            "n": 300,
+            "success": 240
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 300,
+            "success": 90
+          },
+          "B": {
+            "n": 700,
+            "success": 140
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.70_P.jsonl",
+      "sha256": "c71de9af6faea6889157374d633620e04ee58fc8d13bab2cac5031c60f9adf1b",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.70_Q",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.70",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 300,
+            "success": 270
+          },
+          "B": {
+            "n": 700,
+            "success": 560
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 700,
+            "success": 210
+          },
+          "B": {
+            "n": 300,
+            "success": 60
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.70_Q.jsonl",
+      "sha256": "d3506d10f356cd5278c4c7db59f484e8b721c9ba7062902b1d64b822824f503a",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.85_P",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.85",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 850,
+            "success": 765
+          },
+          "B": {
+            "n": 150,
+            "success": 120
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 150,
+            "success": 45
+          },
+          "B": {
+            "n": 850,
+            "success": 170
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.85_P.jsonl",
+      "sha256": "ea424d01636a25a36928d83e7bb76bb15b91b64d29e68ca4374be7d4643b1480",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.85_Q",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.85",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 150,
+            "success": 135
+          },
+          "B": {
+            "n": 850,
+            "success": 680
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 850,
+            "success": 255
+          },
+          "B": {
+            "n": 150,
+            "success": 30
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.85_Q.jsonl",
+      "sha256": "5d7b355402ba78d94461bcd60c8ce3d96bcab59e4732c6b0670905ccf08e5a30",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.95_P",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.95",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 950,
+            "success": 855
+          },
+          "B": {
+            "n": 50,
+            "success": 40
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 50,
+            "success": 15
+          },
+          "B": {
+            "n": 950,
+            "success": 190
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.95_P.jsonl",
+      "sha256": "a6ddc05b7d6a4c84984a0f57c52f4397c32cfdb91d89dc380b5b83ca0be4d26b",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "B_B_0.95_Q",
+      "family": "B",
+      "mechanism": "B",
+      "gamma": "0.95",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 50,
+            "success": 45
+          },
+          "B": {
+            "n": 950,
+            "success": 760
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 950,
+            "success": 285
+          },
+          "B": {
+            "n": 50,
+            "success": 10
+          }
+        }
+      },
+      "file": "results/worlds/B_B_0.95_Q.jsonl",
+      "sha256": "0a3f71f8a8421aec924d8542a5025479d759f932862c7df770340a9edc898e44",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.50_P",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.50",
+      "policy": "P",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 500,
+            "success": 450
+          },
+          "B": {
+            "n": 500,
+            "success": 300
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 500,
+            "success": 100
+          },
+          "B": {
+            "n": 500,
+            "success": 250
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.50_P.jsonl",
+      "sha256": "02c6216c64f0df940f3100a9ec146fdc7787ae3a067497f2da7d114d4b59d433",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.50_Q",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.50",
+      "policy": "Q",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 500,
+            "success": 450
+          },
+          "B": {
+            "n": 500,
+            "success": 300
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 500,
+            "success": 100
+          },
+          "B": {
+            "n": 500,
+            "success": 250
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.50_Q.jsonl",
+      "sha256": "02c6216c64f0df940f3100a9ec146fdc7787ae3a067497f2da7d114d4b59d433",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.70_P",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.70",
+      "policy": "P",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 700,
+            "success": 630
+          },
+          "B": {
+            "n": 300,
+            "success": 180
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 300,
+            "success": 60
+          },
+          "B": {
+            "n": 700,
+            "success": 350
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.70_P.jsonl",
+      "sha256": "239a6423e73ed85855538704fd6e870ca4ad9bbc3ff57c01539f9a687c35c651",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.70_Q",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.70",
+      "policy": "Q",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 300,
+            "success": 270
+          },
+          "B": {
+            "n": 700,
+            "success": 420
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 700,
+            "success": 140
+          },
+          "B": {
+            "n": 300,
+            "success": 150
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.70_Q.jsonl",
+      "sha256": "08e4edc6369d7e761a8a33b1ed9757686f9095c69d0e9d7503e68a52d4532bc1",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.85_P",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.85",
+      "policy": "P",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 850,
+            "success": 765
+          },
+          "B": {
+            "n": 150,
+            "success": 90
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 150,
+            "success": 30
+          },
+          "B": {
+            "n": 850,
+            "success": 425
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.85_P.jsonl",
+      "sha256": "2d99a467aa4369fcdd59457f8d50bdb86fd6cc7ec155602a27c3681a1077ddd5",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.85_Q",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.85",
+      "policy": "Q",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 150,
+            "success": 135
+          },
+          "B": {
+            "n": 850,
+            "success": 510
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 850,
+            "success": 170
+          },
+          "B": {
+            "n": 150,
+            "success": 75
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.85_Q.jsonl",
+      "sha256": "e2cd95bfd7be7b9eec7152f808a51416e9e670d082fd7231917e48babf0070d1",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.95_P",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.95",
+      "policy": "P",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 950,
+            "success": 855
+          },
+          "B": {
+            "n": 50,
+            "success": 30
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 50,
+            "success": 10
+          },
+          "B": {
+            "n": 950,
+            "success": 475
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.95_P.jsonl",
+      "sha256": "a22ff556cacbe0af8df8db88ab683fb0cdb3c250912b6c5d9176a500f0abf33d",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "C_C_0.95_Q",
+      "family": "C",
+      "mechanism": "C",
+      "gamma": "0.95",
+      "policy": "Q",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 50,
+            "success": 45
+          },
+          "B": {
+            "n": 950,
+            "success": 570
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 950,
+            "success": 190
+          },
+          "B": {
+            "n": 50,
+            "success": 25
+          }
+        }
+      },
+      "file": "results/worlds/C_C_0.95_Q.jsonl",
+      "sha256": "e9ec5978597c28b5881cb6abfe25864a8bc57adee51f4498ad098915cd3aab4c",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "D_A_0.95_P",
+      "family": "D",
+      "mechanism": "A",
+      "gamma": "0.95",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 950,
+            "success": 855
+          },
+          "B": {
+            "n": 50,
+            "success": 45
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 50,
+            "success": 10
+          },
+          "B": {
+            "n": 950,
+            "success": 190
+          }
+        }
+      },
+      "file": "results/worlds/D_A_0.95_P.jsonl",
+      "sha256": "3a470e3f11eb61a8703a451359a996905097c146e49f5b289b531c13c4b86d3f",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "D_A_0.95_Q",
+      "family": "D",
+      "mechanism": "A",
+      "gamma": "0.95",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 50,
+            "success": 45
+          },
+          "B": {
+            "n": 950,
+            "success": 855
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 950,
+            "success": 190
+          },
+          "B": {
+            "n": 50,
+            "success": 10
+          }
+        }
+      },
+      "file": "results/worlds/D_A_0.95_Q.jsonl",
+      "sha256": "6b48a8a28256dd574b6c3f20d810e5c501151a5e5e4bc7af2cad9bf808dd19eb",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "D_A_0.99_P",
+      "family": "D",
+      "mechanism": "A",
+      "gamma": "0.99",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 990,
+            "success": 891
+          },
+          "B": {
+            "n": 10,
+            "success": 9
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 10,
+            "success": 2
+          },
+          "B": {
+            "n": 990,
+            "success": 198
+          }
+        }
+      },
+      "file": "results/worlds/D_A_0.99_P.jsonl",
+      "sha256": "7c1424c4ce44e2e2f66749135c0aa9d19d9fdff9e2a543d5267b237a0c07ce7d",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "D_A_0.99_Q",
+      "family": "D",
+      "mechanism": "A",
+      "gamma": "0.99",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 10,
+            "success": 9
+          },
+          "B": {
+            "n": 990,
+            "success": 891
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 990,
+            "success": 198
+          },
+          "B": {
+            "n": 10,
+            "success": 2
+          }
+        }
+      },
+      "file": "results/worlds/D_A_0.99_Q.jsonl",
+      "sha256": "dae70764157edc64ff9bf2d267afab8ccbbb1816e342ce8348d091dc54e248b4",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        }
+      }
+    },
+    {
+      "id": "D_B_0.95_P",
+      "family": "D",
+      "mechanism": "B",
+      "gamma": "0.95",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 950,
+            "success": 855
+          },
+          "B": {
+            "n": 50,
+            "success": 40
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 50,
+            "success": 15
+          },
+          "B": {
+            "n": 950,
+            "success": 190
+          }
+        }
+      },
+      "file": "results/worlds/D_B_0.95_P.jsonl",
+      "sha256": "a6ddc05b7d6a4c84984a0f57c52f4397c32cfdb91d89dc380b5b83ca0be4d26b",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "D_B_0.95_Q",
+      "family": "D",
+      "mechanism": "B",
+      "gamma": "0.95",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 50,
+            "success": 45
+          },
+          "B": {
+            "n": 950,
+            "success": 760
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 950,
+            "success": 285
+          },
+          "B": {
+            "n": 50,
+            "success": 10
+          }
+        }
+      },
+      "file": "results/worlds/D_B_0.95_Q.jsonl",
+      "sha256": "0a3f71f8a8421aec924d8542a5025479d759f932862c7df770340a9edc898e44",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "D_B_0.99_P",
+      "family": "D",
+      "mechanism": "B",
+      "gamma": "0.99",
+      "policy": "P",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 990,
+            "success": 891
+          },
+          "B": {
+            "n": 10,
+            "success": 8
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 10,
+            "success": 3
+          },
+          "B": {
+            "n": 990,
+            "success": 198
+          }
+        }
+      },
+      "file": "results/worlds/D_B_0.99_P.jsonl",
+      "sha256": "11262f34d3722190bc90e175924d3adfb56cfc527981d60aaef44163ffa6cbff",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "D_B_0.99_Q",
+      "family": "D",
+      "mechanism": "B",
+      "gamma": "0.99",
+      "policy": "Q",
+      "targets": [
+        "T"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 10,
+            "success": 9
+          },
+          "B": {
+            "n": 990,
+            "success": 792
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 990,
+            "success": 297
+          },
+          "B": {
+            "n": 10,
+            "success": 2
+          }
+        }
+      },
+      "file": "results/worlds/D_B_0.99_Q.jsonl",
+      "sha256": "4cb68e2a248e16a9928d7f71b13fe6bd09c2d42ae6d8f08f90e7203a92d22432",
+      "truth": {
+        "T": {
+          "A": "3/5",
+          "B": "1/2"
+        }
+      }
+    },
+    {
+      "id": "D_C_0.95_P",
+      "family": "D",
+      "mechanism": "C",
+      "gamma": "0.95",
+      "policy": "P",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 950,
+            "success": 855
+          },
+          "B": {
+            "n": 50,
+            "success": 30
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 50,
+            "success": 10
+          },
+          "B": {
+            "n": 950,
+            "success": 475
+          }
+        }
+      },
+      "file": "results/worlds/D_C_0.95_P.jsonl",
+      "sha256": "a22ff556cacbe0af8df8db88ab683fb0cdb3c250912b6c5d9176a500f0abf33d",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "D_C_0.95_Q",
+      "family": "D",
+      "mechanism": "C",
+      "gamma": "0.95",
+      "policy": "Q",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 50,
+            "success": 45
+          },
+          "B": {
+            "n": 950,
+            "success": 570
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 950,
+            "success": 190
+          },
+          "B": {
+            "n": 50,
+            "success": 25
+          }
+        }
+      },
+      "file": "results/worlds/D_C_0.95_Q.jsonl",
+      "sha256": "e9ec5978597c28b5881cb6abfe25864a8bc57adee51f4498ad098915cd3aab4c",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "D_C_0.99_P",
+      "family": "D",
+      "mechanism": "C",
+      "gamma": "0.99",
+      "policy": "P",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 990,
+            "success": 891
+          },
+          "B": {
+            "n": 10,
+            "success": 6
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 10,
+            "success": 2
+          },
+          "B": {
+            "n": 990,
+            "success": 495
+          }
+        }
+      },
+      "file": "results/worlds/D_C_0.99_P.jsonl",
+      "sha256": "96f1a5efe2ce30c71b0ec358394432058ecb960690404f1474570f82d9c05340",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    },
+    {
+      "id": "D_C_0.99_Q",
+      "family": "D",
+      "mechanism": "C",
+      "gamma": "0.99",
+      "policy": "Q",
+      "targets": [
+        "T",
+        "T0",
+        "T1"
+      ],
+      "n": 2000,
+      "cells": {
+        "S0": {
+          "A": {
+            "n": 10,
+            "success": 9
+          },
+          "B": {
+            "n": 990,
+            "success": 594
+          }
+        },
+        "S1": {
+          "A": {
+            "n": 990,
+            "success": 198
+          },
+          "B": {
+            "n": 10,
+            "success": 5
+          }
+        }
+      },
+      "file": "results/worlds/D_C_0.99_Q.jsonl",
+      "sha256": "87bbb445bf3ce52e6369f005b9134871017a7293a25af05df3e38fb17bd26880",
+      "truth": {
+        "T": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "T0": {
+          "A": "19/25",
+          "B": "29/50"
+        },
+        "T1": {
+          "A": "17/50",
+          "B": "13/25"
+        }
+      }
+    }
+  ],
+  "outcome_sampling": false,
+  "N_per_state": 1000,
+  "D_scope": "A/B/C mechanisms at .95 and .99; sensitivity only at .99"
+}
