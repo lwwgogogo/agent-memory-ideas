@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P08W1:ReflectionLesson",
+  "world_id": "P08W1",
+  "pair_id": 8,
+  "formation_type": "ReflectionLesson",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0执行动作A和B各有高低成功率，但失败率较高；进入状态S1后，无论执行动作A还是B，虽然总尝试次数多，但成功比例依然较低，表明难度增加。",
+  "memory_char_length": 72
+}

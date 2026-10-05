@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P03W1:StrategyMemory",
+  "world_id": "P03W1",
+  "pair_id": 3,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A有较高成功率（成功1/2），而动作B成功率较低（0/2）。在状态S1时，无论选择A或B，成功率均较低（各3/18）。",
+  "memory_char_length": 70
+}

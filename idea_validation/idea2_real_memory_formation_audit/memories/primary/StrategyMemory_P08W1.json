@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P08W1:StrategyMemory",
+  "world_id": "P08W1",
+  "pair_id": 8,
+  "formation_type": "StrategyMemory",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0下，动作A和B各有1次成功和失败记录；在状态S1下，动作A成功率较低（4/18），而动作B稍高（6/18）。",
+  "memory_char_length": 59
+}

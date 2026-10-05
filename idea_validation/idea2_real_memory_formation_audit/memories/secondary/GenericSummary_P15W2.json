@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P15W2:GenericSummary",
+  "world_id": "P15W2",
+  "pair_id": 15,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A和B各两次。其中A全部失败（0成功，2失败），而B有1次成功和1次失败。在状态S1时，动作A执行18次，成功8次失败10次；动作B同样执行18次但成功率更低，仅6次成功12次失败。这表明在S0状态下应优先选择B而非A，而在S1状态下两个动作均表现不佳，可能需要探索新策略或检查环境状态准确性。",
+  "memory_char_length": 158
+}

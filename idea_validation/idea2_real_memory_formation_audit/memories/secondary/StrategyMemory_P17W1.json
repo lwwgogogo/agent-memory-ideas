@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P17W1:StrategyMemory",
+  "world_id": "P17W1",
+  "pair_id": 17,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A的总成功率为50%（1/2），而动作B的成功率则为0%（0/2）。在状态S1时，动作A的成功率约为38.9%（7/18），动作B的成功率约50%（9/18）。建议优先选择成功率较高的动作：S0选A（尽管失败率高但仍有成功可能），S1选B。注意动作B在S0从未成功，而S1的B动作表现均衡。",
+  "memory_char_length": 156
+}

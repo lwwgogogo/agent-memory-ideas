@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P20W2:GenericSummary",
+  "world_id": "P20W2",
+  "pair_id": 20,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时执行动作A和B各有两次尝试，其中A全失败（0成功/2失败），而B有1次成功和1次失败。在状态S1时，无论选择动作A还是B，都进行了18次尝试，成功率均为50%（各9次成功与失败）。这表明在S0状态下应优先考虑动作B而非A，因B有50%的成功率，而A则无成功记录。当处于S1状态时，两种动作的选择没有显著差异，但需注意其固有的风险平衡。",
+  "memory_char_length": 173
+}

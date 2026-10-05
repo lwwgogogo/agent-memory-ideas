@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P03W2:ReflectionLesson",
+  "world_id": "P03W2",
+  "pair_id": 3,
+  "formation_type": "ReflectionLesson",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0执行动作A和B时成功率较低，尤其是在动作A中连续失败两次。状态S1下无论动作A还是B都表现出较高的失败率，尤其是动作A的失败次数远超成功次数。",
+  "memory_char_length": 76
+}

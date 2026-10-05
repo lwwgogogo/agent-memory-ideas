@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P19W2:StrategyMemory",
+  "world_id": "P19W2",
+  "pair_id": 19,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A的失败率较高（2/2），而动作B有1次成功和1次失败。在状态S1时，动作A与B的成功率分别为50%（9/18）和44.4%（8/18），两者失败次数相近（9 vs 10）。",
+  "memory_char_length": 98
+}

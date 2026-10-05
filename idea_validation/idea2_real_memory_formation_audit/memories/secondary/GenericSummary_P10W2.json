@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P10W2:GenericSummary",
+  "world_id": "P10W2",
+  "pair_id": 10,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A和B各两次。其中A全失败（0成功/2失败），而B有1次成功和1次失败。在状态S1时，动作A执行18次，仅6次成功，12次失败；动作B同样执行18次，5次成功，13次失败。这表明无论处于哪个状态，两个动作的成功率均较低，尤其在S1状态下成功率更低（A≈33%，B≈28%）。需谨慎选择动作，优先考虑成功率相对较高的选项，并警惕高失败风险。",
+  "memory_char_length": 180
+}

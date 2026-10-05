@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P16W1:GenericSummary",
+  "world_id": "P16W1",
+  "pair_id": 16,
+  "formation_type": "GenericSummary",
+  "model": "qwen2.5:14b",
+  "memory": "S0状态下A动作成功率50%，B动作失败率100%；S1状态下A和B动作成功率分别为39%和44%，失败率分别为61%和56%",
+  "memory_char_length": 63
+}

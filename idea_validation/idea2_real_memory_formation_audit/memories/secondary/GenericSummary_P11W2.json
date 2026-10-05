@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P11W2:GenericSummary",
+  "world_id": "P11W2",
+  "pair_id": 11,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时执行动作A和B各有两次尝试，其中A全失败（0成功/2失败），而B有1次成功和1次失败。在状态S1时执行动作A和B各18次，成功率均为约33%（6成功/12失败）。关键点：S0中B比A更可能成功；S1中无论选A或B，成功率相似且较低。",
+  "memory_char_length": 122
+}

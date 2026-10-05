@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P03W2:GenericSummary",
+  "world_id": "P03W2",
+  "pair_id": 3,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A和B各两次。其中A全部失败（0成功），而B有1次成功和1次失败。在状态S1时，动作A执行了18次，仅4次成功，14次失败；动作B同样执行18次，2次成功，16次失败。这表明无论处于哪个状态，两个动作的成功率都很低，尤其在S1状态下成功率更低。",
+  "memory_char_length": 133
+}

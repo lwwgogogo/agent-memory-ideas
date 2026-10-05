@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P09W2:GenericSummary",
+  "world_id": "P09W2",
+  "pair_id": 9,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作B比A更好（成功率50% vs 0%），但在状态S1时两个动作成功率都很低（A约33%，B约22%）。",
+  "memory_char_length": 61
+}

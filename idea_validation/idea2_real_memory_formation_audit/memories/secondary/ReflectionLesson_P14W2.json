@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P14W2:ReflectionLesson",
+  "world_id": "P14W2",
+  "pair_id": 14,
+  "formation_type": "ReflectionLesson",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作B比A表现稍好（成功率50% vs 0%），但样本量小（各执行2次）。当处于S1状态，无论选A或B，成功率均约39%，失败率较高（11次失败vs7成功）。需注意在S0优先尝试B，而S1可能需要探索其他策略。",
+  "memory_char_length": 113
+}

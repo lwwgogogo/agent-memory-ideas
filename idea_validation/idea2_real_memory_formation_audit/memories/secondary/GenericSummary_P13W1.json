@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P13W1:GenericSummary",
+  "world_id": "P13W1",
+  "pair_id": 13,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作A成功率较高（50%），而动作B成功率较低（0%）。在状态S1时，动作A和B的成功率分别为33.3%和38.9%，但两者均表现不佳。优先推荐在S0选A，在S1尝试其他策略。",
+  "memory_char_length": 96
+}

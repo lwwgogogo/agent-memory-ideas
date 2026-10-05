@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P20W2:GenericSummary",
+  "world_id": "P20W2",
+  "pair_id": 20,
+  "formation_type": "GenericSummary",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0中，动作A和B各有两次执行记录，但成功率均为50%；而在状态S1中，动作A和B各进行了18次执行，每次的成功率也是50%，表明无论在哪种状态下，这两种动作的成功率都很低。",
+  "memory_char_length": 90
+}

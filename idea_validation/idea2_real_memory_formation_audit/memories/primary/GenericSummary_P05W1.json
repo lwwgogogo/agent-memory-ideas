@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P05W1:GenericSummary",
+  "world_id": "P05W1",
+  "pair_id": 5,
+  "formation_type": "GenericSummary",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0中，动作A和B各有1次成功和失败；在状态S1中，动作A成功率低（3/18），动作B稍好但仍有较多失败（5/18）。",
+  "memory_char_length": 62
+}

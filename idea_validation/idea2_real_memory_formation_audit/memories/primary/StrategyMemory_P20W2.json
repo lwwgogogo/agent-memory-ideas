@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P20W2:StrategyMemory",
+  "world_id": "P20W2",
+  "pair_id": 20,
+  "formation_type": "StrategyMemory",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0时，动作A和B各有两次执行记录，但都各有一次失败，没有成功案例；而在状态S1中，动作A和B都有十八次执行记录，每次动作的成功率都是50%，即九次成功九次失败。",
+  "memory_char_length": 84
+}

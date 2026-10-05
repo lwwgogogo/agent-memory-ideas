@@ -1,0 +1,20 @@
+{
+  "returncode": 0,
+  "source_sha256": {
+    "core.py": "7bb9aa84de46849bf525564372831adcfe2bb8d0bb70092cd9edd936b2a19201",
+    "formation_prompts.py": "28a79770c2ac01b46d334c828e458a68526739b08bc0b6ec0daefc05bee459d8",
+    "generate_source_cases.py": "c2437a1ea10b4ccc0eeb658c2e84c2ae6d14605057c922af6c204c7bc3a54e18",
+    "run_formation.py": "cb01440c6b2bc868565c233f87db1d99a2cf4eccc49ca148d5e15d2e175b6c78",
+    "audit_faithfulness.py": "56678d310e852a6aca173fd88904aa760ea8f933c2099648b491e70013a65f75",
+    "audit_recoverability.py": "40444b750bcbe64718e46b5a7962e6bc9ae464b1bae2c6488e3fb3935e9563ca",
+    "run_downstream.py": "910fff59ece8e58ea431cf50e8d6921445817465d93bfe154ea7400283e6ed51",
+    "evaluate.py": "d42caae1e5ef3618498afa0fb6bb2432f4785000e52b6668bc46444490f968e4",
+    "tests/test_stage3.py": "94973ca5ac28d944ed211e1f569013ae70bf741d651da91de106705d901bf5d0",
+    "preregistration.md": "9180d70f7a2b3f0b4f460860d45c79d4094bb417507d1eaced1ade52f0b8694c",
+    "cases/source_worlds.json": "76fbd6c45e70a8737a6b81b220f480c8f95aa63b18d6d454b969cc8fda2ac148",
+    "cases/source_manifest.json": "9ab4151dbdd6009e58bb450e8b46b9cdfa7b8f7eef15a9c4b5f102e450d34ff4"
+  },
+  "python": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "version": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "stage2_source_sha256": "76fbd6c45e70a8737a6b81b220f480c8f95aa63b18d6d454b969cc8fda2ac148"
+}

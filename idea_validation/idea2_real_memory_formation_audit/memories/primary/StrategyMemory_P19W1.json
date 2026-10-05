@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P19W1:StrategyMemory",
+  "world_id": "P19W1",
+  "pair_id": 19,
+  "formation_type": "StrategyMemory",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0下，动作A和B各有1次成功和失败记录；在状态S1下，动作A执行了18次，其中8次成功，10次失败，而动作B同样执行了18次，9次成功，9次失败。",
+  "memory_char_length": 77
+}

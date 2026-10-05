@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P19W1:StrategyMemory",
+  "world_id": "P19W1",
+  "pair_id": 19,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作A有较高成功率（成功1/2），而动作B尚未成功（0/2）。在状态S1时，动作A和B的执行次数较多（各18次），成功率接近：A为44.4%（8/18），B为50%（9/18）。建议优先在S0选A，在S1可尝试A或B但需注意高失败率。",
+  "memory_char_length": 125
+}

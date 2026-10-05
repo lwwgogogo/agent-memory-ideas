@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P01W2:GenericSummary",
+  "world_id": "P01W2",
+  "pair_id": 1,
+  "formation_type": "GenericSummary",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0中，动作A和B各有两次执行但成功率低；在状态S1中，无论动作A还是B，执行次数多且失败率高。",
+  "memory_char_length": 51
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P18W2:GenericSummary",
+  "world_id": "P18W2",
+  "pair_id": 18,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作B比A更好（成功率50% vs 0%），但在状态S1时两个动作成功率均低于50%，需谨慎选择。具体数据：S0_A(执行2,成功0/2), S0_B(执行2,1/2); S1_A(18次,9/18=50%), S1_B(18次,7/18≈39%)",
+  "memory_char_length": 132
+}

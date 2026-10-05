@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P12W1:ConsolidatedExperience",
+  "world_id": "P12W1",
+  "pair_id": 12,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwq:32b",
+  "memory": "状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功率=0%；失败率=100%\n状态=S1；动作=A；执行=18；成功率≈33%（6/18）；失败率≈67%（12/18）\n状态=S1；动作=B；执行=18；成功率≈33%（6/18）；失败率≈67%（12/18）",
+  "memory_char_length": 149
+}

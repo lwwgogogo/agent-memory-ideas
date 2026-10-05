@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P16W2:ConsolidatedExperience",
+  "world_id": "P16W2",
+  "pair_id": 16,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwen2.5:14b",
+  "memory": "状态S0动作A执行2成功0失败2；状态S0动作B执行2成功1失败1；状态S1动作A执行18成功8失败10；状态S1动作B执行18成功7失败11",
+  "memory_char_length": 71
+}

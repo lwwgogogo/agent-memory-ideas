@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P11W1:ConsolidatedExperience",
+  "world_id": "P11W1",
+  "pair_id": 11,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwen2.5:14b",
+  "memory": "状态S0动作A执行2次成功1次失败1次；状态S0动作B执行2次全失败；状态S1动作A执行18次成功率约27.8%；状态S1动作B执行18次成功率约38.9%",
+  "memory_char_length": 78
+}

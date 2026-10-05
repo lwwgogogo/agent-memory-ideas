@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P03W1:ConsolidatedExperience",
+  "world_id": "P03W1",
+  "pair_id": 3,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwen2.5:14b",
+  "memory": "状态S0动作A执行2次成功1次失败1次；状态S0动作B执行2次全失败；状态S1动作A和B各执行18次，均成功3次失败15次",
+  "memory_char_length": 61
+}

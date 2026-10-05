@@ -1,0 +1,3922 @@
+[
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P01W1",
+    "world_id": "P01W1",
+    "pair_id": 1,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=2；失败=16\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=2；失败=16\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 2,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 3,\n  \"s1_action_b_exposure\": 18\n}",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:07:48.726373599Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 8663129344,
+        "load_duration": 4834819211,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 204000000,
+        "eval_count": 106,
+        "eval_duration": 3008000000
+      },
+      "elapsed_seconds": 8.66594648361206,
+      "timestamp": "2026-10-05T07:07:48.727654+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 2,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 3,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 2,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 3,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P01W1",
+    "world_id": "P01W1",
+    "pair_id": 1,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=3；失败=17",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=3；失败=17",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:07:51.326091554Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2596373238,
+        "load_duration": 31615098,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 90,
+        "eval_duration": 2515000000
+      },
+      "elapsed_seconds": 2.598893642425537,
+      "timestamp": "2026-10-05T07:07:51.327314+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P01W2",
+    "world_id": "P01W2",
+    "pair_id": 1,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=2；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=2；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 3,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 2,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:07:54.442638151Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3113600840,
+        "load_duration": 25467267,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 46000000,
+        "eval_count": 106,
+        "eval_duration": 3024000000
+      },
+      "elapsed_seconds": 3.115671157836914,
+      "timestamp": "2026-10-05T07:07:54.443815+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 3,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 2,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 3,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 2,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P01W2",
+    "world_id": "P01W2",
+    "pair_id": 1,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=3；失败=17",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=3；失败=17",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:07:57.048855969Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2603212500,
+        "load_duration": 28731733,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 90,
+        "eval_duration": 2516000000
+      },
+      "elapsed_seconds": 2.6053428649902344,
+      "timestamp": "2026-10-05T07:07:57.050015+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P02W1",
+    "world_id": "P02W1",
+    "pair_id": 2,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=2；失败=16\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=2；失败=16\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 2,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 4,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:00.216046558Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3163388578,
+        "load_duration": 29069443,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 46000000,
+        "eval_count": 106,
+        "eval_duration": 3073000000
+      },
+      "elapsed_seconds": 3.1655664443969727,
+      "timestamp": "2026-10-05T07:08:00.216987+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 2,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 4,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 2,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 4,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P02W1",
+    "world_id": "P02W1",
+    "pair_id": 2,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=4；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=4；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:03.013670378Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2794931701,
+        "load_duration": 26857577,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 36000000,
+        "eval_count": 96,
+        "eval_duration": 2723000000
+      },
+      "elapsed_seconds": 2.797004222869873,
+      "timestamp": "2026-10-05T07:08:03.014939+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P02W2",
+    "world_id": "P02W2",
+    "pair_id": 2,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 3,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 3,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:06.118610009Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3100822341,
+        "load_duration": 28459045,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 48000000,
+        "eval_count": 106,
+        "eval_duration": 3005000000
+      },
+      "elapsed_seconds": 3.1033830642700195,
+      "timestamp": "2026-10-05T07:08:06.119874+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 3,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 3,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 3,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 3,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P02W2",
+    "world_id": "P02W2",
+    "pair_id": 2,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=4；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=3；失败=17\n动作=B；执行=20；成功=4；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:08.921152335Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2796390724,
+        "load_duration": 21192971,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 33000000,
+        "eval_count": 96,
+        "eval_duration": 2733000000
+      },
+      "elapsed_seconds": 2.7988576889038086,
+      "timestamp": "2026-10-05T07:08:08.922403+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P03W1",
+    "world_id": "P03W1",
+    "pair_id": 3,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 3,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 3,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:12.023436065Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3097992665,
+        "load_duration": 21028216,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 43000000,
+        "eval_count": 106,
+        "eval_duration": 3025000000
+      },
+      "elapsed_seconds": 3.100466251373291,
+      "timestamp": "2026-10-05T07:08:12.024685+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 3,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 3,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 3,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 3,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P03W1",
+    "world_id": "P03W1",
+    "pair_id": 3,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=3；失败=17",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=3；失败=17",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:14.819216042Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2791260745,
+        "load_duration": 29351221,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 38000000,
+        "eval_count": 96,
+        "eval_duration": 2714000000
+      },
+      "elapsed_seconds": 2.793771743774414,
+      "timestamp": "2026-10-05T07:08:14.820468+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P03W2",
+    "world_id": "P03W2",
+    "pair_id": 3,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=2；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=2；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 4,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 2,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:17.934689017Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3111008885,
+        "load_duration": 27906498,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3028000000
+      },
+      "elapsed_seconds": 3.11312198638916,
+      "timestamp": "2026-10-05T07:08:17.935609+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 4,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 2,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 4,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 2,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P03W2",
+    "world_id": "P03W2",
+    "pair_id": 3,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=3；失败=17",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=3；失败=17",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:20.753390265Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2815679750,
+        "load_duration": 28690021,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 96,
+        "eval_duration": 2731000000
+      },
+      "elapsed_seconds": 2.8177452087402344,
+      "timestamp": "2026-10-05T07:08:20.754677+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P04W1",
+    "world_id": "P04W1",
+    "pair_id": 4,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 3,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 4,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:23.898557009Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3138642392,
+        "load_duration": 26509086,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 46000000,
+        "eval_count": 106,
+        "eval_duration": 3050000000
+      },
+      "elapsed_seconds": 3.1428563594818115,
+      "timestamp": "2026-10-05T07:08:23.899762+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 3,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 4,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 3,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 4,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P04W1",
+    "world_id": "P04W1",
+    "pair_id": 4,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=4；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=4；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:26.482190521Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2579013337,
+        "load_duration": 28851065,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 37000000,
+        "eval_count": 90,
+        "eval_duration": 2504000000
+      },
+      "elapsed_seconds": 2.581350564956665,
+      "timestamp": "2026-10-05T07:08:26.483352+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P04W2",
+    "world_id": "P04W2",
+    "pair_id": 4,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 4,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 3,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:29.568092038Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3081151138,
+        "load_duration": 20876472,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 106,
+        "eval_duration": 3005000000
+      },
+      "elapsed_seconds": 3.0835206508636475,
+      "timestamp": "2026-10-05T07:08:29.569316+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 4,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 3,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 4,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 3,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P04W2",
+    "world_id": "P04W2",
+    "pair_id": 4,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=4；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=4；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:32.181261999Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2608260748,
+        "load_duration": 28078323,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 90,
+        "eval_duration": 2532000000
+      },
+      "elapsed_seconds": 2.610628366470337,
+      "timestamp": "2026-10-05T07:08:32.182441+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P05W1",
+    "world_id": "P05W1",
+    "pair_id": 5,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 3,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:35.294370231Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3108164167,
+        "load_duration": 21108918,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3032000000
+      },
+      "elapsed_seconds": 3.110438108444214,
+      "timestamp": "2026-10-05T07:08:35.295472+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 3,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 3,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P05W1",
+    "world_id": "P05W1",
+    "pair_id": 5,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=5；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=5；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:37.910222464Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2610840486,
+        "load_duration": 29064471,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 90,
+        "eval_duration": 2532000000
+      },
+      "elapsed_seconds": 2.6132850646972656,
+      "timestamp": "2026-10-05T07:08:37.911484+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P05W2",
+    "world_id": "P05W2",
+    "pair_id": 5,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 4,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 4,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:41.000342142Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3084721962,
+        "load_duration": 29241197,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 106,
+        "eval_duration": 3005000000
+      },
+      "elapsed_seconds": 3.0870628356933594,
+      "timestamp": "2026-10-05T07:08:41.001455+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 4,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 4,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 4,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 4,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P05W2",
+    "world_id": "P05W2",
+    "pair_id": 5,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=5；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=4；失败=16\n动作=B；执行=20；成功=5；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:43.612443588Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2606139511,
+        "load_duration": 24731764,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 41000000,
+        "eval_count": 90,
+        "eval_duration": 2525000000
+      },
+      "elapsed_seconds": 2.6085660457611084,
+      "timestamp": "2026-10-05T07:08:43.613585+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P06W1",
+    "world_id": "P06W1",
+    "pair_id": 6,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 4,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 4,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:46.73136127Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3113753670,
+        "load_duration": 28737011,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 106,
+        "eval_duration": 3025000000
+      },
+      "elapsed_seconds": 3.1161868572235107,
+      "timestamp": "2026-10-05T07:08:46.732609+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 4,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 4,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 4,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 4,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P06W1",
+    "world_id": "P06W1",
+    "pair_id": 6,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=4；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=4；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:49.336663879Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2599354696,
+        "load_duration": 28181365,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 90,
+        "eval_duration": 2516000000
+      },
+      "elapsed_seconds": 2.6019656658172607,
+      "timestamp": "2026-10-05T07:08:49.337924+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P06W2",
+    "world_id": "P06W2",
+    "pair_id": 6,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 5,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 3,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:52.0570686Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2714590910,
+        "load_duration": 28503204,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 44000000,
+        "eval_count": 97,
+        "eval_duration": 2627000000
+      },
+      "elapsed_seconds": 2.717139959335327,
+      "timestamp": "2026-10-05T07:08:52.058353+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 5,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 3,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 5,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 3,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P06W2",
+    "world_id": "P06W2",
+    "pair_id": 6,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=4；失败=16",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=4；失败=16",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:54.656165992Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2593035465,
+        "load_duration": 27630289,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 33000000,
+        "eval_count": 90,
+        "eval_duration": 2523000000
+      },
+      "elapsed_seconds": 2.595520496368408,
+      "timestamp": "2026-10-05T07:08:54.657389+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P07W1",
+    "world_id": "P07W1",
+    "pair_id": 7,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 4,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:08:57.768375109Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3106077008,
+        "load_duration": 28182495,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 43000000,
+        "eval_count": 106,
+        "eval_duration": 3025000000
+      },
+      "elapsed_seconds": 3.1085214614868164,
+      "timestamp": "2026-10-05T07:08:57.769615+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 4,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 4,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P07W1",
+    "world_id": "P07W1",
+    "pair_id": 7,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=5；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=5；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:00.35770278Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2583038917,
+        "load_duration": 25052873,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 37000000,
+        "eval_count": 90,
+        "eval_duration": 2511000000
+      },
+      "elapsed_seconds": 2.585496187210083,
+      "timestamp": "2026-10-05T07:09:00.358891+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P07W2",
+    "world_id": "P07W2",
+    "pair_id": 7,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\":5,\n  \"s1_action_a_exposure\":18,\n  \"s1_action_b_success\":4,\n  \"s1_action_b_exposure\":18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:03.355781809Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2991857837,
+        "load_duration": 28325688,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 42000000,
+        "eval_count": 102,
+        "eval_duration": 2905000000
+      },
+      "elapsed_seconds": 2.994234085083008,
+      "timestamp": "2026-10-05T07:09:03.356949+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 5,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 4,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 5,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 4,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P07W2",
+    "world_id": "P07W2",
+    "pair_id": 7,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=5；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=5；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:05.939275833Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2577122238,
+        "load_duration": 29298747,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 41000000,
+        "eval_count": 90,
+        "eval_duration": 2497000000
+      },
+      "elapsed_seconds": 2.5795443058013916,
+      "timestamp": "2026-10-05T07:09:05.940417+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P08W1",
+    "world_id": "P08W1",
+    "pair_id": 8,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=4；失败=14\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 4,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:08.994037632Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3048430484,
+        "load_duration": 27903616,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 106,
+        "eval_duration": 2971000000
+      },
+      "elapsed_seconds": 3.0508182048797607,
+      "timestamp": "2026-10-05T07:09:08.995166+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 4,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 4,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P08W1",
+    "world_id": "P08W1",
+    "pair_id": 8,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=6；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=6；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:11.587060148Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2586728072,
+        "load_duration": 27943807,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 33000000,
+        "eval_count": 90,
+        "eval_duration": 2511000000
+      },
+      "elapsed_seconds": 2.5891458988189697,
+      "timestamp": "2026-10-05T07:09:11.588295+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P08W2",
+    "world_id": "P08W2",
+    "pair_id": 8,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 5,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:14.697323591Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3103809794,
+        "load_duration": 25392943,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 43000000,
+        "eval_count": 106,
+        "eval_duration": 3020000000
+      },
+      "elapsed_seconds": 3.1059579849243164,
+      "timestamp": "2026-10-05T07:09:14.698276+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 5,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 5,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P08W2",
+    "world_id": "P08W2",
+    "pair_id": 8,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=6；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=5；失败=15\n动作=B；执行=20；成功=6；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:17.288002744Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2586577213,
+        "load_duration": 30854372,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 37000000,
+        "eval_count": 90,
+        "eval_duration": 2508000000
+      },
+      "elapsed_seconds": 2.5886051654815674,
+      "timestamp": "2026-10-05T07:09:17.289290+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P09W1",
+    "world_id": "P09W1",
+    "pair_id": 9,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 5,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:20.38875082Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3093867895,
+        "load_duration": 27817323,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 106,
+        "eval_duration": 3016000000
+      },
+      "elapsed_seconds": 3.0962562561035156,
+      "timestamp": "2026-10-05T07:09:20.389926+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 5,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 5,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P09W1",
+    "world_id": "P09W1",
+    "pair_id": 9,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=5；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=5；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:23.38530154Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2988360921,
+        "load_duration": 26733561,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 38000000,
+        "eval_count": 102,
+        "eval_duration": 2914000000
+      },
+      "elapsed_seconds": 2.990245819091797,
+      "timestamp": "2026-10-05T07:09:23.386182+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P09W2",
+    "world_id": "P09W2",
+    "pair_id": 9,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=4；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 4,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:26.123475859Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2734248344,
+        "load_duration": 24546157,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 97,
+        "eval_duration": 2645000000
+      },
+      "elapsed_seconds": 2.7361578941345215,
+      "timestamp": "2026-10-05T07:09:26.124681+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 4,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 4,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P09W2",
+    "world_id": "P09W2",
+    "pair_id": 9,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=5；失败=15",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=5；失败=15",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:29.120159615Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2987481977,
+        "load_duration": 33485819,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 102,
+        "eval_duration": 2905000000
+      },
+      "elapsed_seconds": 2.9898481369018555,
+      "timestamp": "2026-10-05T07:09:29.121346+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P10W1",
+    "world_id": "P10W1",
+    "pair_id": 10,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\":5,\n  \"s1_action_a_exposure\":18,\n  \"s1_action_b_success\":6,\n  \"s1_action_b_exposure\":18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:32.129382818Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3002118135,
+        "load_duration": 27985248,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 102,
+        "eval_duration": 2912000000
+      },
+      "elapsed_seconds": 3.0044796466827393,
+      "timestamp": "2026-10-05T07:09:32.130551+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 5,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 5,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P10W1",
+    "world_id": "P10W1",
+    "pair_id": 10,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=6；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=6；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:34.900846345Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2764161293,
+        "load_duration": 27546975,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 96,
+        "eval_duration": 2688000000
+      },
+      "elapsed_seconds": 2.766733407974243,
+      "timestamp": "2026-10-05T07:09:34.902233+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P10W2",
+    "world_id": "P10W2",
+    "pair_id": 10,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:38.017112218Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3108979299,
+        "load_duration": 24571798,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3030000000
+      },
+      "elapsed_seconds": 3.1114020347595215,
+      "timestamp": "2026-10-05T07:09:38.018507+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P10W2",
+    "world_id": "P10W2",
+    "pair_id": 10,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=6；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=6；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:40.775218089Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2750563859,
+        "load_duration": 20379725,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 38000000,
+        "eval_count": 96,
+        "eval_duration": 2675000000
+      },
+      "elapsed_seconds": 2.7531208992004395,
+      "timestamp": "2026-10-05T07:09:40.776634+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P11W1",
+    "world_id": "P11W1",
+    "pair_id": 11,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=5；失败=13\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\":5,\n  \"s1_action_a_exposure\":18,\n  \"s1_action_b_success\":7,\n  \"s1_action_b_exposure\":18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:43.787734732Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3004580522,
+        "load_duration": 28635107,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 102,
+        "eval_duration": 2913000000
+      },
+      "elapsed_seconds": 3.0069491863250732,
+      "timestamp": "2026-10-05T07:09:43.788846+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 5,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 5,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P11W1",
+    "world_id": "P11W1",
+    "pair_id": 11,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=7；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=7；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:46.783855357Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2991419589,
+        "load_duration": 28373049,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 102,
+        "eval_duration": 2906000000
+      },
+      "elapsed_seconds": 2.993422508239746,
+      "timestamp": "2026-10-05T07:09:46.785073+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P11W2",
+    "world_id": "P11W2",
+    "pair_id": 11,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:49.929876911Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3138255098,
+        "load_duration": 26944207,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3051000000
+      },
+      "elapsed_seconds": 3.140608310699463,
+      "timestamp": "2026-10-05T07:09:49.931043+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P11W2",
+    "world_id": "P11W2",
+    "pair_id": 11,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=7；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=6；失败=14\n动作=B；执行=20；成功=7；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:52.926436202Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2988644889,
+        "load_duration": 27936607,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 34000000,
+        "eval_count": 102,
+        "eval_duration": 2918000000
+      },
+      "elapsed_seconds": 2.9911305904388428,
+      "timestamp": "2026-10-05T07:09:52.927656+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P12W1",
+    "world_id": "P12W1",
+    "pair_id": 12,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:56.067331507Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3132729566,
+        "load_duration": 26890635,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3046000000
+      },
+      "elapsed_seconds": 3.1349780559539795,
+      "timestamp": "2026-10-05T07:09:56.068265+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P12W1",
+    "world_id": "P12W1",
+    "pair_id": 12,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=6；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=6；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:09:59.092005099Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3020002106,
+        "load_duration": 37310499,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 41000000,
+        "eval_count": 102,
+        "eval_duration": 2927000000
+      },
+      "elapsed_seconds": 3.0219719409942627,
+      "timestamp": "2026-10-05T07:09:59.093197+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P12W2",
+    "world_id": "P12W2",
+    "pair_id": 12,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=5；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 5,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:02.205736222Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3105442921,
+        "load_duration": 25966098,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 106,
+        "eval_duration": 3021000000
+      },
+      "elapsed_seconds": 3.1078312397003174,
+      "timestamp": "2026-10-05T07:10:02.206897+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 5,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 5,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P12W2",
+    "world_id": "P12W2",
+    "pair_id": 12,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=6；失败=14",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=6；失败=14",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:05.222783214Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3008960336,
+        "load_duration": 20567350,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 102,
+        "eval_duration": 2930000000
+      },
+      "elapsed_seconds": 3.011296033859253,
+      "timestamp": "2026-10-05T07:10:05.223989+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P13W1",
+    "world_id": "P13W1",
+    "pair_id": 13,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:08.333334646Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3102156816,
+        "load_duration": 38808132,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 106,
+        "eval_duration": 3006000000
+      },
+      "elapsed_seconds": 3.1044623851776123,
+      "timestamp": "2026-10-05T07:10:08.334589+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P13W1",
+    "world_id": "P13W1",
+    "pair_id": 13,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=7；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=7；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:10.934519435Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2592573017,
+        "load_duration": 20978892,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 36000000,
+        "eval_count": 90,
+        "eval_duration": 2526000000
+      },
+      "elapsed_seconds": 2.594867706298828,
+      "timestamp": "2026-10-05T07:10:10.935642+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P13W2",
+    "world_id": "P13W2",
+    "pair_id": 13,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:14.038856788Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3095882607,
+        "load_duration": 28404199,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 46000000,
+        "eval_count": 106,
+        "eval_duration": 3012000000
+      },
+      "elapsed_seconds": 3.098236083984375,
+      "timestamp": "2026-10-05T07:10:14.040079+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P13W2",
+    "world_id": "P13W2",
+    "pair_id": 13,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=7；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=7；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:16.644040169Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2596437727,
+        "load_duration": 20985023,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 37000000,
+        "eval_count": 90,
+        "eval_duration": 2521000000
+      },
+      "elapsed_seconds": 2.598994493484497,
+      "timestamp": "2026-10-05T07:10:16.645447+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P14W1",
+    "world_id": "P14W1",
+    "pair_id": 14,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=6；失败=12\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 6,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:19.7608755Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3107675073,
+        "load_duration": 27373598,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 44000000,
+        "eval_count": 106,
+        "eval_duration": 3026000000
+      },
+      "elapsed_seconds": 3.1102287769317627,
+      "timestamp": "2026-10-05T07:10:19.762227+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 6,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 6,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P14W1",
+    "world_id": "P14W1",
+    "pair_id": 14,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=8；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=8；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:22.77000473Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2999582301,
+        "load_duration": 27058859,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 102,
+        "eval_duration": 2919000000
+      },
+      "elapsed_seconds": 3.0018560886383057,
+      "timestamp": "2026-10-05T07:10:22.770955+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P14W2",
+    "world_id": "P14W2",
+    "pair_id": 14,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:25.890883902Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3115692350,
+        "load_duration": 28738798,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 47000000,
+        "eval_count": 106,
+        "eval_duration": 3029000000
+      },
+      "elapsed_seconds": 3.11765193939209,
+      "timestamp": "2026-10-05T07:10:25.892070+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P14W2",
+    "world_id": "P14W2",
+    "pair_id": 14,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=8；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=7；失败=13\n动作=B；执行=20；成功=8；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:28.887921163Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2987832612,
+        "load_duration": 28290745,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 102,
+        "eval_duration": 2905000000
+      },
+      "elapsed_seconds": 2.9899821281433105,
+      "timestamp": "2026-10-05T07:10:28.888868+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P15W1",
+    "world_id": "P15W1",
+    "pair_id": 15,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:32.010604989Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3117343251,
+        "load_duration": 30390697,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3032000000
+      },
+      "elapsed_seconds": 3.119305372238159,
+      "timestamp": "2026-10-05T07:10:32.011777+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P15W1",
+    "world_id": "P15W1",
+    "pair_id": 15,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=7；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=7；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 8,\n  \"s0_action_a_exposure\": 20,\n  \"s0_action_b_success\": 7,\n  \"s0_action_b_exposure\": 20,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:34.628683753Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2608523445,
+        "load_duration": 28704927,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 93,
+        "eval_duration": 2530000000
+      },
+      "elapsed_seconds": 2.610982894897461,
+      "timestamp": "2026-10-05T07:10:34.629874+00:00",
+      "parsed": {
+        "s0_action_a_success": 8,
+        "s0_action_a_exposure": 20,
+        "s0_action_b_success": 7,
+        "s0_action_b_exposure": 20,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 8,
+      "s0_action_a_exposure": 20,
+      "s0_action_b_success": 7,
+      "s0_action_b_exposure": 20,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P15W2",
+    "world_id": "P15W2",
+    "pair_id": 15,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=6；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 6,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:37.357813708Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2719511355,
+        "load_duration": 20944461,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 97,
+        "eval_duration": 2643000000
+      },
+      "elapsed_seconds": 2.721871852874756,
+      "timestamp": "2026-10-05T07:10:37.359002+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 6,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 6,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P15W2",
+    "world_id": "P15W2",
+    "pair_id": 15,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=7；失败=13",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=7；失败=13",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 8,\n  \"s0_action_a_exposure\": 20,\n  \"s0_action_b_success\": 7,\n  \"s0_action_b_exposure\": 20,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:39.968987811Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2601268334,
+        "load_duration": 26951196,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 38000000,
+        "eval_count": 93,
+        "eval_duration": 2519000000
+      },
+      "elapsed_seconds": 2.6036691665649414,
+      "timestamp": "2026-10-05T07:10:39.970137+00:00",
+      "parsed": {
+        "s0_action_a_success": 8,
+        "s0_action_a_exposure": 20,
+        "s0_action_b_success": 7,
+        "s0_action_b_exposure": 20,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 8,
+      "s0_action_a_exposure": 20,
+      "s0_action_b_success": 7,
+      "s0_action_b_exposure": 20,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P16W1",
+    "world_id": "P16W1",
+    "pair_id": 16,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:43.042099038Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3063440887,
+        "load_duration": 28793808,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 44000000,
+        "eval_count": 106,
+        "eval_duration": 2982000000
+      },
+      "elapsed_seconds": 3.0655055046081543,
+      "timestamp": "2026-10-05T07:10:43.042968+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P16W1",
+    "world_id": "P16W1",
+    "pair_id": 16,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=8；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=8；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:45.792246876Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2744252151,
+        "load_duration": 29026955,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 38000000,
+        "eval_count": 96,
+        "eval_duration": 2661000000
+      },
+      "elapsed_seconds": 2.745988130569458,
+      "timestamp": "2026-10-05T07:10:45.793163+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P16W2",
+    "world_id": "P16W2",
+    "pair_id": 16,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:48.882749194Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3085215435,
+        "load_duration": 28571079,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 43000000,
+        "eval_count": 106,
+        "eval_duration": 3004000000
+      },
+      "elapsed_seconds": 3.0871121883392334,
+      "timestamp": "2026-10-05T07:10:48.883879+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P16W2",
+    "world_id": "P16W2",
+    "pair_id": 16,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=8；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=8；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:51.621921669Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2729560292,
+        "load_duration": 25233831,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 32000000,
+        "eval_count": 96,
+        "eval_duration": 2662000000
+      },
+      "elapsed_seconds": 2.7317702770233154,
+      "timestamp": "2026-10-05T07:10:51.623038+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P17W1",
+    "world_id": "P17W1",
+    "pair_id": 17,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=9；失败=9",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=7；失败=11\n状态=S1；动作=B；执行=18；成功=9；失败=9",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 7,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 9,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:54.685656132Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3053588003,
+        "load_duration": 28428985,
+        "prompt_eval_count": 215,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 2971000000
+      },
+      "elapsed_seconds": 3.055978775024414,
+      "timestamp": "2026-10-05T07:10:54.686806+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 7,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 9,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 7,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 9,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P17W1",
+    "world_id": "P17W1",
+    "pair_id": 17,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=9；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=9；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 8,\n  \"s0_action_a_exposure\": 20,\n  \"s0_action_b_success\": 9,\n  \"s0_action_b_exposure\": 20,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:10:57.290021916Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2594144501,
+        "load_duration": 26400973,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 38000000,
+        "eval_count": 93,
+        "eval_duration": 2511000000
+      },
+      "elapsed_seconds": 2.5963070392608643,
+      "timestamp": "2026-10-05T07:10:57.290934+00:00",
+      "parsed": {
+        "s0_action_a_success": 8,
+        "s0_action_a_exposure": 20,
+        "s0_action_b_success": 9,
+        "s0_action_b_exposure": 20,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 8,
+      "s0_action_a_exposure": 20,
+      "s0_action_b_success": 9,
+      "s0_action_b_exposure": 20,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P17W2",
+    "world_id": "P17W2",
+    "pair_id": 17,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:00.406551239Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3110472010,
+        "load_duration": 29112341,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 46000000,
+        "eval_count": 106,
+        "eval_duration": 3020000000
+      },
+      "elapsed_seconds": 3.1123850345611572,
+      "timestamp": "2026-10-05T07:11:00.407689+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P17W2",
+    "world_id": "P17W2",
+    "pair_id": 17,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=9；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=8；失败=12\n动作=B；执行=20；成功=9；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 8,\n  \"s0_action_a_exposure\": 20,\n  \"s0_action_b_success\": 9,\n  \"s0_action_b_exposure\": 20,\n  \"s1_action_a_success\": null,\n  \"s1_action_a_exposure\": null,\n  \"s1_action_b_success\": null,\n  \"s1_action_b_exposure\": null\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:03.024761435Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2607339981,
+        "load_duration": 28226372,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 41000000,
+        "eval_count": 93,
+        "eval_duration": 2523000000
+      },
+      "elapsed_seconds": 2.609624147415161,
+      "timestamp": "2026-10-05T07:11:03.025832+00:00",
+      "parsed": {
+        "s0_action_a_success": 8,
+        "s0_action_a_exposure": 20,
+        "s0_action_b_success": 9,
+        "s0_action_b_exposure": 20,
+        "s1_action_a_success": null,
+        "s1_action_a_exposure": null,
+        "s1_action_b_success": null,
+        "s1_action_b_exposure": null
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 8,
+      "s0_action_a_exposure": 20,
+      "s0_action_b_success": 9,
+      "s0_action_b_exposure": 20,
+      "s1_action_a_success": null,
+      "s1_action_a_exposure": null,
+      "s1_action_b_success": null,
+      "s1_action_b_exposure": null
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P18W1",
+    "world_id": "P18W1",
+    "pair_id": 18,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:06.125778323Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3094548860,
+        "load_duration": 27515595,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 44000000,
+        "eval_count": 106,
+        "eval_duration": 3006000000
+      },
+      "elapsed_seconds": 3.096615791320801,
+      "timestamp": "2026-10-05T07:11:06.126913+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P18W1",
+    "world_id": "P18W1",
+    "pair_id": 18,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=8；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=8；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:09.112938573Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2976265948,
+        "load_duration": 27739845,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 36000000,
+        "eval_count": 102,
+        "eval_duration": 2897000000
+      },
+      "elapsed_seconds": 2.978398323059082,
+      "timestamp": "2026-10-05T07:11:09.113936+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P18W2",
+    "world_id": "P18W2",
+    "pair_id": 18,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=9；失败=9\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=9；失败=9\n状态=S1；动作=B；执行=18；成功=7；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 7,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:12.222361663Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3103192680,
+        "load_duration": 27107134,
+        "prompt_eval_count": 215,
+        "prompt_eval_duration": 45000000,
+        "eval_count": 106,
+        "eval_duration": 3013000000
+      },
+      "elapsed_seconds": 3.105250120162964,
+      "timestamp": "2026-10-05T07:11:12.223582+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 7,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 7,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P18W2",
+    "world_id": "P18W2",
+    "pair_id": 18,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=8；失败=12",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=8；失败=12",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:15.21155203Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2978068504,
+        "load_duration": 27773035,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 40000000,
+        "eval_count": 102,
+        "eval_duration": 2901000000
+      },
+      "elapsed_seconds": 2.9803292751312256,
+      "timestamp": "2026-10-05T07:11:15.212589+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P19W1",
+    "world_id": "P19W1",
+    "pair_id": 19,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=9；失败=9",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=9；失败=9",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 9,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:18.279723773Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3062089826,
+        "load_duration": 24419413,
+        "prompt_eval_count": 215,
+        "prompt_eval_duration": 47000000,
+        "eval_count": 106,
+        "eval_duration": 2980000000
+      },
+      "elapsed_seconds": 3.063920021057129,
+      "timestamp": "2026-10-05T07:11:18.280808+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 9,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 9,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P19W1",
+    "world_id": "P19W1",
+    "pair_id": 19,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=9；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=9；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 9,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:21.04529847Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2754813174,
+        "load_duration": 26653445,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 96,
+        "eval_duration": 2679000000
+      },
+      "elapsed_seconds": 2.757178544998169,
+      "timestamp": "2026-10-05T07:11:21.046494+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 9,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 9,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P19W2",
+    "world_id": "P19W2",
+    "pair_id": 19,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=9；失败=9\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=9；失败=9\n状态=S1；动作=B；执行=18；成功=8；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 8,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:24.155077396Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3098126353,
+        "load_duration": 25933629,
+        "prompt_eval_count": 215,
+        "prompt_eval_duration": 44000000,
+        "eval_count": 106,
+        "eval_duration": 3012000000
+      },
+      "elapsed_seconds": 3.100426435470581,
+      "timestamp": "2026-10-05T07:11:24.156256+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 8,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 8,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P19W2",
+    "world_id": "P19W2",
+    "pair_id": 19,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=9；失败=11",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=9；失败=11",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 9,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:26.915566569Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2749813661,
+        "load_duration": 28921721,
+        "prompt_eval_count": 171,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 96,
+        "eval_duration": 2672000000
+      },
+      "elapsed_seconds": 2.7519986629486084,
+      "timestamp": "2026-10-05T07:11:26.916721+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 9,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 9,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P20W1",
+    "world_id": "P20W1",
+    "pair_id": 20,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=10；失败=8",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=8；失败=10\n状态=S1；动作=B；执行=18；成功=10；失败=8",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 1,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 0,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 8,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 10,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:30.06890949Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3141988033,
+        "load_duration": 33636495,
+        "prompt_eval_count": 216,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 107,
+        "eval_duration": 3051000000
+      },
+      "elapsed_seconds": 3.144336223602295,
+      "timestamp": "2026-10-05T07:11:30.070097+00:00",
+      "parsed": {
+        "s0_action_a_success": 1,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 0,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 8,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 10,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 1,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 0,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 8,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 10,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P20W1",
+    "world_id": "P20W1",
+    "pair_id": 20,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=10；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=10；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 10,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:33.092411218Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3011712663,
+        "load_duration": 29314167,
+        "prompt_eval_count": 172,
+        "prompt_eval_duration": 36000000,
+        "eval_count": 103,
+        "eval_duration": 2937000000
+      },
+      "elapsed_seconds": 3.013834238052368,
+      "timestamp": "2026-10-05T07:11:33.093329+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 10,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 10,
+      "s1_action_b_exposure": 20
+    }
+  },
+  {
+    "run_id": "recovery:C1_StatePreservingOracle:P20W2",
+    "world_id": "P20W2",
+    "pair_id": 20,
+    "condition": "C1_StatePreservingOracle",
+    "memory": "观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=9；失败=9\n状态=S1；动作=B；执行=18；成功=9；失败=9",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的历史计数：\n状态=S0；动作=A；执行=2；成功=0；失败=2\n状态=S0；动作=B；执行=2；成功=1；失败=1\n状态=S1；动作=A；执行=18；成功=9；失败=9\n状态=S1；动作=B；执行=18；成功=9；失败=9",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": 0,\n  \"s0_action_a_exposure\": 2,\n  \"s0_action_b_success\": 1,\n  \"s0_action_b_exposure\": 2,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 18,\n  \"s1_action_b_success\": 9,\n  \"s1_action_b_exposure\": 18\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:35.968928794Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 2870311998,
+        "load_duration": 27487514,
+        "prompt_eval_count": 214,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 100,
+        "eval_duration": 2790000000
+      },
+      "elapsed_seconds": 2.872208833694458,
+      "timestamp": "2026-10-05T07:11:35.970060+00:00",
+      "parsed": {
+        "s0_action_a_success": 0,
+        "s0_action_a_exposure": 2,
+        "s0_action_b_success": 1,
+        "s0_action_b_exposure": 2,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 18,
+        "s1_action_b_success": 9,
+        "s1_action_b_exposure": 18
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": 0,
+      "s0_action_a_exposure": 2,
+      "s0_action_b_success": 1,
+      "s0_action_b_exposure": 2,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 18,
+      "s1_action_b_success": 9,
+      "s1_action_b_exposure": 18
+    }
+  },
+  {
+    "run_id": "recovery:C2_FaithfulLossyAggregate:P20W2",
+    "world_id": "P20W2",
+    "pair_id": 20,
+    "condition": "C2_FaithfulLossyAggregate",
+    "memory": "观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=10；失败=10",
+    "writer": "deterministic",
+    "prompt": "只根据下面的记忆，恢复明确给出的四个状态-动作单元的成功数和执行数。未被明确提供或无法唯一映射的字段一律 null。字段映射：s0_action_a 表示 S0/A，s0_action_b 表示 S0/B，s1_action_a 表示 S1/A，s1_action_b 表示 S1/B。\n\n记忆：\n观察到的汇总计数：\n动作=A；执行=20；成功=9；失败=11\n动作=B；执行=20；成功=10；失败=10",
+    "first_attempt": {
+      "raw": "{\n  \"s0_action_a_success\": null,\n  \"s0_action_a_exposure\": null,\n  \"s0_action_b_success\": null,\n  \"s0_action_b_exposure\": null,\n  \"s1_action_a_success\": 9,\n  \"s1_action_a_exposure\": 20,\n  \"s1_action_b_success\": 10,\n  \"s1_action_b_exposure\": 20\n}\n",
+      "metadata": {
+        "model": "qwq:32b",
+        "created_at": "2026-10-05T07:11:38.984816611Z",
+        "done_reason": "stop",
+        "done": true,
+        "total_duration": 3005121057,
+        "load_duration": 20838384,
+        "prompt_eval_count": 172,
+        "prompt_eval_duration": 39000000,
+        "eval_count": 103,
+        "eval_duration": 2927000000
+      },
+      "elapsed_seconds": 3.0072669982910156,
+      "timestamp": "2026-10-05T07:11:38.986035+00:00",
+      "parsed": {
+        "s0_action_a_success": null,
+        "s0_action_a_exposure": null,
+        "s0_action_b_success": null,
+        "s0_action_b_exposure": null,
+        "s1_action_a_success": 9,
+        "s1_action_a_exposure": 20,
+        "s1_action_b_success": 10,
+        "s1_action_b_exposure": 20
+      },
+      "valid": true
+    },
+    "retry_attempt": null,
+    "final_status": "VALID",
+    "recovered": {
+      "s0_action_a_success": null,
+      "s0_action_a_exposure": null,
+      "s0_action_b_success": null,
+      "s0_action_b_exposure": null,
+      "s1_action_a_success": 9,
+      "s1_action_a_exposure": 20,
+      "s1_action_b_success": 10,
+      "s1_action_b_exposure": 20
+    }
+  }
+]

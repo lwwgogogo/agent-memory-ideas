@@ -1,0 +1,12 @@
+{
+  "C1_StatePreservingOracle": {
+    "n_valid": 40,
+    "mean_cra": 1.0,
+    "full_retention_rate": 1.0
+  },
+  "C2_FaithfulLossyAggregate": {
+    "n_valid": 40,
+    "mean_cra": 0.0,
+    "full_retention_rate": 0.0
+  }
+}

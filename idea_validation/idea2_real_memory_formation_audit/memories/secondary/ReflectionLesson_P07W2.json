@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P07W2:ReflectionLesson",
+  "world_id": "P07W2",
+  "pair_id": 7,
+  "formation_type": "ReflectionLesson",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作B表现优于A：B的成功率为50%（1/2），而A为0%（0/2）。在状态S1时两个动作成功率均低，B稍好但仅22%（4/18），需谨慎。",
+  "memory_char_length": 78
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P03W1:ConsolidatedExperience",
+  "world_id": "P03W1",
+  "pair_id": 3,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwq:32b",
+  "memory": "状态=S0；动作=A；执行=2；成功=1；失败=1\n状态=S0；动作=B；执行=2；成功=0；失败=2\n状态=S1；动作=A；执行=18；成功=3；失败=15\n状态=S1；动作=B；执行=18；成功=3；失败=15",
+  "memory_char_length": 107
+}

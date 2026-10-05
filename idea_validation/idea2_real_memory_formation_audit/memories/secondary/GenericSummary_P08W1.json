@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P08W1:GenericSummary",
+  "world_id": "P08W1",
+  "pair_id": 8,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作A成功率较高（50%），而动作B成功率较低（0%）。在状态S1时选择动作A和B的成功率分别为约22.2%和33.3%，但两者均低于S0-A的效率。优先推荐：S0选A，S1中B略优于A但成功率仍低。",
+  "memory_char_length": 108
+}

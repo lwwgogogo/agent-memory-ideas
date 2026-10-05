@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P18W1:ReflectionLesson",
+  "world_id": "P18W1",
+  "pair_id": 18,
+  "formation_type": "ReflectionLesson",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0执行动作A和B各有1次成功和失败，而在状态S1时，无论执行动作A还是B，成功率均为44%，且都有较高的失败率。",
+  "memory_char_length": 60
+}

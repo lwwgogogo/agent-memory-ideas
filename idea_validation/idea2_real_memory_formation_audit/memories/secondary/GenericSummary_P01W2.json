@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P01W2:GenericSummary",
+  "world_id": "P01W2",
+  "pair_id": 1,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作B比A成功率更高（各执行2次：B成功1/1，A成功0/2）。在状态S1时，动作A和B的成功率都很低（各执行18次：A成功3/15失败，B成功2/16失败），需谨慎选择其他策略。",
+  "memory_char_length": 99
+}

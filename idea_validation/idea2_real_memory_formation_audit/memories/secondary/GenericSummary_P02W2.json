@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P02W2:GenericSummary",
+  "world_id": "P02W2",
+  "pair_id": 2,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时执行动作A和B各有两次尝试，其中A全失败（0成功/2失败），而B有1次成功和1次失败。在状态S1时执行动作A和B各18次，成功率极低（各仅3次成功，15次失败）。关键点：避免在S1状态下使用任何动作，因成功率不足17%；在S0中优先选择B而非A（B有50%成功率而A为0）",
+  "memory_char_length": 142
+}

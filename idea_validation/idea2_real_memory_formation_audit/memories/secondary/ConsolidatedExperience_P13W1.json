@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P13W1:ConsolidatedExperience",
+  "world_id": "P13W1",
+  "pair_id": 13,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwq:32b",
+  "memory": "状态=S0；动作=A：执行=2次（成功1/失败1）。状态=S0；动作=B：执行=2次（成功0/失败2）。状态=S1；动作=A：执行=18次（成功6/失败12）。状态=S1；动作=B：执行=18次（成功7/失败11）。",
+  "memory_char_length": 108
+}

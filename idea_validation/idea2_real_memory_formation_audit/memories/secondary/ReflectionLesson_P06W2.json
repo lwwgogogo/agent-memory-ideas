@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P06W2:ReflectionLesson",
+  "world_id": "P06W2",
+  "pair_id": 6,
+  "formation_type": "ReflectionLesson",
+  "model": "qwq:32b",
+  "memory": "在状态S0下执行动作A和B各有风险：A成功率0%（0/2），B成功率50%（1/2）。状态S1时，无论选A或B失败率均较高，其中A成功率为27.8%（5/18），B仅16.7%（3/18）。应优先避免进入S1状态。",
+  "memory_char_length": 107
+}

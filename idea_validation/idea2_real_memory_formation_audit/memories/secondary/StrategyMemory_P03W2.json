@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P03W2:StrategyMemory",
+  "world_id": "P03W2",
+  "pair_id": 3,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A的总尝试次数为2次，其中成功0次，失败2次；执行动作B的总尝试次数为2次，其中成功1次，失败1次。在状态S1时，执行动作A的总尝试次数为18次，成功4次，失败14次；执行动作B的总尝试次数为18次，成功2次，失败16次。",
+  "memory_char_length": 122
+}

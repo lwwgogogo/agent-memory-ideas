@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P08W2:ConsolidatedExperience",
+  "world_id": "P08W2",
+  "pair_id": 8,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwen2.5:14b",
+  "memory": "状态S0：动作A执行2次失败，动作B执行2次一成一败；状态S1：动作A和B各执行18次，均五成五败",
+  "memory_char_length": 49
+}

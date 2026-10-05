@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P03W1:GenericSummary",
+  "world_id": "P03W1",
+  "pair_id": 3,
+  "formation_type": "GenericSummary",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0中，动作A和B各有1次成功和失败；在状态S1中，动作A和B成功率都很低（约16.7%），执行次数多但失败率高。",
+  "memory_char_length": 60
+}

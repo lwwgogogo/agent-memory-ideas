@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P14W2:StrategyMemory",
+  "world_id": "P14W2",
+  "pair_id": 14,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A的尝试中有2次均失败（成功0/失败2），而选择动作B则有1次成功和1次失败。当处于状态S1时，无论选择动作A还是B，成功率均为约39%（7/18成功 vs 11次失败）。",
+  "memory_char_length": 97
+}

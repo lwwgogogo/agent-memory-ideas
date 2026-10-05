@@ -1,0 +1,57 @@
+{
+  "captured_at_utc": "2026-10-05T08:23:40.208597+00:00",
+  "verdict": "REAL_FORMATION_WEAK",
+  "gates": {
+    "G0": true,
+    "G1": true,
+    "G2": false,
+    "G3": false,
+    "G4": false,
+    "G5": false,
+    "G6": false,
+    "G7": true,
+    "G8": true
+  },
+  "source_worlds": {
+    "pairs": 20,
+    "worlds": 40,
+    "sha256": "76fbd6c45e70a8737a6b81b220f480c8f95aa63b18d6d454b969cc8fda2ac148",
+    "matches_manifest": true,
+    "matches_config": true
+  },
+  "completeness": {
+    "primary": {
+      "formation_planned": 160,
+      "formation_valid": 160,
+      "faithfulness_expected": 320,
+      "faithfulness_valid": 320,
+      "recovery_expected": 160,
+      "recovery_valid": 160,
+      "downstream_expected": 320,
+      "downstream_valid": 320
+    },
+    "secondary": {
+      "formation_planned": 160,
+      "formation_valid": 160,
+      "faithfulness_expected": 320,
+      "faithfulness_valid": 320,
+      "recovery_expected": 160,
+      "recovery_valid": 160,
+      "downstream_expected": 320,
+      "downstream_valid": 320
+    }
+  },
+  "pytest": "8 passed",
+  "python": "3.10.21",
+  "historical_experiment_dirs_unchanged": true,
+  "retry_attempts_in_research_call_journals": 0,
+  "downstream_control_note": "One C1 control downstream call ended INTERRUPTED_REQUEST_OUTCOME_UNKNOWN and remains INVALID; it was not reissued.",
+  "offline_evaluator_audit": "Offline evaluator join/completeness defects fixed after all model calls. Strict faithfulness requires faithful=true and all three error flags false. No model outputs, prompts, samples, or preregistration changed.",
+  "postrun_text_hygiene": "CRLF and extra EOF blank-line normalization applied to Python/Markdown text files for clean Git checks; semantic content unchanged. Frozen pre-run file hashes remain in results/config.json and tests.json.",
+  "artifact_audit": {
+    "listed_file_count_excluding_manifest": 370,
+    "oversized_over_5MiB": [],
+    "credential_pattern_matches": [],
+    "manifest_hashes_each_listed_file": true
+  }
+}

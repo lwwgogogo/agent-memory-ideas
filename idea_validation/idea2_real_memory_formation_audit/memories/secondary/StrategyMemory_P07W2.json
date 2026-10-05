@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P07W2:StrategyMemory",
+  "world_id": "P07W2",
+  "pair_id": 7,
+  "formation_type": "StrategyMemory",
+  "model": "qwq:32b",
+  "memory": "在状态S0时，执行动作A的失败率较高（2/2），而动作B的成功率为50%（1/2）。在状态S1时，动作A和B的成功率分别为27.8%（5/18）和22.2%（4/18），但两者均表现不佳。优先考虑S0中的动作B，并避免在S1中频繁使用这两个动作。",
+  "memory_char_length": 123
+}

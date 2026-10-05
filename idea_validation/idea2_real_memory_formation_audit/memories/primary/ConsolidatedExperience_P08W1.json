@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P08W1:ConsolidatedExperience",
+  "world_id": "P08W1",
+  "pair_id": 8,
+  "formation_type": "ConsolidatedExperience",
+  "model": "qwen2.5:14b",
+  "memory": "状态S0动作A执行2次成功1次失败1次；状态S0动作B执行2次全失败；状态S1动作A执行18次成功率低；状态S1动作B执行18次成功率稍高但仍有较多失败",
+  "memory_char_length": 76
+}

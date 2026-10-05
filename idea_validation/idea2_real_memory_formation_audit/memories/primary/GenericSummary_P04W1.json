@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P04W1:GenericSummary",
+  "world_id": "P04W1",
+  "pair_id": 4,
+  "formation_type": "GenericSummary",
+  "model": "qwen2.5:14b",
+  "memory": "S0_A:执行2次,成功1次,失败1次；S0_B:执行2次,全部失败；S1_A:执行18次,成功率低(3/18)；S1_B:执行18次,成功率略高(4/18),但总体失败率仍高。",
+  "memory_char_length": 89
+}

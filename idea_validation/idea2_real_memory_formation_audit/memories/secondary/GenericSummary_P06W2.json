@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P06W2:GenericSummary",
+  "world_id": "P06W2",
+  "pair_id": 6,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作B表现优于A：B的成功率为50%（1/2），而A为0%（0/2）。在状态S1时，动作A和B成功率分别为27.8%（5/18）和16.7%（3/18），但两者均失败率高。优先选S0的B，避免S1的任意动作。",
+  "memory_char_length": 112
+}

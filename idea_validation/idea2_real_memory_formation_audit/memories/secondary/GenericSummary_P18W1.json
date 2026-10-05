@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P18W1:GenericSummary",
+  "world_id": "P18W1",
+  "pair_id": 18,
+  "formation_type": "GenericSummary",
+  "model": "qwq:32b",
+  "memory": "在状态S0时选择动作A成功率较高（50%），而动作B成功率低（0%）。在状态S1时无论选A或B，成功率均为44.4%，但执行次数显著增加（各18次）。建议优先考虑S0-A，避免S0-B；在S1中需谨慎选择动作，因两者表现相同。",
+  "memory_char_length": 113
+}

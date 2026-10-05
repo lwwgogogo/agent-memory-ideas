@@ -1,0 +1,20 @@
+{
+  "captured_at_utc": "2026-10-05T08:17:26.569300+00:00",
+  "host": "imds",
+  "workspace": "/home/liaoweiwen/projects/agent-memory-ideas",
+  "conda_environment": "agentmem_lab",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "python_executable": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "models": {
+    "primary_writer": "qwen2.5:14b",
+    "secondary_writer": "qwq:32b",
+    "downstream_reader": "qwq:32b",
+    "structural_reader": "qwq:32b",
+    "faithfulness_auditor_A": "qwq:32b",
+    "faithfulness_auditor_B": "qwen2.5:14b"
+  },
+  "installed_ollama_models": "NAME                       ID              SIZE      MODIFIED      \ndeepseek-r1:70b            0c1615a8ca32    42 GB     18 months ago    \nllama3.3:70b               a6eb4748fd29    42 GB     19 months ago    \nqwq:32b                    cc1091b0e276    19 GB     19 months ago    \nnomic-embed-text:latest    0a109f422b47    274 MB    19 months ago    \nqwen2.5:14b                7cdf5a0187d5    9.0 GB    19 months ago",
+  "gpu_snapshot": "0, NVIDIA GeForce RTX 4090, 21747 MiB, 24564 MiB\n1, NVIDIA GeForce RTX 4090, 3 MiB, 24564 MiB\n2, NVIDIA GeForce RTX 4090, 3 MiB, 24564 MiB\n3, NVIDIA GeForce RTX 4090, 3 MiB, 24564 MiB",
+  "ollama_process_snapshot": "NAME       ID              SIZE     PROCESSOR    UNTIL              \nqwq:32b    cc1091b0e276    23 GB    100% GPU     3 minutes from now",
+  "gpu_interpretation": "End-of-run snapshot only: qwq:32b resident on GPU 0; remaining RTX 4090 devices idle at capture. Does not claim per-request GPU placement throughout the full run."
+}

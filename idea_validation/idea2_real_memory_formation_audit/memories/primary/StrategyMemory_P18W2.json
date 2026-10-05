@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P18W2:StrategyMemory",
+  "world_id": "P18W2",
+  "pair_id": 18,
+  "formation_type": "StrategyMemory",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0时，动作A和B各有两次执行记录，但成功率较低；而在状态S1中，尽管动作A和B的总执行次数更多（各18次），它们的成功率也相对不高，尤其是动作B的失败率较高。",
+  "memory_char_length": 83
+}

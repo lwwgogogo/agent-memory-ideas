@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P14W1:ReflectionLesson",
+  "world_id": "P14W1",
+  "pair_id": 14,
+  "formation_type": "ReflectionLesson",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0执行动作A和B成功率较低，尤其是动作B从未成功过。进入状态S1后，虽然总体成功率有所提高，但动作A的成功率仍然偏低，而动作B相对较好一些。",
+  "memory_char_length": 74
+}

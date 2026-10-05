@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P14W2:ReflectionLesson",
+  "world_id": "P14W2",
+  "pair_id": 14,
+  "formation_type": "ReflectionLesson",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0执行动作A和B各有两次尝试，但成功率较低；而在状态S1时，无论执行动作A还是B，虽然总次数更多（各18次），成功与失败的比例也保持一致，均为7:11。这表明，在不同状态下执行相同或相似的动作可能面临类似的挑战，并且在这些情况下，成功的概率相对固定。",
+  "memory_char_length": 129
+}

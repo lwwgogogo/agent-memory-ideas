@@ -1,0 +1,9 @@
+{
+  "run_id": "primary:P04W2:ReflectionLesson",
+  "world_id": "P04W2",
+  "pair_id": 4,
+  "formation_type": "ReflectionLesson",
+  "model": "qwen2.5:14b",
+  "memory": "在状态S0执行动作A和B各有失败记录，尤其是在状态S1，动作A和B的执行成功率都很低，多数为失败。",
+  "memory_char_length": 49
+}

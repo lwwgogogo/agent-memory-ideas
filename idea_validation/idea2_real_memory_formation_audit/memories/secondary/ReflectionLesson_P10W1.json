@@ -1,0 +1,9 @@
+{
+  "run_id": "secondary:P10W1:ReflectionLesson",
+  "world_id": "P10W1",
+  "pair_id": 10,
+  "formation_type": "ReflectionLesson",
+  "model": "qwq:32b",
+  "memory": "在状态S0下执行动作A时成功率较高（50%），而动作B尚未成功。在状态S1中，动作A和B的成功率分别为约28%和33%，但两者均表现不佳，需谨慎选择动作。",
+  "memory_char_length": 77
+}
