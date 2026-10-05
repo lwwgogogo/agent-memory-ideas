@@ -48,3 +48,7 @@
 - Formation Sanity 实际位于 agent_memory_failure_discovery/formation_sanity/；根目录同名路径不存在，索引使用真实位置。
 
 本轮只补充索引与建议，不执行 git mv，也不删除任何研究结果。
+
+## 2026-10-05 逐组安全审计
+
+5 组 / 15 个文件组内 SHA256 完全一致，均分类为 EXACT_DUPLICATE_REFERENCED。另一个 source.tar.gz 分类 UNKNOWN，存在同步脚本依赖且没有确认的等价主副本。没有符合安全移动全部条件的文件：归档 0 组、移动 0 个、16 个候选全部保留原位。未删除任何研究文件。完整 SHA256 与引用证据见 ../archive/duplicates_20261005/MANIFEST.md 和 audit.json。

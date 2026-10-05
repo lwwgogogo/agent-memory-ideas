@@ -1,0 +1,220 @@
+[
+  {
+    "group": 1,
+    "category": "EXACT_DUPLICATE_REFERENCED",
+    "sha256": {
+      "agent_memory_failure_discovery/harness_validation/test_grader.py": "4308844090280106baadc327e8f1390ab3be20954066364ad3615c029589a98a",
+      "agent_memory_failure_discovery/harness_validation/tests/test_grader.py": "4308844090280106baadc327e8f1390ab3be20954066364ad3615c029589a98a"
+    },
+    "references": {
+      "agent_memory_failure_discovery/harness_validation/test_grader.py": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:13:- `agent_memory_failure_discovery/harness_validation/test_grader.py`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:14:- `agent_memory_failure_discovery/harness_validation/tests/test_grader.py`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:44:- 两处 test_grader.py：字节相同，但测试入口与相对导入依赖未全面审定，保留原位。"
+      ],
+      "agent_memory_failure_discovery/harness_validation/tests/test_grader.py": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:13:- `agent_memory_failure_discovery/harness_validation/test_grader.py`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:14:- `agent_memory_failure_discovery/harness_validation/tests/test_grader.py`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:44:- 两处 test_grader.py：字节相同，但测试入口与相对导入依赖未全面审定，保留原位。"
+      ]
+    },
+    "decision": "KEEP_IN_PLACE",
+    "reason": "代码/文档存在名称或路径引用；另属于历史复现记录，不能证明移动安全。"
+  },
+  {
+    "group": 2,
+    "category": "EXACT_DUPLICATE_REFERENCED",
+    "sha256": {
+      "outputs/phase_a1_20260929/environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+      "outputs/phase_a1_dense_20260929/environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+      "outputs/phase_a1_length_diag_20260929/environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+      "outputs/phase_a2_20260929/environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a",
+      "outputs/phase_a_20260924/environment-lock.txt": "d06b9e78fb97b3ab9e549c85774aa3d9ae5b44c58c0b67a22a7e36d6f1695c1a"
+    },
+    "references": {
+      "outputs/phase_a1_20260929/environment-lock.txt": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:18:- `outputs/phase_a1_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:19:- `outputs/phase_a1_dense_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:20:- `outputs/phase_a1_length_diag_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:21:- `outputs/phase_a2_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:22:- `outputs/phase_a_20260924/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "docs/execution_20260924.md:47:- `outputs/phase_a_20260924/environment-lock.txt`：服务器完整 pip freeze。",
+        "docs/execution_20260929.md:49:关键输出：per_seed.csv、summary.csv、run.json、comparison.json、online_diagnostics.csv（100/500/1000/2000步的参数诊断）、environment-lock.txt及figures/accuracy.png等5张图。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:27:服务器/home/liaoweiwen/projects/agent-memory-ideas；Python3.10.21、NumPy1.24.4，CPU；每run保存完整environment-lock.txt。D1耗时212.07秒，D2耗时84.57秒，不含绘图。",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:49:        (out/'environment-lock.txt').write_text(freeze,encoding='utf-8')",
+        "src/agent_memory/research_io.py:51:        (out/'environment-lock.txt').write_text('pip freeze unavailable\\n')"
+      ],
+      "outputs/phase_a1_dense_20260929/environment-lock.txt": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:18:- `outputs/phase_a1_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:19:- `outputs/phase_a1_dense_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:20:- `outputs/phase_a1_length_diag_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:21:- `outputs/phase_a2_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:22:- `outputs/phase_a_20260924/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "docs/execution_20260924.md:47:- `outputs/phase_a_20260924/environment-lock.txt`：服务器完整 pip freeze。",
+        "docs/execution_20260929.md:49:关键输出：per_seed.csv、summary.csv、run.json、comparison.json、online_diagnostics.csv（100/500/1000/2000步的参数诊断）、environment-lock.txt及figures/accuracy.png等5张图。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:27:服务器/home/liaoweiwen/projects/agent-memory-ideas；Python3.10.21、NumPy1.24.4，CPU；每run保存完整environment-lock.txt。D1耗时212.07秒，D2耗时84.57秒，不含绘图。",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:49:        (out/'environment-lock.txt').write_text(freeze,encoding='utf-8')",
+        "src/agent_memory/research_io.py:51:        (out/'environment-lock.txt').write_text('pip freeze unavailable\\n')"
+      ],
+      "outputs/phase_a1_length_diag_20260929/environment-lock.txt": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:18:- `outputs/phase_a1_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:19:- `outputs/phase_a1_dense_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:20:- `outputs/phase_a1_length_diag_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:21:- `outputs/phase_a2_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:22:- `outputs/phase_a_20260924/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "docs/execution_20260924.md:47:- `outputs/phase_a_20260924/environment-lock.txt`：服务器完整 pip freeze。",
+        "docs/execution_20260929.md:49:关键输出：per_seed.csv、summary.csv、run.json、comparison.json、online_diagnostics.csv（100/500/1000/2000步的参数诊断）、environment-lock.txt及figures/accuracy.png等5张图。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:27:服务器/home/liaoweiwen/projects/agent-memory-ideas；Python3.10.21、NumPy1.24.4，CPU；每run保存完整environment-lock.txt。D1耗时212.07秒，D2耗时84.57秒，不含绘图。",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:49:        (out/'environment-lock.txt').write_text(freeze,encoding='utf-8')",
+        "src/agent_memory/research_io.py:51:        (out/'environment-lock.txt').write_text('pip freeze unavailable\\n')"
+      ],
+      "outputs/phase_a2_20260929/environment-lock.txt": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:18:- `outputs/phase_a1_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:19:- `outputs/phase_a1_dense_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:20:- `outputs/phase_a1_length_diag_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:21:- `outputs/phase_a2_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:22:- `outputs/phase_a_20260924/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "docs/execution_20260924.md:47:- `outputs/phase_a_20260924/environment-lock.txt`：服务器完整 pip freeze。",
+        "docs/execution_20260929.md:49:关键输出：per_seed.csv、summary.csv、run.json、comparison.json、online_diagnostics.csv（100/500/1000/2000步的参数诊断）、environment-lock.txt及figures/accuracy.png等5张图。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:27:服务器/home/liaoweiwen/projects/agent-memory-ideas；Python3.10.21、NumPy1.24.4，CPU；每run保存完整environment-lock.txt。D1耗时212.07秒，D2耗时84.57秒，不含绘图。",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:49:        (out/'environment-lock.txt').write_text(freeze,encoding='utf-8')",
+        "src/agent_memory/research_io.py:51:        (out/'environment-lock.txt').write_text('pip freeze unavailable\\n')"
+      ],
+      "outputs/phase_a_20260924/environment-lock.txt": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:18:- `outputs/phase_a1_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:19:- `outputs/phase_a1_dense_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:20:- `outputs/phase_a1_length_diag_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:21:- `outputs/phase_a2_20260929/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:22:- `outputs/phase_a_20260924/environment-lock.txt`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "docs/execution_20260924.md:47:- `outputs/phase_a_20260924/environment-lock.txt`：服务器完整 pip freeze。",
+        "docs/execution_20260929.md:49:关键输出：per_seed.csv、summary.csv、run.json、comparison.json、online_diagnostics.csv（100/500/1000/2000步的参数诊断）、environment-lock.txt及figures/accuracy.png等5张图。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:27:服务器/home/liaoweiwen/projects/agent-memory-ideas；Python3.10.21、NumPy1.24.4，CPU；每run保存完整environment-lock.txt。D1耗时212.07秒，D2耗时84.57秒，不含绘图。",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:49:        (out/'environment-lock.txt').write_text(freeze,encoding='utf-8')",
+        "src/agent_memory/research_io.py:51:        (out/'environment-lock.txt').write_text('pip freeze unavailable\\n')"
+      ]
+    },
+    "decision": "KEEP_IN_PLACE",
+    "reason": "代码/文档存在名称或路径引用；另属于历史复现记录，不能证明移动安全。"
+  },
+  {
+    "group": 3,
+    "category": "EXACT_DUPLICATE_REFERENCED",
+    "sha256": {
+      "outputs/phase_a1_20260929/validation.csv": "b374163021caa81a3353cea00cc91a390553bb290614c9b2e18ec3af0d60f669",
+      "outputs/phase_a1_dense_20260929/validation.csv": "b374163021caa81a3353cea00cc91a390553bb290614c9b2e18ec3af0d60f669",
+      "outputs/phase_a_20260924/validation.csv": "b374163021caa81a3353cea00cc91a390553bb290614c9b2e18ec3af0d60f669"
+    },
+    "references": {
+      "outputs/phase_a1_20260929/validation.csv": [
+        "README.md:71:- `validation.csv`：候选验证成绩。",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:26:- `outputs/phase_a1_20260929/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:27:- `outputs/phase_a1_dense_20260929/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:28:- `outputs/phase_a_20260924/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "scripts/run_diagnostics.py:35:    write_csv(out/'validation.csv',validation)",
+        "scripts/run_phase_a.py:64:    write_csv(out / \"validation.csv\", validation)"
+      ],
+      "outputs/phase_a1_dense_20260929/validation.csv": [
+        "README.md:71:- `validation.csv`：候选验证成绩。",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:26:- `outputs/phase_a1_20260929/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:27:- `outputs/phase_a1_dense_20260929/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:28:- `outputs/phase_a_20260924/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "scripts/run_diagnostics.py:35:    write_csv(out/'validation.csv',validation)",
+        "scripts/run_phase_a.py:64:    write_csv(out / \"validation.csv\", validation)"
+      ],
+      "outputs/phase_a_20260924/validation.csv": [
+        "README.md:71:- `validation.csv`：候选验证成绩。",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:26:- `outputs/phase_a1_20260929/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:27:- `outputs/phase_a1_dense_20260929/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:28:- `outputs/phase_a_20260924/validation.csv`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:45:- environment-lock.txt、validation.csv 及 zip 快照：虽然部分字节相同，但属于不同实验的复现证据，保留各自实验路径。",
+        "scripts/run_diagnostics.py:35:    write_csv(out/'validation.csv',validation)",
+        "scripts/run_phase_a.py:64:    write_csv(out / \"validation.csv\", validation)"
+      ]
+    },
+    "decision": "KEEP_IN_PLACE",
+    "reason": "代码/文档存在名称或路径引用；另属于历史复现记录，不能证明移动安全。"
+  },
+  {
+    "group": 4,
+    "category": "EXACT_DUPLICATE_REFERENCED",
+    "sha256": {
+      "outputs/phase_a1_dense_20260929/postprocessing_source.zip": "930c3872f91854f278359471c1d5b622ab7c5d87f469ee1363ac838f95934290",
+      "outputs/phase_a1_length_diag_20260929/postprocessing_source.zip": "930c3872f91854f278359471c1d5b622ab7c5d87f469ee1363ac838f95934290",
+      "outputs/phase_a2_20260929/postprocessing_source.zip": "930c3872f91854f278359471c1d5b622ab7c5d87f469ee1363ac838f95934290"
+    },
+    "references": {
+      "outputs/phase_a1_dense_20260929/postprocessing_source.zip": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:32:- `outputs/phase_a1_dense_20260929/postprocessing_source.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:33:- `outputs/phase_a1_length_diag_20260929/postprocessing_source.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:34:- `outputs/phase_a2_20260929/postprocessing_source.zip`",
+        "scripts/seal_postprocessing.py:15:        with zipfile.ZipFile(root/'postprocessing_source.zip','x',zipfile.ZIP_DEFLATED) as z:",
+        "scripts/seal_postprocessing.py:20:            json.dump(dict(sha256=hashes,plot_source_archive='postprocessing_source.zip',"
+      ],
+      "outputs/phase_a1_length_diag_20260929/postprocessing_source.zip": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:32:- `outputs/phase_a1_dense_20260929/postprocessing_source.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:33:- `outputs/phase_a1_length_diag_20260929/postprocessing_source.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:34:- `outputs/phase_a2_20260929/postprocessing_source.zip`",
+        "scripts/seal_postprocessing.py:15:        with zipfile.ZipFile(root/'postprocessing_source.zip','x',zipfile.ZIP_DEFLATED) as z:",
+        "scripts/seal_postprocessing.py:20:            json.dump(dict(sha256=hashes,plot_source_archive='postprocessing_source.zip',"
+      ],
+      "outputs/phase_a2_20260929/postprocessing_source.zip": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:32:- `outputs/phase_a1_dense_20260929/postprocessing_source.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:33:- `outputs/phase_a1_length_diag_20260929/postprocessing_source.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:34:- `outputs/phase_a2_20260929/postprocessing_source.zip`",
+        "scripts/seal_postprocessing.py:15:        with zipfile.ZipFile(root/'postprocessing_source.zip','x',zipfile.ZIP_DEFLATED) as z:",
+        "scripts/seal_postprocessing.py:20:            json.dump(dict(sha256=hashes,plot_source_archive='postprocessing_source.zip',"
+      ]
+    },
+    "decision": "KEEP_IN_PLACE",
+    "reason": "代码/文档存在名称或路径引用；另属于历史复现记录，不能证明移动安全。"
+  },
+  {
+    "group": 5,
+    "category": "EXACT_DUPLICATE_REFERENCED",
+    "sha256": {
+      "outputs/phase_a1_dense_20260929/source_snapshot.zip": "6cf560edc64af9092a70d717212e70192561a27925360fc46ae7fee371c7db6e",
+      "outputs/phase_a1_length_diag_20260929/source_snapshot.zip": "6cf560edc64af9092a70d717212e70192561a27925360fc46ae7fee371c7db6e"
+    },
+    "references": {
+      "outputs/phase_a1_dense_20260929/source_snapshot.zip": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:38:- `outputs/phase_a1_dense_20260929/source_snapshot.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:39:- `outputs/phase_a1_length_diag_20260929/source_snapshot.zip`",
+        "docs/diagnostics_frozen_20260929.md:13:D1/D2输出目录新建且禁止覆盖；每次开始存source_snapshot.zip、源hash、完整配置、环境，结束存耗时与输出hash。A2只有两项诊断完成并通过stationary门槛后执行；否则先输出INCONCLUSIVE诊断。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:29:每run在计算前保存source_snapshot.zip、完整source_sha256、config.json及run.json。关键SHA256：",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/audit_research_outputs.py:14:    with zipfile.ZipFile(root/'source_snapshot.zip') as z:",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:38:    with zipfile.ZipFile(out/'source_snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:"
+      ],
+      "outputs/phase_a1_length_diag_20260929/source_snapshot.zip": [
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:38:- `outputs/phase_a1_dense_20260929/source_snapshot.zip`",
+        "docs/FILE_CLEANUP_RECOMMENDATIONS.md:39:- `outputs/phase_a1_length_diag_20260929/source_snapshot.zip`",
+        "docs/diagnostics_frozen_20260929.md:13:D1/D2输出目录新建且禁止覆盖；每次开始存source_snapshot.zip、源hash、完整配置、环境，结束存耗时与输出hash。A2只有两项诊断完成并通过stationary门槛后执行；否则先输出INCONCLUSIVE诊断。",
+        "docs/execution_phase_a1_diagnostics_20260929.md:29:每run在计算前保存source_snapshot.zip、完整source_sha256、config.json及run.json。关键SHA256：",
+        "docs/execution_phase_a2_20260929.md:28:Python 3.10.21，NumPy 1.24.4；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。",
+        "scripts/audit_research_outputs.py:14:    with zipfile.ZipFile(root/'source_snapshot.zip') as z:",
+        "scripts/write_a2_note.py:35:           f\"Python {meta['python']}，NumPy {meta['numpy']}；完整环境见environment-lock.txt。运行开始已存source_snapshot.zip、全部source_sha256、config.json及前置D1/D2 run.json哈希。\",",
+        "src/agent_memory/research_io.py:38:    with zipfile.ZipFile(out/'source_snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:"
+      ]
+    },
+    "decision": "KEEP_IN_PLACE",
+    "reason": "代码/文档存在名称或路径引用；另属于历史复现记录，不能证明移动安全。"
+  }
+]
