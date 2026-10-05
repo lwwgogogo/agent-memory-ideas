@@ -1,0 +1,233 @@
+{
+  "inputs": [
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_001.jsonl",
+      "record_count": 2000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "e663fe2ba08e007247c60a014d893e3483c5f7f0e9c3b0e4db8c463c7bb7e4c1"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_002.jsonl",
+      "record_count": 4000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "f67afcf9d0cbe47bc60a56e161f0816c7e3581e04dd137e5149b468fbe9726bf"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_003.jsonl",
+      "record_count": 10000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "0176477163df5823b187f1d1dde65e424b4dd5e2b54e147e1de5271fbad5dbf9"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_004.jsonl",
+      "record_count": 20000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "99fbd2b3fd3957bd1b43de11177b380692b71317c9b85fc6a1f1ea04dd7c6823"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_005.jsonl",
+      "record_count": 40000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "0524c39c999b25ebcff67a3af57ec2617f92c5a3509407597e694bfc725854fd"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_006.jsonl",
+      "record_count": 4000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "a271441395f792cf539a69e5ee0596a47563d1fc890cfdfd45f4aa06f66334fe"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_007.jsonl",
+      "record_count": 8000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "98f38fd8dcd75577c23bad91aef304818e64b571a62c43c483598ae32bf7ce77"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_008.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_009.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "d95ca6123350bc88e2573826a9df57fed866659c993a43198b9fe1d09b106615"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_010.jsonl",
+      "record_count": 40000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "f2094e7c9d6cac2946f38828729e29a0aad8a8ea7b038a11a2e1924e36cae570"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "export/case_011.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    }
+  ],
+  "metamorphic_inputs": [
+    {
+      "anonymous_era_id_pass": true,
+      "path": "results/private/metamorphic/input_000.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "results/private/metamorphic/input_001.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "results/private/metamorphic/input_002.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "results/private/metamorphic/input_003.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "results/private/metamorphic/input_004.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    },
+    {
+      "anonymous_era_id_pass": true,
+      "path": "results/private/metamorphic/input_005.jsonl",
+      "record_count": 6000,
+      "schema_fields": [
+        "action",
+        "era_id",
+        "outcome",
+        "state"
+      ],
+      "schema_whitelist_pass": true,
+      "sha256": "cee6706724140e5474c244933fc8bcc91b83479e97c4f580c1ad6a8ba63faf2d"
+    }
+  ],
+  "schema_fields": [
+    "action",
+    "era_id",
+    "outcome",
+    "state"
+  ]
+}

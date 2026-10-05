@@ -1,0 +1,2243 @@
+{
+  "access": "EVALUATOR ONLY",
+  "cases": {
+    "case_001.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        }
+      ],
+      "historical_case": "W1_K1",
+      "policies": [
+        "P95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_002.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        }
+      ],
+      "historical_case": "W1_K2",
+      "policies": [
+        "P95",
+        "P95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_003.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        }
+      ],
+      "historical_case": "W1_K5",
+      "policies": [
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_004.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e005",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e005",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e005",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e005",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e006",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e006",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e006",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e006",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e007",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e007",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e007",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e007",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e008",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e008",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e008",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e008",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e009",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e009",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e009",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e009",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        }
+      ],
+      "historical_case": "W1_K10",
+      "policies": [
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_005.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e005",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e005",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e005",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e005",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e006",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e006",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e006",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e006",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e007",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e007",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e007",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e007",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e008",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e008",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e008",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e008",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e009",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e009",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e009",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e009",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e010",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e010",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e010",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e010",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e011",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e011",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e011",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e011",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e012",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e012",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e012",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e012",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e013",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e013",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e013",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e013",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e014",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e014",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e014",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e014",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e015",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e015",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e015",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e015",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e016",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e016",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e016",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e016",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e017",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e017",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e017",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e017",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e018",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e018",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e018",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e018",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e019",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e019",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e019",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e019",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        }
+      ],
+      "historical_case": "W1_K20",
+      "policies": [
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_006.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        }
+      ],
+      "historical_case": "W2_PQ",
+      "policies": [
+        "P95",
+        "Q95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_007.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S1",
+          "success": 190
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S1",
+          "success": 10
+        }
+      ],
+      "historical_case": "W2_PQPQ",
+      "policies": [
+        "P95",
+        "Q95",
+        "P95",
+        "Q95"
+      ],
+      "truth": {
+        "A": "11/20",
+        "B": "11/20"
+      }
+    },
+    "case_008.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 475
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 665
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 15
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S0",
+          "success": 450
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S0",
+          "success": 250
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S1",
+          "success": 350
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S1",
+          "success": 150
+        }
+      ],
+      "historical_case": "W3",
+      "policies": [
+        "P95",
+        "Q95",
+        "R50"
+      ],
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    },
+    "case_009.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 900,
+          "state": "S0",
+          "success": 810
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 100,
+          "state": "S0",
+          "success": 50
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 100,
+          "state": "S1",
+          "success": 70
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 900,
+          "state": "S1",
+          "success": 270
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 920,
+          "state": "S0",
+          "success": 828
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 80,
+          "state": "S0",
+          "success": 40
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 80,
+          "state": "S1",
+          "success": 56
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 920,
+          "state": "S1",
+          "success": 276
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        }
+      ],
+      "historical_case": "W4",
+      "policies": [
+        "P90",
+        "P92",
+        "P95"
+      ],
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    },
+    "case_010.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e003",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e003",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e004",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e004",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e005",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e005",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e005",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e005",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e006",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e006",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e006",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e006",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e007",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e007",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e007",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e007",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e008",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e008",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e008",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e008",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e009",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e009",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e009",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e009",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e010",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e010",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e010",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e010",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e011",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e011",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e011",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e011",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e012",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e012",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e012",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e012",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e013",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e013",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e013",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e013",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e014",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e014",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e014",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e014",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e015",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e015",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e015",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e015",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e016",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e016",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e016",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e016",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e017",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e017",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e017",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e017",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e018",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e018",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e018",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e018",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e019",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e019",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e019",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e019",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        }
+      ],
+      "historical_case": "M1_ECHO",
+      "policies": [
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95",
+        "P95"
+      ],
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    },
+    "case_011.jsonl": {
+      "cells": [
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S0",
+          "success": 855
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S0",
+          "success": 25
+        },
+        {
+          "action": "A",
+          "era_id": "e000",
+          "n": 50,
+          "state": "S1",
+          "success": 35
+        },
+        {
+          "action": "B",
+          "era_id": "e000",
+          "n": 950,
+          "state": "S1",
+          "success": 285
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S0",
+          "success": 45
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S0",
+          "success": 475
+        },
+        {
+          "action": "A",
+          "era_id": "e001",
+          "n": 950,
+          "state": "S1",
+          "success": 665
+        },
+        {
+          "action": "B",
+          "era_id": "e001",
+          "n": 50,
+          "state": "S1",
+          "success": 15
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S0",
+          "success": 450
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S0",
+          "success": 250
+        },
+        {
+          "action": "A",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S1",
+          "success": 350
+        },
+        {
+          "action": "B",
+          "era_id": "e002",
+          "n": 500,
+          "state": "S1",
+          "success": 150
+        }
+      ],
+      "historical_case": "M1_DIVERSE",
+      "policies": [
+        "P95",
+        "Q95",
+        "R50"
+      ],
+      "truth": {
+        "A": "4/5",
+        "B": "2/5"
+      }
+    }
+  }
+}

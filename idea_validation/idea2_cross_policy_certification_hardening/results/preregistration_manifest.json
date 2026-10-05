@@ -1,0 +1,28 @@
+{
+  "base_commit": "1d95cfa60a30ed40ed3d49ba8aefd2c2be471906",
+  "formal_restart": false,
+  "sha256": {
+    "candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+    "candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+    "candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+    "candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+    "candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+    "candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+    "evaluator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evaluator/compute_gates.py": "c91c6e07945696abd49e086598723b4a7a9b8c99ca68bd5a232633e6797ec910",
+    "evaluator/render_report.py": "f1de54ac2dccee95ffdf912320d0d1cc576eed514a11af4efac2198fe559cc78",
+    "evaluator/run_hardening.py": "d9be0a64fe9e24328c52a5795bbe8f8a777d51b53c9321fac1890009a55c86e8",
+    "evaluator/verify_isolation.py": "07dd15795dba478fa8113603596c779eb8e37f04476ad45ac056967a26ee2913",
+    "generator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "generator/private_generate.py": "3c5ca930790060b569ce54f72abc4aa00f9e126d63d19a0ebf56ce81810b19c7",
+    "generator/private_worlds.py": "877adf2011c18cd22ad194b141e07599f286a986799d430f109e16320929f29c",
+    "preregistration.md": "62791868ef4d387f117ce0754a0acd7436b47b9f3d6fe3946bd8a80693ceb194",
+    "public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+    "results/history_before.json": "1975989ea2e56f1001ec2d3d5ec48ef3ad9e680ca86cf26ccad713472810dc5f",
+    "results/preformal_tests.log": "a8f1ffa5d9a3653e949c03eb5796c120a9cb9a00cb3fa1af14e00f482f80609e",
+    "results/preformal_tests.xml": "812a7c51c8a8246a4634972d83d99871bdebcfba4c9de29d682ebab7763c1249",
+    "tests/test_hardening.py": "9658924ac225fb3020ada2b7cf0d8eae0e3291467cd52b7154f92fcad5ee37b7"
+  },
+  "stage": "Stage-6A.1"
+}

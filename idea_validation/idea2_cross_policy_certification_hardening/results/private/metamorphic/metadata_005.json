@@ -1,0 +1,7 @@
+{
+  "gamma": 0.95,
+  "generator_internal_identifier": "mutated_005",
+  "secret_note": "A",
+  "true_label": "TRUE_INVARIANT",
+  "world": "W3"
+}

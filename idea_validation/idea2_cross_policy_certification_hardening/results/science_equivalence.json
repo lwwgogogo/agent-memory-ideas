@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "cases_equal": true,
+    "epsilon_equal": true,
+    "outcome_tables_equal": true,
+    "policy_tables_equal": true,
+    "public_config_equal": true,
+    "thresholds_equal": true
+  },
+  "pass": true
+}

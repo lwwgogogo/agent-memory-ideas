@@ -1,0 +1,543 @@
+{
+  "D_true_over_D_false": 18.00000000000001,
+  "M1_non_substitutability_pass": true,
+  "all_match": true,
+  "cases": {
+    "M1_DIVERSE": {
+      "C_conflict": 0.0,
+      "C_pos": 1.0,
+      "D_policy": 0.6,
+      "M1": {
+        "A": 0.8,
+        "B": 0.4,
+        "exact": {
+          "A": "4/5",
+          "B": "2/5"
+        },
+        "gap": 0.4
+      },
+      "anonymous_input": "case_011.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 3,
+      "pass": true,
+      "raw_support_count": 6000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "PRESCRIPTIVE"
+    },
+    "M1_ECHO": {
+      "C_conflict": 0.0,
+      "C_pos": 0.0,
+      "D_policy": 0.0,
+      "M1": {
+        "A": 0.8,
+        "B": 0.4,
+        "exact": {
+          "A": "4/5",
+          "B": "2/5"
+        },
+        "gap": 0.4
+      },
+      "anonymous_input": "case_010.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 20,
+      "pass": true,
+      "raw_support_count": 40000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "DESCRIPTIVE"
+    },
+    "W1_K1": {
+      "C_conflict": 0.0,
+      "C_pos": 0.0,
+      "D_policy": 0.0,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_001.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 1,
+      "pass": true,
+      "raw_support_count": 2000,
+      "sign_pattern": [
+        "+"
+      ],
+      "status": "DESCRIPTIVE"
+    },
+    "W1_K10": {
+      "C_conflict": 0.0,
+      "C_pos": 0.0,
+      "D_policy": 0.0,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_004.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 10,
+      "pass": true,
+      "raw_support_count": 20000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "DESCRIPTIVE"
+    },
+    "W1_K2": {
+      "C_conflict": 0.0,
+      "C_pos": 0.0,
+      "D_policy": 0.0,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_002.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 2,
+      "pass": true,
+      "raw_support_count": 4000,
+      "sign_pattern": [
+        "+",
+        "+"
+      ],
+      "status": "DESCRIPTIVE"
+    },
+    "W1_K20": {
+      "C_conflict": 0.0,
+      "C_pos": 0.0,
+      "D_policy": 0.0,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_005.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 20,
+      "pass": true,
+      "raw_support_count": 40000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "DESCRIPTIVE"
+    },
+    "W1_K5": {
+      "C_conflict": 0.0,
+      "C_pos": 0.0,
+      "D_policy": 0.0,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_003.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 5,
+      "pass": true,
+      "raw_support_count": 10000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "DESCRIPTIVE"
+    },
+    "W2_PQ": {
+      "C_conflict": 1.0,
+      "C_pos": 0.0,
+      "D_policy": 0.8999999999999999,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_006.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 2,
+      "pass": true,
+      "raw_support_count": 4000,
+      "sign_pattern": [
+        "+",
+        "-"
+      ],
+      "status": "PROVISIONAL"
+    },
+    "W2_PQPQ": {
+      "C_conflict": 1.0,
+      "C_pos": 0.0,
+      "D_policy": 0.6,
+      "M1": {
+        "A": 0.55,
+        "B": 0.55,
+        "exact": {
+          "A": "11/20",
+          "B": "11/20"
+        },
+        "gap": 0.0
+      },
+      "anonymous_input": "case_007.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 4,
+      "pass": true,
+      "raw_support_count": 8000,
+      "sign_pattern": [
+        "+",
+        "-",
+        "+",
+        "-"
+      ],
+      "status": "PROVISIONAL"
+    },
+    "W3": {
+      "C_conflict": 0.0,
+      "C_pos": 1.0,
+      "D_policy": 0.6,
+      "M1": {
+        "A": 0.8,
+        "B": 0.4,
+        "exact": {
+          "A": "4/5",
+          "B": "2/5"
+        },
+        "gap": 0.4
+      },
+      "anonymous_input": "case_008.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 3,
+      "pass": true,
+      "raw_support_count": 6000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "PRESCRIPTIVE"
+    },
+    "W4": {
+      "C_conflict": 0.0,
+      "C_pos": 1.0,
+      "D_policy": 0.03333333333333331,
+      "M1": {
+        "A": 0.8,
+        "B": 0.4,
+        "exact": {
+          "A": "4/5",
+          "B": "2/5"
+        },
+        "gap": 0.4
+      },
+      "anonymous_input": "case_009.jsonl",
+      "checks": {
+        "C_conflict": true,
+        "C_neg": true,
+        "C_pos": true,
+        "D_max": true,
+        "D_median": true,
+        "D_min": true,
+        "D_policy": true,
+        "M1": true,
+        "diagnostic": true,
+        "effective_distinct_policy_pairs": true,
+        "era_count": true,
+        "exact_cell_counts": true,
+        "gaps": true,
+        "mean_observed_gap": true,
+        "profiles": true,
+        "raw_support_count": true,
+        "sign_pattern": true,
+        "status": true,
+        "success_support": true
+      },
+      "era_count": 3,
+      "pass": true,
+      "raw_support_count": 6000,
+      "sign_pattern": [
+        "+",
+        "+",
+        "+"
+      ],
+      "status": "PROVISIONAL"
+    }
+  },
+  "ratio_match": true
+}

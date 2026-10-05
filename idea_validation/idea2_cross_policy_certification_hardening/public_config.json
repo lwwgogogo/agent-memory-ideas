@@ -1,0 +1,8 @@
+{
+  "epsilon": 1e-12,
+  "min_eras": 3,
+  "min_effective_pairs": 2,
+  "min_diversity": 0.2,
+  "min_agreement": 0.8,
+  "max_conflict": 0.1
+}

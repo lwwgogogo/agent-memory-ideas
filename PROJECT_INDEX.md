@@ -120,3 +120,9 @@ M1统计核心就是direct standardization/g-computation，不声明novelty。ex
 
 ## Idea 2 Stage-6A — Cross-Policy Memory Certification — 2026-10-06
 独立目录 idea_validation/idea2_cross_policy_certification/。W1 same-policy echo 保持 D_policy=0、DESCRIPTIVE；W2 识别交替方向与 C_conflict=1；W3 invariant profile 为 PRESCRIPTIVE；W4 false-diversity D=.0333 对比 true-diversity D=.60；M1 utility 在 echo/diverse 下同为 gap=.4，但 lifecycle 不同。最终 **CROSS_POLICY_CERT_NARROW**：G0–G4、G6–G9 通过；G5 因运行器未充分隔离生成器与 candidate 输入而失败，故不声称完成 oracle-free 执行认证。24 项测试通过，正式 deterministic run 一次，未调阈值。Stage-6A 已停止。
+
+## Idea 2 Stage-6A.1 — Oracle-Free Boundary Hardening — 2026-10-06
+
+独立目录：idea_validation/idea2_cross_policy_certification_hardening/。本轮结论 **ORACLE_FREE_HARDENING_GO**，H0–H9 全 PASS，G5 由真实的 schema、拒绝、AST、字符串、进程、文件、环境、metadata invariance 与数值复现检查组合计算。77 项预运行测试通过；正式运行一次，无 restart。
+
+候选仅在临时目录读取匿名逐条观测与冻结公开阈值；11 个固定配置复现 Stage-6A，5 种私有元数据变换得到逐字节相同的输出。M1 ECHO/DIVERSE gap 均 .40，认证分别 DESCRIPTIVE/PRESCRIPTIVE。1,956 个历史文件及链接核验一致。Stage-6A 的 **CROSS_POLICY_CERT_NARROW** 永久保留，未回写历史结果。新增证据仅限受审计代码路径的执行边界，不等同于 OS 级恶意代码隔离，也不扩大 synthetic/exact-count 研究结论。本轮已停止，未进入后续阶段。

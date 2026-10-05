@@ -1,0 +1,27 @@
+{
+  "G5": true,
+  "environment": {
+    "executable": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+    "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]"
+  },
+  "formal_restart": false,
+  "formal_run_count": 1,
+  "historical_verdict_retained": "CROSS_POLICY_CERT_NARROW",
+  "history_file_count": 1956,
+  "history_hash_match": true,
+  "output_hashes": {
+    "candidate_input_manifest.json": "3df8f72c493067846c97a4622bb7460181e6c3d77c18fb519d06d7ad70d133f9",
+    "candidate_output_manifest.json": "9f784ac4baa1b64da855a5189c0e44b58b46593c9bc652fcd44d3abde558853f",
+    "formal_started.json": "bbb643a12b104e3aed1ea7bd09e60fd99f315638e22c5fc4320e7b04f66dd6fd",
+    "gate_results.json": "180c2c906f8bef625bdd80d044ab5ac6238665f4f1b5382469ad28eab6ce6a8c",
+    "history_before.json": "1975989ea2e56f1001ec2d3d5ec48ef3ad9e680ca86cf26ccad713472810dc5f",
+    "metamorphic_test.json": "91183209567d27897d92c61ad2c6dd14e0e69e51682ff940221022cc9df5ff60",
+    "oracle_boundary_audit.json": "83992600cb520dfb4d2ad78399265ff0f2d1345f877d4546275d32715e109a4f",
+    "preregistration_manifest.json": "2f78320bc963985f8c3af696b0af119165625dbdcb9c4dc33f34f17d6952fe7b",
+    "reproduction.json": "d14bc601a992c2932800e6c33d37231bdd3543c9c8d0417bfc6437f0106d7bb6",
+    "science_equivalence.json": "4c5c36446778054f0b89617d468f29cb5bbf0c768bf57f8c371ed6c107cd301e"
+  },
+  "preformal_tests_passed": 77,
+  "preregistration_hash_match": true,
+  "verdict": "ORACLE_FREE_HARDENING_GO"
+}
