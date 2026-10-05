@@ -1,0 +1,51 @@
+{
+  "system": "memrl",
+  "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0",
+  "status": "MEMRL_FULL_RETRIEVAL_NOT_RUN",
+  "candidate_generation_exists": true,
+  "dependencies": {
+    "numpy": "AVAILABLE",
+    "openai": "MISSING",
+    "tiktoken": "MISSING",
+    "dotenv": "MISSING",
+    "faiss": "MISSING",
+    "memos": "MISSING"
+  },
+  "evidence": [
+    {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/retrievers.py",
+      "source_sha256": "a9a4494a08e9dec4fea71650807e854d90f2957937ba1443dfb303f2447e686b",
+      "symbol": null,
+      "lines": [
+        197,
+        218
+      ],
+      "signature": null
+    },
+    {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/retrievers.py",
+      "source_sha256": "a9a4494a08e9dec4fea71650807e854d90f2957937ba1443dfb303f2447e686b",
+      "symbol": null,
+      "lines": [
+        238,
+        337
+      ],
+      "signature": null
+    },
+    {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/memory_service.py",
+      "source_sha256": "252ad7b09d1a53f9e6d6dc925b9b85b9bff1d9cc1bb4ea184dad8de890e363c3",
+      "symbol": null,
+      "lines": [
+        269,
+        307
+      ],
+      "signature": null
+    }
+  ],
+  "mechanism": "QueryRetriever uses MOS.search_score/search(task_description); AveFactRetriever may use keyword/embedding vector recall. Provider and MemOS integration precede value selection.",
+  "blocked_reasons": [
+    "memos package missing; full configured MemOS/provider/vector store unavailable"
+  ],
+  "inference": "The value selector audit passes a fixed candidate pool with identical similarity=0.5. It is not semantic/state-aware candidate retrieval."
+}

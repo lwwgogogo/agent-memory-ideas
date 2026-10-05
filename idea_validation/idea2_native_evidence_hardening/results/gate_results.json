@@ -1,0 +1,213 @@
+{
+  "gates": {
+    "G0": {
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "records_by_system": {
+          "jitrl": 640,
+          "memrl": 640
+        },
+        "expected_records": 1280,
+        "legacy_aggregation_calls": [],
+        "basis": "native selection return only; updater called 320000 times, selector 640 times, episode ranker 640 times in formal run"
+      }
+    },
+    "G1": {
+      "pass": true
+    },
+    "G2": {
+      "pass": true,
+      "detail": {
+        "n": 20,
+        "median_SSP_P": 0.6,
+        "median_SSP_Q": -0.6,
+        "median_RCD": 0.625,
+        "median_abs_SSP_P_minus_Q": 1.25,
+        "reversal_rate": 1.0,
+        "policy_aligned_reversal_rate": 1.0,
+        "median_BAL_reduction": 0.7947368421052632,
+        "valid_BAL_reductions": 20
+      }
+    },
+    "G3": {
+      "pass": true,
+      "detail": {
+        "n": 20,
+        "median_SSP_P": 0.6,
+        "median_SSP_Q": -0.6,
+        "median_RCD": 0.625,
+        "median_abs_SSP_P_minus_Q": 1.25,
+        "reversal_rate": 1.0,
+        "policy_aligned_reversal_rate": 1.0,
+        "median_BAL_reduction": 0.7947368421052632,
+        "valid_BAL_reductions": 20
+      }
+    },
+    "G4": {
+      "pass": true,
+      "detail": {
+        "jitrl": 0.7947368421052632,
+        "memrl": 0.7947368421052632
+      }
+    },
+    "G5": {
+      "pass": true,
+      "detail": {
+        "jitrl": {
+          "D_gamma": {
+            "0.50": 0.0,
+            "0.70": 0.27499999999999997,
+            "0.85": 0.525,
+            "0.95": 0.625
+          },
+          "spearman_rho": 1.0,
+          "thresholds_pass": true
+        },
+        "memrl": {
+          "D_gamma": {
+            "0.50": 0.0,
+            "0.70": 0.27499999999999997,
+            "0.85": 0.525,
+            "0.95": 0.625
+          },
+          "spearman_rho": 1.0,
+          "thresholds_pass": true
+        }
+      }
+    },
+    "G6": {
+      "pass": true,
+      "detail": {
+        "jitrl": {
+          "primary_direction": [
+            1,
+            -1
+          ],
+          "by_k": {
+            "5": {
+              "median_SSP_P": 0.6,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 0.95,
+              "median_RCD": 0.6000000000000001,
+              "direction_consistent": true
+            },
+            "10": {
+              "median_SSP_P": 0.6,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 0.95,
+              "median_RCD": 0.6000000000000001,
+              "direction_consistent": true
+            },
+            "20": {
+              "median_SSP_P": 0.6,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 1.0,
+              "median_RCD": 0.625,
+              "direction_consistent": true
+            },
+            "50": {
+              "median_SSP_P": 0.62,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 1.0,
+              "median_RCD": 0.58,
+              "direction_consistent": true
+            }
+          },
+          "consistent_k_count": 4,
+          "pass": true
+        },
+        "memrl": {
+          "primary_direction": [
+            1,
+            -1
+          ],
+          "by_k": {
+            "5": {
+              "median_SSP_P": 0.6,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 0.95,
+              "median_RCD": 0.6000000000000001,
+              "direction_consistent": true
+            },
+            "10": {
+              "median_SSP_P": 0.6,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 0.95,
+              "median_RCD": 0.6000000000000001,
+              "direction_consistent": true
+            },
+            "20": {
+              "median_SSP_P": 0.6,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 1.0,
+              "median_RCD": 0.625,
+              "direction_consistent": true
+            },
+            "50": {
+              "median_SSP_P": 0.62,
+              "median_SSP_Q": -0.6,
+              "reversal_rate": 1.0,
+              "median_RCD": 0.58,
+              "direction_consistent": true
+            }
+          },
+          "consistent_k_count": 4,
+          "pass": true
+        }
+      }
+    },
+    "G7": {
+      "pass": true,
+      "detail": "All metrics recomputed directly from native_return; no old adapter import and no bank action mean used."
+    },
+    "G8": {
+      "status": "BLOCKED",
+      "hard_gate": false,
+      "detail": {
+        "status": "BLOCKED",
+        "detail_status": "FULL_STATE_AWARE_BLOCKED_BY_DEPENDENCY",
+        "exact_upstream_path_run": false,
+        "reason": [
+          "Missing required Python package: openai",
+          "Missing required Python package: tiktoken",
+          "Missing required Python package: dotenv",
+          "Missing required Python package: faiss",
+          "Required environment variable is NOT_SET: OPENAI_API_KEY",
+          "Required environment variable is NOT_SET: OPENAI_API_KEY2"
+        ],
+        "StateAware_RCD_S0": null,
+        "StateAware_RCD_S1": null,
+        "mitigation_ratio": null,
+        "replacement_embeddings_used": false,
+        "provider_calls": 0,
+        "claim_scope": "Only global episode ranking / value-based selection components have dynamic evidence."
+      }
+    }
+  },
+  "verdict": "NATIVE_EVIDENCE_GO",
+  "primary": {
+    "jitrl": {
+      "n": 20,
+      "median_SSP_P": 0.6,
+      "median_SSP_Q": -0.6,
+      "median_RCD": 0.625,
+      "median_abs_SSP_P_minus_Q": 1.25,
+      "reversal_rate": 1.0,
+      "policy_aligned_reversal_rate": 1.0,
+      "median_BAL_reduction": 0.7947368421052632,
+      "valid_BAL_reductions": 20
+    },
+    "memrl": {
+      "n": 20,
+      "median_SSP_P": 0.6,
+      "median_SSP_Q": -0.6,
+      "median_RCD": 0.625,
+      "median_abs_SSP_P_minus_Q": 1.25,
+      "reversal_rate": 1.0,
+      "policy_aligned_reversal_rate": 1.0,
+      "median_BAL_reduction": 0.7947368421052632,
+      "valid_BAL_reductions": 20
+    }
+  }
+}

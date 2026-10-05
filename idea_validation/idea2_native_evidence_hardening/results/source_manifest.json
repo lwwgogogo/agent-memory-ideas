@@ -1,0 +1,45 @@
+{
+  "created_at_utc": "2026-10-05T11:30:58.943783+00:00",
+  "project_head_before": "a5bab6996daa50c778ed813e4b4f646f61019d1e",
+  "initial_repo_status": "clean (verified before new directory creation)",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "python_executable": "/home/liaoweiwen/miniconda3/envs/agentmem_lab/bin/python",
+  "conda_environment": "agentmem_lab",
+  "sources": {
+    "jitrl": {
+      "commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl",
+      "tracked_source_clean": true
+    },
+    "memrl": {
+      "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0",
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl",
+      "tracked_source_clean": true
+    }
+  },
+  "upstream_source_sha256": {
+    "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/prompt_update_with_history.py": "badde43d32471e483a775a6016345c43fd1862a53106dfc394c48f4ef671c7ec",
+    "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+    "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/openai_helpers.py": "baa98da67b6fad1e8a93dc262163200d0607e0cbf741cb8878a8a1199c33b427",
+    "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/value_driven.py": "994a27154e78bdfdad07018b795c22c68e26ad30a41c67da7276c75cd85f563b",
+    "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/retrievers.py": "a9a4494a08e9dec4fea71650807e854d90f2957937ba1443dfb303f2447e686b",
+    "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl/memrl/service/memory_service.py": "252ad7b09d1a53f9e6d6dc925b9b85b9bff1d9cc1bb4ea184dad8de890e363c3"
+  },
+  "history_tracked_file_count": 513,
+  "history_hash_manifest_sha256": "03704d6f4a56e7ef9d7259a265fda89b9d084bbbab2f01692710328e5203406c",
+  "native_import_boundaries": {
+    "jitrl": "unused openai_helpers.claude_completion_with_retries raises if invoked",
+    "memrl": "MOS annotation import + duck-typed storage; no provider retrieval"
+  },
+  "formal_expected_calls": {
+    "jitrl.get_top_episodes": 640,
+    "memrl.QValueUpdater.update": 320000,
+    "memrl.ValueAwareSelector.select": 640
+  },
+  "packages": {
+    "pytest": "9.1.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  }
+}

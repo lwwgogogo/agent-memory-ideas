@@ -1,0 +1,22 @@
+{
+  "locked_at_utc": "2026-10-05T11:30:58.956722+00:00",
+  "preregistration_sha256": "3e5386d9580509dbeddb13e4513cdc5750436e5902a752c07e9966806654dedd",
+  "implementation_sha256": {
+    "adapters/__init__.py": "409d46abd51476b59cca9c5d3585b86bd49b53134d82d3fd90f79985bf22c4f3",
+    "adapters/native_loaders.py": "f1a00ad82892113eddc090b952526a4b6e4dae9e218c6ae81ff5f9714bd4bde0",
+    "adapters/objects.py": "9ddb04ef39547d88aa4561b85a7afe05da36b6a896c0637c12edc93ae0b48a4c",
+    "build_exact_logs.py": "f1bac2cffc184027cd003c2ebc9e8ae9ada864cff2ba13c6e56f93972f857793",
+    "common.py": "b0bf291acf58b7cbf4a52b641bfc02b6e6acb84e85f64f440d2eaf1c3875906d",
+    "evaluate.py": "da41d1a61c859d4a456ab6c4ef1c79e17ab7d40ad4b38d0a7a5efd41c3f2717c",
+    "inspect_state_aware_paths.py": "7fcf9e7baf2d550ccf46ffabe92141830e8f8ccc48fb4f8d4ebf285f9e5831a8",
+    "native_metrics.py": "053c1d79353ed94f08835dde7573cc9ad8d8977d7cadf829d177ff98e8637c02",
+    "preflight.py": "6656ff8dae21c2d40f6f4e0f16516895910b9cfc4dc92ca72f84ad02f0947d00",
+    "run_jitrl_native.py": "e10d5eca11bf078e40b1a32258362dd3972a06e23744aa7f80286aaba3dba480",
+    "run_jitrl_state_aware.py": "f6987138c1dff93511979b3c9550ebd2dc9fc373ddbccb3ca2a3350dccf9d125",
+    "run_memrl_native.py": "e21a7436dbdac486c2d05a53785c8fa513cda92dcd3b43bb020465e13d4db777",
+    "tests/test_exact_and_metrics.py": "e9fbbd86ad355dcf6c4696932af372d7b0b5fd61b2bff87c26d79eb2c05664ac",
+    "tests/test_native_provenance.py": "54751fff7dfe89db313d51317327597cb11c70bc10cbd6575a64c96beefa7bb3"
+  },
+  "preflight_tests_sha256": "da5cc4f6f4bda374aa5757fdc69b2235d4979eedfd5409a30ec9e6024facff1a",
+  "formal_native_run_started": false
+}

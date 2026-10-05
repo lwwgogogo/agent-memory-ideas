@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED",
+  "detail_status": "FULL_STATE_AWARE_BLOCKED_BY_DEPENDENCY",
+  "exact_upstream_path_run": false,
+  "reason": [
+    "Missing required Python package: openai",
+    "Missing required Python package: tiktoken",
+    "Missing required Python package: dotenv",
+    "Missing required Python package: faiss",
+    "Required environment variable is NOT_SET: OPENAI_API_KEY",
+    "Required environment variable is NOT_SET: OPENAI_API_KEY2"
+  ],
+  "StateAware_RCD_S0": null,
+  "StateAware_RCD_S1": null,
+  "mitigation_ratio": null,
+  "replacement_embeddings_used": false,
+  "provider_calls": 0,
+  "claim_scope": "Only global episode ranking / value-based selection components have dynamic evidence."
+}

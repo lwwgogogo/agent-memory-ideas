@@ -1,0 +1,79 @@
+{
+  "verified_at_utc": "2026-10-05T11:36:24.639861+00:00",
+  "environment": "agentmem_lab",
+  "python": "3.10.21",
+  "preregistration_and_frozen_code_unchanged": true,
+  "test_before_lock_before_formal": true,
+  "preflight_tests": 37,
+  "history_files_byte_identical": true,
+  "history_file_count": 513,
+  "upstream_source_byte_identical": true,
+  "sources": {
+    "jitrl": {
+      "commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl",
+      "tracked_source_clean": true
+    },
+    "memrl": {
+      "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0",
+      "path": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/memrl",
+      "tracked_source_clean": true
+    }
+  },
+  "native_provenance_checks": true,
+  "exact_environment_checks": true,
+  "native_raw_records": {
+    "jitrl": 640,
+    "memrl": 640
+  },
+  "formal_reruns": 0,
+  "additional_seeds_k_conditions": false,
+  "raw_file_sha256": {
+    "jitrl": "cbfc2a2390dc2298a0256add394c4e05605aced2a9905009445c583f2ea4222b",
+    "memrl": "0ca0801abca4de173badc1b676fcca6578715120a1469d45ac47b1ad8972a8d7"
+  },
+  "source_manifest_sha256": "c575a5eb0761fe6f2e3e8305604963495ae053672bed358213fa1d9bebb55f9b",
+  "preregistration_sha256": "3e5386d9580509dbeddb13e4513cdc5750436e5902a752c07e9966806654dedd",
+  "required_files_present": true,
+  "plot_png_validation": {
+    "native_rcd_vs_gamma.png": {
+      "size": [
+        1800,
+        720
+      ],
+      "format": "PNG"
+    },
+    "k_sensitivity.png": {
+      "size": [
+        1800,
+        720
+      ],
+      "format": "PNG"
+    },
+    "native_reversal_by_seed.png": {
+      "size": [
+        1980,
+        720
+      ],
+      "format": "PNG"
+    },
+    "balanced_control_native.png": {
+      "size": [
+        1800,
+        720
+      ],
+      "format": "PNG"
+    }
+  },
+  "tracked_changes_outside_new_directory": [
+    "PROJECT_INDEX.md",
+    "docs/RESEARCH_STATUS.md"
+  ],
+  "tracked_change_scope_valid": true,
+  "external_environments_created": [],
+  "new_packages_installed": [],
+  "full_state_aware_path_executed": false,
+  "state_aware_status": "BLOCKED",
+  "verdict": "NATIVE_EVIDENCE_GO",
+  "snapshot_stage": "pre-commit artifact verification; Git delivery verified after push"
+}

@@ -1,0 +1,131 @@
+{
+  "system": "jitrl",
+  "commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+  "functions": [
+    {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": "CrossEpisodeMemory.retrieve_similar_with_vector",
+      "lines": [
+        335,
+        537
+      ],
+      "signature": "self, game_history: List[Dict[str, Any]], current_state: str, current_summary: str, k: int=3, r: float=0.7, info=None"
+    },
+    {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": "_encode_trajectory_context",
+      "lines": [
+        178,
+        236
+      ],
+      "signature": "self, states: List[str], actions: List[str], current_step: int, current_summary: str, info=None"
+    },
+    {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": "_init_vector_database",
+      "lines": [
+        39,
+        77
+      ],
+      "signature": "self"
+    }
+  ],
+  "candidate_recall": {
+    "formula": "recall_size=min(max(k*10,100),history_index.ntotal)",
+    "mechanism": "union of dual FAISS IndexFlatIP history/state recalls",
+    "evidence": {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": null,
+      "lines": [
+        390,
+        412
+      ],
+      "signature": null
+    }
+  },
+  "similarity": {
+    "formula": "0.3 * history_Jaccard(ngram=1) + 0.7 * current_state_Jaccard(ngram=4)",
+    "note": "FAISS cosine used for recall; final similarity is Jaccard, not cosine.",
+    "evidence": {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": null,
+      "lines": [
+        424,
+        432
+      ],
+      "signature": null
+    }
+  },
+  "reward_order": {
+    "formula": "sort descending by (similarity, discounted_future_reward)",
+    "evidence": {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": null,
+      "lines": [
+        434,
+        482
+      ],
+      "signature": null
+    },
+    "note": "all high-similarity >0.98 items are retained before filling k; return need not be size k"
+  },
+  "embedding": {
+    "model_default": "text-embedding-ada-002",
+    "vector_dim_default": 1536,
+    "credential_name": "OPENAI_API_KEY2",
+    "evidence": {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/openai_helpers.py",
+      "source_sha256": "baa98da67b6fad1e8a93dc262163200d0607e0cbf741cb8878a8a1199c33b427",
+      "symbol": "get_embedding_with_retries",
+      "lines": [
+        111,
+        164
+      ],
+      "signature": "text: str, model: str='text-embedding-ada-002', max_retries: int=5, retry_interval_sec: int=20, max_tokens: int=8000"
+    }
+  },
+  "context_generation": {
+    "provider": "LLM provider via openai_helpers; OPENAI_API_KEY",
+    "evidence": {
+      "file": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/src/cross_episode_memory.py",
+      "source_sha256": "67f5e77cf5cc53516b48b8a2d06b2c19c7d9bdab84c66d46e3fa066419552b70",
+      "symbol": null,
+      "lines": [
+        198,
+        234
+      ],
+      "signature": null
+    }
+  },
+  "dependencies": {
+    "numpy": "AVAILABLE",
+    "openai": "MISSING",
+    "tiktoken": "MISSING",
+    "dotenv": "MISSING",
+    "faiss": "MISSING",
+    "memos": "MISSING"
+  },
+  "environment_presence": {
+    "OPENAI_API_KEY": "NOT_SET",
+    "OPENAI_API_KEY2": "NOT_SET",
+    "OPENAI_BASE_URL": "NOT_SET"
+  },
+  "credential_values_read_or_recorded": false,
+  "dotenv_loaded": false,
+  "exact_upstream_state_path_invoked": false,
+  "blocking_reasons": [
+    "Missing required Python package: openai",
+    "Missing required Python package: tiktoken",
+    "Missing required Python package: dotenv",
+    "Missing required Python package: faiss",
+    "Required environment variable is NOT_SET: OPENAI_API_KEY",
+    "Required environment variable is NOT_SET: OPENAI_API_KEY2"
+  ],
+  "status": "FULL_STATE_AWARE_BLOCKED_BY_DEPENDENCY"
+}

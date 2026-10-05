@@ -1,0 +1,10 @@
+{
+  "started_at_utc": "2026-10-05T11:30:54.707382+00:00",
+  "completed_at_utc": "2026-10-05T11:30:58.899884+00:00",
+  "exit_code": 0,
+  "passed": 37,
+  "failed": 0,
+  "command": "python -m pytest -q tests",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "test_output_sha256": "7c3209fbf96fa33396c107ac741f9bedb26dec9f053282b187abc7e3be822ab6"
+}

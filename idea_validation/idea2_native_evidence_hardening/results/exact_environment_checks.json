@@ -1,0 +1,206 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "gamma": "0.50",
+      "policy": "P",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "1edd99aa1be08cb0ae4e91ad2627c70c45b2e5a4e705e9e38bc9a22fb6fb36f4",
+      "cells": {
+        "S0/A": {
+          "exposure": 500,
+          "success": 450
+        },
+        "S0/B": {
+          "exposure": 500,
+          "success": 450
+        },
+        "S1/A": {
+          "exposure": 500,
+          "success": 100
+        },
+        "S1/B": {
+          "exposure": 500,
+          "success": 100
+        }
+      }
+    },
+    {
+      "gamma": "0.50",
+      "policy": "Q",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "1edd99aa1be08cb0ae4e91ad2627c70c45b2e5a4e705e9e38bc9a22fb6fb36f4",
+      "cells": {
+        "S0/A": {
+          "exposure": 500,
+          "success": 450
+        },
+        "S0/B": {
+          "exposure": 500,
+          "success": 450
+        },
+        "S1/A": {
+          "exposure": 500,
+          "success": 100
+        },
+        "S1/B": {
+          "exposure": 500,
+          "success": 100
+        }
+      }
+    },
+    {
+      "gamma": "0.70",
+      "policy": "P",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "98de91f603461946982d95375aea18e4798425d19aa9e5602617129167ee6c8d",
+      "cells": {
+        "S0/A": {
+          "exposure": 700,
+          "success": 630
+        },
+        "S0/B": {
+          "exposure": 300,
+          "success": 270
+        },
+        "S1/A": {
+          "exposure": 300,
+          "success": 60
+        },
+        "S1/B": {
+          "exposure": 700,
+          "success": 140
+        }
+      }
+    },
+    {
+      "gamma": "0.70",
+      "policy": "Q",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "e3a26ab0a02f54d1a6dbe18c85ea7b864bab050eb9eeb6645941b1257f0f4803",
+      "cells": {
+        "S0/A": {
+          "exposure": 300,
+          "success": 270
+        },
+        "S0/B": {
+          "exposure": 700,
+          "success": 630
+        },
+        "S1/A": {
+          "exposure": 700,
+          "success": 140
+        },
+        "S1/B": {
+          "exposure": 300,
+          "success": 60
+        }
+      }
+    },
+    {
+      "gamma": "0.85",
+      "policy": "P",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "e5c31eb654be6afb65851df12461abc17b8a6d57b430ff669197110a34f26a06",
+      "cells": {
+        "S0/A": {
+          "exposure": 850,
+          "success": 765
+        },
+        "S0/B": {
+          "exposure": 150,
+          "success": 135
+        },
+        "S1/A": {
+          "exposure": 150,
+          "success": 30
+        },
+        "S1/B": {
+          "exposure": 850,
+          "success": 170
+        }
+      }
+    },
+    {
+      "gamma": "0.85",
+      "policy": "Q",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "03a2cdee2bd658e0abf8cb8c3a1967b39750bfbe8e82b3a9b8aba19b8e5804a4",
+      "cells": {
+        "S0/A": {
+          "exposure": 150,
+          "success": 135
+        },
+        "S0/B": {
+          "exposure": 850,
+          "success": 765
+        },
+        "S1/A": {
+          "exposure": 850,
+          "success": 170
+        },
+        "S1/B": {
+          "exposure": 150,
+          "success": 30
+        }
+      }
+    },
+    {
+      "gamma": "0.95",
+      "policy": "P",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "0e30154bc7d5292c5fa9da86228bb9f6f1f5ccb235cf01000f60c67edda8d0aa",
+      "cells": {
+        "S0/A": {
+          "exposure": 950,
+          "success": 855
+        },
+        "S0/B": {
+          "exposure": 50,
+          "success": 45
+        },
+        "S1/A": {
+          "exposure": 50,
+          "success": 10
+        },
+        "S1/B": {
+          "exposure": 950,
+          "success": 190
+        }
+      }
+    },
+    {
+      "gamma": "0.95",
+      "policy": "Q",
+      "exact_cells": true,
+      "all_20_order_multisets_identical": true,
+      "multiset_sha256": "6391c193e9271ad3da25f4a44487f73ef1f8ae0dfe1c4f3c9c72851cda9ccd9d",
+      "cells": {
+        "S0/A": {
+          "exposure": 50,
+          "success": 45
+        },
+        "S0/B": {
+          "exposure": 950,
+          "success": 855
+        },
+        "S1/A": {
+          "exposure": 950,
+          "success": 190
+        },
+        "S1/B": {
+          "exposure": 50,
+          "success": 10
+        }
+      }
+    }
+  ],
+  "target_value_exact": "11/20"
+}

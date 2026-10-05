@@ -101,3 +101,11 @@ Primary qwen2.5:14b 和 Secondary qwq:32b 各完成 160/160 memory formation、3
 独立目录：`idea_validation/idea2_policy_conditioned_memory_audit/`。预注册门槛结果为 **POLICY_MEMORY_GO（限定范围）**。六个目标系统纳入静态审计，五个官方 repo 成功 clone，Memento 标记 `OFFICIAL_CODE_NOT_FOUND`。五个可审 repo 均未发现 behavior-policy/propensity 记录或 exposure correction，结构性 blind spot 5/5。
 
 JitRL 原生 episode ranking helper 与 MemRL 原生 Q-value selector 在合成 P/Q exposure 反转下均出现 policy-aligned preference flip（PIUR=1），BAL 后 score gap reduction 各约 97.8%。此为隔离的 native ranking/value-selection component 证据，不是完整 agent 端到端结果。state-matched query API 不支持；JitRL 完整 state/history embedding retrieval 未运行，解释收窄至 aggregate/native selector 路径。G0–G4、G6 PASS，G5 为 NARROW。详见 Stage4 报告和逐系统 JSON；本阶段结束，不启动新 Idea。
+
+## Idea 2 Stage-4.1 — Native Evidence Hardening — 2026-10-05
+
+独立目录：idea_validation/idea2_native_evidence_hardening/。新增 verdict：**NATIVE_EVIDENCE_GO**。正式前 37 tests 全部通过，预注册与实现 SHA256 锁定；JitRL/MemRL 各 640 条正式 native return。精确整数日志的 target V(A)=V(B)=.55，20 个顺序复本只有顺序不同。primary gamma=.95、k=20：两个系统均 reversal rate=1.00、median SSP P/Q=+.60/−.60、median Native-RCD=.625、median BAL reduction=.794737。D_gamma=0/.275/.525/.625，四点 rho=1；4/4 k 中位方向一致。G0–G7 全 PASS。
+
+证据只来自 JitRL 原生 get_top_episodes 与 MemRL 原生 QValueUpdater/ValueAwareSelector 的返回选择；不再以旧 adapter 全 bank action-average score 为 Gate。所有 selected 项在成功池内同分，20 次 shuffle 后偏移仍随 P/Q 稳定变化。两个组件 selected IDs 一致，属于同一固定机制的两个实现，不应视为独立统计重复。JitRL exact state-aware path 被依赖阻塞，MemRL full retrieval 未运行；结论仅限 native global/value-selection components。详见新目录 SCOPE_CORRECTION.md、Stage4_1实验结果.md、最终结论.md 和 results/。
+
+历史 verdict 均冻结：Run1 IDEA2_RUN1_NO_GO；Confirmatory IDEA2_CONFIRM_GO；Stage-2 CAUSAL_SUFFICIENCY_WEAK；Stage-3 REAL_FORMATION_WEAK；Stage-4 POLICY_MEMORY_GO。本阶段停止，不自动进入方法设计或下一阶段。
