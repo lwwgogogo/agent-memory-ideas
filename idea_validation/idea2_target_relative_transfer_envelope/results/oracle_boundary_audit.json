@@ -1,0 +1,790 @@
+{
+  "candidate_dependency_audit": true,
+  "execution_order": [
+    "generator_completed",
+    "candidate_finished:case_001",
+    "candidate_finished:case_002",
+    "candidate_finished:case_003",
+    "candidate_finished:case_004",
+    "candidate_finished:case_005",
+    "candidate_finished:case_006",
+    "candidate_finished:case_007",
+    "candidate_finished:case_008",
+    "evaluator_private_manifest_read"
+  ],
+  "isolated_runs": true,
+  "negative_schema_checks_pass": true,
+  "outside_read_denied": true,
+  "pass": true,
+  "runs": [
+    {
+      "anonymous_id": "case_001",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "567cbc19fc3d9c80beb1fc4667a6ed5be68c56a616e2db293a0f6547ebe84a53",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "0f54a0a721e0133f1668d85ad2546d4295c3285355a5ee69e32ebe299c6b96b9",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_002",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "567cbc19fc3d9c80beb1fc4667a6ed5be68c56a616e2db293a0f6547ebe84a53",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "ad4b3730c2930f6ec79cbfcdf4090c6cc9c14758b6877c64956b37e02d7fa1c2",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_003",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "567cbc19fc3d9c80beb1fc4667a6ed5be68c56a616e2db293a0f6547ebe84a53",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "0f54a0a721e0133f1668d85ad2546d4295c3285355a5ee69e32ebe299c6b96b9",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_004",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "567cbc19fc3d9c80beb1fc4667a6ed5be68c56a616e2db293a0f6547ebe84a53",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "ad4b3730c2930f6ec79cbfcdf4090c6cc9c14758b6877c64956b37e02d7fa1c2",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_005",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "567cbc19fc3d9c80beb1fc4667a6ed5be68c56a616e2db293a0f6547ebe84a53",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "0f54a0a721e0133f1668d85ad2546d4295c3285355a5ee69e32ebe299c6b96b9",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_006",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "567cbc19fc3d9c80beb1fc4667a6ed5be68c56a616e2db293a0f6547ebe84a53",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "ad4b3730c2930f6ec79cbfcdf4090c6cc9c14758b6877c64956b37e02d7fa1c2",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_007",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "709c26c1b10f5b2a42c80bac0f6f58d8f9611c4ff8377489f76346793a31634c",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "7cefaa34d9521abe3d489391494f4ae286bbfaba1143259d40b37514b6fe5795",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    },
+    {
+      "anonymous_id": "case_008",
+      "candidate_execution_audit": {
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "initial_files": [
+          "baselines.py",
+          "boundary.py",
+          "global_candidate",
+          "global_config.json",
+          "policy_geometry.py",
+          "schema.py",
+          "source.jsonl",
+          "target.jsonl",
+          "transfer_probe.py"
+        ],
+        "read_paths": [
+          "global_config.json",
+          "source.jsonl",
+          "target.jsonl"
+        ]
+      },
+      "official": {
+        "arguments": [
+          "cli.py",
+          "input.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "19a7d552d8643096a71c3fcee444863884f84e8a5df45c5a031fc814630ebfc2",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      },
+      "probe": {
+        "arguments": [
+          "transfer_probe.py",
+          "source.jsonl",
+          "target.jsonl",
+          "output.json"
+        ],
+        "copied_hashes": {
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/baselines.py": "d718e32eafe8c253e4bc11539a91eb72e28b8c30f660fdcaaff3721fedf6c788",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/boundary.py": "2e87de13ceff6c3fc70bb2d422d3496271aa9eee276001efdcc84a0a8a324917",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/certification.py": "16d7ac40060cd9243f3dc8183c98908c085e17ef39b4ed2c1c6de80d4552f8f5",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/cli.py": "a4546370e52c41efddfa013f5807147a8f4215d9cffaca25d19d9c950cfe6119",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/policy_profile.py": "712c06b17ed1e6b412b5dd2fa384d9e41049d17dd2da1852b498007b25b3971e",
+          "idea_validation/idea2_cross_policy_certification_hardening/candidate/schema.py": "a8709d35b8c25e3a4091d4241d4ebf92f6859ef9b0fab81224ea2fe3258de7ca",
+          "idea_validation/idea2_cross_policy_certification_hardening/public_config.json": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f",
+          "idea_validation/idea2_target_relative_transfer_envelope/baselines.py": "406be07c6d6c4c70a284295e37b4aa7189b3dc613eabef785aa892df09e9e892",
+          "idea_validation/idea2_target_relative_transfer_envelope/policy_geometry.py": "aadc8a91fc3c7403bf1a4a4945622b05a93bbe5e4d7bb31d31a51d40ee1b52cb",
+          "idea_validation/idea2_target_relative_transfer_envelope/schema.py": "cbde58e8108dcfbd28149de2d8d1c7b30d70db04bf26c77c98a5e3a770c766a9",
+          "idea_validation/idea2_target_relative_transfer_envelope/transfer_probe.py": "9b48b1eebc91030f76f93ea7bb497d757c329049da15563db6d6c951c901189b"
+        },
+        "environment_isolation_pass": true,
+        "environment_keys": [
+          "LANG",
+          "LC_ALL",
+          "OMP_NUM_THREADS",
+          "OPENBLAS_NUM_THREADS",
+          "PATH",
+          "PYTHONHASHSEED"
+        ],
+        "filesystem_isolation_pass": true,
+        "output_sha256": "44a5bc0758b586ca3e730d63fa65deba7dbb8c7b9630c5b064e55fde77362ba0",
+        "returncode": 0,
+        "source_copy_hash_match": true,
+        "stderr": ""
+      }
+    }
+  ],
+  "scope": "Audited candidate path; not malicious-code OS sandbox"
+}

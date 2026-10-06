@@ -1,0 +1,202 @@
+[
+  {
+    "anonymous_id": "case_001",
+    "construction_source_percent": [
+      [
+        20,
+        20
+      ],
+      [
+        80,
+        20
+      ],
+      [
+        50,
+        80
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      40
+    ],
+    "pair": "P1",
+    "side": "IN",
+    "source_file": "case_001_source.jsonl",
+    "target_file": "case_001_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_002",
+    "construction_source_percent": [
+      [
+        20,
+        20
+      ],
+      [
+        80,
+        20
+      ],
+      [
+        50,
+        80
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      95
+    ],
+    "pair": "P1",
+    "side": "OUT",
+    "source_file": "case_002_source.jsonl",
+    "target_file": "case_002_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_003",
+    "construction_source_percent": [
+      [
+        20,
+        20
+      ],
+      [
+        80,
+        20
+      ],
+      [
+        50,
+        80
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      40
+    ],
+    "pair": "P2",
+    "side": "IN",
+    "source_file": "case_003_source.jsonl",
+    "target_file": "case_003_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_004",
+    "construction_source_percent": [
+      [
+        20,
+        20
+      ],
+      [
+        80,
+        20
+      ],
+      [
+        50,
+        80
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      95
+    ],
+    "pair": "P2",
+    "side": "OUT",
+    "source_file": "case_004_source.jsonl",
+    "target_file": "case_004_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_005",
+    "construction_source_percent": [
+      [
+        20,
+        20
+      ],
+      [
+        80,
+        20
+      ],
+      [
+        50,
+        80
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      40
+    ],
+    "pair": "P3",
+    "side": "IN",
+    "source_file": "case_005_source.jsonl",
+    "target_file": "case_005_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_006",
+    "construction_source_percent": [
+      [
+        20,
+        20
+      ],
+      [
+        80,
+        20
+      ],
+      [
+        50,
+        80
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      95
+    ],
+    "pair": "P3",
+    "side": "OUT",
+    "source_file": "case_006_source.jsonl",
+    "target_file": "case_006_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_007",
+    "construction_source_percent": [
+      [
+        30,
+        40
+      ],
+      [
+        70,
+        40
+      ],
+      [
+        50,
+        70
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      50
+    ],
+    "pair": "P4",
+    "side": "IN",
+    "source_file": "case_007_source.jsonl",
+    "target_file": "case_007_target.jsonl"
+  },
+  {
+    "anonymous_id": "case_008",
+    "construction_source_percent": [
+      [
+        30,
+        50
+      ],
+      [
+        10,
+        90
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "construction_target_percent": [
+      50,
+      50
+    ],
+    "pair": "P4",
+    "side": "OUT",
+    "source_file": "case_008_source.jsonl",
+    "target_file": "case_008_target.jsonl"
+  }
+]

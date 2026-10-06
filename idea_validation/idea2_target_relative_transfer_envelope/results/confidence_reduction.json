@@ -1,0 +1,505 @@
+{
+  "cases": [
+    {
+      "anonymous_id": "case_005",
+      "construction_source_percent": [
+        [
+          20,
+          20
+        ],
+        [
+          80,
+          20
+        ],
+        [
+          50,
+          80
+        ]
+      ],
+      "construction_target_percent": [
+        50,
+        40
+      ],
+      "data_integrity": true,
+      "descriptors_match": true,
+      "global_equivalence": true,
+      "independent_geometry": {
+        "indices": [
+          0,
+          1,
+          2
+        ],
+        "inside": true,
+        "weights": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      },
+      "pair": "P3",
+      "probe": {
+        "baselines": {
+          "B0": "PRESCRIPTIVE",
+          "B1": "ALLOW",
+          "B2": {
+            "decision": "NO_THRESHOLD_DEFINED",
+            "information_sha256": "eb040b5124669654b4633a864efde0edc328d6977cce54f671a7c0b0c96c2529"
+          },
+          "B3": {
+            "information_sha256": "0b22e5985166dffd3856e1df353af00b7b18dd7f55f2851d04408b45568c0d23",
+            "source_status": "VERIFIED_RUNTIME_TRACE"
+          },
+          "B4": {
+            "decision": "NO_THRESHOLD_DEFINED",
+            "nearest_TV_exact": "1/5"
+          },
+          "B5": {
+            "U_A": "4/5",
+            "U_B": "2/5",
+            "gap": "2/5"
+          }
+        },
+        "convex_weights": {
+          "e000": 0.3333333333333334,
+          "e001": 0.3333333333333333,
+          "e002": 0.3333333333333333
+        },
+        "global": {
+          "C_conflict": 0.0,
+          "C_neg": 0.0,
+          "C_pos": 1.0,
+          "D_max": 0.45000000000000007,
+          "D_median": 0.45000000000000007,
+          "D_min": 0.30000000000000004,
+          "D_policy": 0.4000000000000001,
+          "cells": {
+            "e000": {
+              "S0": {
+                "A": [
+                  200,
+                  160
+                ],
+                "B": [
+                  800,
+                  320
+                ]
+              },
+              "S1": {
+                "A": [
+                  200,
+                  160
+                ],
+                "B": [
+                  800,
+                  320
+                ]
+              }
+            },
+            "e001": {
+              "S0": {
+                "A": [
+                  800,
+                  640
+                ],
+                "B": [
+                  200,
+                  80
+                ]
+              },
+              "S1": {
+                "A": [
+                  200,
+                  160
+                ],
+                "B": [
+                  800,
+                  320
+                ]
+              }
+            },
+            "e002": {
+              "S0": {
+                "A": [
+                  500,
+                  400
+                ],
+                "B": [
+                  500,
+                  200
+                ]
+              },
+              "S1": {
+                "A": [
+                  800,
+                  640
+                ],
+                "B": [
+                  200,
+                  80
+                ]
+              }
+            }
+          },
+          "diagnostic": "CROSS_POLICY_SUPPORT",
+          "effective_distinct_policy_pairs": 3,
+          "era_count": 3,
+          "gaps": {
+            "e000": 0.4,
+            "e001": 0.4,
+            "e002": 0.4
+          },
+          "mean_observed_gap": 0.4000000000000001,
+          "profile": {
+            "e000": {
+              "S0": 0.2,
+              "S1": 0.2
+            },
+            "e001": {
+              "S0": 0.8,
+              "S1": 0.2
+            },
+            "e002": {
+              "S0": 0.5,
+              "S1": 0.8
+            }
+          },
+          "raw_support_count": 6000,
+          "sign_pattern": [
+            "+",
+            "+",
+            "+"
+          ],
+          "status": "PRESCRIPTIVE",
+          "success_support": 2160
+        },
+        "interpolation_diagnostic": "INTERPOLATION",
+        "lambda_entropy": 1.0986122886681096,
+        "linprog_residual": 0.0,
+        "max_lambda": 0.3333333333333334,
+        "provenance_summary": {
+          "era_count": 3,
+          "lineage_placeholder": "NOT_IMPLEMENTED",
+          "source_count": 3,
+          "source_type": "VERIFIED_RUNTIME_TRACE",
+          "trust_label": "VERIFIED",
+          "validation_status": "SCHEMA_AND_COUNTS_VALIDATED"
+        },
+        "provenance_summary_sha256": "0b22e5985166dffd3856e1df353af00b7b18dd7f55f2851d04408b45568c0d23",
+        "solver_status": 0,
+        "source_policy_vectors": {
+          "e000": [
+            "1/5",
+            "1/5"
+          ],
+          "e001": [
+            "4/5",
+            "1/5"
+          ],
+          "e002": [
+            "1/2",
+            "4/5"
+          ]
+        },
+        "source_summary": {
+          "C_conflict": 0.0,
+          "C_neg": 0.0,
+          "C_pos": 1.0,
+          "D_policy": 0.4000000000000001,
+          "GlobalCertification": "PRESCRIPTIVE",
+          "M1": {
+            "U_A": "4/5",
+            "U_B": "2/5",
+            "gap": "2/5"
+          },
+          "effective_distinct_pairs": 3,
+          "max_era_gap": "2/5",
+          "mean_era_gap": "2/5",
+          "min_era_gap": "2/5",
+          "number_of_eras": 3,
+          "per_era_observation_counts": {
+            "e000": 2000,
+            "e001": 2000,
+            "e002": 2000
+          },
+          "total_observations": 6000,
+          "variance_era_gap": "0"
+        },
+        "source_summary_sha256": "eb040b5124669654b4633a864efde0edc328d6977cce54f671a7c0b0c96c2529",
+        "supporting_eras": [
+          "e000",
+          "e001",
+          "e002"
+        ],
+        "target_in_convex_hull": true,
+        "target_min_TV": 0.2,
+        "target_min_TV_exact": "1/5",
+        "target_policy_vector": [
+          "1/2",
+          "2/5"
+        ],
+        "transfer_decision": "TRANSFERABLE"
+      },
+      "side": "IN",
+      "source_file": "case_005_source.jsonl",
+      "source_sha256": "5b2ec823ba296b7b158e4e9164043661d52f21bdcf7fa6cd83ed543c0b64696f",
+      "target_file": "case_005_target.jsonl",
+      "target_sha256": "e984bce590454a9b386ee4a8c4c3e456c7d8021171fa164e418bc53e542e200d"
+    },
+    {
+      "anonymous_id": "case_006",
+      "construction_source_percent": [
+        [
+          20,
+          20
+        ],
+        [
+          80,
+          20
+        ],
+        [
+          50,
+          80
+        ]
+      ],
+      "construction_target_percent": [
+        50,
+        95
+      ],
+      "data_integrity": true,
+      "descriptors_match": true,
+      "global_equivalence": true,
+      "independent_geometry": {
+        "indices": null,
+        "inside": false,
+        "weights": null
+      },
+      "pair": "P3",
+      "probe": {
+        "baselines": {
+          "B0": "PRESCRIPTIVE",
+          "B1": "ALLOW",
+          "B2": {
+            "decision": "NO_THRESHOLD_DEFINED",
+            "information_sha256": "eb040b5124669654b4633a864efde0edc328d6977cce54f671a7c0b0c96c2529"
+          },
+          "B3": {
+            "information_sha256": "0b22e5985166dffd3856e1df353af00b7b18dd7f55f2851d04408b45568c0d23",
+            "source_status": "VERIFIED_RUNTIME_TRACE"
+          },
+          "B4": {
+            "decision": "NO_THRESHOLD_DEFINED",
+            "nearest_TV_exact": "3/40"
+          },
+          "B5": {
+            "U_A": "4/5",
+            "U_B": "2/5",
+            "gap": "2/5"
+          }
+        },
+        "convex_weights": null,
+        "global": {
+          "C_conflict": 0.0,
+          "C_neg": 0.0,
+          "C_pos": 1.0,
+          "D_max": 0.45000000000000007,
+          "D_median": 0.45000000000000007,
+          "D_min": 0.30000000000000004,
+          "D_policy": 0.4000000000000001,
+          "cells": {
+            "e000": {
+              "S0": {
+                "A": [
+                  200,
+                  160
+                ],
+                "B": [
+                  800,
+                  320
+                ]
+              },
+              "S1": {
+                "A": [
+                  200,
+                  160
+                ],
+                "B": [
+                  800,
+                  320
+                ]
+              }
+            },
+            "e001": {
+              "S0": {
+                "A": [
+                  800,
+                  640
+                ],
+                "B": [
+                  200,
+                  80
+                ]
+              },
+              "S1": {
+                "A": [
+                  200,
+                  160
+                ],
+                "B": [
+                  800,
+                  320
+                ]
+              }
+            },
+            "e002": {
+              "S0": {
+                "A": [
+                  500,
+                  400
+                ],
+                "B": [
+                  500,
+                  200
+                ]
+              },
+              "S1": {
+                "A": [
+                  800,
+                  640
+                ],
+                "B": [
+                  200,
+                  80
+                ]
+              }
+            }
+          },
+          "diagnostic": "CROSS_POLICY_SUPPORT",
+          "effective_distinct_policy_pairs": 3,
+          "era_count": 3,
+          "gaps": {
+            "e000": 0.4,
+            "e001": 0.4,
+            "e002": 0.4
+          },
+          "mean_observed_gap": 0.4000000000000001,
+          "profile": {
+            "e000": {
+              "S0": 0.2,
+              "S1": 0.2
+            },
+            "e001": {
+              "S0": 0.8,
+              "S1": 0.2
+            },
+            "e002": {
+              "S0": 0.5,
+              "S1": 0.8
+            }
+          },
+          "raw_support_count": 6000,
+          "sign_pattern": [
+            "+",
+            "+",
+            "+"
+          ],
+          "status": "PRESCRIPTIVE",
+          "success_support": 2160
+        },
+        "interpolation_diagnostic": "EXTRAPOLATION",
+        "lambda_entropy": null,
+        "linprog_residual": null,
+        "max_lambda": null,
+        "provenance_summary": {
+          "era_count": 3,
+          "lineage_placeholder": "NOT_IMPLEMENTED",
+          "source_count": 3,
+          "source_type": "VERIFIED_RUNTIME_TRACE",
+          "trust_label": "VERIFIED",
+          "validation_status": "SCHEMA_AND_COUNTS_VALIDATED"
+        },
+        "provenance_summary_sha256": "0b22e5985166dffd3856e1df353af00b7b18dd7f55f2851d04408b45568c0d23",
+        "solver_status": 2,
+        "source_policy_vectors": {
+          "e000": [
+            "1/5",
+            "1/5"
+          ],
+          "e001": [
+            "4/5",
+            "1/5"
+          ],
+          "e002": [
+            "1/2",
+            "4/5"
+          ]
+        },
+        "source_summary": {
+          "C_conflict": 0.0,
+          "C_neg": 0.0,
+          "C_pos": 1.0,
+          "D_policy": 0.4000000000000001,
+          "GlobalCertification": "PRESCRIPTIVE",
+          "M1": {
+            "U_A": "4/5",
+            "U_B": "2/5",
+            "gap": "2/5"
+          },
+          "effective_distinct_pairs": 3,
+          "max_era_gap": "2/5",
+          "mean_era_gap": "2/5",
+          "min_era_gap": "2/5",
+          "number_of_eras": 3,
+          "per_era_observation_counts": {
+            "e000": 2000,
+            "e001": 2000,
+            "e002": 2000
+          },
+          "total_observations": 6000,
+          "variance_era_gap": "0"
+        },
+        "source_summary_sha256": "eb040b5124669654b4633a864efde0edc328d6977cce54f671a7c0b0c96c2529",
+        "supporting_eras": [
+          "e000",
+          "e001",
+          "e002"
+        ],
+        "target_in_convex_hull": false,
+        "target_min_TV": 0.075,
+        "target_min_TV_exact": "3/40",
+        "target_policy_vector": [
+          "1/2",
+          "19/20"
+        ],
+        "transfer_decision": "OUT_OF_ENVELOPE"
+      },
+      "side": "OUT",
+      "source_file": "case_006_source.jsonl",
+      "source_sha256": "5b2ec823ba296b7b158e4e9164043661d52f21bdcf7fa6cd83ed543c0b64696f",
+      "target_file": "case_006_target.jsonl",
+      "target_sha256": "08d371ba5cedefbf8502f52f07d95b631101f0759091020fe6305adc9b656365"
+    }
+  ],
+  "checks": {
+    "B0_equal": true,
+    "B1_equal": true,
+    "B3_equal": true,
+    "agreement_equal": true,
+    "counts_equal": true,
+    "diversity_equal": true,
+    "exact_membership_pair": true,
+    "global_both_prescriptive": true,
+    "global_equal": true,
+    "hull_pair": true,
+    "min_distance_equal": false,
+    "min_distance_tolerance": false,
+    "provenance_sha_equal": true,
+    "source_sha_equal": true,
+    "source_summary_canonical_equal": true,
+    "source_summary_sha_equal": true,
+    "transfer_pair": true,
+    "utility_equal": true,
+    "variance_equal": true
+  },
+  "claim_scope": "Only the specified source-only / nearest-scalar information projection",
+  "pair": "P3"
+}

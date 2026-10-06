@@ -133,3 +133,12 @@ M1统计核心就是direct standardization/g-computation，不声明novelty。ex
 独立目录：idea_validation/idea2_native_mapping_and_differentiation/。静态审计结论 **NATIVE_MAPPING_GO / DIFFERENTIATION_BORDERLINE / STAGE6B_NARROW**。JitRL MAP-L1、MemRL MAP-L3、ExpeL MAP-L1、Reflexion MAP-L0、ReasoningBank MAP-L3；JitRL与Reflexion提供最小过门槛证据。MemRL异常fallback动作对齐和ReasoningBank细粒度观察/执行证据链缺口未隐去。映射只表示原生数据落点，不代表动态行为多样性或干预收益。
 
 正式核验16篇agent memory/learning与8篇母领域论文的方法正文；C1和广义utility/使用资格分离已有直接重叠，未找到完整cross-policy支持+transfer certification lifecycle组合的直接覆盖，但尚未排除漂移/不变性化约、既有gate替换证据以及evidence-aware confidence/support决策三项风险。同M1不同status不足以证明不可替代性。12项校验测试通过；2035个历史文件/链接SHA核验一致，预注册不变。未运行LLM、API、benchmark或训练，未改upstream和九项历史verdict。本轮停止，不进入Stage7。详见Stage6B研究结果.md、两个track矩阵和results/final_verification.json。
+
+
+## Idea 2 Stage-6C — Target-Relative Transfer Envelope — 2026-10-06
+
+独立目录：idea_validation/idea2_target_relative_transfer_envelope/。最终 **TARGET_RELATIVE_ENVELOPE_GO**，G0–G9全PASS。45项测试预先通过并SHA锁定；一次deterministic formal run，无restart。原Stage-6A.1全局认证代码不变，8个case均PRESCRIPTIVE，所有M1精确为A=4/5、B=2/5、gap=2/5。
+
+P1/P2/P3相同source evidence与source summary/provenance SHA对应不同target位置，probe分别TRANSFERABLE/OUT_OF_ENVELOPE。P4最近TV均精确1/10，但convex membership不同。独立Fraction几何验证与HiGHS结果一致。结果只排除指定source-only及nearest-scalar信息投影，不能排除target-aware uncertainty/provenance/已有support geometry方法；OUT在本world也有真实+.40 gap，未证明实际迁移失败或causal safety。Convex hull仅diagnostic probe，无method novelty claim。
+
+十个历史目录2074个文件/链接SHA一致，Stage-6B **STAGE6B_NARROW**永久保留。本轮未查论文、调用LLM或运行agent benchmark；到此停止。下一步只建议对target-relative transportability、support geometry、multi-logger OPE与target-aware gating做精确collision audit，不自动开始，不进入Stage7。详见Stage6C实验结果.md及results/final_verification.json。

@@ -1,0 +1,8 @@
+{
+  "report_read": true,
+  "scope_overclaim_found": false,
+  "all_four_plots_visually_checked": true,
+  "geometry_labels_match_results": true,
+  "formal_scientific_code_modified": false,
+  "notes": "OUT的真实gap仍+.40；不同标签仅代表probe支持区域；source-only限定和target-aware近邻边界明确。"
+}

@@ -1,0 +1,11 @@
+{
+  "observations_per_state": 1000,
+  "solver": "highs",
+  "residual_tolerance": 1e-10,
+  "nearest_equality_tolerance": 1e-12,
+  "source_state_weights": [
+    "1/2",
+    "1/2"
+  ],
+  "global_config_sha256": "3c8bd8439679d53bccf8fd8a32b1763eeb43485ddc1e1c4512b5032d8f8d589f"
+}

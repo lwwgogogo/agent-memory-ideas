@@ -1,0 +1,31 @@
+{
+  "G0-G9": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "PASS",
+    "G6": "PASS",
+    "G7": "PASS",
+    "G8": "PASS",
+    "G9": "PASS"
+  },
+  "all_pair_constraints_match": true,
+  "candidate_processes": 8,
+  "formal_restart": false,
+  "formal_run_count": 1,
+  "global_cert_equivalence": true,
+  "historical_stage6b": "STAGE6B_NARROW",
+  "history_file_count": 2074,
+  "history_hash_match": true,
+  "missing_files": [],
+  "no_literature_search": true,
+  "no_llm_calls": true,
+  "no_target_outcome": true,
+  "official_global_cli_calls": 8,
+  "preregistration_hash_match": true,
+  "required_files_present": true,
+  "tests_passed": 45,
+  "verdict": "TARGET_RELATIVE_ENVELOPE_GO"
+}

@@ -1,0 +1,10 @@
+{
+  "PROJECT_INDEX.md": {
+    "append_only": true,
+    "baseline_sha256": "dd887b58288529fb5b23a436694010ee7fdbc8294a3b34d9af16207753b86706"
+  },
+  "docs/RESEARCH_STATUS.md": {
+    "append_only": true,
+    "baseline_sha256": "8a85909fb00814642955d13d5c05a31085e4ea98c3e4628ebf9f1b94ce36c560"
+  }
+}

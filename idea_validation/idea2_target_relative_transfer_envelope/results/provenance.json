@@ -1,0 +1,18 @@
+{
+  "stage": "Idea 2 Stage-6C",
+  "baseline_commit": "c9bbb744a3200461728c5959469f86f3e13a32d7",
+  "environment": "agentmem_lab",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "audit_date": "2026-10-06",
+  "preformal_tests": 45,
+  "formal_run_count_before_start": 0,
+  "case_coordinates_changed": false,
+  "geometry_threshold_changed": false,
+  "preformal_repairs": [
+    "copy-hash manifest uses unique repository-relative source keys",
+    "explicit NO_GO boundary for target-outcome requirement"
+  ],
+  "formal_restart": false,
+  "legacy_global_path": "byte-identical Stage6A.1 code plus original CLI",
+  "lock_file": "results/preregistration_manifest.json"
+}
