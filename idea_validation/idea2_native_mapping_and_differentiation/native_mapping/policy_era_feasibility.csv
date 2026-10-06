@@ -1,0 +1,6 @@
+system,repo_commit,mapping_level,policy_era_status,scope,action_space,policy_descriptor_feasibility,era_id,state,action,outcome,new_marker,evidence,limitations
+JitRL,143d22185d95fbf633a0befe6861d5e8b732543b,MAP-L1,REQUIRES_INSTRUMENTATION,Jericho,STRUCTURED,FEATURE_DISTRIBUTION,MISSING,NATIVE,NATIVE,NATIVE,REQUIRES_INSTRUMENTATION,jitrl_audit.md,完整日志/固定配置范围；边界不等于分布多样性
+MemRL,c1b322ca43de36ddf64c6712f89d0095bfc35ce0,MAP-L3,REQUIRES_INSTRUMENTATION,ALFWorld；全路径保守判定,STRUCTURED,FEATURE_DISTRIBUTION,MISSING,NATIVE,MISSING,NATIVE,REQUIRES_INSTRUMENTATION,memrl_audit.md,仅正常解析可DERIVABLE；全路径缺executed-action；不以新增动作日志冒充marker
+ExpeL,e41ec9a24823e7b560c561ab191441b56d9bcefc,MAP-L1,REQUIRES_INSTRUMENTATION,trajectory-level；保留训练轨迹和反馈,TRAJECTORY_LEVEL,FEATURE_DISTRIBUTION,MISSING,NATIVE,NATIVE,NATIVE,REQUIRES_INSTRUMENTATION,expel_audit.md,完整日志/固定配置范围；边界不等于分布多样性
+Reflexion,218cf0ef1df84b05ce379dd4a8e47f17766733a0,MAP-L0,NATIVELY_DERIVABLE,ALFWorld；完整 trial logs 同一 env 固定 model,STRUCTURED,FEATURE_DISTRIBUTION,DERIVABLE,NATIVE,NATIVE,NATIVE,NO,reflexion_audit.md,完整日志/固定配置范围；边界不等于分布多样性
+ReasoningBank,ed80611788292ea739f1effd31f16c53823b8a0d,MAP-L3,REQUIRES_INSTRUMENTATION,WebArena；已核验本仓库持久数据,STRUCTURED,NOT_CLEAR,MISSING,MISSING,NATIVE,NATIVE,REQUIRES_INSTRUMENTATION,reasoningbank_audit.md,query proxy不足；外部obs日志链未核验

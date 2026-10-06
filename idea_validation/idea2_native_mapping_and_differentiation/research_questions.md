@@ -1,0 +1,6 @@
+# 研究问题及回答边界
+本轮问题A：真实experience-memory系统的state/action/outcome与实际行为机制更新边界是否可观测？回答是局部可行；JitRL和Reflexion提供独立于MemRL的过门槛证据。字段可观察不等于充分因果调整、有效行为多样性或可部署证书。
+问题B：policy-conditioned evidence、cross-policy support与prescriptive lifecycle的组合是否已有覆盖？C1及广义C6已有直接覆盖，多项母领域和memory系统有部分组合。未核验完整组合的直接碰撞；但不可替代性仍未确立。
+主要反证目标：episode索引冒充era；optional schema冒充真实写入；策略计数冒充多样性；按mean utility之外增加status就宣称超越confidence；以闭环或metadata本身当创新。本轮发现的负面事实必须进入矩阵，不因历史GO忽略。
+M1 StateStandardizedUtility是direct standardization/g-computation经典baseline，不是本轮创新。MAP-L1只表示轻量日志映射级别，与M1无关。
+审计不设计新算法、不实现wrapper/lineage/detector、不运行LLM、不改历史阈值或verdict。范围与源文献方法详见两个track文件。

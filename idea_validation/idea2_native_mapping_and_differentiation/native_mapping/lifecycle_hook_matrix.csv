@@ -1,0 +1,9 @@
+system,hook,native_function,what_happens_here,certification_input_available,can_gate_prescriptive_reuse,requires_upstream_change,requires_new_metadata,risk
+JitRL,reuse/action selection,Jericho/src/jitrl_agent.py:update_scores:233-262,聚合检索action return,PARTIAL,YES,YES,era marker + future certification status,另有guiding prompt入口；奖励加工
+JitRL,memory write,Jericho/src/cross_episode_memory.py:add_episode:557-638,写逐步经验,PARTIAL,NO,YES,era marker,只是收集证据，不能单独阻断reuse
+MemRL,retrieval/reuse,memrl/service/value_driven.py:90-151; memrl/agent/memp_agent.py:_construct_messages:164-214,选memory并注入,PARTIAL,YES,YES,era及动作对齐缺口，超出L1,选memory IDs不等于环境action；历史不足
+MemRL,value update,memrl/service/value_driven.py:QValueUpdater:181-219,更新Q/访问统计,PARTIAL,NO,YES,完整执行证据,覆盖latest不能恢复所有revision
+ExpeL,reuse,agent/expel.py:insert_before_task_prompt:404-412; dynamic prompt:611-653,注入rules/fewshots,PARTIAL,YES,YES,executed revision + future status,必须同时覆盖两个入口；终局反馈
+ExpeL,consolidation,agent/expel.py:create_rules:287-402,比较经验更新rule counts,PARTIAL,NO,YES,revision marker,候选rule未必已执行
+Reflexion,reuse,alfworld_runs/alfworld_trial.py:alfworld_run:46-50,用最后3反思构造history,YES,YES,YES,NO（输入映射）；未来status需新增,同env固定配置；少样本；跳过任务不算新经验
+ReasoningBank,retrieval/reuse,WebArena/run.py:157-193; WebArena/agents/legacy/agent.py:get_action:132-137,选memory写txt并注入,PARTIAL,YES,YES,细粒度obs/执行关联和revision；超L1,txt覆盖；外部artifact未核验

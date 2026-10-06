@@ -1,0 +1,68 @@
+{
+  "audit_date": "2026-10-06",
+  "verdict": "NATIVE_MAPPING_GO",
+  "systems": [
+    {
+      "system": "JitRL",
+      "repo": "jitrl",
+      "commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+      "level": "MAP-L1",
+      "era": "REQUIRES_INSTRUMENTATION",
+      "scope": "Jericho",
+      "action": "STRUCTURED",
+      "descriptor": "FEATURE_DISTRIBUTION"
+    },
+    {
+      "system": "MemRL",
+      "repo": "memrl",
+      "commit": "c1b322ca43de36ddf64c6712f89d0095bfc35ce0",
+      "level": "MAP-L3",
+      "era": "REQUIRES_INSTRUMENTATION",
+      "scope": "ALFWorld；全路径保守判定",
+      "action": "STRUCTURED",
+      "descriptor": "FEATURE_DISTRIBUTION"
+    },
+    {
+      "system": "ExpeL",
+      "repo": "expel",
+      "commit": "e41ec9a24823e7b560c561ab191441b56d9bcefc",
+      "level": "MAP-L1",
+      "era": "REQUIRES_INSTRUMENTATION",
+      "scope": "trajectory-level；保留训练轨迹和反馈",
+      "action": "TRAJECTORY_LEVEL",
+      "descriptor": "FEATURE_DISTRIBUTION"
+    },
+    {
+      "system": "Reflexion",
+      "repo": "reflexion",
+      "commit": "218cf0ef1df84b05ce379dd4a8e47f17766733a0",
+      "level": "MAP-L0",
+      "era": "NATIVELY_DERIVABLE",
+      "scope": "ALFWorld；完整 trial logs 同一 env 固定 model",
+      "action": "STRUCTURED",
+      "descriptor": "FEATURE_DISTRIBUTION"
+    },
+    {
+      "system": "ReasoningBank",
+      "repo": "reasoningbank",
+      "commit": "ed80611788292ea739f1effd31f16c53823b8a0d",
+      "level": "MAP-L3",
+      "era": "REQUIRES_INSTRUMENTATION",
+      "scope": "WebArena；已核验本仓库持久数据",
+      "action": "STRUCTURED",
+      "descriptor": "NOT_CLEAR"
+    }
+  ],
+  "qualifying_systems": [
+    "JitRL",
+    "ExpeL",
+    "Reflexion"
+  ],
+  "robust_minimal_witness": [
+    "JitRL",
+    "Reflexion"
+  ],
+  "scope": "STATIC_ONLY; no deployment effectiveness claim",
+  "oracle_inputs_used": false,
+  "dynamic_validation": "DYNAMIC_VALIDATION_BLOCKED"
+}

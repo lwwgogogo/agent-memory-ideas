@@ -1,0 +1,87 @@
+{
+  "audit_date": "2026-10-06",
+  "historical_files_unchanged": true,
+  "history_file_count": 2035,
+  "systems_audited": 5,
+  "papers_audited": 24,
+  "agent_memory_papers": 16,
+  "mother_field_papers": 8,
+  "native_mapping_verdict": "NATIVE_MAPPING_GO",
+  "differentiation_verdict": "DIFFERENTIATION_BORDERLINE",
+  "combined_verdict": "STAGE6B_NARROW",
+  "unresolved_collisions": [
+    {
+      "id": "U1",
+      "issue": "policy drift / ICP invariance to memory-gate reduction",
+      "sources": [
+        "A01",
+        "M01",
+        "M02"
+      ]
+    },
+    {
+      "id": "U2",
+      "issue": "existing transfer/boundary/provenance gate with substituted evidence",
+      "sources": [
+        "A06",
+        "A11",
+        "A15",
+        "A16"
+      ]
+    },
+    {
+      "id": "U3",
+      "issue": "evidence-aware confidence/support decision equivalence",
+      "sources": [
+        "A13",
+        "A14",
+        "M05",
+        "M06",
+        "M07"
+      ]
+    }
+  ],
+  "blocked_dynamic_checks": [
+    "DYNAMIC_VALIDATION_BLOCKED: runtime logging completeness and exception coverage",
+    "DYNAMIC_VALIDATION_BLOCKED: effective behavior diversity and common-state support",
+    "DYNAMIC_VALIDATION_BLOCKED: outcome semantics and certification intervention effect"
+  ],
+  "required_files_present": true,
+  "required_files": [
+    "README.md",
+    "preregistration.md",
+    "research_questions.md",
+    "native_mapping/jitrl_audit.md",
+    "native_mapping/memrl_audit.md",
+    "native_mapping/expel_audit.md",
+    "native_mapping/reflexion_audit.md",
+    "native_mapping/reasoningbank_audit.md",
+    "native_mapping/mapping_summary.md",
+    "native_mapping/native_field_matrix.csv",
+    "native_mapping/lifecycle_hook_matrix.csv",
+    "native_mapping/policy_era_feasibility.csv",
+    "native_mapping/source_evidence.csv",
+    "literature/search_protocol.md",
+    "literature/paper_matrix.csv",
+    "literature/nearest_neighbors.md",
+    "literature/mother_field_matrix.md",
+    "literature/claim_collision_matrix.csv",
+    "literature/novelty_summary.md",
+    "results/native_mapping_verdict.json",
+    "results/differentiation_verdict.json",
+    "results/combined_verdict.json",
+    "results/provenance.json",
+    "results/final_verification.json",
+    "Stage6B研究结果.md",
+    "最终结论.md",
+    "validate_audit.py",
+    "test_validate_audit.py"
+  ],
+  "preregistration_sha256_verified": true,
+  "csv_schema_and_enums_valid": true,
+  "duplicate_papers": false,
+  "missing_sources": false,
+  "no_new_llm_inference": true,
+  "no_upstream_edits": true,
+  "unit_tests": "see results/test_results.txt"
+}

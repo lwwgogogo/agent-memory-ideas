@@ -126,3 +126,10 @@ M1统计核心就是direct standardization/g-computation，不声明novelty。ex
 独立目录：idea_validation/idea2_cross_policy_certification_hardening/。本轮结论 **ORACLE_FREE_HARDENING_GO**，H0–H9 全 PASS，G5 由真实的 schema、拒绝、AST、字符串、进程、文件、环境、metadata invariance 与数值复现检查组合计算。77 项预运行测试通过；正式运行一次，无 restart。
 
 候选仅在临时目录读取匿名逐条观测与冻结公开阈值；11 个固定配置复现 Stage-6A，5 种私有元数据变换得到逐字节相同的输出。M1 ECHO/DIVERSE gap 均 .40，认证分别 DESCRIPTIVE/PRESCRIPTIVE。1,956 个历史文件及链接核验一致。Stage-6A 的 **CROSS_POLICY_CERT_NARROW** 永久保留，未回写历史结果。新增证据仅限受审计代码路径的执行边界，不等同于 OS 级恶意代码隔离，也不扩大 synthetic/exact-count 研究结论。本轮已停止，未进入后续阶段。
+
+
+## Idea 2 Stage-6B — Native-System Mapping + Method Differentiation Audit — 2026-10-06
+
+独立目录：idea_validation/idea2_native_mapping_and_differentiation/。静态审计结论 **NATIVE_MAPPING_GO / DIFFERENTIATION_BORDERLINE / STAGE6B_NARROW**。JitRL MAP-L1、MemRL MAP-L3、ExpeL MAP-L1、Reflexion MAP-L0、ReasoningBank MAP-L3；JitRL与Reflexion提供最小过门槛证据。MemRL异常fallback动作对齐和ReasoningBank细粒度观察/执行证据链缺口未隐去。映射只表示原生数据落点，不代表动态行为多样性或干预收益。
+
+正式核验16篇agent memory/learning与8篇母领域论文的方法正文；C1和广义utility/使用资格分离已有直接重叠，未找到完整cross-policy支持+transfer certification lifecycle组合的直接覆盖，但尚未排除漂移/不变性化约、既有gate替换证据以及evidence-aware confidence/support决策三项风险。同M1不同status不足以证明不可替代性。12项校验测试通过；2035个历史文件/链接SHA核验一致，预注册不变。未运行LLM、API、benchmark或训练，未改upstream和九项历史verdict。本轮停止，不进入Stage7。详见Stage6B研究结果.md、两个track矩阵和results/final_verification.json。

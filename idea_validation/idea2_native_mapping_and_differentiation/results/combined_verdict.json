@@ -1,0 +1,9 @@
+{
+  "audit_date": "2026-10-06",
+  "native_mapping_verdict": "NATIVE_MAPPING_GO",
+  "differentiation_verdict": "DIFFERENTIATION_BORDERLINE",
+  "verdict": "STAGE6B_NARROW",
+  "rule": "preregistered user section 28 precedence",
+  "next_gate": "Resolve U1-U3 method differentiation; no automatic Stage-7",
+  "stop": true
+}

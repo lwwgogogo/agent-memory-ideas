@@ -1,0 +1,42 @@
+{
+  "audit_date": "2026-10-06",
+  "verdict": "DIFFERENTIATION_BORDERLINE",
+  "agent_papers": 16,
+  "mother_field_papers": 8,
+  "full_combination_direct_collisions": [],
+  "unresolved_collisions": [
+    {
+      "id": "U1",
+      "issue": "policy drift / ICP invariance to memory-gate reduction",
+      "sources": [
+        "A01",
+        "M01",
+        "M02"
+      ]
+    },
+    {
+      "id": "U2",
+      "issue": "existing transfer/boundary/provenance gate with substituted evidence",
+      "sources": [
+        "A06",
+        "A11",
+        "A15",
+        "A16"
+      ]
+    },
+    {
+      "id": "U3",
+      "issue": "evidence-aware confidence/support decision equivalence",
+      "sources": [
+        "A13",
+        "A14",
+        "M05",
+        "M06",
+        "M07"
+      ]
+    }
+  ],
+  "remaining_difference": "behavior-era diversity and conditional stability determine per-memory transfer eligibility",
+  "indispensability_demonstrated": false,
+  "absolute_priority_claim": false
+}

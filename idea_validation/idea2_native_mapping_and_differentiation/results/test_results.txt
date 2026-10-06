@@ -1,0 +1,17 @@
+test_all_combined_boundaries (__main__.AuditTests) ... ok
+test_claim_enum (__main__.AuditTests) ... ok
+test_claim_missing_paper (__main__.AuditTests) ... ok
+test_diff_kill_precedence (__main__.AuditTests) ... ok
+test_duplicate_paper (__main__.AuditTests) ... ok
+test_mapping_enum (__main__.AuditTests) ... ok
+test_missing_native_evidence (__main__.AuditTests) ... ok
+test_missing_source (__main__.AuditTests) ... ok
+test_native_boundary_cases (__main__.AuditTests) ... ok
+test_native_enum (__main__.AuditTests) ... ok
+test_positive_real_matrices (__main__.AuditTests) ... ok
+test_schema_missing_column (__main__.AuditTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.004s
+
+OK
