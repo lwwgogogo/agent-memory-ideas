@@ -1,0 +1,27 @@
+{
+  "pilot_excluded_from_primary": true,
+  "summary": {
+    "backend": "http://localhost:11434/v1",
+    "elapsed_seconds": 22.66879940032959,
+    "env_step_limit": 1,
+    "episodes_completed": 2,
+    "episodes_requested": 2,
+    "faiss_available": false,
+    "max_model_calls": 20,
+    "memory_writes": 2,
+    "model": "qwen2.5:14b",
+    "model_calls": 4,
+    "native_success": true,
+    "retrieval_attempts": 2,
+    "retrieval_events": 0,
+    "run_kind": "pilot",
+    "scores": [
+      0,
+      0
+    ],
+    "seed": 20261008,
+    "source_memory_steps": 2,
+    "temperature": 0.0
+  },
+  "technical_integrity": true
+}

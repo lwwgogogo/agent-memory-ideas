@@ -1,0 +1,4 @@
+{"call": 1, "completion_tokens": 194, "episode": 0, "max_tokens": 3000, "model": "qwen2.5:14b", "prompt_chars": 4894, "prompt_tokens": 1047, "response_format": true, "temperature": 0.0}
+{"call": 2, "completion_tokens": 292, "episode": 0, "max_tokens": 20000, "model": "qwen2.5:14b", "prompt_chars": 3793, "prompt_tokens": 779, "response_format": true, "temperature": 0.0}
+{"call": 3, "completion_tokens": 212, "episode": 1, "max_tokens": 3000, "model": "qwen2.5:14b", "prompt_chars": 4894, "prompt_tokens": 1047, "response_format": true, "temperature": 0.0}
+{"call": 4, "completion_tokens": 292, "episode": 1, "max_tokens": 20000, "model": "qwen2.5:14b", "prompt_chars": 3793, "prompt_tokens": 779, "response_format": true, "temperature": 0.0}

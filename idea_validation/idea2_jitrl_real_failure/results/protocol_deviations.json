@@ -1,0 +1,13 @@
+{
+  "initial_test_collection": {
+    "cause": "PYTHONPATH omitted from first conda-run pytest invocation",
+    "executed_tests": 0,
+    "formal_started": false,
+    "resolution": "same locked tests rerun with PYTHONPATH=.; 30/30 passed"
+  },
+  "verdict_label_mapping": {
+    "gate_or_metric_change": false,
+    "internal_locked_label": "REAL_JITRL_MEMORY_FAILURE_NO_GO",
+    "required_final_label": "REAL_JITRL_FAILURE_NO_GO"
+  }
+}

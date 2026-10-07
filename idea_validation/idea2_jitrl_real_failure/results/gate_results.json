@@ -1,0 +1,15 @@
+{
+  "gates": {
+    "G0_preregistered_and_tested": true,
+    "G1_real_formal_20_episodes": true,
+    "G2_native_write_and_retrieval": false,
+    "G3_state_matched_pair": false,
+    "G4_positive_native_source": false,
+    "G5_failure_candidate": false,
+    "G6_confirmed_negative_effect": false,
+    "G7_confirmed_behavior_change": false,
+    "G8_pair_integrity": true,
+    "G9_budgets_hold": true
+  },
+  "lock_problems": []
+}

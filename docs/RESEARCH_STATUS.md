@@ -127,3 +127,9 @@ advantage=-1.5，原生 score correction 将动作从安全 `a_R` 改为 `a_L`�
 policy-update rule 而 **NOT_TESTABLE**；最终 **JITRL_NATIVE_FAILURE_GO**。
 该 GO 仅是 toy native-path controlled reproduction，不证明 JitRL 严重缺陷、
 真实任务频率、long-run instability、普遍性、novelty 或解决方法。本轮停止。
+
+## Idea 2 Stage-8C — Real JitRL Agent Memory Failure Reproduction — 2026-10-08
+
+独立目录 `idea_validation/idea2_jitrl_real_failure/`，最终 **REAL_JITRL_FAILURE_NO_GO**。固定 runtime 下 30/30 tests 通过；20 个 formal episodes 一次完成，20 次原生 memory write、20 次 retrieval attempt、0 次 returned retrieval event、40 次 inference call。冻结 Jericho 实现需要 FAISS dual-vector index，当前环境缺少该依赖且无 fallback；按禁止改依赖/参数的规则未修补。因此无真实目标 memory 可供 state-matched paired intervention，G2–G7 FAIL；G0/G1/G8/G9 PASS。
+
+结论只表示此冻结 runtime 未能支持当前 real-system failure hypothesis 的 paired 检验，不是对 harmful-memory hypothesis 的反证，也不覆盖 failure frequency、其他 task/model/system 或方法有效性。Stage-8 历史 verdict 保持不变，本阶段按 stop rule 结束。

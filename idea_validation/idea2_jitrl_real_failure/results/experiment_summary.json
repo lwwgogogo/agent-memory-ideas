@@ -1,0 +1,39 @@
+{
+  "gates": {
+    "G0_preregistered_and_tested": true,
+    "G1_real_formal_20_episodes": true,
+    "G2_native_write_and_retrieval": false,
+    "G3_state_matched_pair": false,
+    "G4_positive_native_source": false,
+    "G5_failure_candidate": false,
+    "G6_confirmed_negative_effect": false,
+    "G7_confirmed_behavior_change": false,
+    "G8_pair_integrity": true,
+    "G9_budgets_hold": true
+  },
+  "interpretation": "The frozen runtime completed real native memory writes but produced no native retrieval events because the required vector index was unavailable. Therefore no causal paired intervention could be instantiated; this is a runtime-specific feasibility NO_GO, not evidence of absence of harmful memory effects.",
+  "metrics": {
+    "behavior_changing_confirmed_failures": 0,
+    "candidate_rate": null,
+    "confirmation_rate": null,
+    "confirmed_failures": 0,
+    "episodes": 20,
+    "failure_candidates": 0,
+    "mean_delta_current": null,
+    "median_delta_current": null,
+    "memory_writes": 20,
+    "model_calls": 40,
+    "positive_source_retrievals": 0,
+    "retrieval_attempts": 20,
+    "retrieval_events": 0,
+    "retrieval_rate_per_attempt": 0.0,
+    "source_memory_steps": 20,
+    "valid_paired_events": 0
+  },
+  "verdict": "REAL_JITRL_FAILURE_NO_GO",
+  "verdict_label_mapping": {
+    "gate_or_metric_change": false,
+    "internal_locked_label": "REAL_JITRL_MEMORY_FAILURE_NO_GO",
+    "required_final_label": "REAL_JITRL_FAILURE_NO_GO"
+  }
+}

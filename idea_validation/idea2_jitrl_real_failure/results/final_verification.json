@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "formal_call_budget": true,
+    "formal_exactly_20": true,
+    "formal_not_restarted": true,
+    "jitrl_clean": true,
+    "jitrl_commit": true,
+    "locked_hashes": true,
+    "preformal_tests_at_least_20": true,
+    "python_3_10_21": true,
+    "required_outputs": true
+  },
+  "final_verdict": "REAL_JITRL_FAILURE_NO_GO",
+  "lock_problems": [],
+  "ok": true,
+  "plots": {
+    "failure_cases_absent_when_confirmed_zero": true,
+    "paired_effect_distribution": true,
+    "source_vs_current_effect": true
+  },
+  "public_schema_checks": {
+    "candidate_rows": true,
+    "confirmed_rows": true,
+    "retrieval_rows": true,
+    "source_rows": true
+  },
+  "required_delivery_artifacts": true
+}

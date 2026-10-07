@@ -164,3 +164,9 @@ NoMemory/JitRLNative/Oracle 平均回报为 +1/-2/+1，JitRLNative 累计 regret
 harmful-use/bias rate=1。G0–G7 PASS，G8 NOT_TESTABLE，最终
 **JITRL_NATIVE_FAILURE_GO**。结论仅限 toy MDP、固定 seed/commit 和薄 adapter；
 无完整 LLM benchmark、native closed-loop、普遍性、novelty 或方法主张。
+
+## Idea 2 Stage-8C — Real JitRL Agent Memory Failure Reproduction — 2026-10-08
+
+独立目录：`idea_validation/idea2_jitrl_real_failure/`。最终 **REAL_JITRL_FAILURE_NO_GO**。固定 JitRL commit `143d22185d95fbf633a0befe6861d5e8b732543b`、Jericho/library、qwen2.5:14b、Ollama、temperature 0、seed 20261008；30 项预正式测试通过并完成 SHA-256 lock，唯一一次 formal run 无 restart。
+
+20/20 episodes 完成，原生 memory write=20、retrieval attempts=20、inference calls=40/160。冻结环境缺少 FAISS，Jericho 原生路径只有 dual-vector retrieval 且无 fallback，因此 retrieval events=0，无法形成真实 WITH_MEMORY / WITHOUT_THIS_MEMORY state-matched pair；G0/G1/G8/G9 PASS，G2–G7 FAIL。该 NO_GO 是当前冻结 runtime 的 retrieval 可行性结论，不证明有害 memory 不存在，也不改变 Stage-8 的 **JITRL_NATIVE_FAILURE_GO**。未换 task/model、未扩样本、未改依赖或第三方 JitRL；未进入方法设计、跨系统复现、文献检索或 Stage-9。

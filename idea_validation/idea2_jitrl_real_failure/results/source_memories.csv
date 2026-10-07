@@ -1,0 +1,621 @@
+memory_id,source_episode,source_step,source_observation_context,source_action,source_reward,source_return,source_native_signal,source_success,generation_order,model,backend,run_kind,source_policy_identity
+fda9a9196f369eead6d0926f6d40bd9a132c1385f10c79aba78ddd7edc04d8c6,0,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,1,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+e2f00cf4eb39f00cc327f543f0323e922db7f17f40f5ee0a124ecca6e25574dc,1,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,2,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+10eeeb94cb10186c7353a2ebe485ee378561810abf57fd9e63922680d7846461,2,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,3,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+8423e74f405689f5a3aff61f75226e477f5a45a2b7205c1104992a108942b713,3,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,4,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+6c2016fba6faed2d0b4b75096baa29a72085fc4db04e5ad6c42cc4fb89e8bb9d,4,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,5,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+25a724e03c5c695f86570de218c9f9c964f6a18a5ab3554c72ed4b4c2f59b1d5,5,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,6,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+72f41983921e2b3ca626a291ee76dc3473bea4824ce794848797ed06e572896f,6,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,7,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+874013711be5a7614cd47256b3b89aa1b26417916e6827b4e23942076ebf7074,7,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,8,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+eba10ab617c7e1da0cef3c6748013491af3c1cf48484d63c49185b7afa89af89,8,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,9,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+32777268896d6224148d855f99de45fbaf32be36fe06012bc3f7000eca3d77e5,9,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,10,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+dbcd3d7d4ddc16c11fd4ce2e94f7b49cfb7223ee929a2f330dba7ed5c497667e,10,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,11,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+b69eaf3cdec1e44db61b16178c98473a3e541bb25f67079bbb3049a9ce0501b8,11,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,12,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+234739a9bf3ebe76df363ec5e51ef8d59dd7798da3e30c90f9319119611dac4c,12,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,13,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+1a9447abf9ae3078ac66267029c24ac127b2b9e92e6461778e53ccf19abb9bc2,13,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,14,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+3b0e308842a918ab5c02482442c6329bac5f43e6a6b145eda5396b843d326c1a,14,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,15,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+b1d31fbfda57e8beb13607ebb3f2931f06af913077004efb1976f9940aa4fe26,15,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,16,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+2a6fd3fc93dc9f0bca4d670508754fd8010a4b96f7e16c74ee4a9e46009f6e24,16,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,17,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+d0e267ee803104d006ca080c39bf4e045febf1bedf9b4451bb1c638d8a2b0d8c,17,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,18,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+fd2e2c24134bba64dd75d219f51437d20a75be7e864d72d2dfd5369f99ba313c,18,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,19,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE
+ecc280d12916bf34d0074068f227acb3b9866a1ca37e726715578e66dd4ad8f7,19,0,"
+
+
+
+
+
+
+
+
+
+
+
+
+                                               ALL QUIET ON THE LIBRARY FRONT
+
+
+                                               [Please press SPACE to begin.]
+                                                                                          Every library should try to be complete                                             on something, if it were only the history                                             of pinheads.                                                                                            -- Oliver Wendell Holmes,                                                  The Poet at the Breakfast-Table
+You are a student at Anycollege, in Anytown, and it's the end of the semester!  You've been slacking off all semester long, and it's catching up to you. That final paper is due for your Computer Science class (""The History of IF Games""), and you desperately need to check out a comprehensive book on Graham Nelson, one of the foremost authors of the obscure genre of interactive-fiction. You know there is exactly one such book, but you have no idea where it might be!
+
+The first time player should probably type ""help"".
+
+ALL QUIET ON THE LIBRARY FRONT
+An Interactive Vignette
+Release 2 / Serial number 951204 / Inform v1502 Library 5/12
+Standard interpreter 1.0
+
+Lobby
+This is the entrance to the library. The circulation desk dominates the room, seemingly cobbled together over the course of several generations from an assortment of desks and tables. A pair of security gates stands before the front doors to prevent people from stealing books. A card catalog lurks in a dark and dusty corner of the room, seemingly cringing away from the harsh flourescent light. Glass doors to the west lead to the book stacks; an archway to the northwest is labelled ""Duplicating Services""; a door to the north bears a sign marked ""Private"" in large friendly letters; and the exit is to the east
+
+You can see a circulation desk attendant here.",west,-10,UNAVAILABLE,0,False,20,qwen2.5:14b,Ollama http://localhost:11434/v1,formal,UNAVAILABLE

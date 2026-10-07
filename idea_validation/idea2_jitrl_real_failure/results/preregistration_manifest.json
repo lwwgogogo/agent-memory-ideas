@@ -1,0 +1,14 @@
+{
+  "expected_jitrl_commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+  "files": {
+    "analyze_failures.py": "3c2d2657dc9a50514b735052c7377d85326a0186ee00367f4337886b1126596e",
+    "paired_intervention.py": "b2b39f1b199a7d665b7d44425b063dd89cd9cb96346bc5ffe749aa64d327f172",
+    "preregistration.md": "f073d6764ad363b84a23382663cf648fa18ebd9da477695caeea3a635bb87b56",
+    "run_formal.py": "7ed85264784dcfb56f543bbb7e7e59505e28b86d682e3d5194d98789c2ddf592",
+    "run_pilot.py": "323ae4a5453312cac41c672500edfb57d28df3aef2b1ec569ae1c64041133983",
+    "runtime_runner.py": "2d4f285af92dd10acfabe3eeb908ffe76b7e03f527dce56c9fa8163897ab1b5b",
+    "verify.py": "10d3f17fc4029def08735fbc572815ad300ba074f465cddec28da4ac278f45af"
+  },
+  "locked_before_formal": true,
+  "python": "3.10.21"
+}

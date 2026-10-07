@@ -1,0 +1,22 @@
+[
+  {
+    "attempt_id": "pilot-e000-s000",
+    "current_state_hash": "68ecafae6ede77af12dfb68516b11d69356feac33d7c928501280085d5120fcb",
+    "episode": 0,
+    "history_index_available": false,
+    "returned_count": 0,
+    "run_kind": "pilot",
+    "state_index_available": false,
+    "step": 0
+  },
+  {
+    "attempt_id": "pilot-e001-s000",
+    "current_state_hash": "68ecafae6ede77af12dfb68516b11d69356feac33d7c928501280085d5120fcb",
+    "episode": 1,
+    "history_index_available": false,
+    "returned_count": 0,
+    "run_kind": "pilot",
+    "state_index_available": false,
+    "step": 0
+  }
+]

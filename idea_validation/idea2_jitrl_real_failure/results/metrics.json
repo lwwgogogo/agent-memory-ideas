@@ -1,0 +1,18 @@
+{
+  "behavior_changing_confirmed_failures": 0,
+  "candidate_rate": null,
+  "confirmation_rate": null,
+  "confirmed_failures": 0,
+  "episodes": 20,
+  "failure_candidates": 0,
+  "mean_delta_current": null,
+  "median_delta_current": null,
+  "memory_writes": 20,
+  "model_calls": 40,
+  "positive_source_retrievals": 0,
+  "retrieval_attempts": 20,
+  "retrieval_events": 0,
+  "retrieval_rate_per_attempt": 0.0,
+  "source_memory_steps": 20,
+  "valid_paired_events": 0
+}
