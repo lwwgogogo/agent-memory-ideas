@@ -1,0 +1,17 @@
+{
+  "stage": "Idea 2 Stage-7",
+  "date": "2026-10-07",
+  "baseline_commit": "6e2c8d1a7433e133170fcf0ebbe99ca2cb410f63",
+  "environment": "agentmem_lab",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "preformal_tests": 19,
+  "formal_run_count_before_start": 0,
+  "formal_restart": false,
+  "preformal_repairs": [
+    "pytest path bootstrap added after collection-only failure",
+    "test corrected to compare pi_B continuation rather than full post-memory mapping"
+  ],
+  "scientific_design_changed_after_preregistration": false,
+  "literature_searches": 0,
+  "llm_calls": 0
+}

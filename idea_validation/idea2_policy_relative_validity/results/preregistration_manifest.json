@@ -1,0 +1,11 @@
+{
+  "files": {
+    "baselines.py": "895c5e11ce8fa7abd1e997abdedd52882546daf8ef2d2d9f39baea662138d81d",
+    "mdp.py": "8c2e51bdaa29c57da5d2208885bbbe11815de2b639969036e488b909b8242181",
+    "memory.py": "d8694afbd6b57956bc609c4e700e5d99102d59fcc150ac4ccce371810b4f4b89",
+    "policies.py": "52aaaf4e1b3325de4dfea7d7e818ae18367b96b1ad20bba36539926d887c1166",
+    "preregistration.md": "9599666729b9654771e739b9e89c1d410d7ec065731cc8e12d6fffdb9f6652d3",
+    "run_experiment.py": "f0ad5df25a154fa43d8d517a71c8b7de06220e118f3970ce56b160c741662140",
+    "verify.py": "f2d58b850009671f9cdad171ee5ee91fe448419c54911731629105090ea27a13"
+  }
+}

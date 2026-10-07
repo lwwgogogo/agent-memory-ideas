@@ -1,0 +1,10 @@
+{
+  "count": 19,
+  "passed": true,
+  "returncode": 0,
+  "preformal_repairs": [
+    "pytest path bootstrap added after collection-only failure",
+    "test corrected to compare pi_B continuation rather than full post-memory mapping"
+  ],
+  "formal_run_count_at_test": 0
+}

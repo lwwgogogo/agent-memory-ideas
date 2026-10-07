@@ -1,0 +1,2 @@
+source_policy,target_policy,state,action,historical_return,Q_source,Q_target,memory_recommendation,target_effect,valid_under_target
+pi_A,pi_B,s0,a_L,2,2,-2,a_L,-2,False

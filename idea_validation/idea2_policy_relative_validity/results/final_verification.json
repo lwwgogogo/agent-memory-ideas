@@ -1,0 +1,27 @@
+{
+  "G0-G6": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "PASS",
+    "G6": "PASS"
+  },
+  "deterministic": true,
+  "environment_fingerprint_match": true,
+  "formal_restart": false,
+  "formal_run_count": 1,
+  "historical_stage6c": "TARGET_RELATIVE_ENVELOPE_GO",
+  "history_file_count": 2144,
+  "history_hash_match": true,
+  "missing_files": [],
+  "no_literature_search": true,
+  "no_llm_calls": true,
+  "no_oracle_leakage": true,
+  "preregistration_hash_match": true,
+  "required_files_present": true,
+  "tests_passed": 19,
+  "validity_flip_count": 1,
+  "verdict": "POLICY_RELATIVE_VALIDITY_GO"
+}

@@ -1,0 +1,15 @@
+{
+  "F1": "PASS",
+  "F2": "PASS",
+  "F3": "PASS",
+  "gates": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "PASS",
+    "G6": "PASS"
+  },
+  "verdict": "POLICY_RELATIVE_VALIDITY_GO"
+}

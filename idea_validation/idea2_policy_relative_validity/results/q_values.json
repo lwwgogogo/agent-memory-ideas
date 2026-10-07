@@ -1,0 +1,12 @@
+{
+  "Q_piA_s0_aL": 2,
+  "Q_piA_s0_aR": 1,
+  "Q_piB_s0_aL": -2,
+  "Q_piB_s0_aR": 1,
+  "derivation": {
+    "a_L_immediate_reward": 0,
+    "pi_A_continuation": "s1,a_R -> +2",
+    "pi_B_continuation": "s1,a_L -> -2"
+  },
+  "environment_fingerprint": "4a38fda971c92e7a8d81752e6b28316eef23452e798ea5ff81080815255c2ad2"
+}

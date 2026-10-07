@@ -1,0 +1,13 @@
+baseline,target_policy,episodes,average_return,cumulative_regret,harmful_memory_use_rate,memory_acceptance_rate,chosen_action,deterministic_return,optimal_target_return
+B0_NoMemory,pi_A,20,2.0,0,0.0,0.0,a_L,2,2
+B1_SimilarityMemory,pi_A,20,2.0,0,0.0,1.0,a_L,2,2
+B2_HistoricalUtility,pi_A,20,2.0,0,0.0,1.0,a_L,2,2
+B3_JitRLStyle,pi_A,20,2.0,0,0.0,1.0,a_L,2,2
+B4_OraclePolicyValidity,pi_A,20,2.0,0,0.0,1.0,a_L,2,2
+B5_ProvenanceOnly,pi_A,20,2.0,0,0.0,1.0,a_L,2,2
+B0_NoMemory,pi_B,20,1.0,0,0.0,0.0,a_R,1,1
+B1_SimilarityMemory,pi_B,20,-2.0,60,1.0,1.0,a_L,-2,1
+B2_HistoricalUtility,pi_B,20,-2.0,60,1.0,1.0,a_L,-2,1
+B3_JitRLStyle,pi_B,20,-2.0,60,1.0,1.0,a_L,-2,1
+B4_OraclePolicyValidity,pi_B,20,1.0,0,0.0,0.0,a_R,1,1
+B5_ProvenanceOnly,pi_B,20,1.0,0,0.0,0.0,a_R,1,1

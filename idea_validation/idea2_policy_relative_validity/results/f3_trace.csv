@@ -1,0 +1,7 @@
+iteration,policy_action_preference_before,policy_action_preference_after,continuation_action_before,continuation_action_after,memory_used,memory_source_policy,memory_trajectory_id,historical_utility,pre_use_target_Q,current_target_Q,action,continuation_action,reward,valid_before,valid_now,validity_flip,memory_bank_size,written_memory_return
+0,0,2,a_R,a_L,True,pi_A,traj_A_000,2,2,-2,a_L,a_L,-2,True,False,True,2,-2
+1,2,4,a_L,a_L,True,pi_A,traj_A_000,2,-2,-2,a_L,a_L,-2,False,False,False,3,-2
+2,4,6,a_L,a_L,True,pi_A,traj_A_000,2,-2,-2,a_L,a_L,-2,False,False,False,4,-2
+3,6,8,a_L,a_L,True,pi_A,traj_A_000,2,-2,-2,a_L,a_L,-2,False,False,False,5,-2
+4,8,10,a_L,a_L,True,pi_A,traj_A_000,2,-2,-2,a_L,a_L,-2,False,False,False,6,-2
+5,10,12,a_L,a_L,True,pi_A,traj_A_000,2,-2,-2,a_L,a_L,-2,False,False,False,7,-2

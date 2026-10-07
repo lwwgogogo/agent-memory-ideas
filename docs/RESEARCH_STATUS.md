@@ -99,3 +99,12 @@ M1与经典direct standardization/g-computation相同，不声明novelty；下�
 P1/P2/P3相同source evidence与source summary/provenance SHA对应不同target位置，probe分别TRANSFERABLE/OUT_OF_ENVELOPE。P4最近TV均精确1/10，但convex membership不同。独立Fraction几何验证与HiGHS结果一致。结果只排除指定source-only及nearest-scalar信息投影，不能排除target-aware uncertainty/provenance/已有support geometry方法；OUT在本world也有真实+.40 gap，未证明实际迁移失败或causal safety。Convex hull仅diagnostic probe，无method novelty claim。
 
 十个历史目录2074个文件/链接SHA一致，Stage-6B **STAGE6B_NARROW**永久保留。本轮未查论文、调用LLM或运行agent benchmark；到此停止。下一步只建议对target-relative transportability、support geometry、multi-logger OPE与target-aware gating做精确collision audit，不自动开始，不进入Stage7。详见Stage6C实验结果.md及results/final_verification.json。
+
+
+## Idea 2 Stage-7 — Policy-Relative Memory Validity — 2026-10-07
+
+独立目录：idea_validation/idea2_policy_relative_validity/。最终 **POLICY_RELATIVE_VALIDITY_GO**，G0–G6全PASS。19项正式前测试通过并锁定预注册与正式代码；一次deterministic formal run，无restart。五状态固定MDP中，同一m0=(s0,a_L,+2,pi_A)的exact Q随continuation从pi_A切换pi_B，由+2变−2，环境与奖励fingerprint不变。
+
+pi_B下NoMemory回报+1；SimilarityMemory、HistoricalUtility和simplified JitRL-style均因历史成功m0选择a_L，回报−2、20轮累计regret 60、harmful-use rate=1。Oracle与naive provenance-only拒绝并恢复+1。F3中m0首次复用令共享a_L偏好θ从0到2，continuation由a_R变a_L，m0在同轮发生+2→−2 validity flip；负trajectory写回后，naive最高历史utility检索仍重复m0，形成最小M_t→pi_t→trajectory_t→M_(t+1)闭环。
+
+policy-dependent Q本身是经典RL事实；本轮额外验证的仅是self-generated memory同时作为旧policy产物和改变未来policy的干预变量。共享偏好更新是人为固定toy机制；B2/B3不是MemRL/JitRL复现；无真实LLM、自然语言memory、benchmark、novelty或真实系统普遍性主张。此前2144个历史文件/链接SHA一致，Stage-6C verdict永久保留。本轮停止，不自动映射真实系统或开始下一阶段。详见Stage7实验结果.md与results/final_verification.json。
