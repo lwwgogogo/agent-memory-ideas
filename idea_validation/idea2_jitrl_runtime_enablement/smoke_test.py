@@ -1,4 +1,4 @@
-"""Bounded Stage-8C0 JitRL smoke runner.
+"""Bounded Stage-8C0.1 JitRL smoke runner.
 
 Default behavior audits dependencies. --run permits at most one Jericho
 episode with one environment step.
@@ -7,11 +7,14 @@ episode with one environment step.
 from __future__ import annotations
 
 import argparse
+import ast
 import importlib.util
 import json
+import re
 import runpy
 import sys
 import tempfile
+import time
 import traceback
 from pathlib import Path
 
@@ -41,7 +44,7 @@ def write_result(payload: dict) -> None:
 
 def blocked_payload(state: dict[str, bool]) -> dict:
     return {
-        "stage": "Idea 2 Stage-8C0",
+        "stage": "Idea 2 Stage-8C0.1",
         "task": "Jericho/library",
         "status": "BLOCKED_BY_DEPENDENCY",
         "required_dependencies": state,
@@ -49,12 +52,55 @@ def blocked_payload(state: dict[str, bool]) -> dict:
         "episode_attempted": False,
         "episode_count": 0,
         "environment_initialized": False,
+        "llm_request_success": False,
+        "response_parse_success": False,
         "action_generated": False,
-        "runner_completed": False,
-        "trajectory_log_created": False,
+        "action_in_valid_actions": None,
+        "environment_step_success": False,
+        "trajectory_created": False,
+        "memory_written_if_any": False,
+        "exception": None,
         "model": backend_settings()["model"],
+        "backend": backend_settings()["base_url"],
         "temperature": 0,
         "seed": 0,
+        "wall_time_seconds": 0.0,
+        "prompt_tokens": None,
+        "completion_tokens": None,
+        "output_characters": 0,
+    }
+
+
+def extract_observations(log_text: str) -> dict:
+    raw_match = re.search(r"\[RAW_LLM_OUTPUT\] (.*?)\n\[CHOSEN_ACTION\] (.*?)\n", log_text, re.DOTALL)
+    raw_output = raw_match.group(1).strip() if raw_match else ""
+    chosen_action = raw_match.group(2).strip() if raw_match else ""
+    cleaned = re.sub(r"^~~~(?:json)?\s*", "", raw_output)
+    cleaned = re.sub(r"\s*~~~$", "", cleaned)
+    cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+    cleaned = re.sub(r"\s*```$", "", cleaned)
+    response_parse_success = False
+    if cleaned:
+        try:
+            json.loads(cleaned)
+            response_parse_success = True
+        except json.JSONDecodeError:
+            response_parse_success = False
+
+    valid_match = re.search(r"\[VALID_ACTIONS\] (.*?)\n", log_text)
+    action_in_valid_actions = None
+    if valid_match and chosen_action:
+        try:
+            valid_actions = ast.literal_eval(valid_match.group(1))
+            action_in_valid_actions = chosen_action in valid_actions
+        except (ValueError, SyntaxError):
+            action_in_valid_actions = None
+
+    return {
+        "raw_output": raw_output,
+        "chosen_action": chosen_action,
+        "response_parse_success": response_parse_success,
+        "action_in_valid_actions": action_in_valid_actions,
     }
 
 
@@ -70,14 +116,15 @@ def run_one_episode() -> dict:
 
     old_argv = sys.argv[:]
     old_path = sys.path[:]
+    started = time.perf_counter()
     try:
-        with tempfile.TemporaryDirectory(prefix="jitrl_stage8c0_") as tmp:
+        with tempfile.TemporaryDirectory(prefix="jitrl_stage8c01_") as tmp:
             sys.path.insert(0, str(JERICHO_DIR))
             settings = backend_settings()
             sys.argv = [
                 str(JERICHO_DIR / "main.py"),
                 "--game_name", "library",
-                "--rom_path", str(JERICHO_DIR / "games"),
+                "--rom_path", str(JERICHO_DIR / "jericho-games"),
                 "--output_path", tmp,
                 "--env_step_limit", "1",
                 "--seed", "0",
@@ -95,35 +142,67 @@ def run_one_episode() -> dict:
                 runpy.run_path(str(JERICHO_DIR / "main.py"), run_name="__main__")
             except SystemExit as exc:
                 exit_code = int(exc.code or 0)
+
             logs = list(Path(tmp).rglob("episode_*.txt"))
             log_text = "\n".join(path.read_text(encoding="utf-8", errors="replace") for path in logs)
+            observed = extract_observations(log_text)
+            elapsed = time.perf_counter() - started
+            action_generated = bool(observed["chosen_action"])
+            step_success = "[REWARD]" in log_text and "[CUM_REWARD]" in log_text
             payload = {
-                "stage": "Idea 2 Stage-8C0",
+                "stage": "Idea 2 Stage-8C0.1",
                 "task": "Jericho/library",
-                "status": "PASS" if exit_code == 0 else "FAIL",
+                "status": "PASS" if exit_code == 0 and action_generated and step_success and logs else "FAIL",
                 "required_dependencies": state,
                 "missing_dependencies": [],
                 "episode_attempted": True,
                 "episode_count": 1,
                 "environment_initialized": bool(logs),
-                "action_generated": "[CHOSEN_ACTION]" in log_text,
-                "runner_completed": exit_code == 0,
-                "trajectory_log_created": bool(logs),
+                "llm_request_success": bool(observed["raw_output"]),
+                "response_parse_success": observed["response_parse_success"],
+                "action_generated": action_generated,
+                "action": observed["chosen_action"],
+                "action_in_valid_actions": observed["action_in_valid_actions"],
+                "environment_step_success": step_success,
+                "trajectory_created": bool(logs),
+                "trajectory_log_count": len(logs),
+                "memory_written_if_any": False,
+                "memory_mode": "disabled_for_transport_runtime_smoke",
+                "exception": None,
                 "model": settings["model"],
+                "backend": settings["base_url"],
                 "temperature": 0,
                 "seed": 0,
+                "wall_time_seconds": elapsed,
+                "prompt_tokens": None,
+                "completion_tokens": None,
+                "output_characters": len(observed["raw_output"]),
                 "exit_code": exit_code,
             }
     except Exception as exc:
         payload = {
-            "stage": "Idea 2 Stage-8C0",
+            "stage": "Idea 2 Stage-8C0.1",
             "task": "Jericho/library",
             "status": "FAIL",
             "episode_attempted": True,
             "episode_count": 1,
-            "error_type": type(exc).__name__,
-            "error": str(exc),
-            "traceback": traceback.format_exc(),
+            "environment_initialized": False,
+            "llm_request_success": False,
+            "response_parse_success": False,
+            "action_generated": False,
+            "action_in_valid_actions": None,
+            "environment_step_success": False,
+            "trajectory_created": False,
+            "memory_written_if_any": False,
+            "exception": {"type": type(exc).__name__, "message": str(exc), "traceback": traceback.format_exc()},
+            "model": backend_settings()["model"],
+            "backend": backend_settings()["base_url"],
+            "temperature": 0,
+            "seed": 0,
+            "wall_time_seconds": time.perf_counter() - started,
+            "prompt_tokens": None,
+            "completion_tokens": None,
+            "output_characters": 0,
         }
     finally:
         openai.OpenAI = original_openai

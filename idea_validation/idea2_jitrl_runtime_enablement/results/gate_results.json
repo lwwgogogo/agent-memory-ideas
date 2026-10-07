@@ -1,36 +1,16 @@
 {
-  "stage": "Idea 2 Stage-8C0",
+  "stage": "Idea 2 Stage-8C0.1",
   "gates": {
-    "G0_integrity": {
-      "status": "PASS",
-      "evidence": "Baseline was clean; changes are confined to the new audit directory; frozen history and JitRL remain unmodified."
-    },
-    "G1_minimal_dependency_path_identified": {
-      "status": "PASS",
-      "evidence": "Jericho/library selected and its actual import path classified."
-    },
-    "G2_backend_contract_identified": {
-      "status": "PASS",
-      "evidence": "Client, hardcoded base URL, key, model, retry, schema, logprobs, and consumed response fields identified."
-    },
-    "G3_ollama_available": {
-      "status": "PASS",
-      "evidence": "Ollama 0.5.12 and existing qwen2.5:14b were reachable; no model pull."
-    },
-    "G4_openai_compatibility": {
-      "status": "FAIL",
-      "evidence": "Raw OpenAI-compatible endpoint probes passed, but the mandated OpenAI Python client probe could not run because openai is absent and installation was forbidden."
-    },
-    "G5_adapter_fidelity": {
-      "status": "PASS",
-      "evidence": "Adapter changes only OpenAI constructor base_url and api_key."
-    },
-    "G6_smoke_runtime": {
-      "status": "BLOCKED_BY_DEPENDENCY",
-      "evidence": "No episode attempted; openai, jericho, tiktoken, and python-dotenv are missing."
-    }
+    "G0_environment_isolation": {"status": "PASS", "evidence": "jitrl_runtime cloned successfully; agentmem_lab was not modified."},
+    "G1_dependencies": {"status": "PASS", "evidence": "numpy, openai, jericho, tiktoken, and dotenv imports passed; pip check passed."},
+    "G2_openai_client_compatibility": {"status": "PASS", "evidence": "Official OpenAI Python client text and JSON requests to Ollama succeeded."},
+    "G3_response_contract": {"status": "PASS", "evidence": "choices[0].message.content existed and strict JSON parsed."},
+    "G4_transport_fidelity": {"status": "PASS", "evidence": "Adapter changes only backend client construction and transport configuration."},
+    "G5_third_party_integrity": {"status": "PASS", "evidence": "Frozen JitRL checkout is clean."},
+    "G6_smoke": {"status": "FAIL", "evidence": "The single episode failed before environment initialization because the wrapper supplied the wrong ROM directory."}
   },
-  "standalone_model_requests": 2,
-  "jitrl_episodes_run": 0,
-  "verdict": "RUNTIME_BLOCKED"
+  "standalone_inference_requests": 2,
+  "smoke_episodes_attempted": 1,
+  "smoke_llm_requests": 0,
+  "verdict": "OLLAMA_CLIENT_COMPATIBLE_RUNTIME_BLOCKED"
 }

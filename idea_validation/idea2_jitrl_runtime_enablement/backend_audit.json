@@ -1,71 +1,39 @@
 {
-  "audit": "JitRL backend contract",
-  "source": "Jericho/src/openai_helpers.py and Jericho/src/jitrl_agent.py",
-  "native_client": {
-    "sdk": "openai.OpenAI",
-    "base_url": "https://openrouter.ai/api/v1",
-    "base_url_hardcoded": true,
-    "api_key_env": "OPENAI_API_KEY",
-    "operation": "client.chat.completions.create",
-    "responses_api_used": false,
-    "provider_model_default": "google/gemini-2.5-flash",
-    "provider_model_is_cli_replaceable": true,
-    "max_retries": 5,
-    "retry_interval_seconds": 20,
-    "explicit_timeout": false,
-    "streaming": false
+  "stage": "Idea 2 Stage-8C0.1",
+  "client": "openai.OpenAI",
+  "openai_version": "3.26.0",
+  "base_url": "http://localhost:11434/v1",
+  "api_key": "non-empty dummy value; not stored",
+  "model": "qwen2.5:14b",
+  "standalone_request_count": 2,
+  "text_probe": {
+    "pass": true,
+    "content": "OK",
+    "finish_reason": "stop",
+    "model_returned": "qwen2.5:14b",
+    "usage": {"prompt_tokens": 34, "completion_tokens": 2, "total_tokens": 36},
+    "wall_time_seconds": 4.459677998092957
   },
-  "feature_matrix": {
-    "OpenRouter-only headers": "NO",
-    "provider routing": "NO",
-    "special OpenRouter response fields": "NO",
-    "usage schema": "NOT USED",
-    "logprobs": "YES - always requested for action generation; consumed only in logit mode",
-    "tool-calling behavior": "NOT USED",
-    "retry wrapper": "YES - standard OpenAI SDK exceptions, five attempts",
-    "streaming": "NO",
-    "structured output": "YES - strict response_format json_schema"
+  "json_probe": {
+    "pass": true,
+    "content": "{\n  \"status\": \"OK\"\n}",
+    "parsed": {"status": "OK"},
+    "finish_reason": "stop",
+    "model_returned": "qwen2.5:14b",
+    "usage": {"prompt_tokens": 25, "completion_tokens": 10, "total_tokens": 35},
+    "wall_time_seconds": 0.21592017193324864
   },
-  "core_consumption": {
-    "verbalized_mode": "choices[0].message.content parsed as JSON action options, confidence integers, and best_action",
-    "logit_mode": "the same JSON plus choices[0].logprobs.content",
-    "usage": "not consumed",
-    "tool_calls": "not consumed"
-  },
-  "embedding_contract": {
-    "operation": "client.embeddings.create",
-    "api_key_env": "OPENAI_API_KEY2",
-    "base_url": "OpenAI SDK default",
-    "default_model": "text-embedding-ada-002",
-    "covered_by_generator_probe": false,
-    "impact": "Cross-episode vector memory is outside the bounded transport smoke."
-  },
-  "ollama": {
-    "version": "0.5.12",
-    "endpoint": "http://localhost:11434/v1",
-    "selected_model": "qwen2.5:14b",
-    "model_already_present": true,
-    "model_pull_performed": false,
-    "basic_chat_http_200": true,
-    "basic_content_exact_ok": true,
-    "json_schema_http_200": true,
-    "json_schema_valid": true,
-    "logprobs_fields_accepted": true,
-    "logprobs_returned": false,
-    "verbalized_mode_transport_assessment": "compatible",
-    "logit_mode_transport_assessment": "incompatible_without_returned_logprobs"
+  "response_contract": {
+    "choices_0_message_content": true,
+    "strict_json_parse": true,
+    "openrouter_only_field_required": false,
+    "pass": true
   },
   "adapter": {
-    "file": "optional_backend_adapter.py",
-    "scope": "OpenAI constructor base_url and api_key only",
-    "changes_memory_logic": false,
-    "changes_retrieval_logic": false,
-    "changes_return_or_advantage_logic": false,
-    "changes_action_interface": false,
-    "changes_environment": false
-  },
-  "exact_openai_python_client_probe": {
-    "performed": false,
-    "reason": "openai is absent in agentmem_lab and installation was forbidden."
+    "needed": true,
+    "transport_only": true,
+    "changes": ["base_url", "api_key", "client initialization"],
+    "model_selected_externally": "qwen2.5:14b",
+    "core_jitrl_modified": false
   }
 }

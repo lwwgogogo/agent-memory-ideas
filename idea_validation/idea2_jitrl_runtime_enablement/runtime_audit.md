@@ -1,35 +1,48 @@
-# Runtime audit
+# Stage-8C0.1 runtime audit
 
-## Frozen baseline
+## Isolation
 
-The audit started from a clean main branch with HEAD equal to origin/main at 7a3f15538efcb213ce9badf4922c551e416278bb. The frozen JitRL checkout is at 143d22185d95fbf633a0befe6861d5e8b732543b. Python is 3.10.21 in conda environment agentmem_lab. The prior Phase A gate is JITRL_NATIVE_FAILURE_GO.
+The repository baseline was clean at 77e9313c57309948b334641884a2c1a26a2395ca and matched origin/main. Home had 364 GB available.
 
-No frozen JitRL file or earlier Idea 2 result was changed.
+jitrl_runtime was created successfully with:
 
-## Selected task
+conda create -n jitrl_runtime --clone agentmem_lab -y
 
-Jericho library was selected because it is the native main.py default, games/library.z5 exists locally, and it requires no browser infrastructure. WebArena would require browsergym plus external browser and website services. A single-step episode is sufficient to exercise environment initialization, action generation, runner flow, and trajectory logging.
+The clone retained Python 3.10.21 and numpy 2.2.6. agentmem_lab was not modified.
 
-## Actual import path
+## Minimal installation
 
-main.py -> src.evaluation.GameEvaluator -> src.jitrl_agent.JitRLAgent and src.env.JerichoEnv.
+Only openai, jericho, tiktoken, and python-dotenv were requested from pip. The resolver added their declared dependencies, including spaCy from Jericho. It did not downgrade existing packages or install browsergym, faiss-cpu, torch, rank-bm25, or WebArena dependencies.
 
-| Component | Classification | Current state | Role |
-|---|---|---:|---|
-| numpy | required | installed, 2.2.6 | evaluator and arrays |
-| openai | required | missing | chat client and exception types |
-| jericho | required | missing | FrotzEnv runtime |
-| tiktoken | required | missing | imported and initialized at module load |
-| python-dotenv | required | missing | load_dotenv at module load |
-| faiss-cpu | optional for smoke | missing | guarded vector-index import |
-| browsergym | not needed | missing | WebArena only |
-| rank-bm25 | not needed | missing | WebArena path |
-| torch | not needed | missing | absent from selected import path |
+Installed top-level versions:
 
-The no-episode command PYTHONDONTWRITEBYTECODE=1 conda run -n agentmem_lab python -B main.py --help exited 1 at src/openai_helpers.py with ModuleNotFoundError: No module named 'openai'. It failed before argument parsing or environment initialization.
+- openai 3.26.0
+- jericho 3.3.1
+- tiktoken 0.14.0
+- python-dotenv 1.2.4
+- numpy remained 2.2.6
 
-## Bounded smoke design
+All required imports passed and pip check reported no broken requirements.
 
-smoke_test.py permits at most one evaluation run and one environment step with seed 0, qwen2.5:14b, temperature 0, verbalized confidence, and a temporary output directory outside the repository. Cross-episode vector memory is disabled only for this transport/runtime smoke. The script would verify environment initialization, one action call, runner completion, and an episode log.
+## Official client compatibility
 
-It was not run because required packages are missing and installation was forbidden.
+Two and only two standalone requests were made with openai.OpenAI, base_url http://localhost:11434/v1, a non-empty dummy key, and qwen2.5:14b.
+
+The text request returned exactly OK. The structured request returned JSON parsed as {"status": "OK"}. Both responses exposed choices[0].message.content, finish_reason, model, and usage. No OpenRouter-only response field was required.
+
+## Single smoke attempt
+
+Exactly one JitRL evaluation run was attempted with one environment step, seed 0, temperature 0, verbalized confidence, and cross-episode memory disabled for the transport/runtime smoke.
+
+The attempt failed in Jericho FrotzEnv construction before any LLM request or environment step:
+
+- configured ROM: Jericho/games/library.z5
+- actual ROM: Jericho/jericho-games/library.z5
+- exception: FileNotFoundError
+- wall time: 4.026174445985816 seconds
+
+No trajectory or memory write occurred. No second episode was run. The external smoke wrapper now points to jericho-games for a future explicitly authorized retry, but this correction was not executed.
+
+## Integrity
+
+The adapter changes only client base_url and api_key. JitRL source, memory, retrieval, return, advantage, action selection, environment, and reward logic were not changed. The frozen JitRL checkout is clean.

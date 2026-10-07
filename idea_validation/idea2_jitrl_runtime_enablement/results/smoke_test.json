@@ -1,27 +1,33 @@
 {
   "action_generated": false,
+  "action_in_valid_actions": null,
+  "backend": "http://localhost:11434/v1",
+  "completion_tokens": null,
+  "configured_rom_path": "Jericho/games/library.z5",
+  "discovered_rom_path": "Jericho/jericho-games/library.z5",
   "environment_initialized": false,
-  "episode_attempted": false,
-  "episode_count": 0,
-  "missing_dependencies": [
-    "jericho",
-    "openai",
-    "python-dotenv",
-    "tiktoken"
-  ],
-  "model": "qwen2.5:14b",
-  "required_dependencies": {
-    "jericho": false,
-    "numpy": true,
-    "openai": false,
-    "python-dotenv": false,
-    "tiktoken": false
+  "environment_step_success": false,
+  "episode_attempted": true,
+  "episode_count": 1,
+  "exception": {
+    "message": "/home/liaoweiwen/projects/agent-memory-ideas/idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/games/library.z5",
+    "type": "FileNotFoundError"
   },
-  "runner_completed": false,
+  "failure_stage": "Jericho FrotzEnv construction",
+  "llm_request_success": false,
+  "memory_written_if_any": false,
+  "model": "qwen2.5:14b",
+  "output_characters": 0,
+  "prompt_tokens": null,
+  "response_parse_success": false,
   "seed": 0,
-  "stage": "Idea 2 Stage-8C0",
-  "status": "BLOCKED_BY_DEPENDENCY",
+  "stage": "Idea 2 Stage-8C0.1",
+  "status": "FAIL",
   "task": "Jericho/library",
   "temperature": 0,
-  "trajectory_log_created": false
+  "trajectory_created": false,
+  "wall_time_seconds": 4.026174445985816,
+  "second_episode_run": false,
+  "wrapper_path_corrected_after_attempt": true,
+  "corrected_wrapper_executed": false
 }

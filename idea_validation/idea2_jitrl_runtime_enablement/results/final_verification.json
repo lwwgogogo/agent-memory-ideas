@@ -1,35 +1,31 @@
 {
-  "stage": "Idea 2 Stage-8C0",
+  "stage": "Idea 2 Stage-8C0.1",
   "verification": {
-    "repository_baseline_recorded": true,
-    "python_3_10_21_confirmed": true,
-    "conda_environment_agentmem_lab_confirmed": true,
-    "selected_task_rom_present": true,
-    "native_import_failure_reproduced_without_episode": true,
-    "dependencies_installed": false,
-    "models_pulled": false,
-    "standalone_request_count": 2,
+    "repository_baseline_clean": true,
+    "baseline_head_equal_origin_main": true,
+    "isolated_environment_created": true,
+    "agentmem_lab_modified": false,
+    "python_3_10_21": true,
+    "minimal_requested_dependencies_installed": true,
+    "pip_check_passed": true,
+    "official_openai_client_text_probe_passed": true,
+    "official_openai_client_json_probe_passed": true,
     "standalone_request_limit_respected": true,
-    "jitrl_episode_count": 0,
-    "benchmark_run": false,
-    "paper_search_performed": false,
-    "frozen_jitrl_modified": false,
-    "prior_idea2_results_modified": false,
-    "adapter_transport_only": true,
-    "stage8c_experiment_started": false
+    "single_episode_limit_respected": true,
+    "second_episode_run": false,
+    "stage8c_formal_started": false,
+    "openrouter_used": false,
+    "real_api_key_configured": false,
+    "model_pulled": false,
+    "core_jitrl_modified": false,
+    "third_party_clean": true,
+    "conda_environment_committed": false,
+    "cache_or_pyc_committed": false
   },
-  "allowed_files_created": [
-    "README.md",
-    "runtime_audit.md",
-    "dependency_audit.json",
-    "backend_audit.json",
-    "ollama_compatibility.md",
-    "smoke_test.py",
-    "optional_backend_adapter.py",
-    "results/smoke_test.json",
-    "results/final_verification.json",
-    "results/gate_results.json",
-    "Stage8C0结果.md"
-  ],
-  "final_verdict": "RUNTIME_BLOCKED"
+  "smoke_blocker": {
+    "type": "FileNotFoundError",
+    "configured_rom_path": "Jericho/games/library.z5",
+    "actual_rom_path": "Jericho/jericho-games/library.z5"
+  },
+  "final_verdict": "OLLAMA_CLIENT_COMPATIBLE_RUNTIME_BLOCKED"
 }

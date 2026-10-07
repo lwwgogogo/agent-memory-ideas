@@ -1,43 +1,14 @@
-# Ollama compatibility audit
+# Ollama compatibility
 
-## Server and model
+## Stage-8C0.1 official client probes
 
-- Ollama version: 0.5.12
-- OpenAI-compatible base URL: http://localhost:11434/v1
-- Existing model: qwen2.5:14b, the smallest installed text generator
-- No model was pulled
-- Before request 1, /api/ps reported no loaded model
+The isolated jitrl_runtime environment used openai 3.26.0 and OpenAI(base_url="http://localhost:11434/v1", api_key=<non-empty dummy>). The existing qwen2.5:14b model was used. No model was pulled and no real API key was configured.
 
-Exactly two standalone model requests were made. No JitRL episode was run.
+Exactly two standalone requests were made:
 
-## Request 1: required basic probe
+1. Text probe: returned exactly OK in 4.459678 seconds; usage was 34 prompt, 2 completion, 36 total tokens.
+2. Strict JSON-schema probe: parsed as {"status": "OK"} in 0.215920 seconds; usage was 25 prompt, 10 completion, 35 total tokens.
 
-The request used raw HTTP because the official OpenAI Python client is missing from agentmem_lab and installation was forbidden.
+Both returned choices[0].message.content. The probes did not depend on OpenRouter-only response fields.
 
-Prompt: Respond with exactly: OK
-
-Settings: temperature 0, max_tokens 16, stream false.
-
-- HTTP 200
-- 4.388890 seconds
-- content exactly OK
-- finish_reason stop
-- usage: 34 prompt, 2 completion, 36 total tokens
-- schema included id, object, created, model, choices, and usage
-
-## Request 2: JitRL field probe
-
-The final allowed request added strict response_format json_schema, logprobs true, and top_logprobs 3.
-
-- HTTP 200
-- 0.242299 seconds
-- content parsed as {"status": "OK"}
-- usage: 24 prompt, 10 completion, 34 total tokens
-- JSON schema was honored
-- logprobs fields were accepted, but no logprobs object was returned
-
-## Interpretation
-
-The endpoint provides the chat-completions object and structured output required by verbalized-confidence action generation. Native JitRL hardcodes OpenRouter, so a constructor-level base URL adapter is needed. Default verbalized mode does not consume response logprobs. Logit mode does and is unsupported by the observed response.
-
-The endpoint evidence is positive, but it is not the mandated OpenAI Python-client probe. The full compatibility gate therefore does not pass.
+This establishes OpenAI Python client compatibility for the tested text and structured-output contract. It does not claim that Ollama and OpenRouter are generally equivalent or that JitRL officially supports Ollama.
