@@ -1,0 +1,27 @@
+{
+  "action_generated": false,
+  "environment_initialized": false,
+  "episode_attempted": false,
+  "episode_count": 0,
+  "missing_dependencies": [
+    "jericho",
+    "openai",
+    "python-dotenv",
+    "tiktoken"
+  ],
+  "model": "qwen2.5:14b",
+  "required_dependencies": {
+    "jericho": false,
+    "numpy": true,
+    "openai": false,
+    "python-dotenv": false,
+    "tiktoken": false
+  },
+  "runner_completed": false,
+  "seed": 0,
+  "stage": "Idea 2 Stage-8C0",
+  "status": "BLOCKED_BY_DEPENDENCY",
+  "task": "Jericho/library",
+  "temperature": 0,
+  "trajectory_log_created": false
+}

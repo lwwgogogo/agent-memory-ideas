@@ -1,0 +1,34 @@
+{
+  "audit": "Idea 2 Stage-8C0 JitRL Runtime Enablement",
+  "environment": {
+    "conda_env": "agentmem_lab",
+    "python": "3.10.21",
+    "repository_commit": "7a3f15538efcb213ce9badf4922c551e416278bb",
+    "jitrl_commit": "143d22185d95fbf633a0befe6861d5e8b732543b"
+  },
+  "selected_task": {
+    "family": "Jericho",
+    "game": "library",
+    "rom_present": true,
+    "reason": "Native default with a local ROM and no browser infrastructure."
+  },
+  "packages": {
+    "numpy": {"classification": "REQUIRED_FOR_SELECTED_TASK", "installed": true, "version": "2.2.6"},
+    "openai": {"classification": "REQUIRED_FOR_SELECTED_TASK", "installed": false, "evidence": "Native import failed at src/openai_helpers.py."},
+    "jericho": {"classification": "REQUIRED_FOR_SELECTED_TASK", "installed": false, "evidence": "src/env.py imports jericho symbols."},
+    "tiktoken": {"classification": "REQUIRED_FOR_SELECTED_TASK", "installed": false, "evidence": "Imported and initialized at module load."},
+    "python-dotenv": {"classification": "REQUIRED_FOR_SELECTED_TASK", "installed": false, "evidence": "load_dotenv is imported and called at module load."},
+    "faiss-cpu": {"classification": "OPTIONAL_FOR_OTHER_PATHS", "installed": false, "evidence": "Import is guarded; used by the cross-episode vector index."},
+    "browsergym": {"classification": "OPTIONAL_FOR_OTHER_TASKS", "installed": false, "evidence": "WebArena only."},
+    "rank-bm25": {"classification": "NOT_NEEDED", "installed": false, "evidence": "Not on the selected Jericho import path."},
+    "torch": {"classification": "NOT_NEEDED", "installed": false, "evidence": "Not on the selected Jericho import path."}
+  },
+  "minimal_install_set_report_only": ["openai", "jericho", "tiktoken", "python-dotenv"],
+  "install_performed": false,
+  "native_import_check": {
+    "command_kind": "main.py --help; no episode",
+    "exit_code": 1,
+    "first_error": "ModuleNotFoundError: No module named 'openai'"
+  },
+  "status": "BLOCKED_BY_DEPENDENCY"
+}

@@ -1,0 +1,36 @@
+{
+  "stage": "Idea 2 Stage-8C0",
+  "gates": {
+    "G0_integrity": {
+      "status": "PASS",
+      "evidence": "Baseline was clean; changes are confined to the new audit directory; frozen history and JitRL remain unmodified."
+    },
+    "G1_minimal_dependency_path_identified": {
+      "status": "PASS",
+      "evidence": "Jericho/library selected and its actual import path classified."
+    },
+    "G2_backend_contract_identified": {
+      "status": "PASS",
+      "evidence": "Client, hardcoded base URL, key, model, retry, schema, logprobs, and consumed response fields identified."
+    },
+    "G3_ollama_available": {
+      "status": "PASS",
+      "evidence": "Ollama 0.5.12 and existing qwen2.5:14b were reachable; no model pull."
+    },
+    "G4_openai_compatibility": {
+      "status": "FAIL",
+      "evidence": "Raw OpenAI-compatible endpoint probes passed, but the mandated OpenAI Python client probe could not run because openai is absent and installation was forbidden."
+    },
+    "G5_adapter_fidelity": {
+      "status": "PASS",
+      "evidence": "Adapter changes only OpenAI constructor base_url and api_key."
+    },
+    "G6_smoke_runtime": {
+      "status": "BLOCKED_BY_DEPENDENCY",
+      "evidence": "No episode attempted; openai, jericho, tiktoken, and python-dotenv are missing."
+    }
+  },
+  "standalone_model_requests": 2,
+  "jitrl_episodes_run": 0,
+  "verdict": "RUNTIME_BLOCKED"
+}
