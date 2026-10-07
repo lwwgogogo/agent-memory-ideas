@@ -1,31 +1,25 @@
 {
-  "stage": "Idea 2 Stage-8C0.1",
+  "stage": "Idea 2 Stage-8C0.2",
   "verification": {
-    "repository_baseline_clean": true,
+    "baseline_git_clean": true,
     "baseline_head_equal_origin_main": true,
-    "isolated_environment_created": true,
-    "agentmem_lab_modified": false,
-    "python_3_10_21": true,
-    "minimal_requested_dependencies_installed": true,
-    "pip_check_passed": true,
-    "official_openai_client_text_probe_passed": true,
-    "official_openai_client_json_probe_passed": true,
-    "standalone_request_limit_respected": true,
-    "single_episode_limit_respected": true,
+    "runtime_environment": "jitrl_runtime",
+    "runtime_python": "3.10.21",
+    "runtime_dependency_install_performed": false,
+    "runtime_package_set_changed": false,
+    "rom_exists": true,
+    "jericho_direct_load_reset_passed": true,
+    "smoke_episode_attempts": 1,
     "second_episode_run": false,
-    "stage8c_formal_started": false,
+    "ollama_requests_during_smoke": 0,
     "openrouter_used": false,
-    "real_api_key_configured": false,
     "model_pulled": false,
+    "en_core_web_sm_installed": false,
+    "smoke_process_terminated": true,
     "core_jitrl_modified": false,
     "third_party_clean": true,
-    "conda_environment_committed": false,
-    "cache_or_pyc_committed": false
+    "stage8c_formal_started": false
   },
-  "smoke_blocker": {
-    "type": "FileNotFoundError",
-    "configured_rom_path": "Jericho/games/library.z5",
-    "actual_rom_path": "Jericho/jericho-games/library.z5"
-  },
-  "final_verdict": "OLLAMA_CLIENT_COMPATIBLE_RUNTIME_BLOCKED"
+  "blocker": "Jericho valid-action enumeration requires en_core_web_sm and attempted an unauthorized runtime download.",
+  "final_verdict": "JERICHO_RUNTIME_BLOCKED"
 }

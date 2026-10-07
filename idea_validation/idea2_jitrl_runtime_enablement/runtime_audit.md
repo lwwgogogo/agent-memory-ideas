@@ -1,48 +1,54 @@
-# Stage-8C0.1 runtime audit
+# Stage-8C0.2 runtime audit
 
-## Isolation
+## Baseline and corrected ROM
 
-The repository baseline was clean at 77e9313c57309948b334641884a2c1a26a2395ca and matched origin/main. Home had 364 GB available.
+The run started from a clean repository at 58aa718f3d5a4c5eb35563fcc4bd14ac1f90ea24, equal to origin/main. jitrl_runtime used Python 3.10.21. The frozen JitRL checkout was clean.
 
-jitrl_runtime was created successfully with:
+The corrected ROM was found at:
 
-conda create -n jitrl_runtime --clone agentmem_lab -y
+idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/jericho-games/library.z5
 
-The clone retained Python 3.10.21 and numpy 2.2.6. agentmem_lab was not modified.
+The file existed and was 71 KB.
 
-## Minimal installation
+## Jericho load preflight
 
-Only openai, jericho, tiktoken, and python-dotenv were requested from pip. The resolver added their declared dependencies, including spaCy from Jericho. It did not downgrade existing packages or install browsergym, faiss-cpu, torch, rank-bm25, or WebArena dependencies.
+A direct FrotzEnv load/reset completed in 0.007903074030764401 seconds without an LLM call:
 
-Installed top-level versions:
+- ROM load: success
+- reset: success
+- initial observation present: yes
+- initial observation characters: 2020
+- initial score: 0
 
-- openai 3.26.0
-- jericho 3.3.1
-- tiktoken 0.14.0
-- python-dotenv 1.2.4
-- numpy remained 2.2.6
+This establishes that the ROM itself is readable by the installed Jericho runtime.
 
-All required imports passed and pip check reported no broken requirements.
+## Single JitRL smoke attempt
 
-## Official client compatibility
+Exactly one smoke episode was started with the corrected ROM path, qwen2.5:14b, Ollama at http://localhost:11434/v1, seed 0, temperature 0, and the previously validated transport-only adapter.
 
-Two and only two standalone requests were made with openai.OpenAI, base_url http://localhost:11434/v1, a non-empty dummy key, and qwen2.5:14b.
+The JitRL JerichoEnv.reset path calls env.get_valid_actions(use_parallel=True). During that call the installed Jericho package detected that en_core_web_sm was missing and invoked spacy.cli.download("en_core_web_sm") from jericho/util.py lines 44-47.
 
-The text request returned exactly OK. The structured request returned JSON parsed as {"status": "OK"}. Both responses exposed choices[0].message.content, finish_reason, model, and usage. No OpenRouter-only response field was required.
+Installing a new runtime dependency was prohibited in this stage and G0 required the runtime environment to remain unchanged. The same smoke process was therefore interrupted and terminated. It had not reached Ollama: /api/ps reported no loaded models and all GPUs were idle.
 
-## Single smoke attempt
+Observed smoke state:
 
-Exactly one JitRL evaluation run was attempted with one environment step, seed 0, temperature 0, verbalized confidence, and cross-episode memory disabled for the transport/runtime smoke.
+- JitRL environment reset completed: no
+- runner received initial observation: no
+- LLM request: no
+- response parse: no
+- action generated/executed: no
+- environment step: no
+- trajectory: no
+- memory write: no
+- episode finished: no
+- episode steps: 0
+- reward: unavailable
+- elapsed time: approximately 9 minutes before policy-preserving termination
 
-The attempt failed in Jericho FrotzEnv construction before any LLM request or environment step:
+No second episode was run. en-core-web-sm was confirmed absent after termination. The repository, runtime package set, and third-party checkout remained unchanged.
 
-- configured ROM: Jericho/games/library.z5
-- actual ROM: Jericho/jericho-games/library.z5
-- exception: FileNotFoundError
-- wall time: 4.026174445985816 seconds
+## Verdict
 
-No trajectory or memory write occurred. No second episode was run. The external smoke wrapper now points to jericho-games for a future explicitly authorized retry, but this correction was not executed.
+JERICHO_RUNTIME_BLOCKED
 
-## Integrity
-
-The adapter changes only client base_url and api_key. JitRL source, memory, retrieval, return, advantage, action selection, environment, and reward logic were not changed. The frozen JitRL checkout is clean.
+The minimal blocker is the undeclared-at-install-time spaCy language model required by Jericho valid-action enumeration.

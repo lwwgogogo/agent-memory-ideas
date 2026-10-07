@@ -1,16 +1,38 @@
 {
-  "stage": "Idea 2 Stage-8C0.1",
+  "stage": "Idea 2 Stage-8C0.2",
   "gates": {
-    "G0_environment_isolation": {"status": "PASS", "evidence": "jitrl_runtime cloned successfully; agentmem_lab was not modified."},
-    "G1_dependencies": {"status": "PASS", "evidence": "numpy, openai, jericho, tiktoken, and dotenv imports passed; pip check passed."},
-    "G2_openai_client_compatibility": {"status": "PASS", "evidence": "Official OpenAI Python client text and JSON requests to Ollama succeeded."},
-    "G3_response_contract": {"status": "PASS", "evidence": "choices[0].message.content existed and strict JSON parsed."},
-    "G4_transport_fidelity": {"status": "PASS", "evidence": "Adapter changes only backend client construction and transport configuration."},
-    "G5_third_party_integrity": {"status": "PASS", "evidence": "Frozen JitRL checkout is clean."},
-    "G6_smoke": {"status": "FAIL", "evidence": "The single episode failed before environment initialization because the wrapper supplied the wrong ROM directory."}
+    "G0_integrity": {
+      "status": "PASS",
+      "evidence": "Baseline clean; runtime package set unchanged; third-party unmodified."
+    },
+    "G1_rom_path": {
+      "status": "PASS",
+      "evidence": "jericho-games/library.z5 found and readable."
+    },
+    "G2_jericho_load": {
+      "status": "PASS",
+      "evidence": "Direct FrotzEnv load/reset succeeded with a 2020-character observation."
+    },
+    "G3_llm_backend": {
+      "status": "PASS",
+      "evidence": "Frozen Stage-8C0.1 official OpenAI client to Ollama probes passed; re-audit was prohibited."
+    },
+    "G4_response_parse": {
+      "status": "FAIL",
+      "evidence": "The JitRL runner did not reach the LLM request or response parser."
+    },
+    "G5_action_execution": {
+      "status": "FAIL",
+      "evidence": "No action was generated or sent to Jericho."
+    },
+    "G6_trajectory": {
+      "status": "FAIL",
+      "evidence": "No trajectory/log record was produced."
+    },
+    "G7_single_episode_discipline": {
+      "status": "PASS",
+      "evidence": "Exactly one episode was attempted and no second episode was started."
+    }
   },
-  "standalone_inference_requests": 2,
-  "smoke_episodes_attempted": 1,
-  "smoke_llm_requests": 0,
-  "verdict": "OLLAMA_CLIENT_COMPATIBLE_RUNTIME_BLOCKED"
+  "verdict": "JERICHO_RUNTIME_BLOCKED"
 }
