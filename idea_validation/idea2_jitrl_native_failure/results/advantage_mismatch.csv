@@ -1,0 +1,3 @@
+condition,source_policy,target_policy,historical_action,historical_return,historical_q_source,historical_advantage_source,retrieved,retrieved_count,retrieval_score,native_memory_signal,native_raw_advantage,target_q,target_advantage,target_q_right,signal_sign_match,sign_mismatch,positive_historical_negative_target,base_action,chosen_action,optimal_action,policy_bias_applied,chosen_return,regret,harmful_memory_use,harmful_policy_bias,memory_read,oracle_read
+B1_same_policy,pi_A,pi_A,a_L,2.0,2.0,0.5,True,1,1.0,1.0,1.0,2.0,0.5,1.0,True,False,False,a_L,a_L,a_L,False,2.0,0.0,False,False,True,False
+B2_policy_shift,pi_A,pi_B,a_L,2.0,2.0,0.5,True,1,1.0,1.0,1.0,-2.0,-1.5,1.0,False,True,True,a_R,a_L,a_R,True,-2.0,3.0,True,True,True,False

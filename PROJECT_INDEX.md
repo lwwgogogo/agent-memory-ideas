@@ -151,3 +151,16 @@ P1/P2/P3相同source evidence与source summary/provenance SHA对应不同target�
 pi_B下NoMemory回报+1；SimilarityMemory、HistoricalUtility和simplified JitRL-style均因历史成功m0选择a_L，回报−2、20轮累计regret 60、harmful-use rate=1。Oracle与naive provenance-only拒绝并恢复+1。F3中m0首次复用令共享a_L偏好θ从0到2，continuation由a_R变a_L，m0在同轮发生+2→−2 validity flip；负trajectory写回后，naive最高历史utility检索仍重复m0，形成最小M_t→pi_t→trajectory_t→M_(t+1)闭环。
 
 policy-dependent Q本身是经典RL事实；本轮额外验证的仅是self-generated memory同时作为旧policy产物和改变未来policy的干预变量。共享偏好更新是人为固定toy机制；B2/B3不是MemRL/JitRL复现；无真实LLM、自然语言memory、benchmark、novelty或真实系统普遍性主张。此前2144个历史文件/链接SHA一致，Stage-6C verdict永久保留。本轮停止，不自动映射真实系统或开始下一阶段。详见Stage7实验结果.md与results/final_verification.json。
+
+## Idea 2 Stage-8 — JitRL Native Mapping & Policy-Relative Failure Reproduction — 2026-10-07
+
+独立目录：`idea_validation/idea2_jitrl_native_failure/`。使用项目内固定 JitRL
+commit `143d22185d95fbf633a0befe6861d5e8b732543b`，Stage-8A 得
+**JITRL_MAPPING_GO**；23 项预运行测试与 SHA256 lock 通过，唯一一次 deterministic
+formal run 无 restart。source-extracted WebArena 原生 storage/retrieval/advantage/
+score correction 路径在 `pi_A→pi_B` 下检索 +2 历史信号，native signal=+1，而
+current exact target advantage=-1.5；动作由 `a_R` 改为 `a_L`。20 episodes 中
+NoMemory/JitRLNative/Oracle 平均回报为 +1/-2/+1，JitRLNative 累计 regret=60，
+harmful-use/bias rate=1。G0–G7 PASS，G8 NOT_TESTABLE，最终
+**JITRL_NATIVE_FAILURE_GO**。结论仅限 toy MDP、固定 seed/commit 和薄 adapter；
+无完整 LLM benchmark、native closed-loop、普遍性、novelty 或方法主张。

@@ -1,0 +1,146 @@
+{
+  "B1": {
+    "base_action": "a_L",
+    "chosen_action": "a_L",
+    "chosen_return": 2.0,
+    "condition": "B1_same_policy",
+    "harmful_memory_use": false,
+    "harmful_policy_bias": false,
+    "historical_action": "a_L",
+    "historical_advantage_source": 0.5,
+    "historical_q_source": 2.0,
+    "historical_return": 2.0,
+    "left_base_score": 1.0,
+    "left_corrected_score": 2.0,
+    "memory_read": true,
+    "native_memory_signal": 1.0,
+    "native_raw_advantage": 1.0,
+    "optimal_action": "a_L",
+    "oracle_read": false,
+    "policy_bias_applied": false,
+    "positive_historical_negative_target": false,
+    "regret": 0.0,
+    "retrieval_score": 1.0,
+    "retrieved": true,
+    "retrieved_count": 1,
+    "right_base_score": 0.0,
+    "right_corrected_score": -1.0,
+    "sign_mismatch": false,
+    "signal_sign_match": true,
+    "source_policy": "pi_A",
+    "target_advantage": 0.5,
+    "target_policy": "pi_A",
+    "target_q": 2.0,
+    "target_q_right": 1.0
+  },
+  "B2": {
+    "base_action": "a_R",
+    "chosen_action": "a_L",
+    "chosen_return": -2.0,
+    "condition": "B2_policy_shift",
+    "harmful_memory_use": true,
+    "harmful_policy_bias": true,
+    "historical_action": "a_L",
+    "historical_advantage_source": 0.5,
+    "historical_q_source": 2.0,
+    "historical_return": 2.0,
+    "left_base_score": 0.0,
+    "left_corrected_score": 1.0,
+    "memory_read": true,
+    "native_memory_signal": 1.0,
+    "native_raw_advantage": 1.0,
+    "optimal_action": "a_R",
+    "oracle_read": false,
+    "policy_bias_applied": true,
+    "positive_historical_negative_target": true,
+    "regret": 3.0,
+    "retrieval_score": 1.0,
+    "retrieved": true,
+    "retrieved_count": 1,
+    "right_base_score": 1.0,
+    "right_corrected_score": 0.0,
+    "sign_mismatch": true,
+    "signal_sign_match": false,
+    "source_policy": "pi_A",
+    "target_advantage": -1.5,
+    "target_policy": "pi_B",
+    "target_q": -2.0,
+    "target_q_right": 1.0
+  },
+  "B3": {
+    "JitRLNative": {
+      "average_return": -2.0,
+      "cumulative_regret": 60.0,
+      "harmful_memory_use_rate": 1.0,
+      "harmful_policy_bias_rate": 1.0,
+      "n": 20
+    },
+    "NoMemory": {
+      "average_return": 1.0,
+      "cumulative_regret": 0.0,
+      "harmful_memory_use_rate": 0.0,
+      "harmful_policy_bias_rate": 0.0,
+      "n": 20
+    },
+    "OracleValidity": {
+      "average_return": 1.0,
+      "cumulative_regret": 0.0,
+      "harmful_memory_use_rate": 0.0,
+      "harmful_policy_bias_rate": 0.0,
+      "n": 20
+    }
+  },
+  "B4": {
+    "reason": "The no-LLM source-extracted harness executes native storage, retrieval, advantage, and score correction, but JitRL episode scoring/text generation needs the excluded LLM runtime and exposes no standalone native policy-update rule. Adding one would be invented.",
+    "status": "NOT_TESTABLE",
+    "validity_flip_count": null
+  },
+  "formal_seed": 0,
+  "metrics": {
+    "AverageReturn": {
+      "JitRLNative": -2.0,
+      "NoMemory": 1.0,
+      "OracleValidity": 1.0
+    },
+    "CumulativeRegret": {
+      "JitRLNative": 60.0,
+      "NoMemory": 0.0,
+      "OracleValidity": 0.0
+    },
+    "HarmfulMemoryUseRate": 1.0,
+    "HarmfulPolicyBiasRate": 1.0,
+    "NativeRetrievalRate": 1.0,
+    "NativeSignal": {
+      "B1": 1.0,
+      "B2": 1.0
+    },
+    "PolicyShiftSignalMismatchRate": 1.0,
+    "PositiveHistoricalNegativeTargetRate": 1.0,
+    "SignalMismatchRate": 0.5,
+    "TargetOracleSignal": {
+      "B1": 0.5,
+      "B2": -1.5
+    },
+    "ValidityFlipCount": null
+  },
+  "native_execution": {
+    "adapter_boundary_only": true,
+    "mapping": {
+      "adapter_boundary": "pre-materialized trajectory text and canonical toy action normalization only",
+      "policy_influence": "WebArena/memory_agents/jitrl_agent.py:BrowserGymJitRLAgent.update_scores and generate_action argmax",
+      "retrieval": "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory.retrieve_similar_with_vector",
+      "storage": "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._store_step_in_vector_db",
+      "value_and_advantage": "WebArena/memory_agents/jitrl_agent.py:BrowserGymJitRLAgent.update_scores"
+    },
+    "method_ast_hashes": {
+      "WebArena/memory_agents/jitrl_agent.py:BrowserGymJitRLAgent.update_scores": "a77db845570700c5658a230e5afb1b94c208ce2b20b33a79408edf8028350c16",
+      "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._get_ngrams": "193cbaba78af619d021ca144f3359480eee6a773b7b778351310d8e30e56841f",
+      "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._jaccard": "dd036a331edde7ec76c1bd527ab3bf291695eb54601c5292e8473a746466939e",
+      "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._store_step_in_vector_db": "370379b9f4ab28df1b2e84cb2a507cefb7fef555f7f2ed2235ba1c7d959b74da",
+      "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._tokenize": "b521f5e2b0d19ad0d2dcdfa90bc4b21312c338fea5d0786f7109ef5d2db3dc7c",
+      "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory.retrieve_similar_with_vector": "57ea28fb1f6e379f5f1183419a9df349fc26d9391d34e6ac2b851007a4d8800b"
+    },
+    "source_extracted_methods": true
+  },
+  "stage": "Idea 2 Stage-8B"
+}

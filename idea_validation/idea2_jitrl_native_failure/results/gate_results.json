@@ -1,0 +1,42 @@
+{
+  "gates": {
+    "G0": {
+      "evidence": "locked hashes, clean tracked history, source hashes, and baseline access boundaries",
+      "result": "PASS"
+    },
+    "G1": {
+      "evidence": "native storage/retrieval/advantage/score path executed",
+      "result": "PASS"
+    },
+    "G2": {
+      "evidence": "no explicit current-policy validity correction in audited path",
+      "result": "PASS"
+    },
+    "G3": {
+      "evidence": "pi_A to pi_A native and target signs agree",
+      "result": "PASS"
+    },
+    "G4": {
+      "evidence": "retrieved positive native signal conflicts with negative pi_B target advantage",
+      "result": "PASS"
+    },
+    "G5": {
+      "evidence": "native memory changes action and degrades return under pi_B",
+      "result": "PASS"
+    },
+    "G6": {
+      "evidence": "core storage, retrieval, advantage, and score update execute upstream AST bodies",
+      "result": "PASS"
+    },
+    "G7": {
+      "evidence": "evidence includes native retrieval/reinjection and harm beyond Q reversal",
+      "result": "PASS"
+    },
+    "G8": {
+      "evidence": "The no-LLM source-extracted harness executes native storage, retrieval, advantage, and score correction, but JitRL episode scoring/text generation needs the excluded LLM runtime and exposes no standalone native policy-update rule. Adding one would be invented.",
+      "result": "NOT_TESTABLE"
+    }
+  },
+  "stage8a_verdict": "JITRL_MAPPING_GO",
+  "verdict": "JITRL_NATIVE_FAILURE_GO"
+}

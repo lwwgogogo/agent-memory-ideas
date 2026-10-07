@@ -1,0 +1,62 @@
+{
+  "stage": "Idea 2 Stage-8A",
+  "source": {
+    "path": "idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl",
+    "remote": "https://github.com/liushiliushi/JitRL.git",
+    "commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+    "primary_implementation": "WebArena",
+    "agent_file": "WebArena/memory_agents/jitrl_agent.py",
+    "agent_sha256": "e4f1b2143ed412833d0bbe592dd5123f669d6cbc5631e55dcc969662c40849e1",
+    "memory_file": "WebArena/memory_agents/utils/cross_episode_memory.py",
+    "memory_sha256": "e93c382d30bee83f5248397c475280e9e060317971f8a5aefa2cc53c01e507cc",
+    "tracked_diff_clean": true,
+    "preexisting_untracked_bytecode": true
+  },
+  "memory_unit": {
+    "durable_unit": "episode with step records",
+    "retrieval_unit": "per-step metadata",
+    "step_fields": ["step_num", "state", "action", "normalized_action", "semantic_action", "action_metadata", "step_summary", "reward", "score", "delta_score", "llm_step_score", "llm_reasoning", "url"],
+    "retrieval_metadata_fields": ["episode_timestamp", "episode_number", "task_goal", "step_data", "episode_final_score", "episode_success", "trajectory_context", "current_env_info", "future_rewards", "step_summary", "url", "normalized_url"]
+  },
+  "stores_source_policy": {
+    "status": "PARTIAL",
+    "present": ["model_slug in storage path", "agent_type in storage path", "episode_number", "timestamp"],
+    "absent": ["behavior policy", "policy snapshot", "checkpoint", "policy version", "propensity", "policy-era id"]
+  },
+  "retrieval_rule": {
+    "function": "CrossEpisodeMemory.retrieve_similar_with_vector",
+    "url_filter": "exact normalized_url",
+    "task_filter": "unigram Jaccard > 0.27 by default",
+    "history_similarity": "unigram Jaccard",
+    "combined_similarity": "0.7 * history_similarity + 0.3 * task_similarity",
+    "dynamic_threshold": "r - min(step_count,20)/20 * 0.1",
+    "sort": ["similarity descending", "discounted_return descending"],
+    "active_top_k_truncation": false
+  },
+  "historical_value_source": "discounted sum of stored future llm_step_score values",
+  "advantage_computation": {
+    "raw": "mean discounted_reward by normalized action - overall reward baseline",
+    "normalization": "divide by max positive advantage, else max absolute negative advantage"
+  },
+  "policy_modification": "corrected_logprob = normalized_prob + normalized_advantage; argmax executes action",
+  "revalues_under_current_policy": "NO",
+  "importance_correction": "NO",
+  "behavior_policy_correction": "NO",
+  "target_policy_correction": "NO",
+  "policy_mismatch_check": "NO",
+  "provenance_filter": "NO",
+  "confidence_scope": "retrieval reliability/base option confidence, not current-policy action validity",
+  "potential_failure_surface": "a positive source-policy-derived discounted reward remains a positive native advantage after retrieval and can override a current option, even if current-policy continuation makes that action harmful",
+  "stage7_mapping": {
+    "source_policy": "coarse model/run chronology only",
+    "historical_experience": "stored episode step",
+    "historical_return": "discounted_reward",
+    "retrieval": "URL/task/history Jaccard path",
+    "advantage_or_value": "mean discounted reward and normalized action advantage",
+    "target_or_current_policy": "current option scores/action generation",
+    "memory_influence": "add normalized advantage then argmax",
+    "validity_check": "absent"
+  },
+  "gates": {"A0": "PASS", "A1": "PASS", "A2": "PASS", "A3": "PASS", "A4": "PASS", "A5": "PASS", "A6": "PASS"},
+  "verdict": "JITRL_MAPPING_GO"
+}

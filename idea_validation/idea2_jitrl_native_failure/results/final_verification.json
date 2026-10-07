@@ -1,0 +1,30 @@
+{
+  "closed_loop": "NOT_TESTABLE",
+  "deterministic": true,
+  "formal_restart": false,
+  "formal_run_count": 1,
+  "gates": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "PASS",
+    "G6": "PASS",
+    "G7": "PASS",
+    "G8": "NOT_TESTABLE"
+  },
+  "jitrl_commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+  "jitrl_source_hash_match": true,
+  "manifest_hash_match": true,
+  "no_api_calls": true,
+  "no_full_jitrl_benchmark": true,
+  "no_llm_calls": true,
+  "no_oracle_leakage": true,
+  "root_tracked_history_clean_at_formal_verification": true,
+  "stage": "Idea 2 Stage-8",
+  "stage7_history_hash_match": true,
+  "tests_failed": 0,
+  "tests_passed": 23,
+  "verdict": "JITRL_NATIVE_FAILURE_GO"
+}

@@ -1,0 +1,36 @@
+{
+  "b3_episodes": 20,
+  "formal_python_files": [
+    "jitrl_adapter.py",
+    "native_probe.py",
+    "run_experiment.py",
+    "verify.py"
+  ],
+  "formal_run_count_planned": 1,
+  "formal_seed": 0,
+  "jitrl_commit": "143d22185d95fbf633a0befe6861d5e8b732543b",
+  "jitrl_source_sha256": {
+    "WebArena/memory_agents/jitrl_agent.py": "e4f1b2143ed412833d0bbe592dd5123f669d6cbc5631e55dcc969662c40849e1",
+    "WebArena/memory_agents/utils/cross_episode_memory.py": "e93c382d30bee83f5248397c475280e9e060317971f8a5aefa2cc53c01e507cc"
+  },
+  "locked_files": {
+    "jitrl_adapter.py": "bbd7b95dfdf5521bfe503af475980f5d61107b00372ad0c2d4e80ae365bdadaf",
+    "native_mapping.md": "f0e3a5131c9ac190e42ae3958ad2ae8d79596283da841257b447005f82d49b8d",
+    "native_probe.py": "81d3f2869ccb3046dcdc2e284d3214f21f4d20dae335e7ec5665739c03d2ac7c",
+    "preregistration.md": "c7215e12405693c3fa084cbeec12384f94f45f764829beaad9fbdc65636eeb5a",
+    "results/native_mapping.json": "18cf4a88ebc3b088b8152245b43bbfcd405a332bca131c34fa68e7d6c92a493b",
+    "run_experiment.py": "14e35eea4dd48be76037d17840f68ab874fb7be23041117dd12f97a2b9660b1e",
+    "tests/test_stage8.py": "8d8d06e584b965aacecf943a7faa857cd998e8125e4e2b1e226d7208446e91ff",
+    "verify.py": "80a5c433ecf432b9f5d53b57eb99b1c722b5077c011c286389dc6a93a32bc237"
+  },
+  "native_method_ast_sha256": {
+    "WebArena/memory_agents/jitrl_agent.py:BrowserGymJitRLAgent.update_scores": "a77db845570700c5658a230e5afb1b94c208ce2b20b33a79408edf8028350c16",
+    "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._get_ngrams": "193cbaba78af619d021ca144f3359480eee6a773b7b778351310d8e30e56841f",
+    "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._jaccard": "dd036a331edde7ec76c1bd527ab3bf291695eb54601c5292e8473a746466939e",
+    "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._store_step_in_vector_db": "370379b9f4ab28df1b2e84cb2a507cefb7fef555f7f2ed2235ba1c7d959b74da",
+    "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory._tokenize": "b521f5e2b0d19ad0d2dcdfa90bc4b21312c338fea5d0786f7109ef5d2db3dc7c",
+    "WebArena/memory_agents/utils/cross_episode_memory.py:CrossEpisodeMemory.retrieve_similar_with_vector": "57ea28fb1f6e379f5f1183419a9df349fc26d9391d34e6ac2b851007a4d8800b"
+  },
+  "stage7_tree_sha256": "8943decf8fca24f07912a7cfc234a6ca81fb540a1d33dadbf45c473294a79e2a",
+  "status": "LOCKED_BEFORE_FORMAL_RUN"
+}

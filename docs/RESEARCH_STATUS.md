@@ -108,3 +108,22 @@ P1/P2/P3相同source evidence与source summary/provenance SHA对应不同target�
 pi_B下NoMemory回报+1；SimilarityMemory、HistoricalUtility和simplified JitRL-style均因历史成功m0选择a_L，回报−2、20轮累计regret 60、harmful-use rate=1。Oracle与naive provenance-only拒绝并恢复+1。F3中m0首次复用令共享a_L偏好θ从0到2，continuation由a_R变a_L，m0在同轮发生+2→−2 validity flip；负trajectory写回后，naive最高历史utility检索仍重复m0，形成最小M_t→pi_t→trajectory_t→M_(t+1)闭环。
 
 policy-dependent Q本身是经典RL事实；本轮额外验证的仅是self-generated memory同时作为旧policy产物和改变未来policy的干预变量。共享偏好更新是人为固定toy机制；B2/B3不是MemRL/JitRL复现；无真实LLM、自然语言memory、benchmark、novelty或真实系统普遍性主张。此前2144个历史文件/链接SHA一致，Stage-6C verdict永久保留。本轮停止，不自动映射真实系统或开始下一阶段。详见Stage7实验结果.md与results/final_verification.json。
+
+## Idea 2 Stage-8 — JitRL Native Mapping & Policy-Relative Failure Reproduction — 2026-10-07
+
+独立目录 `idea_validation/idea2_jitrl_native_failure/`。固定项目内 JitRL commit
+`143d22185d95fbf633a0befe6861d5e8b732543b`，不修改 upstream 或 Stage-7。
+原生 WebArena 逐步 memory 经 URL/task/history retrieval、discounted historical
+signal、action advantage normalization 后直接加到当前候选分数；只见粗粒度
+model/episode provenance，没有 per-memory source-policy snapshot、current-policy
+revaluation 或 importance/off-policy validity correction。Stage-8A 为
+**JITRL_MAPPING_GO**。
+
+23 tests 通过并锁定，唯一 formal run 无 restart。`pi_A→pi_A` 符号一致；
+`pi_A→pi_B` 中同一历史 memory 被检索，native signal=+1，而 exact target
+advantage=-1.5，原生 score correction 将动作从安全 `a_R` 改为 `a_L`。
+20 episodes 的 NoMemory/JitRLNative/Oracle 回报为 +1/-2/+1，JitRLNative
+累计 regret=60。G0–G7 PASS，G8 因 no-LLM 最小 harness 无可独立调用的 native
+policy-update rule 而 **NOT_TESTABLE**；最终 **JITRL_NATIVE_FAILURE_GO**。
+该 GO 仅是 toy native-path controlled reproduction，不证明 JitRL 严重缺陷、
+真实任务频率、long-run instability、普遍性、novelty 或解决方法。本轮停止。
