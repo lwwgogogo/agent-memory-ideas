@@ -1,40 +1,45 @@
-# Idea 2 Stage-8C0.2 结果
+# Idea 2 Stage-8C0.3 结果
 
-## ROM
+## spaCy
 
-修正路径为：
+- spaCy：3.8.16
+- en_core_web_sm：3.8.0
+- load/tokenization：PASS
+- 安装方式：官方 wheel，--no-deps
+- 其他核心包升级：无
+- pip check：PASS
 
-idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/jericho-games/library.z5
+## Runtime
 
-文件存在，约 71 KB。
-
-## Jericho load
-
-直接使用 jitrl_runtime 中的 FrotzEnv load/reset 成功。初始 observation 存在，长度 2020 字符，初始 score 为 0。
+- 环境：jitrl_runtime
+- Python：3.10.21
+- ROM：Jericho/jericho-games/library.z5
+- 模型：qwen2.5:14b
+- Backend：Ollama / http://localhost:11434/v1
 
 ## Single episode smoke
 
-本轮只启动了 1 个 episode，没有启动第二个。
+本轮只运行 1 个 episode：
 
-真实 JitRL runner 在 JerichoEnv.reset 的 valid-action 枚举阶段阻塞。安装版 Jericho 在缺少 en_core_web_sm 时调用 spacy.cli.download("en_core_web_sm")。本轮禁止重新安装依赖且要求 runtime unchanged，因此中止并终止该进程。
+- runner initialization：PASS
+- initial observation：PASS
+- prompt constructed：PASS
+- LLM request：PASS
+- LLM response：PASS
+- response parse：PASS
+- action generated：west
+- action valid：PASS
+- environment step：PASS
+- trajectory created：PASS
+- memory written：NO（runtime smoke 明确关闭 cross-episode memory）
+- episode finished：PASS
+- steps：1
+- reward：0
+- score：0
+- wall time：10.01150385197252 秒
+- exception：NONE
 
-中止前尚未到达 Ollama：
-
-- environment initialized：NO
-- initial observation returned to runner：NO
-- LLM request：NO
-- response parse：NO
-- action generated：NO
-- action valid：NO
-- environment step：NO
-- trajectory created：NO
-- memory written：NO
-- episode finished：NO
-- steps：0
-- reward：N/A
-- wall time：约 9 分钟
-
-中止后确认 en-core-web-sm 未安装，Ollama 无加载模型，runtime package set 未变化，third-party checkout 干净。
+reward 为 0 不影响 runtime gate。没有运行第二个 episode，也没有进入 Stage-8C formal experiment。
 
 ## Gates
 
@@ -42,15 +47,19 @@ idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/
 - G1 PASS
 - G2 PASS
 - G3 PASS
-- G4 FAIL
-- G5 FAIL
-- G6 FAIL
+- G4 PASS
+- G5 PASS
+- G6 PASS
 - G7 PASS
+- G8 PASS
+- G9 PASS
 
 ## Verdict
 
-JERICHO_RUNTIME_BLOCKED
+OLLAMA_SMOKE_PASS
+
+本地 Ollama 已可作为当前 JitRL 受控 Stage-8C 实验的 inference transport。
 
 ## Next
 
-下一步最小动作是单独授权在 jitrl_runtime 中安装 Jericho 所需的 en-core-web-sm 3.8.0；安装后再新开一次、且仅一次 smoke episode。
+下一步最小动作是返回 Stage-8C real failure reproduction；本轮到此停止。

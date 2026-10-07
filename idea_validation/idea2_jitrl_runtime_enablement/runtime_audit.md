@@ -1,54 +1,64 @@
-# Stage-8C0.2 runtime audit
+# Stage-8C0.3 runtime audit
 
-## Baseline and corrected ROM
+## Baseline
 
-The run started from a clean repository at 58aa718f3d5a4c5eb35563fcc4bd14ac1f90ea24, equal to origin/main. jitrl_runtime used Python 3.10.21. The frozen JitRL checkout was clean.
-
-The corrected ROM was found at:
+The repository started clean at 67a68f4a3bd19e2132428a92d1d25aac4f625304, equal to origin/main. The runtime was jitrl_runtime with Python 3.10.21. The corrected 71 KB ROM existed at:
 
 idea_validation/idea2_policy_conditioned_memory_audit/third_party/jitrl/Jericho/jericho-games/library.z5
 
-The file existed and was 71 KB.
+The frozen JitRL checkout was clean.
 
-## Jericho load preflight
+## Authorized spaCy model installation
 
-A direct FrotzEnv load/reset completed in 0.007903074030764401 seconds without an LLM call:
+spaCy 3.8.16 was installed but had no language models. Loading en_core_web_sm produced E050, confirming that the only missing resource was the model.
 
-- ROM load: success
-- reset: success
-- initial observation present: yes
-- initial observation characters: 2020
-- initial score: 0
+The official en_core_web_sm 3.8.0 wheel was dry-run with --no-deps. The plan contained only en_core_web_sm 3.8.0. It was then installed with --no-deps, so spaCy, numpy, openai, jericho, tiktoken, and python-dotenv were not upgraded.
 
-This establishes that the ROM itself is readable by the installed Jericho runtime.
+Validation passed:
 
-## Single JitRL smoke attempt
+- model name: core_web_sm
+- model version: 3.8.0
+- tokens for "You are in a library.": ["You", "are", "in", "a", "library", "."]
+- pip check: no broken requirements
 
-Exactly one smoke episode was started with the corrected ROM path, qwen2.5:14b, Ollama at http://localhost:11434/v1, seed 0, temperature 0, and the previously validated transport-only adapter.
+## Final single-episode smoke
 
-The JitRL JerichoEnv.reset path calls env.get_valid_actions(use_parallel=True). During that call the installed Jericho package detected that en_core_web_sm was missing and invoked spacy.cli.download("en_core_web_sm") from jericho/util.py lines 44-47.
+Exactly one episode was run with:
 
-Installing a new runtime dependency was prohibited in this stage and G0 required the runtime environment to remain unchanged. The same smoke process was therefore interrupted and terminated. It had not reached Ollama: /api/ps reported no loaded models and all GPUs were idle.
+- task: Jericho/library
+- ROM: jericho-games/library.z5
+- backend: Ollama, http://localhost:11434/v1
+- model: qwen2.5:14b
+- seed: 0
+- temperature: 0
+- evaluation runs: 1
+- environment step limit: 1
+- external runner time guard: 360 seconds
+- transport-only adapter
+- cross-episode memory disabled for the runtime smoke
 
-Observed smoke state:
+Observed chain:
 
-- JitRL environment reset completed: no
-- runner received initial observation: no
-- LLM request: no
-- response parse: no
-- action generated/executed: no
-- environment step: no
-- trajectory: no
-- memory write: no
-- episode finished: no
-- episode steps: 0
-- reward: unavailable
-- elapsed time: approximately 9 minutes before policy-preserving termination
+1. JitRL created and reset JerichoEnv.
+2. The runner obtained the initial observation and valid actions.
+3. JitRL constructed the action prompt.
+4. The OpenAI-compatible client sent a real request to Ollama.
+5. A response was received and parsed.
+6. JitRL selected west.
+7. west was present in the valid-action set.
+8. Jericho executed the action.
+9. One environment step completed with reward 0 and score 0.
+10. A real episode log/trajectory record was created.
+11. The evaluator completed successfully.
 
-No second episode was run. en-core-web-sm was confirmed absent after termination. The repository, runtime package set, and third-party checkout remained unchanged.
+Wall time was 10.01150385197252 seconds. The model output contained 818 characters. Token usage was not exposed by the JitRL runner. No second episode was started.
+
+## Integrity
+
+No JitRL core, memory, retrieval, value, advantage, action-selection, environment, or reward logic was changed. The third-party checkout remained clean.
 
 ## Verdict
 
-JERICHO_RUNTIME_BLOCKED
+OLLAMA_SMOKE_PASS
 
-The minimal blocker is the undeclared-at-install-time spaCy language model required by Jericho valid-action enumeration.
+Local Ollama can serve as the inference transport for the current controlled JitRL Stage-8C runtime path.

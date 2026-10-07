@@ -1,38 +1,46 @@
 {
-  "stage": "Idea 2 Stage-8C0.2",
+  "stage": "Idea 2 Stage-8C0.3",
   "gates": {
     "G0_integrity": {
       "status": "PASS",
-      "evidence": "Baseline clean; runtime package set unchanged; third-party unmodified."
+      "evidence": "Git baseline clean; history and third-party JitRL unmodified."
     },
-    "G1_rom_path": {
+    "G1_spacy_model": {
       "status": "PASS",
-      "evidence": "jericho-games/library.z5 found and readable."
+      "evidence": "en_core_web_sm 3.8.0 installed alone and loaded successfully under spaCy 3.8.16."
     },
-    "G2_jericho_load": {
+    "G2_jericho_runner_initialization": {
       "status": "PASS",
-      "evidence": "Direct FrotzEnv load/reset succeeded with a 2020-character observation."
+      "evidence": "The real JitRL runner initialized and reset library.z5."
     },
-    "G3_llm_backend": {
+    "G3_initial_observation": {
       "status": "PASS",
-      "evidence": "Frozen Stage-8C0.1 official OpenAI client to Ollama probes passed; re-audit was prohibited."
+      "evidence": "The runner obtained the real initial observation."
     },
-    "G4_response_parse": {
-      "status": "FAIL",
-      "evidence": "The JitRL runner did not reach the LLM request or response parser."
-    },
-    "G5_action_execution": {
-      "status": "FAIL",
-      "evidence": "No action was generated or sent to Jericho."
-    },
-    "G6_trajectory": {
-      "status": "FAIL",
-      "evidence": "No trajectory/log record was produced."
-    },
-    "G7_single_episode_discipline": {
+    "G4_llm_request": {
       "status": "PASS",
-      "evidence": "Exactly one episode was attempted and no second episode was started."
+      "evidence": "The real JitRL runner called local Ollama through the transport adapter."
+    },
+    "G5_response_parsing": {
+      "status": "PASS",
+      "evidence": "JitRL parsed the structured model output successfully."
+    },
+    "G6_action_execution": {
+      "status": "PASS",
+      "evidence": "Generated action west was in the valid-action set and entered Jericho."
+    },
+    "G7_environment_step": {
+      "status": "PASS",
+      "evidence": "One real environment step completed with reward 0."
+    },
+    "G8_trajectory": {
+      "status": "PASS",
+      "evidence": "One real episode trajectory/log record was created."
+    },
+    "G9_single_episode_discipline": {
+      "status": "PASS",
+      "evidence": "Exactly one episode was run."
     }
   },
-  "verdict": "JERICHO_RUNTIME_BLOCKED"
+  "verdict": "OLLAMA_SMOKE_PASS"
 }

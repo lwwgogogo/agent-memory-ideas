@@ -1,4 +1,4 @@
-"""Bounded Stage-8C0.1 JitRL smoke runner.
+"""Bounded Stage-8C0.3 JitRL smoke runner.
 
 Default behavior audits dependencies. --run permits at most one Jericho
 episode with one environment step.
@@ -44,7 +44,7 @@ def write_result(payload: dict) -> None:
 
 def blocked_payload(state: dict[str, bool]) -> dict:
     return {
-        "stage": "Idea 2 Stage-8C0.1",
+        "stage": "Idea 2 Stage-8C0.3",
         "task": "Jericho/library",
         "status": "BLOCKED_BY_DEPENDENCY",
         "required_dependencies": state,
@@ -118,7 +118,7 @@ def run_one_episode() -> dict:
     old_path = sys.path[:]
     started = time.perf_counter()
     try:
-        with tempfile.TemporaryDirectory(prefix="jitrl_stage8c01_") as tmp:
+        with tempfile.TemporaryDirectory(prefix="jitrl_stage8c03_") as tmp:
             sys.path.insert(0, str(JERICHO_DIR))
             settings = backend_settings()
             sys.argv = [
@@ -150,7 +150,7 @@ def run_one_episode() -> dict:
             action_generated = bool(observed["chosen_action"])
             step_success = "[REWARD]" in log_text and "[CUM_REWARD]" in log_text
             payload = {
-                "stage": "Idea 2 Stage-8C0.1",
+                "stage": "Idea 2 Stage-8C0.3",
                 "task": "Jericho/library",
                 "status": "PASS" if exit_code == 0 and action_generated and step_success and logs else "FAIL",
                 "required_dependencies": state,
@@ -181,7 +181,7 @@ def run_one_episode() -> dict:
             }
     except Exception as exc:
         payload = {
-            "stage": "Idea 2 Stage-8C0.1",
+            "stage": "Idea 2 Stage-8C0.3",
             "task": "Jericho/library",
             "status": "FAIL",
             "episode_attempted": True,
