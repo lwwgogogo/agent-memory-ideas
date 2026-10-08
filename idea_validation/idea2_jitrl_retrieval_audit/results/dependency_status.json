@@ -1,0 +1,20 @@
+{
+  "embedding_blocker": "get_embedding_with_retries returns None when OPENAI_API_KEY2 is unset; no local embedding backend is on the Jericho path",
+  "faiss_cpu_importable": false,
+  "faiss_importable": false,
+  "faiss_symbol_is_none": true,
+  "minimal_install_candidate": "faiss-cpu",
+  "missing": [
+    "faiss",
+    "OPENAI_API_KEY2"
+  ],
+  "numpy_importable": true,
+  "numpy_version": "2.2.6",
+  "openai_api_key2_set": false,
+  "openai_importable": true,
+  "required": [
+    "faiss",
+    "numpy",
+    "openai embeddings via OPENAI_API_KEY2"
+  ]
+}

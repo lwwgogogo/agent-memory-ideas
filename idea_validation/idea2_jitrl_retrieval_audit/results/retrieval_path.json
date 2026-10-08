@@ -1,0 +1,38 @@
+{
+  "anchors": {
+    "agent_calls_add_episode": true,
+    "agent_calls_retrieve_similar": true,
+    "embedding_requires_openai_key2": true,
+    "empty_guard_before_null_vector_guard": true,
+    "faiss_add": true,
+    "faiss_import": true,
+    "index_flat_ip": true,
+    "index_guard_before_search": true,
+    "index_none_when_faiss_missing": true,
+    "jaccard_filter": true,
+    "retrieve_ignores_use_vector": true,
+    "search_calls": true,
+    "store_returns_when_index_missing": true
+  },
+  "path": {
+    "embedding_backend": "OpenAI embeddings API, default model text-embedding-ada-002, get_embedding_with_retries",
+    "final_return": "filtered_trajectories, else []",
+    "index_dependency": "faiss",
+    "index_insertion": "CrossEpisodeMemory._store_step_in_vector_db -> history_index.add and state_index.add",
+    "index_type": "faiss.IndexFlatIP dual indexes (history_index, state_index)",
+    "init_stdout_has_faiss_warning": true,
+    "memory_write": "JitRLAgent.end_episode -> CrossEpisodeMemory.add_episode",
+    "native_k": 10,
+    "native_r": 0.95,
+    "native_search": "history_index.search and state_index.search",
+    "post_filter": "Jaccard similarity 0.3*sim1+0.7*sim2 against dynamic_threshold derived from r; no URL filter on the Jericho path",
+    "query_generation": "JitRLAgent.update_scores -> retrieve_similar -> _encode_trajectory_context",
+    "representation": "generate_trajectory_context_for_vector; with info it concatenates look/state and does not call an LLM"
+  },
+  "stage8c_zero": {
+    "earliest_layer": "index_initialization",
+    "reason": "faiss import failed; history_index and state_index stay None; retrieve_similar_with_vector returns [] at the index-unavailable guard before search",
+    "stage8c_attempts_observed_readonly": 20,
+    "stage8c_returned_observed_readonly": 0
+  }
+}

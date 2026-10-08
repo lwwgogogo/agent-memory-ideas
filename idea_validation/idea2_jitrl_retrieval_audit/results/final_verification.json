@@ -1,0 +1,17 @@
+{
+  "earliest_zero_layer": "index_initialization",
+  "gates": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "FAIL",
+    "G6": "PASS"
+  },
+  "near_identical_retrieval": "NOT_RUN",
+  "self_retrieval": "FAIL",
+  "stage": "Idea 2 Stage-8C1",
+  "stage8c_verdict_retained": "REAL_JITRL_FAILURE_NO_GO",
+  "verdict": "RETRIEVAL_INFRA_BLOCKED"
+}

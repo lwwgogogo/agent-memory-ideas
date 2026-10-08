@@ -1,0 +1,16 @@
+{
+  "G0": "PASS",
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS",
+  "G5": "FAIL",
+  "G6": "PASS",
+  "frozen": {
+    "jitrl_head": "143d22185d95fbf633a0befe6861d5e8b732543b",
+    "jitrl_status_clean": true,
+    "stage8c_status_clean": true,
+    "stage8c_verdict": "REAL_JITRL_FAILURE_NO_GO"
+  },
+  "verdict": "RETRIEVAL_INFRA_BLOCKED"
+}

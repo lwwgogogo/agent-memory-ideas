@@ -1,0 +1,72 @@
+{
+  "direct_embedding_attempts": 1,
+  "direct_embedding_returned_vector": false,
+  "embedding_attempts_on_exact_query": 2,
+  "embedding_generated": false,
+  "embedding_results": [
+    {
+      "model": "text-embedding-ada-002",
+      "returned_vector": false,
+      "text_chars": 43
+    },
+    {
+      "model": "text-embedding-ada-002",
+      "returned_vector": false,
+      "text_chars": 58
+    }
+  ],
+  "empty_index_guard": false,
+  "exact_query_search_executed": false,
+  "faiss_add_reached": false,
+  "final_returned": 0,
+  "index_after": {
+    "history_index_is_none": true,
+    "history_ntotal": null,
+    "metadata_entries": 0,
+    "state_index_is_none": true,
+    "state_ntotal": null
+  },
+  "index_before": {
+    "embedding_model": "text-embedding-ada-002",
+    "encoder_available_flag": true,
+    "history_index_is_none": true,
+    "history_ntotal": null,
+    "state_index_is_none": true,
+    "state_ntotal": null,
+    "vector_dim": 1536
+  },
+  "index_files": {
+    "episodes_file": true,
+    "history_index_file": false,
+    "state_index_file": false
+  },
+  "index_insertion_called": false,
+  "index_insertion_success": false,
+  "index_unavailable_guard": true,
+  "llm_called": false,
+  "memory_created": true,
+  "memory_persisted": true,
+  "near_identical_retrieval": "NOT_RUN",
+  "null_query_guard": false,
+  "persisted_step_keys": [
+    "action",
+    "delta_score",
+    "llm_reasoning",
+    "llm_step_score",
+    "reward",
+    "score",
+    "state",
+    "step_num",
+    "step_summary"
+  ],
+  "post_filter_candidates": null,
+  "prewrite_embedding_attempts": 2,
+  "prewrite_retrieval_returned": 0,
+  "query_error": null,
+  "raw_candidates": null,
+  "self_retrieval": "FAIL",
+  "step_scorer_calls": 1,
+  "step_scorer_stubbed": true,
+  "store_error": null,
+  "thresholds_modified": false
+}
